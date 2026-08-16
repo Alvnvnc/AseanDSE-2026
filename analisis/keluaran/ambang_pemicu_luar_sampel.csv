@@ -1,0 +1,5 @@
+,n_bulan,cakupan_%,sensitivitas_%,presisi_%,lift,negara
+latih 2010-2016,82.0,12.2,47.6,100.0,3.9,Indonesia
+UJI 2017-2024,90.0,11.1,43.5,100.0,3.91,Indonesia
+latih 2010-2016,82.0,15.9,47.6,76.9,3.0,Thailand
+UJI 2017-2022,72.0,16.7,44.4,66.7,2.67,Thailand

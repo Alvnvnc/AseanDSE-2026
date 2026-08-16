@@ -1,0 +1,925 @@
+negara,provinsi,bulan,nama_bulan,share_persen,status,status_kode
+Thailand,Amnat Charoen,1,Jan,1.0,Normal,0
+Thailand,Amnat Charoen,2,Feb,1.4,Normal,0
+Thailand,Amnat Charoen,3,Mar,2.4,Normal,0
+Thailand,Amnat Charoen,4,Apr,3.6,Normal,0
+Thailand,Amnat Charoen,5,Mei,11.3,Siaga,1
+Thailand,Amnat Charoen,6,Jun,25.7,Puncak,2
+Thailand,Amnat Charoen,7,Jul,21.1,Puncak,2
+Thailand,Amnat Charoen,8,Agu,17.5,Puncak,2
+Thailand,Amnat Charoen,9,Sep,8.2,Normal,0
+Thailand,Amnat Charoen,10,Okt,4.8,Normal,0
+Thailand,Amnat Charoen,11,Nov,2.1,Normal,0
+Thailand,Amnat Charoen,12,Des,0.9,Normal,0
+Thailand,Mukdahan,1,Jan,1.3,Normal,0
+Thailand,Mukdahan,2,Feb,1.6,Normal,0
+Thailand,Mukdahan,3,Mar,2.8,Normal,0
+Thailand,Mukdahan,4,Apr,4.7,Normal,0
+Thailand,Mukdahan,5,Mei,10.3,Siaga,1
+Thailand,Mukdahan,6,Jun,23.9,Puncak,2
+Thailand,Mukdahan,7,Jul,20.0,Puncak,2
+Thailand,Mukdahan,8,Agu,17.0,Puncak,2
+Thailand,Mukdahan,9,Sep,8.4,Normal,0
+Thailand,Mukdahan,10,Okt,4.2,Normal,0
+Thailand,Mukdahan,11,Nov,4.1,Normal,0
+Thailand,Mukdahan,12,Des,1.7,Normal,0
+Thailand,Nakhon Phanom,1,Jan,1.4,Normal,0
+Thailand,Nakhon Phanom,2,Feb,1.3,Normal,0
+Thailand,Nakhon Phanom,3,Mar,4.0,Normal,0
+Thailand,Nakhon Phanom,4,Apr,5.3,Normal,0
+Thailand,Nakhon Phanom,5,Mei,14.8,Puncak,2
+Thailand,Nakhon Phanom,6,Jun,23.4,Puncak,2
+Thailand,Nakhon Phanom,7,Jul,22.2,Puncak,2
+Thailand,Nakhon Phanom,8,Agu,13.1,Siaga,1
+Thailand,Nakhon Phanom,9,Sep,6.6,Normal,0
+Thailand,Nakhon Phanom,10,Okt,4.1,Normal,0
+Thailand,Nakhon Phanom,11,Nov,2.4,Normal,0
+Thailand,Nakhon Phanom,12,Des,1.4,Normal,0
+Thailand,Nan,1,Jan,0.9,Normal,0
+Thailand,Nan,2,Feb,1.1,Normal,0
+Thailand,Nan,3,Mar,1.1,Normal,0
+Thailand,Nan,4,Apr,5.3,Normal,0
+Thailand,Nan,5,Mei,16.2,Puncak,2
+Thailand,Nan,6,Jun,23.4,Puncak,2
+Thailand,Nan,7,Jul,20.7,Puncak,2
+Thailand,Nan,8,Agu,13.8,Siaga,1
+Thailand,Nan,9,Sep,8.7,Normal,0
+Thailand,Nan,10,Okt,5.1,Normal,0
+Thailand,Nan,11,Nov,2.5,Normal,0
+Thailand,Nan,12,Des,1.3,Normal,0
+Thailand,Phangnga,1,Jan,6.7,Normal,0
+Thailand,Phangnga,2,Feb,5.0,Normal,0
+Thailand,Phangnga,3,Mar,4.3,Normal,0
+Thailand,Phangnga,4,Apr,5.5,Normal,0
+Thailand,Phangnga,5,Mei,9.7,Normal,0
+Thailand,Phangnga,6,Jun,16.5,Puncak,2
+Thailand,Phangnga,7,Jul,14.6,Puncak,2
+Thailand,Phangnga,8,Agu,12.0,Puncak,2
+Thailand,Phangnga,9,Sep,8.7,Normal,0
+Thailand,Phangnga,10,Okt,6.2,Normal,0
+Thailand,Phangnga,11,Nov,5.6,Normal,0
+Thailand,Phangnga,12,Des,5.1,Normal,0
+Thailand,Ranong,1,Jan,7.7,Normal,0
+Thailand,Ranong,2,Feb,5.1,Normal,0
+Thailand,Ranong,3,Mar,6.6,Normal,0
+Thailand,Ranong,4,Apr,7.6,Normal,0
+Thailand,Ranong,5,Mei,13.4,Puncak,2
+Thailand,Ranong,6,Jun,15.4,Puncak,2
+Thailand,Ranong,7,Jul,11.9,Puncak,2
+Thailand,Ranong,8,Agu,11.2,Siaga,1
+Thailand,Ranong,9,Sep,5.4,Normal,0
+Thailand,Ranong,10,Okt,4.1,Normal,0
+Thailand,Ranong,11,Nov,6.1,Normal,0
+Thailand,Ranong,12,Des,5.4,Normal,0
+Thailand,Roi Et,1,Jan,2.1,Normal,0
+Thailand,Roi Et,2,Feb,2.2,Normal,0
+Thailand,Roi Et,3,Mar,2.8,Normal,0
+Thailand,Roi Et,4,Apr,2.9,Normal,0
+Thailand,Roi Et,5,Mei,7.9,Normal,0
+Thailand,Roi Et,6,Jun,20.6,Puncak,2
+Thailand,Roi Et,7,Jul,19.2,Puncak,2
+Thailand,Roi Et,8,Agu,19.2,Puncak,2
+Thailand,Roi Et,9,Sep,12.1,Siaga,1
+Thailand,Roi Et,10,Okt,6.0,Normal,0
+Thailand,Roi Et,11,Nov,3.0,Normal,0
+Thailand,Roi Et,12,Des,2.0,Normal,0
+Thailand,Sakon Nakhon,1,Jan,1.3,Normal,0
+Thailand,Sakon Nakhon,2,Feb,1.6,Normal,0
+Thailand,Sakon Nakhon,3,Mar,3.0,Normal,0
+Thailand,Sakon Nakhon,4,Apr,5.4,Normal,0
+Thailand,Sakon Nakhon,5,Mei,12.3,Siaga,1
+Thailand,Sakon Nakhon,6,Jun,27.7,Puncak,2
+Thailand,Sakon Nakhon,7,Jul,21.3,Puncak,2
+Thailand,Sakon Nakhon,8,Agu,14.0,Puncak,2
+Thailand,Sakon Nakhon,9,Sep,6.6,Normal,0
+Thailand,Sakon Nakhon,10,Okt,3.8,Normal,0
+Thailand,Sakon Nakhon,11,Nov,2.1,Normal,0
+Thailand,Sakon Nakhon,12,Des,1.0,Normal,0
+Thailand,Singburi,1,Jan,2.2,Normal,0
+Thailand,Singburi,2,Feb,2.4,Normal,0
+Thailand,Singburi,3,Mar,6.6,Normal,0
+Thailand,Singburi,4,Apr,3.4,Normal,0
+Thailand,Singburi,5,Mei,6.8,Normal,0
+Thailand,Singburi,6,Jun,20.6,Puncak,2
+Thailand,Singburi,7,Jul,13.6,Puncak,2
+Thailand,Singburi,8,Agu,12.4,Puncak,2
+Thailand,Singburi,9,Sep,11.8,Siaga,1
+Thailand,Singburi,10,Okt,4.4,Normal,0
+Thailand,Singburi,11,Nov,5.8,Normal,0
+Thailand,Singburi,12,Des,10.1,Siaga,1
+Thailand,Surat Thani,1,Jan,8.9,Normal,0
+Thailand,Surat Thani,2,Feb,6.3,Normal,0
+Thailand,Surat Thani,3,Mar,5.1,Normal,0
+Thailand,Surat Thani,4,Apr,4.4,Normal,0
+Thailand,Surat Thani,5,Mei,7.3,Normal,0
+Thailand,Surat Thani,6,Jun,12.5,Puncak,2
+Thailand,Surat Thani,7,Jul,10.7,Puncak,2
+Thailand,Surat Thani,8,Agu,11.6,Puncak,2
+Thailand,Surat Thani,9,Sep,9.3,Normal,0
+Thailand,Surat Thani,10,Okt,8.6,Normal,0
+Thailand,Surat Thani,11,Nov,8.3,Normal,0
+Thailand,Surat Thani,12,Des,7.0,Normal,0
+Thailand,Trad,1,Jan,5.3,Normal,0
+Thailand,Trad,2,Feb,3.5,Normal,0
+Thailand,Trad,3,Mar,4.0,Normal,0
+Thailand,Trad,4,Apr,6.2,Normal,0
+Thailand,Trad,5,Mei,13.2,Puncak,2
+Thailand,Trad,6,Jun,16.9,Puncak,2
+Thailand,Trad,7,Jul,14.7,Puncak,2
+Thailand,Trad,8,Agu,11.7,Siaga,1
+Thailand,Trad,9,Sep,7.9,Normal,0
+Thailand,Trad,10,Okt,6.4,Normal,0
+Thailand,Trad,11,Nov,6.1,Normal,0
+Thailand,Trad,12,Des,4.2,Normal,0
+Thailand,Ang Thong,1,Jan,4.5,Normal,0
+Thailand,Ang Thong,2,Feb,4.3,Normal,0
+Thailand,Ang Thong,3,Mar,5.8,Normal,0
+Thailand,Ang Thong,4,Apr,4.9,Normal,0
+Thailand,Ang Thong,5,Mei,6.8,Normal,0
+Thailand,Ang Thong,6,Jun,9.2,Normal,0
+Thailand,Ang Thong,7,Jul,14.3,Puncak,2
+Thailand,Ang Thong,8,Agu,12.4,Puncak,2
+Thailand,Ang Thong,9,Sep,13.2,Puncak,2
+Thailand,Ang Thong,10,Okt,9.9,Normal,0
+Thailand,Ang Thong,11,Nov,10.4,Siaga,1
+Thailand,Ang Thong,12,Des,4.4,Normal,0
+Thailand,Bungkan,1,Jan,1.2,Normal,0
+Thailand,Bungkan,2,Feb,2.0,Normal,0
+Thailand,Bungkan,3,Mar,3.1,Normal,0
+Thailand,Bungkan,4,Apr,6.3,Normal,0
+Thailand,Bungkan,5,Mei,15.0,Puncak,2
+Thailand,Bungkan,6,Jun,19.1,Puncak,2
+Thailand,Bungkan,7,Jul,21.7,Puncak,2
+Thailand,Bungkan,8,Agu,9.0,Normal,0
+Thailand,Bungkan,9,Sep,11.0,Siaga,1
+Thailand,Bungkan,10,Okt,4.5,Normal,0
+Thailand,Bungkan,11,Nov,4.7,Normal,0
+Thailand,Bungkan,12,Des,2.3,Normal,0
+Thailand,Chachoengsao,1,Jan,5.6,Normal,0
+Thailand,Chachoengsao,2,Feb,3.8,Normal,0
+Thailand,Chachoengsao,3,Mar,3.3,Normal,0
+Thailand,Chachoengsao,4,Apr,4.3,Normal,0
+Thailand,Chachoengsao,5,Mei,5.4,Normal,0
+Thailand,Chachoengsao,6,Jun,11.6,Siaga,1
+Thailand,Chachoengsao,7,Jul,14.9,Puncak,2
+Thailand,Chachoengsao,8,Agu,13.8,Puncak,2
+Thailand,Chachoengsao,9,Sep,11.9,Puncak,2
+Thailand,Chachoengsao,10,Okt,9.7,Normal,0
+Thailand,Chachoengsao,11,Nov,9.5,Normal,0
+Thailand,Chachoengsao,12,Des,6.2,Normal,0
+Thailand,Chainat,1,Jan,5.1,Normal,0
+Thailand,Chainat,2,Feb,3.4,Normal,0
+Thailand,Chainat,3,Mar,4.4,Normal,0
+Thailand,Chainat,4,Apr,3.7,Normal,0
+Thailand,Chainat,5,Mei,7.4,Normal,0
+Thailand,Chainat,6,Jun,11.1,Siaga,1
+Thailand,Chainat,7,Jul,16.5,Puncak,2
+Thailand,Chainat,8,Agu,12.5,Puncak,2
+Thailand,Chainat,9,Sep,13.1,Puncak,2
+Thailand,Chainat,10,Okt,7.1,Normal,0
+Thailand,Chainat,11,Nov,10.0,Normal,0
+Thailand,Chainat,12,Des,5.8,Normal,0
+Thailand,Chaiyaphum,1,Jan,2.2,Normal,0
+Thailand,Chaiyaphum,2,Feb,2.6,Normal,0
+Thailand,Chaiyaphum,3,Mar,2.9,Normal,0
+Thailand,Chaiyaphum,4,Apr,4.9,Normal,0
+Thailand,Chaiyaphum,5,Mei,11.5,Siaga,1
+Thailand,Chaiyaphum,6,Jun,17.6,Puncak,2
+Thailand,Chaiyaphum,7,Jul,17.8,Puncak,2
+Thailand,Chaiyaphum,8,Agu,16.0,Puncak,2
+Thailand,Chaiyaphum,9,Sep,11.2,Siaga,1
+Thailand,Chaiyaphum,10,Okt,6.7,Normal,0
+Thailand,Chaiyaphum,11,Nov,4.7,Normal,0
+Thailand,Chaiyaphum,12,Des,1.9,Normal,0
+Thailand,Chanthaburi,1,Jan,3.0,Normal,0
+Thailand,Chanthaburi,2,Feb,2.1,Normal,0
+Thailand,Chanthaburi,3,Mar,2.7,Normal,0
+Thailand,Chanthaburi,4,Apr,5.1,Normal,0
+Thailand,Chanthaburi,5,Mei,10.2,Siaga,1
+Thailand,Chanthaburi,6,Jun,16.8,Puncak,2
+Thailand,Chanthaburi,7,Jul,17.9,Puncak,2
+Thailand,Chanthaburi,8,Agu,13.7,Puncak,2
+Thailand,Chanthaburi,9,Sep,10.1,Siaga,1
+Thailand,Chanthaburi,10,Okt,7.6,Normal,0
+Thailand,Chanthaburi,11,Nov,6.7,Normal,0
+Thailand,Chanthaburi,12,Des,4.2,Normal,0
+Thailand,Chiang Mai,1,Jan,2.2,Normal,0
+Thailand,Chiang Mai,2,Feb,1.2,Normal,0
+Thailand,Chiang Mai,3,Mar,1.1,Normal,0
+Thailand,Chiang Mai,4,Apr,1.7,Normal,0
+Thailand,Chiang Mai,5,Mei,5.2,Normal,0
+Thailand,Chiang Mai,6,Jun,13.5,Siaga,1
+Thailand,Chiang Mai,7,Jul,22.1,Puncak,2
+Thailand,Chiang Mai,8,Agu,21.5,Puncak,2
+Thailand,Chiang Mai,9,Sep,14.2,Puncak,2
+Thailand,Chiang Mai,10,Okt,8.3,Normal,0
+Thailand,Chiang Mai,11,Nov,6.2,Normal,0
+Thailand,Chiang Mai,12,Des,2.9,Normal,0
+Thailand,Chiang Rai,1,Jan,1.6,Normal,0
+Thailand,Chiang Rai,2,Feb,0.7,Normal,0
+Thailand,Chiang Rai,3,Mar,0.8,Normal,0
+Thailand,Chiang Rai,4,Apr,1.6,Normal,0
+Thailand,Chiang Rai,5,Mei,7.9,Normal,0
+Thailand,Chiang Rai,6,Jun,15.3,Puncak,2
+Thailand,Chiang Rai,7,Jul,21.7,Puncak,2
+Thailand,Chiang Rai,8,Agu,21.2,Puncak,2
+Thailand,Chiang Rai,9,Sep,13.6,Siaga,1
+Thailand,Chiang Rai,10,Okt,7.2,Normal,0
+Thailand,Chiang Rai,11,Nov,5.7,Normal,0
+Thailand,Chiang Rai,12,Des,2.6,Normal,0
+Thailand,Chonburi,1,Jan,7.2,Normal,0
+Thailand,Chonburi,2,Feb,5.0,Normal,0
+Thailand,Chonburi,3,Mar,5.6,Normal,0
+Thailand,Chonburi,4,Apr,5.6,Normal,0
+Thailand,Chonburi,5,Mei,8.1,Normal,0
+Thailand,Chonburi,6,Jun,11.6,Puncak,2
+Thailand,Chonburi,7,Jul,12.0,Puncak,2
+Thailand,Chonburi,8,Agu,11.5,Puncak,2
+Thailand,Chonburi,9,Sep,9.7,Normal,0
+Thailand,Chonburi,10,Okt,7.9,Normal,0
+Thailand,Chonburi,11,Nov,9.3,Normal,0
+Thailand,Chonburi,12,Des,6.4,Normal,0
+Thailand,Chumphon,1,Jan,5.3,Normal,0
+Thailand,Chumphon,2,Feb,5.9,Normal,0
+Thailand,Chumphon,3,Mar,5.2,Normal,0
+Thailand,Chumphon,4,Apr,5.0,Normal,0
+Thailand,Chumphon,5,Mei,11.1,Puncak,2
+Thailand,Chumphon,6,Jun,12.9,Puncak,2
+Thailand,Chumphon,7,Jul,14.0,Puncak,2
+Thailand,Chumphon,8,Agu,10.7,Siaga,1
+Thailand,Chumphon,9,Sep,9.1,Normal,0
+Thailand,Chumphon,10,Okt,8.8,Normal,0
+Thailand,Chumphon,11,Nov,7.6,Normal,0
+Thailand,Chumphon,12,Des,4.3,Normal,0
+Thailand,Kalasin,1,Jan,3.0,Normal,0
+Thailand,Kalasin,2,Feb,4.0,Normal,0
+Thailand,Kalasin,3,Mar,6.9,Normal,0
+Thailand,Kalasin,4,Apr,3.7,Normal,0
+Thailand,Kalasin,5,Mei,5.3,Normal,0
+Thailand,Kalasin,6,Jun,14.5,Puncak,2
+Thailand,Kalasin,7,Jul,20.2,Puncak,2
+Thailand,Kalasin,8,Agu,18.1,Puncak,2
+Thailand,Kalasin,9,Sep,10.8,Siaga,1
+Thailand,Kalasin,10,Okt,7.2,Normal,0
+Thailand,Kalasin,11,Nov,4.3,Normal,0
+Thailand,Kalasin,12,Des,2.0,Normal,0
+Thailand,Kampaeng Phet,1,Jan,3.7,Normal,0
+Thailand,Kampaeng Phet,2,Feb,3.0,Normal,0
+Thailand,Kampaeng Phet,3,Mar,4.7,Normal,0
+Thailand,Kampaeng Phet,4,Apr,4.6,Normal,0
+Thailand,Kampaeng Phet,5,Mei,6.2,Normal,0
+Thailand,Kampaeng Phet,6,Jun,14.6,Puncak,2
+Thailand,Kampaeng Phet,7,Jul,20.0,Puncak,2
+Thailand,Kampaeng Phet,8,Agu,16.7,Puncak,2
+Thailand,Kampaeng Phet,9,Sep,11.7,Siaga,1
+Thailand,Kampaeng Phet,10,Okt,7.4,Normal,0
+Thailand,Kampaeng Phet,11,Nov,4.5,Normal,0
+Thailand,Kampaeng Phet,12,Des,2.9,Normal,0
+Thailand,Kanchanaburi,1,Jan,6.4,Normal,0
+Thailand,Kanchanaburi,2,Feb,5.8,Normal,0
+Thailand,Kanchanaburi,3,Mar,6.0,Normal,0
+Thailand,Kanchanaburi,4,Apr,5.0,Normal,0
+Thailand,Kanchanaburi,5,Mei,7.6,Normal,0
+Thailand,Kanchanaburi,6,Jun,11.4,Puncak,2
+Thailand,Kanchanaburi,7,Jul,14.1,Puncak,2
+Thailand,Kanchanaburi,8,Agu,13.4,Puncak,2
+Thailand,Kanchanaburi,9,Sep,9.0,Normal,0
+Thailand,Kanchanaburi,10,Okt,8.3,Normal,0
+Thailand,Kanchanaburi,11,Nov,8.8,Normal,0
+Thailand,Kanchanaburi,12,Des,4.2,Normal,0
+Thailand,Krabi,1,Jan,6.9,Normal,0
+Thailand,Krabi,2,Feb,5.6,Normal,0
+Thailand,Krabi,3,Mar,5.2,Normal,0
+Thailand,Krabi,4,Apr,5.3,Normal,0
+Thailand,Krabi,5,Mei,9.2,Normal,0
+Thailand,Krabi,6,Jun,14.9,Puncak,2
+Thailand,Krabi,7,Jul,15.2,Puncak,2
+Thailand,Krabi,8,Agu,13.1,Puncak,2
+Thailand,Krabi,9,Sep,7.5,Normal,0
+Thailand,Krabi,10,Okt,6.1,Normal,0
+Thailand,Krabi,11,Nov,6.3,Normal,0
+Thailand,Krabi,12,Des,4.6,Normal,0
+Thailand,Lampang,1,Jan,1.4,Normal,0
+Thailand,Lampang,2,Feb,1.2,Normal,0
+Thailand,Lampang,3,Mar,1.4,Normal,0
+Thailand,Lampang,4,Apr,3.0,Normal,0
+Thailand,Lampang,5,Mei,8.2,Normal,0
+Thailand,Lampang,6,Jun,18.6,Puncak,2
+Thailand,Lampang,7,Jul,23.5,Puncak,2
+Thailand,Lampang,8,Agu,19.2,Puncak,2
+Thailand,Lampang,9,Sep,11.0,Siaga,1
+Thailand,Lampang,10,Okt,6.0,Normal,0
+Thailand,Lampang,11,Nov,4.1,Normal,0
+Thailand,Lampang,12,Des,2.5,Normal,0
+Thailand,Lamphun,1,Jan,3.2,Normal,0
+Thailand,Lamphun,2,Feb,3.2,Normal,0
+Thailand,Lamphun,3,Mar,1.9,Normal,0
+Thailand,Lamphun,4,Apr,4.2,Normal,0
+Thailand,Lamphun,5,Mei,6.1,Normal,0
+Thailand,Lamphun,6,Jun,15.9,Puncak,2
+Thailand,Lamphun,7,Jul,18.9,Puncak,2
+Thailand,Lamphun,8,Agu,18.2,Puncak,2
+Thailand,Lamphun,9,Sep,12.4,Siaga,1
+Thailand,Lamphun,10,Okt,7.6,Normal,0
+Thailand,Lamphun,11,Nov,6.2,Normal,0
+Thailand,Lamphun,12,Des,2.1,Normal,0
+Thailand,Loei,1,Jan,1.4,Normal,0
+Thailand,Loei,2,Feb,2.3,Normal,0
+Thailand,Loei,3,Mar,2.9,Normal,0
+Thailand,Loei,4,Apr,4.1,Normal,0
+Thailand,Loei,5,Mei,10.5,Siaga,1
+Thailand,Loei,6,Jun,19.6,Puncak,2
+Thailand,Loei,7,Jul,21.4,Puncak,2
+Thailand,Loei,8,Agu,15.1,Puncak,2
+Thailand,Loei,9,Sep,9.6,Normal,0
+Thailand,Loei,10,Okt,6.7,Normal,0
+Thailand,Loei,11,Nov,4.8,Normal,0
+Thailand,Loei,12,Des,1.7,Normal,0
+Thailand,Mae Hong Son,1,Jan,1.0,Normal,0
+Thailand,Mae Hong Son,2,Feb,0.7,Normal,0
+Thailand,Mae Hong Son,3,Mar,1.0,Normal,0
+Thailand,Mae Hong Son,4,Apr,2.3,Normal,0
+Thailand,Mae Hong Son,5,Mei,10.3,Siaga,1
+Thailand,Mae Hong Son,6,Jun,18.2,Puncak,2
+Thailand,Mae Hong Son,7,Jul,24.5,Puncak,2
+Thailand,Mae Hong Son,8,Agu,20.0,Puncak,2
+Thailand,Mae Hong Son,9,Sep,10.4,Siaga,1
+Thailand,Mae Hong Son,10,Okt,6.0,Normal,0
+Thailand,Mae Hong Son,11,Nov,4.2,Normal,0
+Thailand,Mae Hong Son,12,Des,1.5,Normal,0
+Thailand,Nakhon Sawan,1,Jan,5.2,Normal,0
+Thailand,Nakhon Sawan,2,Feb,4.8,Normal,0
+Thailand,Nakhon Sawan,3,Mar,4.6,Normal,0
+Thailand,Nakhon Sawan,4,Apr,3.4,Normal,0
+Thailand,Nakhon Sawan,5,Mei,6.0,Normal,0
+Thailand,Nakhon Sawan,6,Jun,11.2,Siaga,1
+Thailand,Nakhon Sawan,7,Jul,15.4,Puncak,2
+Thailand,Nakhon Sawan,8,Agu,15.2,Puncak,2
+Thailand,Nakhon Sawan,9,Sep,12.4,Puncak,2
+Thailand,Nakhon Sawan,10,Okt,8.7,Normal,0
+Thailand,Nakhon Sawan,11,Nov,8.5,Normal,0
+Thailand,Nakhon Sawan,12,Des,4.6,Normal,0
+Thailand,Nong Khai,1,Jan,1.7,Normal,0
+Thailand,Nong Khai,2,Feb,2.0,Normal,0
+Thailand,Nong Khai,3,Mar,3.2,Normal,0
+Thailand,Nong Khai,4,Apr,3.7,Normal,0
+Thailand,Nong Khai,5,Mei,7.6,Normal,0
+Thailand,Nong Khai,6,Jun,21.4,Puncak,2
+Thailand,Nong Khai,7,Jul,22.3,Puncak,2
+Thailand,Nong Khai,8,Agu,17.0,Puncak,2
+Thailand,Nong Khai,9,Sep,10.0,Siaga,1
+Thailand,Nong Khai,10,Okt,5.3,Normal,0
+Thailand,Nong Khai,11,Nov,4.2,Normal,0
+Thailand,Nong Khai,12,Des,1.6,Normal,0
+Thailand,Phayao,1,Jan,0.9,Normal,0
+Thailand,Phayao,2,Feb,0.3,Normal,0
+Thailand,Phayao,3,Mar,2.1,Normal,0
+Thailand,Phayao,4,Apr,2.9,Normal,0
+Thailand,Phayao,5,Mei,10.4,Siaga,1
+Thailand,Phayao,6,Jun,22.0,Puncak,2
+Thailand,Phayao,7,Jul,22.6,Puncak,2
+Thailand,Phayao,8,Agu,17.8,Puncak,2
+Thailand,Phayao,9,Sep,9.4,Normal,0
+Thailand,Phayao,10,Okt,4.1,Normal,0
+Thailand,Phayao,11,Nov,4.4,Normal,0
+Thailand,Phayao,12,Des,3.2,Normal,0
+Thailand,Phetchabun,1,Jan,1.2,Normal,0
+Thailand,Phetchabun,2,Feb,2.1,Normal,0
+Thailand,Phetchabun,3,Mar,2.9,Normal,0
+Thailand,Phetchabun,4,Apr,3.4,Normal,0
+Thailand,Phetchabun,5,Mei,10.5,Siaga,1
+Thailand,Phetchabun,6,Jun,22.6,Puncak,2
+Thailand,Phetchabun,7,Jul,24.4,Puncak,2
+Thailand,Phetchabun,8,Agu,14.5,Puncak,2
+Thailand,Phetchabun,9,Sep,8.7,Normal,0
+Thailand,Phetchabun,10,Okt,4.9,Normal,0
+Thailand,Phetchabun,11,Nov,2.8,Normal,0
+Thailand,Phetchabun,12,Des,1.9,Normal,0
+Thailand,Phichit,1,Jan,3.3,Normal,0
+Thailand,Phichit,2,Feb,4.8,Normal,0
+Thailand,Phichit,3,Mar,7.2,Normal,0
+Thailand,Phichit,4,Apr,5.3,Normal,0
+Thailand,Phichit,5,Mei,6.8,Normal,0
+Thailand,Phichit,6,Jun,12.7,Puncak,2
+Thailand,Phichit,7,Jul,14.7,Puncak,2
+Thailand,Phichit,8,Agu,14.5,Puncak,2
+Thailand,Phichit,9,Sep,12.5,Siaga,1
+Thailand,Phichit,10,Okt,8.5,Normal,0
+Thailand,Phichit,11,Nov,5.8,Normal,0
+Thailand,Phichit,12,Des,3.8,Normal,0
+Thailand,Phrae,1,Jan,2.6,Normal,0
+Thailand,Phrae,2,Feb,1.7,Normal,0
+Thailand,Phrae,3,Mar,2.9,Normal,0
+Thailand,Phrae,4,Apr,2.7,Normal,0
+Thailand,Phrae,5,Mei,10.5,Siaga,1
+Thailand,Phrae,6,Jun,18.4,Puncak,2
+Thailand,Phrae,7,Jul,22.9,Puncak,2
+Thailand,Phrae,8,Agu,20.1,Puncak,2
+Thailand,Phrae,9,Sep,9.3,Normal,0
+Thailand,Phrae,10,Okt,4.4,Normal,0
+Thailand,Phrae,11,Nov,3.4,Normal,0
+Thailand,Phrae,12,Des,1.3,Normal,0
+Thailand,Phuket,1,Jan,8.3,Normal,0
+Thailand,Phuket,2,Feb,5.2,Normal,0
+Thailand,Phuket,3,Mar,5.9,Normal,0
+Thailand,Phuket,4,Apr,4.8,Normal,0
+Thailand,Phuket,5,Mei,9.8,Normal,0
+Thailand,Phuket,6,Jun,12.9,Puncak,2
+Thailand,Phuket,7,Jul,13.9,Puncak,2
+Thailand,Phuket,8,Agu,9.6,Normal,0
+Thailand,Phuket,9,Sep,7.0,Normal,0
+Thailand,Phuket,10,Okt,6.8,Normal,0
+Thailand,Phuket,11,Nov,8.1,Normal,0
+Thailand,Phuket,12,Des,7.7,Normal,0
+Thailand,Prachin Buri,1,Jan,5.1,Normal,0
+Thailand,Prachin Buri,2,Feb,3.7,Normal,0
+Thailand,Prachin Buri,3,Mar,4.9,Normal,0
+Thailand,Prachin Buri,4,Apr,4.0,Normal,0
+Thailand,Prachin Buri,5,Mei,8.4,Normal,0
+Thailand,Prachin Buri,6,Jun,15.5,Puncak,2
+Thailand,Prachin Buri,7,Jul,17.3,Puncak,2
+Thailand,Prachin Buri,8,Agu,15.9,Puncak,2
+Thailand,Prachin Buri,9,Sep,11.0,Siaga,1
+Thailand,Prachin Buri,10,Okt,6.1,Normal,0
+Thailand,Prachin Buri,11,Nov,5.4,Normal,0
+Thailand,Prachin Buri,12,Des,2.7,Normal,0
+Thailand,Prachuap Khilikhan,1,Jan,4.0,Normal,0
+Thailand,Prachuap Khilikhan,2,Feb,4.2,Normal,0
+Thailand,Prachuap Khilikhan,3,Mar,6.6,Normal,0
+Thailand,Prachuap Khilikhan,4,Apr,6.1,Normal,0
+Thailand,Prachuap Khilikhan,5,Mei,8.1,Normal,0
+Thailand,Prachuap Khilikhan,6,Jun,12.8,Puncak,2
+Thailand,Prachuap Khilikhan,7,Jul,14.0,Puncak,2
+Thailand,Prachuap Khilikhan,8,Agu,12.1,Puncak,2
+Thailand,Prachuap Khilikhan,9,Sep,9.1,Normal,0
+Thailand,Prachuap Khilikhan,10,Okt,7.4,Normal,0
+Thailand,Prachuap Khilikhan,11,Nov,8.1,Normal,0
+Thailand,Prachuap Khilikhan,12,Des,7.5,Normal,0
+Thailand,Rayong,1,Jan,4.7,Normal,0
+Thailand,Rayong,2,Feb,4.4,Normal,0
+Thailand,Rayong,3,Mar,4.6,Normal,0
+Thailand,Rayong,4,Apr,5.4,Normal,0
+Thailand,Rayong,5,Mei,8.8,Normal,0
+Thailand,Rayong,6,Jun,12.3,Puncak,2
+Thailand,Rayong,7,Jul,14.8,Puncak,2
+Thailand,Rayong,8,Agu,12.5,Puncak,2
+Thailand,Rayong,9,Sep,8.5,Normal,0
+Thailand,Rayong,10,Okt,8.7,Normal,0
+Thailand,Rayong,11,Nov,8.9,Normal,0
+Thailand,Rayong,12,Des,6.4,Normal,0
+Thailand,Sa Kaeo,1,Jan,5.1,Normal,0
+Thailand,Sa Kaeo,2,Feb,4.0,Normal,0
+Thailand,Sa Kaeo,3,Mar,3.0,Normal,0
+Thailand,Sa Kaeo,4,Apr,4.5,Normal,0
+Thailand,Sa Kaeo,5,Mei,9.8,Normal,0
+Thailand,Sa Kaeo,6,Jun,16.0,Puncak,2
+Thailand,Sa Kaeo,7,Jul,16.8,Puncak,2
+Thailand,Sa Kaeo,8,Agu,15.7,Puncak,2
+Thailand,Sa Kaeo,9,Sep,11.5,Siaga,1
+Thailand,Sa Kaeo,10,Okt,7.6,Normal,0
+Thailand,Sa Kaeo,11,Nov,3.9,Normal,0
+Thailand,Sa Kaeo,12,Des,2.1,Normal,0
+Thailand,Satun,1,Jan,5.5,Normal,0
+Thailand,Satun,2,Feb,5.3,Normal,0
+Thailand,Satun,3,Mar,5.3,Normal,0
+Thailand,Satun,4,Apr,5.9,Normal,0
+Thailand,Satun,5,Mei,9.7,Normal,0
+Thailand,Satun,6,Jun,14.1,Puncak,2
+Thailand,Satun,7,Jul,15.3,Puncak,2
+Thailand,Satun,8,Agu,9.7,Normal,0
+Thailand,Satun,9,Sep,6.6,Normal,0
+Thailand,Satun,10,Okt,8.0,Normal,0
+Thailand,Satun,11,Nov,8.6,Normal,0
+Thailand,Satun,12,Des,5.9,Normal,0
+Thailand,Si Saket,1,Jan,2.3,Normal,0
+Thailand,Si Saket,2,Feb,2.2,Normal,0
+Thailand,Si Saket,3,Mar,3.6,Normal,0
+Thailand,Si Saket,4,Apr,2.9,Normal,0
+Thailand,Si Saket,5,Mei,7.9,Normal,0
+Thailand,Si Saket,6,Jun,18.0,Puncak,2
+Thailand,Si Saket,7,Jul,18.2,Puncak,2
+Thailand,Si Saket,8,Agu,17.7,Puncak,2
+Thailand,Si Saket,9,Sep,12.4,Siaga,1
+Thailand,Si Saket,10,Okt,7.6,Normal,0
+Thailand,Si Saket,11,Nov,4.4,Normal,0
+Thailand,Si Saket,12,Des,2.8,Normal,0
+Thailand,Songkhla,1,Jan,9.2,Normal,0
+Thailand,Songkhla,2,Feb,5.7,Normal,0
+Thailand,Songkhla,3,Mar,5.1,Normal,0
+Thailand,Songkhla,4,Apr,4.5,Normal,0
+Thailand,Songkhla,5,Mei,6.3,Normal,0
+Thailand,Songkhla,6,Jun,10.5,Puncak,2
+Thailand,Songkhla,7,Jul,10.9,Puncak,2
+Thailand,Songkhla,8,Agu,9.3,Normal,0
+Thailand,Songkhla,9,Sep,9.0,Normal,0
+Thailand,Songkhla,10,Okt,10.3,Puncak,2
+Thailand,Songkhla,11,Nov,10.2,Siaga,1
+Thailand,Songkhla,12,Des,9.0,Normal,0
+Thailand,Surin,1,Jan,2.6,Normal,0
+Thailand,Surin,2,Feb,2.0,Normal,0
+Thailand,Surin,3,Mar,2.9,Normal,0
+Thailand,Surin,4,Apr,3.0,Normal,0
+Thailand,Surin,5,Mei,8.4,Normal,0
+Thailand,Surin,6,Jun,16.3,Puncak,2
+Thailand,Surin,7,Jul,20.2,Puncak,2
+Thailand,Surin,8,Agu,20.1,Puncak,2
+Thailand,Surin,9,Sep,13.3,Siaga,1
+Thailand,Surin,10,Okt,6.1,Normal,0
+Thailand,Surin,11,Nov,3.6,Normal,0
+Thailand,Surin,12,Des,1.5,Normal,0
+Thailand,Tak,1,Jan,2.2,Normal,0
+Thailand,Tak,2,Feb,2.2,Normal,0
+Thailand,Tak,3,Mar,2.9,Normal,0
+Thailand,Tak,4,Apr,3.4,Normal,0
+Thailand,Tak,5,Mei,9.0,Normal,0
+Thailand,Tak,6,Jun,17.8,Puncak,2
+Thailand,Tak,7,Jul,21.2,Puncak,2
+Thailand,Tak,8,Agu,15.8,Puncak,2
+Thailand,Tak,9,Sep,9.9,Normal,0
+Thailand,Tak,10,Okt,6.4,Normal,0
+Thailand,Tak,11,Nov,6.1,Normal,0
+Thailand,Tak,12,Des,3.1,Normal,0
+Thailand,Trang,1,Jan,5.1,Normal,0
+Thailand,Trang,2,Feb,3.5,Normal,0
+Thailand,Trang,3,Mar,2.7,Normal,0
+Thailand,Trang,4,Apr,4.5,Normal,0
+Thailand,Trang,5,Mei,8.2,Normal,0
+Thailand,Trang,6,Jun,14.7,Puncak,2
+Thailand,Trang,7,Jul,16.9,Puncak,2
+Thailand,Trang,8,Agu,12.2,Puncak,2
+Thailand,Trang,9,Sep,9.3,Normal,0
+Thailand,Trang,10,Okt,8.8,Normal,0
+Thailand,Trang,11,Nov,7.4,Normal,0
+Thailand,Trang,12,Des,6.9,Normal,0
+Thailand,Ubon Ratchathani,1,Jan,2.3,Normal,0
+Thailand,Ubon Ratchathani,2,Feb,2.5,Normal,0
+Thailand,Ubon Ratchathani,3,Mar,3.5,Normal,0
+Thailand,Ubon Ratchathani,4,Apr,4.1,Normal,0
+Thailand,Ubon Ratchathani,5,Mei,10.4,Siaga,1
+Thailand,Ubon Ratchathani,6,Jun,19.4,Puncak,2
+Thailand,Ubon Ratchathani,7,Jul,20.2,Puncak,2
+Thailand,Ubon Ratchathani,8,Agu,16.0,Puncak,2
+Thailand,Ubon Ratchathani,9,Sep,10.7,Siaga,1
+Thailand,Ubon Ratchathani,10,Okt,6.0,Normal,0
+Thailand,Ubon Ratchathani,11,Nov,3.3,Normal,0
+Thailand,Ubon Ratchathani,12,Des,1.6,Normal,0
+Thailand,Udon Thani,1,Jan,4.2,Normal,0
+Thailand,Udon Thani,2,Feb,3.0,Normal,0
+Thailand,Udon Thani,3,Mar,2.0,Normal,0
+Thailand,Udon Thani,4,Apr,3.9,Normal,0
+Thailand,Udon Thani,5,Mei,6.9,Normal,0
+Thailand,Udon Thani,6,Jun,15.7,Puncak,2
+Thailand,Udon Thani,7,Jul,22.7,Puncak,2
+Thailand,Udon Thani,8,Agu,19.7,Puncak,2
+Thailand,Udon Thani,9,Sep,10.2,Siaga,1
+Thailand,Udon Thani,10,Okt,6.1,Normal,0
+Thailand,Udon Thani,11,Nov,4.5,Normal,0
+Thailand,Udon Thani,12,Des,1.1,Normal,0
+Thailand,Uthai Thani,1,Jan,3.9,Normal,0
+Thailand,Uthai Thani,2,Feb,2.7,Normal,0
+Thailand,Uthai Thani,3,Mar,3.8,Normal,0
+Thailand,Uthai Thani,4,Apr,4.3,Normal,0
+Thailand,Uthai Thani,5,Mei,7.5,Normal,0
+Thailand,Uthai Thani,6,Jun,11.9,Puncak,2
+Thailand,Uthai Thani,7,Jul,16.1,Puncak,2
+Thailand,Uthai Thani,8,Agu,14.2,Puncak,2
+Thailand,Uthai Thani,9,Sep,11.7,Siaga,1
+Thailand,Uthai Thani,10,Okt,9.9,Normal,0
+Thailand,Uthai Thani,11,Nov,8.9,Normal,0
+Thailand,Uthai Thani,12,Des,5.2,Normal,0
+Thailand,Buriram,1,Jan,2.8,Normal,0
+Thailand,Buriram,2,Feb,3.7,Normal,0
+Thailand,Buriram,3,Mar,3.9,Normal,0
+Thailand,Buriram,4,Apr,3.8,Normal,0
+Thailand,Buriram,5,Mei,6.6,Normal,0
+Thailand,Buriram,6,Jun,16.9,Puncak,2
+Thailand,Buriram,7,Jul,17.5,Puncak,2
+Thailand,Buriram,8,Agu,19.0,Puncak,2
+Thailand,Buriram,9,Sep,13.0,Siaga,1
+Thailand,Buriram,10,Okt,5.9,Normal,0
+Thailand,Buriram,11,Nov,4.8,Normal,0
+Thailand,Buriram,12,Des,1.9,Normal,0
+Thailand,Khon Kaen,1,Jan,2.7,Normal,0
+Thailand,Khon Kaen,2,Feb,3.2,Normal,0
+Thailand,Khon Kaen,3,Mar,3.8,Normal,0
+Thailand,Khon Kaen,4,Apr,2.9,Normal,0
+Thailand,Khon Kaen,5,Mei,8.4,Normal,0
+Thailand,Khon Kaen,6,Jun,15.0,Puncak,2
+Thailand,Khon Kaen,7,Jul,17.7,Puncak,2
+Thailand,Khon Kaen,8,Agu,18.1,Puncak,2
+Thailand,Khon Kaen,9,Sep,12.6,Siaga,1
+Thailand,Khon Kaen,10,Okt,7.5,Normal,0
+Thailand,Khon Kaen,11,Nov,5.4,Normal,0
+Thailand,Khon Kaen,12,Des,2.8,Normal,0
+Thailand,Lopburi,1,Jan,5.5,Normal,0
+Thailand,Lopburi,2,Feb,8.1,Normal,0
+Thailand,Lopburi,3,Mar,6.8,Normal,0
+Thailand,Lopburi,4,Apr,2.4,Normal,0
+Thailand,Lopburi,5,Mei,4.7,Normal,0
+Thailand,Lopburi,6,Jun,8.4,Normal,0
+Thailand,Lopburi,7,Jul,11.6,Puncak,2
+Thailand,Lopburi,8,Agu,16.5,Puncak,2
+Thailand,Lopburi,9,Sep,13.9,Puncak,2
+Thailand,Lopburi,10,Okt,10.0,Normal,0
+Thailand,Lopburi,11,Nov,8.5,Normal,0
+Thailand,Lopburi,12,Des,3.7,Normal,0
+Thailand,Maha Sarakham,1,Jan,2.1,Normal,0
+Thailand,Maha Sarakham,2,Feb,3.3,Normal,0
+Thailand,Maha Sarakham,3,Mar,3.6,Normal,0
+Thailand,Maha Sarakham,4,Apr,2.5,Normal,0
+Thailand,Maha Sarakham,5,Mei,6.5,Normal,0
+Thailand,Maha Sarakham,6,Jun,16.0,Puncak,2
+Thailand,Maha Sarakham,7,Jul,18.7,Puncak,2
+Thailand,Maha Sarakham,8,Agu,19.4,Puncak,2
+Thailand,Maha Sarakham,9,Sep,13.3,Siaga,1
+Thailand,Maha Sarakham,10,Okt,7.3,Normal,0
+Thailand,Maha Sarakham,11,Nov,5.2,Normal,0
+Thailand,Maha Sarakham,12,Des,2.0,Normal,0
+Thailand,Nakhon Nayok,1,Jan,3.3,Normal,0
+Thailand,Nakhon Nayok,2,Feb,4.4,Normal,0
+Thailand,Nakhon Nayok,3,Mar,6.8,Normal,0
+Thailand,Nakhon Nayok,4,Apr,3.8,Normal,0
+Thailand,Nakhon Nayok,5,Mei,8.5,Normal,0
+Thailand,Nakhon Nayok,6,Jun,13.0,Puncak,2
+Thailand,Nakhon Nayok,7,Jul,14.7,Puncak,2
+Thailand,Nakhon Nayok,8,Agu,15.6,Puncak,2
+Thailand,Nakhon Nayok,9,Sep,12.0,Siaga,1
+Thailand,Nakhon Nayok,10,Okt,8.1,Normal,0
+Thailand,Nakhon Nayok,11,Nov,6.5,Normal,0
+Thailand,Nakhon Nayok,12,Des,3.3,Normal,0
+Thailand,Nakhon Ratchasima,1,Jan,3.2,Normal,0
+Thailand,Nakhon Ratchasima,2,Feb,3.4,Normal,0
+Thailand,Nakhon Ratchasima,3,Mar,4.4,Normal,0
+Thailand,Nakhon Ratchasima,4,Apr,3.5,Normal,0
+Thailand,Nakhon Ratchasima,5,Mei,8.1,Normal,0
+Thailand,Nakhon Ratchasima,6,Jun,14.5,Puncak,2
+Thailand,Nakhon Ratchasima,7,Jul,16.4,Puncak,2
+Thailand,Nakhon Ratchasima,8,Agu,16.8,Puncak,2
+Thailand,Nakhon Ratchasima,9,Sep,11.4,Siaga,1
+Thailand,Nakhon Ratchasima,10,Okt,8.3,Normal,0
+Thailand,Nakhon Ratchasima,11,Nov,6.8,Normal,0
+Thailand,Nakhon Ratchasima,12,Des,3.1,Normal,0
+Thailand,Nakhon Si Thammarat,1,Jan,9.7,Normal,0
+Thailand,Nakhon Si Thammarat,2,Feb,7.6,Normal,0
+Thailand,Nakhon Si Thammarat,3,Mar,5.7,Normal,0
+Thailand,Nakhon Si Thammarat,4,Apr,5.0,Normal,0
+Thailand,Nakhon Si Thammarat,5,Mei,7.7,Normal,0
+Thailand,Nakhon Si Thammarat,6,Jun,9.5,Normal,0
+Thailand,Nakhon Si Thammarat,7,Jul,10.6,Puncak,2
+Thailand,Nakhon Si Thammarat,8,Agu,11.1,Puncak,2
+Thailand,Nakhon Si Thammarat,9,Sep,9.4,Normal,0
+Thailand,Nakhon Si Thammarat,10,Okt,9.3,Normal,0
+Thailand,Nakhon Si Thammarat,11,Nov,8.6,Normal,0
+Thailand,Nakhon Si Thammarat,12,Des,5.8,Normal,0
+Thailand,Nong Bua Lamphu,1,Jan,1.9,Normal,0
+Thailand,Nong Bua Lamphu,2,Feb,2.9,Normal,0
+Thailand,Nong Bua Lamphu,3,Mar,4.2,Normal,0
+Thailand,Nong Bua Lamphu,4,Apr,5.5,Normal,0
+Thailand,Nong Bua Lamphu,5,Mei,8.9,Normal,0
+Thailand,Nong Bua Lamphu,6,Jun,19.5,Puncak,2
+Thailand,Nong Bua Lamphu,7,Jul,18.5,Puncak,2
+Thailand,Nong Bua Lamphu,8,Agu,21.2,Puncak,2
+Thailand,Nong Bua Lamphu,9,Sep,7.6,Normal,0
+Thailand,Nong Bua Lamphu,10,Okt,3.7,Normal,0
+Thailand,Nong Bua Lamphu,11,Nov,3.8,Normal,0
+Thailand,Nong Bua Lamphu,12,Des,2.2,Normal,0
+Thailand,Phetchaburi,1,Jan,6.4,Normal,0
+Thailand,Phetchaburi,2,Feb,5.2,Normal,0
+Thailand,Phetchaburi,3,Mar,6.4,Normal,0
+Thailand,Phetchaburi,4,Apr,6.6,Normal,0
+Thailand,Phetchaburi,5,Mei,5.7,Normal,0
+Thailand,Phetchaburi,6,Jun,8.7,Normal,0
+Thailand,Phetchaburi,7,Jul,11.8,Puncak,2
+Thailand,Phetchaburi,8,Agu,12.0,Puncak,2
+Thailand,Phetchaburi,9,Sep,10.2,Siaga,1
+Thailand,Phetchaburi,10,Okt,9.5,Normal,0
+Thailand,Phetchaburi,11,Nov,11.5,Puncak,2
+Thailand,Phetchaburi,12,Des,6.0,Normal,0
+Thailand,Phitsanulok,1,Jan,3.9,Normal,0
+Thailand,Phitsanulok,2,Feb,3.0,Normal,0
+Thailand,Phitsanulok,3,Mar,3.5,Normal,0
+Thailand,Phitsanulok,4,Apr,3.7,Normal,0
+Thailand,Phitsanulok,5,Mei,8.9,Normal,0
+Thailand,Phitsanulok,6,Jun,13.3,Puncak,2
+Thailand,Phitsanulok,7,Jul,16.4,Puncak,2
+Thailand,Phitsanulok,8,Agu,17.6,Puncak,2
+Thailand,Phitsanulok,9,Sep,12.9,Siaga,1
+Thailand,Phitsanulok,10,Okt,7.2,Normal,0
+Thailand,Phitsanulok,11,Nov,6.3,Normal,0
+Thailand,Phitsanulok,12,Des,3.4,Normal,0
+Thailand,Ratchaburi,1,Jan,7.2,Normal,0
+Thailand,Ratchaburi,2,Feb,5.8,Normal,0
+Thailand,Ratchaburi,3,Mar,4.9,Normal,0
+Thailand,Ratchaburi,4,Apr,3.8,Normal,0
+Thailand,Ratchaburi,5,Mei,4.4,Normal,0
+Thailand,Ratchaburi,6,Jun,8.2,Normal,0
+Thailand,Ratchaburi,7,Jul,12.3,Puncak,2
+Thailand,Ratchaburi,8,Agu,14.6,Puncak,2
+Thailand,Ratchaburi,9,Sep,13.4,Puncak,2
+Thailand,Ratchaburi,10,Okt,9.9,Normal,0
+Thailand,Ratchaburi,11,Nov,9.3,Normal,0
+Thailand,Ratchaburi,12,Des,6.2,Normal,0
+Thailand,Samut Songkham,1,Jan,6.5,Normal,0
+Thailand,Samut Songkham,2,Feb,5.3,Normal,0
+Thailand,Samut Songkham,3,Mar,6.3,Normal,0
+Thailand,Samut Songkham,4,Apr,4.9,Normal,0
+Thailand,Samut Songkham,5,Mei,5.4,Normal,0
+Thailand,Samut Songkham,6,Jun,5.6,Normal,0
+Thailand,Samut Songkham,7,Jul,7.4,Normal,0
+Thailand,Samut Songkham,8,Agu,13.9,Puncak,2
+Thailand,Samut Songkham,9,Sep,13.9,Puncak,2
+Thailand,Samut Songkham,10,Okt,11.9,Puncak,2
+Thailand,Samut Songkham,11,Nov,11.1,Siaga,1
+Thailand,Samut Songkham,12,Des,7.8,Normal,0
+Thailand,Saraburi,1,Jan,4.8,Normal,0
+Thailand,Saraburi,2,Feb,4.9,Normal,0
+Thailand,Saraburi,3,Mar,6.5,Normal,0
+Thailand,Saraburi,4,Apr,4.0,Normal,0
+Thailand,Saraburi,5,Mei,7.4,Normal,0
+Thailand,Saraburi,6,Jun,12.2,Siaga,1
+Thailand,Saraburi,7,Jul,14.7,Puncak,2
+Thailand,Saraburi,8,Agu,16.3,Puncak,2
+Thailand,Saraburi,9,Sep,12.7,Puncak,2
+Thailand,Saraburi,10,Okt,8.2,Normal,0
+Thailand,Saraburi,11,Nov,6.0,Normal,0
+Thailand,Saraburi,12,Des,2.3,Normal,0
+Thailand,Sukhothai,1,Jan,3.0,Normal,0
+Thailand,Sukhothai,2,Feb,3.5,Normal,0
+Thailand,Sukhothai,3,Mar,5.0,Normal,0
+Thailand,Sukhothai,4,Apr,5.0,Normal,0
+Thailand,Sukhothai,5,Mei,8.3,Normal,0
+Thailand,Sukhothai,6,Jun,12.1,Siaga,1
+Thailand,Sukhothai,7,Jul,16.4,Puncak,2
+Thailand,Sukhothai,8,Agu,17.5,Puncak,2
+Thailand,Sukhothai,9,Sep,13.8,Puncak,2
+Thailand,Sukhothai,10,Okt,7.3,Normal,0
+Thailand,Sukhothai,11,Nov,5.7,Normal,0
+Thailand,Sukhothai,12,Des,2.6,Normal,0
+Thailand,Uttaradit,1,Jan,2.3,Normal,0
+Thailand,Uttaradit,2,Feb,2.2,Normal,0
+Thailand,Uttaradit,3,Mar,3.2,Normal,0
+Thailand,Uttaradit,4,Apr,3.9,Normal,0
+Thailand,Uttaradit,5,Mei,9.5,Normal,0
+Thailand,Uttaradit,6,Jun,15.1,Puncak,2
+Thailand,Uttaradit,7,Jul,18.6,Puncak,2
+Thailand,Uttaradit,8,Agu,19.8,Puncak,2
+Thailand,Uttaradit,9,Sep,12.9,Siaga,1
+Thailand,Uttaradit,10,Okt,5.9,Normal,0
+Thailand,Uttaradit,11,Nov,3.9,Normal,0
+Thailand,Uttaradit,12,Des,2.6,Normal,0
+Thailand,Yasothon,1,Jan,2.4,Normal,0
+Thailand,Yasothon,2,Feb,2.4,Normal,0
+Thailand,Yasothon,3,Mar,3.1,Normal,0
+Thailand,Yasothon,4,Apr,4.0,Normal,0
+Thailand,Yasothon,5,Mei,7.5,Normal,0
+Thailand,Yasothon,6,Jun,16.7,Puncak,2
+Thailand,Yasothon,7,Jul,20.3,Puncak,2
+Thailand,Yasothon,8,Agu,21.2,Puncak,2
+Thailand,Yasothon,9,Sep,12.7,Siaga,1
+Thailand,Yasothon,10,Okt,5.4,Normal,0
+Thailand,Yasothon,11,Nov,2.7,Normal,0
+Thailand,Yasothon,12,Des,1.7,Normal,0
+Thailand,Nakhon Pathom,1,Jan,7.9,Normal,0
+Thailand,Nakhon Pathom,2,Feb,6.1,Normal,0
+Thailand,Nakhon Pathom,3,Mar,5.0,Normal,0
+Thailand,Nakhon Pathom,4,Apr,3.2,Normal,0
+Thailand,Nakhon Pathom,5,Mei,3.9,Normal,0
+Thailand,Nakhon Pathom,6,Jun,5.8,Normal,0
+Thailand,Nakhon Pathom,7,Jul,8.7,Normal,0
+Thailand,Nakhon Pathom,8,Agu,13.0,Puncak,2
+Thailand,Nakhon Pathom,9,Sep,13.3,Puncak,2
+Thailand,Nakhon Pathom,10,Okt,12.2,Siaga,1
+Thailand,Nakhon Pathom,11,Nov,12.7,Puncak,2
+Thailand,Nakhon Pathom,12,Des,8.3,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,1,Jan,7.4,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,2,Feb,6.2,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,3,Mar,4.8,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,4,Apr,3.2,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,5,Mei,5.9,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,6,Jun,8.9,Normal,0
+Thailand,Phra Nakhon Si Ayudhya,7,Jul,11.5,Puncak,2
+Thailand,Phra Nakhon Si Ayudhya,8,Agu,12.5,Puncak,2
+Thailand,Phra Nakhon Si Ayudhya,9,Sep,14.3,Puncak,2
+Thailand,Phra Nakhon Si Ayudhya,10,Okt,10.8,Siaga,1
+Thailand,Phra Nakhon Si Ayudhya,11,Nov,10.1,Siaga,1
+Thailand,Phra Nakhon Si Ayudhya,12,Des,4.4,Normal,0
+Thailand,Suphanburi,1,Jan,6.3,Normal,0
+Thailand,Suphanburi,2,Feb,5.7,Normal,0
+Thailand,Suphanburi,3,Mar,6.4,Normal,0
+Thailand,Suphanburi,4,Apr,3.7,Normal,0
+Thailand,Suphanburi,5,Mei,6.0,Normal,0
+Thailand,Suphanburi,6,Jun,7.0,Normal,0
+Thailand,Suphanburi,7,Jul,10.6,Siaga,1
+Thailand,Suphanburi,8,Agu,11.8,Puncak,2
+Thailand,Suphanburi,9,Sep,12.7,Puncak,2
+Thailand,Suphanburi,10,Okt,11.7,Puncak,2
+Thailand,Suphanburi,11,Nov,11.2,Siaga,1
+Thailand,Suphanburi,12,Des,7.1,Normal,0
+Thailand,Bangkok,1,Jan,8.9,Normal,0
+Thailand,Bangkok,2,Feb,5.4,Normal,0
+Thailand,Bangkok,3,Mar,4.9,Normal,0
+Thailand,Bangkok,4,Apr,3.1,Normal,0
+Thailand,Bangkok,5,Mei,4.0,Normal,0
+Thailand,Bangkok,6,Jun,5.9,Normal,0
+Thailand,Bangkok,7,Jul,9.2,Normal,0
+Thailand,Bangkok,8,Agu,11.6,Puncak,2
+Thailand,Bangkok,9,Sep,10.8,Siaga,1
+Thailand,Bangkok,10,Okt,12.0,Puncak,2
+Thailand,Bangkok,11,Nov,14.9,Puncak,2
+Thailand,Bangkok,12,Des,9.1,Normal,0
+Thailand,Narathiwat,1,Jan,8.5,Normal,0
+Thailand,Narathiwat,2,Feb,6.4,Normal,0
+Thailand,Narathiwat,3,Mar,4.9,Normal,0
+Thailand,Narathiwat,4,Apr,2.6,Normal,0
+Thailand,Narathiwat,5,Mei,4.8,Normal,0
+Thailand,Narathiwat,6,Jun,8.2,Normal,0
+Thailand,Narathiwat,7,Jul,10.8,Siaga,1
+Thailand,Narathiwat,8,Agu,12.2,Puncak,2
+Thailand,Narathiwat,9,Sep,9.5,Normal,0
+Thailand,Narathiwat,10,Okt,11.5,Puncak,2
+Thailand,Narathiwat,11,Nov,12.6,Puncak,2
+Thailand,Narathiwat,12,Des,7.8,Normal,0
+Thailand,Nonthaburi,1,Jan,9.4,Normal,0
+Thailand,Nonthaburi,2,Feb,5.0,Normal,0
+Thailand,Nonthaburi,3,Mar,4.6,Normal,0
+Thailand,Nonthaburi,4,Apr,3.0,Normal,0
+Thailand,Nonthaburi,5,Mei,4.9,Normal,0
+Thailand,Nonthaburi,6,Jun,7.1,Normal,0
+Thailand,Nonthaburi,7,Jul,8.7,Normal,0
+Thailand,Nonthaburi,8,Agu,11.2,Siaga,1
+Thailand,Nonthaburi,9,Sep,11.8,Puncak,2
+Thailand,Nonthaburi,10,Okt,12.3,Puncak,2
+Thailand,Nonthaburi,11,Nov,13.4,Puncak,2
+Thailand,Nonthaburi,12,Des,8.7,Normal,0
+Thailand,Pathum Thani,1,Jan,7.9,Normal,0
+Thailand,Pathum Thani,2,Feb,5.9,Normal,0
+Thailand,Pathum Thani,3,Mar,6.3,Normal,0
+Thailand,Pathum Thani,4,Apr,3.4,Normal,0
+Thailand,Pathum Thani,5,Mei,6.3,Normal,0
+Thailand,Pathum Thani,6,Jun,8.4,Normal,0
+Thailand,Pathum Thani,7,Jul,10.1,Siaga,1
+Thailand,Pathum Thani,8,Agu,11.4,Puncak,2
+Thailand,Pathum Thani,9,Sep,10.7,Puncak,2
+Thailand,Pathum Thani,10,Okt,10.3,Siaga,1
+Thailand,Pathum Thani,11,Nov,11.8,Puncak,2
+Thailand,Pathum Thani,12,Des,7.4,Normal,0
+Thailand,Pattani,1,Jan,9.6,Normal,0
+Thailand,Pattani,2,Feb,6.7,Normal,0
+Thailand,Pattani,3,Mar,6.6,Normal,0
+Thailand,Pattani,4,Apr,2.9,Normal,0
+Thailand,Pattani,5,Mei,7.9,Normal,0
+Thailand,Pattani,6,Jun,8.4,Normal,0
+Thailand,Pattani,7,Jul,10.0,Puncak,2
+Thailand,Pattani,8,Agu,9.0,Normal,0
+Thailand,Pattani,9,Sep,9.7,Normal,0
+Thailand,Pattani,10,Okt,9.0,Normal,0
+Thailand,Pattani,11,Nov,11.3,Puncak,2
+Thailand,Pattani,12,Des,8.9,Normal,0
+Thailand,Samut Prakarn,1,Jan,8.4,Normal,0
+Thailand,Samut Prakarn,2,Feb,7.0,Normal,0
+Thailand,Samut Prakarn,3,Mar,7.0,Normal,0
+Thailand,Samut Prakarn,4,Apr,4.5,Normal,0
+Thailand,Samut Prakarn,5,Mei,5.0,Normal,0
+Thailand,Samut Prakarn,6,Jun,6.4,Normal,0
+Thailand,Samut Prakarn,7,Jul,8.9,Normal,0
+Thailand,Samut Prakarn,8,Agu,10.5,Puncak,2
+Thailand,Samut Prakarn,9,Sep,9.2,Normal,0
+Thailand,Samut Prakarn,10,Okt,10.7,Puncak,2
+Thailand,Samut Prakarn,11,Nov,12.6,Puncak,2
+Thailand,Samut Prakarn,12,Des,9.8,Normal,0
+Thailand,Samut Sakhon,1,Jan,13.4,Puncak,2
+Thailand,Samut Sakhon,2,Feb,7.3,Normal,0
+Thailand,Samut Sakhon,3,Mar,5.3,Normal,0
+Thailand,Samut Sakhon,4,Apr,3.6,Normal,0
+Thailand,Samut Sakhon,5,Mei,3.8,Normal,0
+Thailand,Samut Sakhon,6,Jun,4.8,Normal,0
+Thailand,Samut Sakhon,7,Jul,8.0,Normal,0
+Thailand,Samut Sakhon,8,Agu,9.5,Normal,0
+Thailand,Samut Sakhon,9,Sep,10.7,Siaga,1
+Thailand,Samut Sakhon,10,Okt,11.0,Puncak,2
+Thailand,Samut Sakhon,11,Nov,13.4,Puncak,2
+Thailand,Samut Sakhon,12,Des,9.2,Normal,0
+Thailand,Phatthalung,1,Jan,7.8,Normal,0
+Thailand,Phatthalung,2,Feb,5.4,Normal,0
+Thailand,Phatthalung,3,Mar,4.4,Normal,0
+Thailand,Phatthalung,4,Apr,3.9,Normal,0
+Thailand,Phatthalung,5,Mei,7.3,Normal,0
+Thailand,Phatthalung,6,Jun,10.2,Puncak,2
+Thailand,Phatthalung,7,Jul,8.3,Normal,0
+Thailand,Phatthalung,8,Agu,10.3,Puncak,2
+Thailand,Phatthalung,9,Sep,7.6,Normal,0
+Thailand,Phatthalung,10,Okt,8.1,Normal,0
+Thailand,Phatthalung,11,Nov,9.0,Normal,0
+Thailand,Phatthalung,12,Des,17.6,Puncak,2
+Thailand,Yala,1,Jan,9.8,Normal,0
+Thailand,Yala,2,Feb,4.5,Normal,0
+Thailand,Yala,3,Mar,4.4,Normal,0
+Thailand,Yala,4,Apr,4.2,Normal,0
+Thailand,Yala,5,Mei,7.2,Normal,0
+Thailand,Yala,6,Jun,10.4,Puncak,2
+Thailand,Yala,7,Jul,10.1,Puncak,2
+Thailand,Yala,8,Agu,9.0,Normal,0
+Thailand,Yala,9,Sep,8.2,Normal,0
+Thailand,Yala,10,Okt,9.9,Normal,0
+Thailand,Yala,11,Nov,9.8,Normal,0
+Thailand,Yala,12,Des,12.2,Puncak,2

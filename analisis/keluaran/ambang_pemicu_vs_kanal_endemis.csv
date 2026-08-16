@@ -1,0 +1,5 @@
+,cakupan_%,sensitivitas_%,spesifisitas_%,presisi_%,lift
+A. Musim (Jan-Apr),33.7,28.6,65.6,10.3,0.85
+"B. El Nino: ONI jeda-4 >= 0,5",29.7,61.9,74.8,25.5,2.09
+C. A atau B,51.7,61.9,49.7,14.6,1.2
+D. A dan B (eskalasi),11.6,28.6,90.7,30.0,2.46

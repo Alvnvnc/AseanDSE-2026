@@ -1,0 +1,5 @@
+aturan,cakupan_alarm_%,sensitivitas_%,presisi_%,lift
+A. Musim (Jan/Feb/Mar/Apr),33.7,67.4,50.0,2.0
+"B. El Niño: ONI jeda-4 ≥ 0,5",29.7,67.4,56.9,2.27
+C. Musim ATAU El Niño,51.7,88.4,42.7,1.71
+D. Musim DAN El Niño (eskalasi),11.6,46.5,100.0,4.0
