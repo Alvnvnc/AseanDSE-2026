@@ -1,0 +1,623 @@
+negara,iso3,kota,tahun,polutan,konsentrasi_ug_m3,cakupan_waktu_persen,jenis_stasiun
+Thailand,THA,Ayutthaya,2016,PM10,43.66,59.0,NA
+Thailand,THA,Ayutthaya,2017,PM10,47.614,42.0,NA
+Filipina,PHL,Baguio,2013,PM10,84.0,,NA
+Indonesia,IDN,Bali,2019,PM2.5,14.906,33.0,Urban
+Indonesia,IDN,Bali,2019,PM10,15.161,33.0,Urban
+Indonesia,IDN,Bali,2019,NO2,9.89,33.0,Urban
+Indonesia,IDN,Bali,2020,PM2.5,12.522,83.0,Urban
+Indonesia,IDN,Bali,2020,PM10,15.19,82.0,Urban
+Indonesia,IDN,Bali,2021,PM2.5,11.902,98.0,Urban
+Indonesia,IDN,Bali,2021,PM10,12.355,96.0,Urban
+Indonesia,IDN,Bali,2021,NO2,18.28,61.0,Urban
+Indonesia,IDN,Bandung,2014,PM2.5,33.0,75.0,NA
+Thailand,THA,Bang Phra,2021,PM2.5,15.0,99.0,Urban
+Thailand,THA,Bang Phra,2021,PM10,32.0,99.0,Urban
+Thailand,THA,Bang Phra,2021,NO2,4.564,95.0,Urban
+Thailand,THA,Bangkok,2014,PM10,42.286,87.0,NA
+Thailand,THA,Bangkok,2015,PM2.5,27.87,,NA
+Thailand,THA,Bangkok,2015,PM10,40.675,,NA
+Thailand,THA,Bangkok,2015,NO2,19.466,,NA
+Thailand,THA,Bangkok,2016,PM10,40.985,19.0,NA
+Thailand,THA,Bangkok,2019,PM2.5,23.143,85.0,NA
+Thailand,THA,Bangkok,2019,PM10,43.143,89.0,NA
+Thailand,THA,Bangkok,2019,NO2,36.833,79.0,NA
+Thailand,THA,Bangkok,2021,PM2.5,23.417,99.0,"Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Bangkok,2021,PM10,44.333,99.0,"Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Bangkok,2021,NO2,30.97,83.0,"Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban, Urban"
+Kamboja,KHM,Banlung Ratanakiri Province,2020,PM2.5,21.0,,NA
+Kamboja,KHM,Banlung Ratanakiri Province,2021,PM2.5,21.0,,NA
+Kamboja,KHM,Battambang,2019,PM2.5,25.0,,NA
+Kamboja,KHM,Battambang,2020,PM2.5,34.0,,NA
+Kamboja,KHM,Battambang,2021,PM2.5,35.0,,NA
+Malaysia,MYS,Bayan Lepas,2014,PM10,33.85,17.0,NA
+Filipina,PHL,Caloocan,2015,PM2.5,32.0,,NA
+Vietnam,VNM,Can Tho,2020,PM2.5,15.5,,Urban
+Filipina,PHL,Cebu,2013,PM10,53.5,,NA
+Thailand,THA,Chachoengsao,2015,PM10,39.006,13.0,NA
+Thailand,THA,Chachoengsao,2016,PM10,44.272,41.0,NA
+Thailand,THA,Chachoengsao,2017,PM10,35.388,50.0,NA
+Thailand,THA,Chachoengsao,2019,PM2.5,16.0,50.0,NA
+Thailand,THA,Chachoengsao,2019,PM10,45.0,96.0,NA
+Thailand,THA,Chachoengsao,2019,NO2,21.0,93.0,NA
+Thailand,THA,Chachoengsao,2021,PM2.5,23.0,98.0,Urban
+Thailand,THA,Chachoengsao,2021,PM10,49.0,99.0,Urban
+Thailand,THA,Chachoengsao,2021,NO2,24.631,38.0,Urban
+Thailand,THA,Chaloem Phra Kiat District,2021,PM2.5,19.0,97.0,Urban
+Thailand,THA,Chaloem Phra Kiat District,2021,PM10,33.0,93.0,Urban
+Thailand,THA,Chaloem Phra Kiat District,2021,NO2,3.422,84.0,Urban
+Kamboja,KHM,Chbar Mon,2020,PM2.5,21.0,,NA
+Kamboja,KHM,Chbar Mon,2021,PM2.5,33.0,,NA
+Thailand,THA,Chiang Mai,2014,PM10,45.5,95.0,NA
+Thailand,THA,Chiang Mai,2016,PM10,49.357,83.0,NA
+Thailand,THA,Chiang Mai,2016,NO2,27.706,1.0,NA
+Thailand,THA,Chiang Mai,2017,PM10,46.747,62.0,NA
+Thailand,THA,Chiang Mai,2019,PM2.5,33.0,100.0,NA
+Thailand,THA,Chiang Mai,2019,PM10,53.0,100.0,NA
+Thailand,THA,Chiang Mai,2019,NO2,22.5,95.0,NA
+Thailand,THA,Chiang Mai,2021,PM2.5,26.5,99.0,"Urban, Urban"
+Thailand,THA,Chiang Mai,2021,PM10,42.0,100.0,"Urban, Urban"
+Thailand,THA,Chiang Mai,2021,NO2,22.41,23.0,"Urban, Urban"
+Thailand,THA,Chiang Rai,2014,PM10,49.0,95.0,NA
+Thailand,THA,Chiang Rai,2016,PM10,52.322,70.0,NA
+Thailand,THA,Chiang Rai,2017,PM10,46.535,46.0,NA
+Thailand,THA,Chiang Rai,2019,PM2.5,37.0,98.0,NA
+Thailand,THA,Chiang Rai,2019,PM10,52.5,98.0,NA
+Thailand,THA,Chiang Rai,2019,NO2,15.0,95.0,NA
+Thailand,THA,Chiang Rai,2021,PM2.5,32.0,99.0,"Urban, Urban"
+Thailand,THA,Chiang Rai,2021,PM10,47.0,97.0,"Urban, Urban"
+Thailand,THA,Chiang Rai,2021,NO2,6.244,71.0,"Urban, Urban"
+Thailand,THA,Chon Buri,2014,PM10,31.667,83.0,NA
+Thailand,THA,Chon Buri,2016,PM10,39.731,62.0,NA
+Thailand,THA,Chon Buri,2016,NO2,25.982,1.0,NA
+Thailand,THA,Chon Buri,2017,PM10,41.177,50.0,NA
+Thailand,THA,Chon Buri,2019,PM2.5,20.667,98.0,NA
+Thailand,THA,Chon Buri,2019,PM10,44.667,98.0,NA
+Thailand,THA,Chon Buri,2019,NO2,24.667,94.0,NA
+Thailand,THA,Chon Buri,2021,PM2.5,18.0,98.0,"Urban, Urban, Urban"
+Thailand,THA,Chon Buri,2021,PM10,39.667,98.0,"Urban, Urban, Urban"
+Thailand,THA,Chon Buri,2021,NO2,27.866,61.0,"Urban, Urban, Urban"
+Vietnam,VNM,Da Nang,2011,PM10,19.0,,NA
+Vietnam,VNM,Da Nang,2012,PM10,20.0,,NA
+Vietnam,VNM,Da Nang,2013,PM10,19.7,,NA
+Vietnam,VNM,Da Nang,2014,PM10,19.8,,NA
+Vietnam,VNM,Da Nang,2015,PM10,19.9,,NA
+Filipina,PHL,Daguapan,2013,PM10,51.0,,NA
+Filipina,PHL,Davao,2013,PM10,21.0,,NA
+Indonesia,IDN,DKI Jakarta,2018,PM2.5,41.763,63.0,Urban
+Indonesia,IDN,DKI Jakarta,2018,PM10,47.946,63.0,Urban
+Indonesia,IDN,DKI Jakarta,2018,NO2,54.78,64.0,Urban
+Indonesia,IDN,DKI Jakarta,2019,PM2.5,37.665,98.0,Urban
+Indonesia,IDN,DKI Jakarta,2019,PM10,39.309,98.0,Urban
+Indonesia,IDN,DKI Jakarta,2019,NO2,68.2,98.0,Urban
+Indonesia,IDN,DKI Jakarta,2020,PM2.5,28.626,96.0,Urban
+Indonesia,IDN,DKI Jakarta,2020,PM10,32.257,,Urban
+Indonesia,IDN,DKI Jakarta,2020,NO2,76.88,69.0,Urban
+Indonesia,IDN,DKI Jakarta,2021,PM2.5,33.838,100.0,Urban
+Indonesia,IDN,DKI Jakarta,2021,PM10,33.572,100.0,Urban
+Indonesia,IDN,DKI Jakarta,2021,NO2,35.83,94.0,Urban
+Vietnam,VNM,Ha Noi,2011,PM10,46.0,,NA
+Vietnam,VNM,Ha Noi,2012,PM10,47.0,,NA
+Vietnam,VNM,Ha Noi,2013,PM10,44.0,,NA
+Vietnam,VNM,Ha Noi,2014,PM10,51.0,,NA
+Vietnam,VNM,Ha Noi,2015,PM10,49.0,,NA
+Vietnam,VNM,Ha Noi,2016,PM2.5,47.906,87.0,NA
+Vietnam,VNM,Hai Phong,2020,PM2.5,28.2,,Urban
+Vietnam,VNM,Hanoi,2015,PM2.5,81.756,6.0,NA
+Vietnam,VNM,Hanoi,2016,PM2.5,50.808,95.0,NA
+Vietnam,VNM,Hanoi,2017,PM2.5,42.463,99.0,NA
+Vietnam,VNM,Hanoi,2018,PM2.5,40.528,96.0,NA
+Vietnam,VNM,Hanoi,2019,PM2.5,52.094,59.0,NA
+Vietnam,VNM,Hanoi,2020,PM2.5,35.74,100.0,"Urban, Urban"
+Vietnam,VNM,Ho Chi Minh,2016,PM2.5,35.205,84.0,NA
+Vietnam,VNM,Ho Chi Minh,2017,PM2.5,39.451,94.0,NA
+Vietnam,VNM,Ho Chi Minh,2018,PM2.5,26.227,98.0,NA
+Vietnam,VNM,Ho Chi Minh,2019,PM2.5,26.618,85.0,NA
+Vietnam,VNM,Ho Chi Minh,2020,PM2.5,23.5,,Urban
+Vietnam,VNM,Hue,2013,PM10,21.0,,NA
+Vietnam,VNM,Hue,2014,PM10,16.0,,NA
+Vietnam,VNM,Hue,2015,PM10,15.0,,NA
+Vietnam,VNM,Hue,2020,PM2.5,13.8,,Urban
+Indonesia,IDN,Jakarta,2015,PM2.5,31.486,3.0,NA
+Indonesia,IDN,Jakarta,2016,PM2.5,42.653,96.0,NA
+Malaysia,MYS,Johor,2019,PM2.5,20.975,,NA
+Malaysia,MYS,Johor,2019,PM10,30.104,,NA
+Malaysia,MYS,Johor,2019,NO2,0.007,,NA
+Kamboja,KHM,Kaeb Kep Province,2020,PM2.5,9.0,,NA
+Kamboja,KHM,Kaeb Kep Province,2021,PM2.5,10.0,,NA
+Kamboja,KHM,Kampong Cham Province,2020,PM2.5,21.0,,NA
+Kamboja,KHM,Kampong Cham Province,2021,PM2.5,30.0,,NA
+Kamboja,KHM,Kampong Chhnang,2020,PM2.5,27.0,,NA
+Kamboja,KHM,Kampong Chhnang,2021,PM2.5,30.0,,NA
+Kamboja,KHM,Kampong Thom,2020,PM2.5,17.0,,NA
+Kamboja,KHM,Kampong Thom,2021,PM2.5,17.0,,NA
+Thailand,THA,Kanchanaburi,2019,PM2.5,27.0,100.0,NA
+Thailand,THA,Kanchanaburi,2021,PM2.5,17.0,99.0,Urban
+Thailand,THA,Kanchanaburi,2021,PM10,32.0,99.0,Urban
+Thailand,THA,Kanchanaburi,2021,NO2,20.895,4.0,Urban
+Myanmar,MMR,Kathar,2013,PM10,76.0,,NA
+Malaysia,MYS,Kedah,2019,PM2.5,17.315,,NA
+Malaysia,MYS,Kedah,2019,PM10,24.6,,NA
+Malaysia,MYS,Kedah,2019,NO2,0.006,,NA
+Malaysia,MYS,Kelantan,2019,PM2.5,19.737,,NA
+Malaysia,MYS,Kelantan,2019,PM10,29.459,,NA
+Malaysia,MYS,Kelantan,2019,NO2,0.005,,NA
+Thailand,THA,Khon Kaen,2014,PM10,51.0,93.0,NA
+Thailand,THA,Khon Kaen,2016,PM10,63.299,39.0,NA
+Thailand,THA,Khon Kaen,2017,PM10,50.82,10.0,NA
+Thailand,THA,Khon Kaen,2019,PM2.5,34.0,99.0,NA
+Thailand,THA,Khon Kaen,2019,PM10,59.0,99.0,NA
+Thailand,THA,Khon Kaen,2019,NO2,19.0,94.0,NA
+Thailand,THA,Khon Kaen,2021,PM2.5,30.0,96.0,Urban
+Thailand,THA,Khon Kaen,2021,PM10,56.0,96.0,Urban
+Thailand,THA,Khon Kaen,2021,NO2,18.345,67.0,Urban
+Kamboja,KHM,Koh Kong,2020,PM2.5,8.0,,NA
+Kamboja,KHM,Koh Kong,2021,PM2.5,3.0,,NA
+Kamboja,KHM,Kompot,2020,PM2.5,14.0,,NA
+Kamboja,KHM,Kompot,2021,PM2.5,13.0,,NA
+Malaysia,MYS,Kota Kinabalu,2012,PM2.5,15.0,,NA
+Kamboja,KHM,Kratie,2020,PM2.5,16.0,,NA
+Kamboja,KHM,Kratie,2021,PM2.5,15.0,,NA
+Malaysia,MYS,Kuala Lumpur,2010,PM2.5,21.0,,NA
+Malaysia,MYS,Kuala Lumpur,2019,PM2.5,28.271,,NA
+Malaysia,MYS,Kuala Lumpur,2019,PM10,36.042,,NA
+Malaysia,MYS,Kuala Lumpur,2019,NO2,0.017,,NA
+Malaysia,MYS,Kuantan,2014,PM10,27.25,50.0,NA
+Malaysia,MYS,Kuching,2014,PM10,26.122,75.0,NA
+Myanmar,MMR,Kyauk Pa Taung,2013,PM10,89.0,,NA
+Thailand,THA,Lampang,2014,PM10,53.0,93.0,NA
+Thailand,THA,Lampang,2016,PM10,47.796,79.0,NA
+Thailand,THA,Lampang,2016,NO2,10.554,1.0,NA
+Thailand,THA,Lampang,2017,PM10,35.655,4.0,NA
+Thailand,THA,Lampang,2019,PM2.5,30.0,98.0,NA
+Thailand,THA,Lampang,2019,PM10,45.5,98.0,NA
+Thailand,THA,Lampang,2019,NO2,10.25,92.0,NA
+Thailand,THA,Lampang,2021,PM2.5,24.25,99.0,"Urban, Urban, Urban, Urban"
+Thailand,THA,Lampang,2021,PM10,39.0,95.0,"Urban, Urban, Urban, Urban"
+Thailand,THA,Lamphun,2014,PM10,44.0,98.0,NA
+Thailand,THA,Lamphun,2019,PM2.5,36.0,93.0,NA
+Thailand,THA,Lamphun,2019,PM10,57.0,93.0,NA
+Thailand,THA,Lamphun,2019,NO2,30.0,89.0,NA
+Thailand,THA,Lamphun,2021,PM2.5,23.0,99.0,Urban
+Thailand,THA,Lamphun,2021,PM10,36.0,98.0,Urban
+Thailand,THA,Lamphun,2021,NO2,22.649,92.0,Urban
+Filipina,PHL,Las Pina,2015,PM2.5,29.0,,NA
+Filipina,PHL,Las Pina,2016,PM2.5,19.0,,NA
+Thailand,THA,Loei,2016,PM10,51.077,52.0,NA
+Thailand,THA,Loei,2016,NO2,21.642,0.0,NA
+Thailand,THA,Loei,2019,PM2.5,25.0,98.0,NA
+Thailand,THA,Loei,2021,PM2.5,13.0,46.0,Urban
+Thailand,THA,Loei,2021,PM10,25.0,46.0,Urban
+Thailand,THA,Loei,2021,NO2,4.564,44.0,Urban
+Thailand,THA,Mae Hong Son,2014,PM10,42.0,97.0,NA
+Thailand,THA,Mae Hong Son,2016,PM10,42.358,79.0,NA
+Thailand,THA,Mae Hong Son,2017,PM10,41.062,61.0,NA
+Thailand,THA,Mae Hong Son,2019,PM2.5,31.0,96.0,NA
+Thailand,THA,Mae Hong Son,2019,PM10,41.0,96.0,NA
+Thailand,THA,Mae Hong Son,2019,NO2,8.0,95.0,NA
+Thailand,THA,Mae Hong Son,2021,PM2.5,29.0,98.0,Urban
+Thailand,THA,Mae Hong Son,2021,PM10,37.0,98.0,Urban
+Thailand,THA,Mae Hong Son,2021,NO2,6.814,94.0,Urban
+Thailand,THA,Mae Sot,2021,PM2.5,25.0,98.0,Urban
+Thailand,THA,Mae Sot,2021,PM10,45.0,99.0,Urban
+Thailand,THA,Mae Sot,2021,NO2,9.74,76.0,Urban
+Filipina,PHL,Malabon,2015,PM2.5,34.0,,NA
+Filipina,PHL,Manila,2010,PM10,149.5,,NA
+Filipina,PHL,Manila,2011,PM10,121.5,,NA
+Filipina,PHL,Manila,2012,PM10,125.0,,NA
+Filipina,PHL,Manila,2013,PM10,77.875,,NA
+Filipina,PHL,Manila,2014,PM2.5,17.1,80.0,NA
+Filipina,PHL,Manila,2014,PM10,121.0,,NA
+Filipina,PHL,Manila,2015,PM2.5,17.0,,NA
+Filipina,PHL,Manila,2015,PM10,110.5,,NA
+Filipina,PHL,Manila,2016,PM2.5,29.0,,NA
+Filipina,PHL,Manila,2016,PM10,117.5,,NA
+Filipina,PHL,Marikina,2016,PM2.5,31.0,,NA
+Myanmar,MMR,Mawlamyaing,2012,PM10,124.0,,NA
+Myanmar,MMR,Meikhtilar,2013,PM10,59.1,,NA
+Malaysia,MYS,Melaka,2019,PM2.5,24.864,,NA
+Malaysia,MYS,Melaka,2019,PM10,32.404,,NA
+Malaysia,MYS,Melaka,2019,NO2,0.007,,NA
+Thailand,THA,Mueang Nan district,2021,PM2.5,26.0,99.0,Urban
+Thailand,THA,Mueang Nan district,2021,PM10,48.0,99.0,Urban
+Thailand,THA,Mueang Nan district,2021,NO2,8.27,94.0,Urban
+Filipina,PHL,Muntinlupa,2015,PM2.5,17.0,,NA
+Filipina,PHL,Muntinlupa,2016,PM2.5,15.0,,NA
+Thailand,THA,Nakhon Pathom,2019,PM2.5,22.0,50.0,NA
+Thailand,THA,Nakhon Pathom,2019,PM10,44.0,50.0,NA
+Thailand,THA,Nakhon Pathom,2019,NO2,23.0,50.0,NA
+Thailand,THA,Nakhon Pathom,2021,PM2.5,22.0,99.0,"Urban, Urban"
+Thailand,THA,Nakhon Pathom,2021,PM10,38.5,99.0,"Urban, Urban"
+Thailand,THA,Nakhon Pathom,2021,NO2,16.05,95.0,"Urban, Urban"
+Thailand,THA,Nakhon Ratchasima,2014,PM10,51.0,89.0,NA
+Thailand,THA,Nakhon Ratchasima,2019,PM2.5,24.0,50.0,NA
+Thailand,THA,Nakhon Ratchasima,2019,PM10,49.0,77.0,NA
+Thailand,THA,Nakhon Ratchasima,2021,PM2.5,25.0,100.0,Urban
+Thailand,THA,Nakhon Ratchasima,2021,PM10,44.0,100.0,Urban
+Thailand,THA,Nakhon Ratchasima,2021,NO2,27.161,95.0,Urban
+Thailand,THA,Nakhon Sawan,2014,PM10,57.0,96.0,NA
+Thailand,THA,Nakhon Sawan,2016,PM10,52.324,70.0,NA
+Thailand,THA,Nakhon Sawan,2016,NO2,23.084,1.0,NA
+Thailand,THA,Nakhon Sawan,2017,PM10,49.748,62.0,NA
+Thailand,THA,Nakhon Sawan,2019,PM2.5,28.0,98.0,NA
+Thailand,THA,Nakhon Sawan,2019,NO2,24.0,95.0,NA
+Thailand,THA,Nakhon Sawan,2021,PM2.5,24.0,99.0,Urban
+Thailand,THA,Nakhon Sawan,2021,PM10,48.0,99.0,Urban
+Thailand,THA,Nakhon Sawan,2021,NO2,24.951,16.0,Urban
+Thailand,THA,Nakhon Si Thammarat,2021,PM2.5,14.0,100.0,Urban
+Thailand,THA,Nakhon Si Thammarat,2021,PM10,30.0,100.0,Urban
+Thailand,THA,Nakhon Si Thammarat,2021,NO2,10.761,95.0,Urban
+Myanmar,MMR,Namkham,2012,PM10,127.0,,NA
+Myanmar,MMR,Namthu,2012,PM10,31.0,,NA
+Thailand,THA,Nan,2014,PM10,45.0,95.0,NA
+Thailand,THA,Nan,2016,PM10,40.824,77.0,NA
+Thailand,THA,Nan,2016,NO2,5.876,1.0,NA
+Thailand,THA,Nan,2017,PM10,31.965,56.0,NA
+Thailand,THA,Nan,2019,PM2.5,29.5,98.0,NA
+Thailand,THA,Nan,2019,PM10,46.5,98.0,NA
+Thailand,THA,Nan,2019,NO2,8.5,94.0,NA
+Thailand,THA,Narathiwat,2014,PM10,29.0,95.0,NA
+Thailand,THA,Narathiwat,2016,PM10,32.328,76.0,NA
+Thailand,THA,Narathiwat,2017,PM10,24.696,22.0,NA
+Thailand,THA,Narathiwat,2019,PM10,33.0,99.0,NA
+Thailand,THA,Narathiwat,2021,PM2.5,14.0,100.0,Urban
+Thailand,THA,Narathiwat,2021,PM10,26.0,99.0,Urban
+Thailand,THA,Narathiwat,2021,NO2,9.111,94.0,Urban
+Filipina,PHL,Navotas,2015,PM2.5,43.0,,NA
+Filipina,PHL,Navotas,2016,PM2.5,45.0,,NA
+Myanmar,MMR,Nay Pyi Taw,2014,PM10,29.896,37.0,NA
+Myanmar,MMR,Nay Pyi Taw,2015,PM10,47.419,100.0,NA
+Myanmar,MMR,Nay Pyi Taw,2015,NO2,6.131,1.0,NA
+Myanmar,MMR,Nay Pyi Taw,2016,PM10,44.248,85.0,NA
+Myanmar,MMR,Nay Pyi Taw,2016,NO2,10.456,1.0,NA
+Myanmar,MMR,Nay Pyi Taw,2017,PM10,26.665,92.0,NA
+Malaysia,MYS,Negeri Sembilan,2019,PM2.5,25.644,,NA
+Malaysia,MYS,Negeri Sembilan,2019,PM10,34.546,,NA
+Malaysia,MYS,Negeri Sembilan,2019,NO2,0.008,,NA
+Vietnam,VNM,Nha Trang,2012,PM10,13.0,,NA
+Vietnam,VNM,Nha Trang,2013,PM10,30.0,,NA
+Vietnam,VNM,Nha Trang,2014,PM10,12.0,,NA
+Vietnam,VNM,Nha Trang,2015,PM10,14.0,,NA
+Filipina,PHL,Nia Road,2015,PM2.5,26.0,,NA
+Filipina,PHL,Nia Road,2016,PM2.5,46.0,,NA
+Thailand,THA,Nong Khai,2021,PM2.5,20.0,99.0,Urban
+Thailand,THA,Nong Khai,2021,PM10,38.0,99.0,Urban
+Thailand,THA,Nong Khai,2021,NO2,8.864,95.0,Urban
+Thailand,THA,Nonthaburi,2014,PM10,45.5,90.0,NA
+Thailand,THA,Nonthaburi,2016,PM10,51.21,35.0,NA
+Thailand,THA,Nonthaburi,2017,PM10,63.916,9.0,NA
+Thailand,THA,Nonthaburi,2019,PM2.5,24.5,74.0,NA
+Thailand,THA,Nonthaburi,2019,PM10,44.0,88.0,NA
+Thailand,THA,Nonthaburi,2019,NO2,28.5,66.0,NA
+Thailand,THA,Nonthaburi,2021,PM2.5,18.5,99.0,"Urban, Urban"
+Thailand,THA,Nonthaburi,2021,PM10,33.5,92.0,"Urban, Urban"
+Thailand,THA,Nonthaburi,2021,NO2,29.94,95.0,"Urban, Urban"
+Indonesia,IDN,North Sulawesi,2018,PM2.5,5.389,47.0,Urban
+Indonesia,IDN,North Sulawesi,2018,PM10,10.977,47.0,Urban
+Indonesia,IDN,North Sulawesi,2018,NO2,27.2,47.0,Urban
+Indonesia,IDN,North Sulawesi,2019,PM2.5,15.439,98.0,Urban
+Indonesia,IDN,North Sulawesi,2019,PM10,16.821,99.0,Urban
+Indonesia,IDN,North Sulawesi,2019,NO2,6.85,99.0,Urban
+Indonesia,IDN,North Sulawesi,2020,PM2.5,14.682,96.0,Urban
+Indonesia,IDN,North Sulawesi,2020,PM10,16.222,96.0,Urban
+Indonesia,IDN,North Sulawesi,2020,NO2,41.02,94.0,Urban
+Indonesia,IDN,North Sulawesi,2021,PM2.5,12.063,96.0,Urban
+Indonesia,IDN,North Sulawesi,2021,PM10,14.028,99.0,Urban
+Indonesia,IDN,North Sulawesi,2021,NO2,16.62,97.0,Urban
+Myanmar,MMR,Nyaung Oo,2013,PM10,91.0,,NA
+Malaysia,MYS,Pahang,2019,PM2.5,21.15,,NA
+Malaysia,MYS,Pahang,2019,PM10,30.064,,NA
+Malaysia,MYS,Pahang,2019,NO2,0.004,,NA
+Kamboja,KHM,Paoy Pet Poipet Bonteay Meanchey,2020,PM2.5,17.0,,NA
+Kamboja,KHM,Paoy Pet Poipet Bonteay Meanchey,2021,PM2.5,16.0,,NA
+Indonesia,IDN,Papua,2019,PM2.5,12.249,33.0,Urban
+Indonesia,IDN,Papua,2019,PM10,15.175,33.0,Urban
+Indonesia,IDN,Papua,2019,NO2,6.54,33.0,Urban
+Indonesia,IDN,Papua,2020,PM2.5,10.433,98.0,Urban
+Indonesia,IDN,Papua,2020,PM10,12.063,98.0,Urban
+Indonesia,IDN,Papua,2020,NO2,30.24,98.0,Urban
+Indonesia,IDN,Papua,2021,PM2.5,9.987,81.0,Urban
+Indonesia,IDN,Papua,2021,PM10,12.932,96.0,Urban
+Filipina,PHL,Paranaque,2015,PM2.5,16.0,,NA
+Filipina,PHL,Paranaque,2016,PM2.5,20.0,,NA
+Filipina,PHL,Pasay,2016,PM2.5,22.0,,NA
+Filipina,PHL,Pasig,2016,PM2.5,34.0,,NA
+Filipina,PHL,Pateros,2015,PM2.5,32.0,,NA
+Thailand,THA,Pathum Thani,2014,PM10,48.0,95.0,NA
+Thailand,THA,Pathum Thani,2019,PM2.5,25.0,97.0,NA
+Thailand,THA,Pathum Thani,2019,PM10,38.0,96.0,NA
+Thailand,THA,Pathum Thani,2019,NO2,28.0,87.0,NA
+Thailand,THA,Pathum Thani,2021,PM2.5,23.0,95.0,Urban
+Thailand,THA,Pathum Thani,2021,PM10,39.0,95.0,Urban
+Thailand,THA,Pathum Thani,2021,NO2,21.595,47.0,Urban
+Malaysia,MYS,Perak,2019,PM2.5,20.284,,NA
+Malaysia,MYS,Perak,2019,PM10,29.071,,NA
+Malaysia,MYS,Perak,2019,NO2,0.009,,NA
+Malaysia,MYS,Perlis,2019,PM2.5,15.199,,NA
+Malaysia,MYS,Perlis,2019,PM10,22.896,,NA
+Malaysia,MYS,Perlis,2019,NO2,0.003,,NA
+Malaysia,MYS,Petaling Jaya,2014,PM10,47.21,83.0,NA
+Thailand,THA,Phayao,2014,PM10,41.0,95.0,NA
+Thailand,THA,Phayao,2019,PM2.5,18.0,50.0,NA
+Thailand,THA,Phayao,2019,PM10,29.0,50.0,NA
+Thailand,THA,Phayao,2019,NO2,9.0,50.0,NA
+Thailand,THA,Phayao,2021,PM2.5,25.0,99.0,Urban
+Thailand,THA,Phayao,2021,PM10,40.0,99.0,Urban
+Thailand,THA,Phayao,2021,NO2,8.762,95.0,Urban
+Thailand,THA,Phitsanulok,2021,PM2.5,25.0,99.0,Urban
+Thailand,THA,Phitsanulok,2021,PM10,45.0,99.0,Urban
+Thailand,THA,Phitsanulok,2021,NO2,15.057,94.0,Urban
+Kamboja,KHM,Phnom Penh,2019,PM2.5,22.0,,NA
+Kamboja,KHM,Phnom Penh,2019,NO2,6.6,,NA
+Kamboja,KHM,Phnom Penh,2020,PM2.5,18.0,,NA
+Kamboja,KHM,Phnom Penh,2020,NO2,14.5,,NA
+Kamboja,KHM,Phnom Penh,2021,PM2.5,19.0,,NA
+Kamboja,KHM,Phnom Penh,2021,NO2,19.0,,NA
+Thailand,THA,Phra Nakhon Si Ayutthaya,2014,PM10,55.0,98.0,NA
+Thailand,THA,Phra Nakhon Si Ayutthaya,2019,PM2.5,25.0,97.0,NA
+Thailand,THA,Phra Nakhon Si Ayutthaya,2019,PM10,53.0,94.0,NA
+Thailand,THA,Phra Nakhon Si Ayutthaya,2019,NO2,24.0,95.0,NA
+Thailand,THA,Phra Nakhon Si Ayutthaya,2021,PM2.5,21.0,99.0,Urban
+Thailand,THA,Phra Nakhon Si Ayutthaya,2021,PM10,65.0,96.0,Urban
+Thailand,THA,Phra Nakhon Si Ayutthaya,2021,NO2,18.904,39.0,Urban
+Thailand,THA,Phrae,2014,PM10,55.0,90.0,NA
+Thailand,THA,Phrae,2016,PM10,48.099,84.0,NA
+Thailand,THA,Phrae,2016,NO2,15.947,1.0,NA
+Thailand,THA,Phrae,2017,PM10,37.248,63.0,NA
+Thailand,THA,Phrae,2019,PM10,45.0,98.0,NA
+Thailand,THA,Phrae,2021,PM2.5,25.0,100.0,Urban
+Thailand,THA,Phrae,2021,PM10,38.0,100.0,Urban
+Thailand,THA,Phrae,2021,NO2,13.153,94.0,Urban
+Thailand,THA,Phuket,2014,PM10,24.0,90.0,NA
+Thailand,THA,Phuket,2016,PM10,24.712,47.0,NA
+Thailand,THA,Phuket,2017,PM10,19.268,20.0,NA
+Thailand,THA,Phuket,2019,PM2.5,11.0,50.0,NA
+Thailand,THA,Phuket,2019,PM10,30.0,93.0,NA
+Thailand,THA,Phuket,2021,PM2.5,17.0,99.0,Urban
+Thailand,THA,Phuket,2021,PM10,34.0,99.0,Urban
+Thailand,THA,Phuket,2021,NO2,12.109,94.0,Urban
+Kamboja,KHM,Phumi Samraong Otdor Mean Chey Province,2020,PM2.5,15.0,,NA
+Kamboja,KHM,Phumi Samraong Otdor Mean Chey Province,2021,PM2.5,15.0,,NA
+Thailand,THA,Prachin Buri,2019,PM2.5,25.0,98.0,NA
+Thailand,THA,Prachin Buri,2019,PM10,42.0,95.0,NA
+Thailand,THA,Prachin Buri,2019,NO2,11.0,90.0,NA
+Thailand,THA,Prachin Buri,2021,PM2.5,25.0,99.0,Urban
+Thailand,THA,Prachin Buri,2021,PM10,46.0,99.0,Urban
+Kamboja,KHM,Preah Vihear,2020,PM2.5,26.0,,NA
+Kamboja,KHM,Preah Vihear,2021,PM2.5,24.0,,NA
+Kamboja,KHM,Prey Veng,2020,PM2.5,10.0,,NA
+Kamboja,KHM,Prey Veng,2021,PM2.5,12.0,,NA
+Malaysia,MYS,Pulau Pinang,2019,PM2.5,21.246,,NA
+Malaysia,MYS,Pulau Pinang,2019,PM10,28.765,,NA
+Malaysia,MYS,Pulau Pinang,2019,NO2,0.009,,NA
+Kamboja,KHM,Pursat,2020,PM2.5,22.0,,NA
+Kamboja,KHM,Pursat,2021,PM2.5,19.0,,NA
+Malaysia,MYS,Putrajaya,2019,PM2.5,29.808,,NA
+Malaysia,MYS,Putrajaya,2019,PM10,38.811,,NA
+Malaysia,MYS,Putrajaya,2019,NO2,0.009,,NA
+Myanmar,MMR,Pyay Aunglan,2013,PM10,44.4,,NA
+Myanmar,MMR,Pyin OO Win,2012,PM10,140.0,,NA
+Filipina,PHL,Quezon,2016,PM2.5,18.0,,NA
+Thailand,THA,Ratchaburi,2016,PM10,44.733,83.0,NA
+Thailand,THA,Ratchaburi,2016,NO2,10.492,1.0,NA
+Thailand,THA,Ratchaburi,2017,PM10,41.768,48.0,NA
+Thailand,THA,Ratchaburi,2019,PM2.5,30.0,93.0,NA
+Thailand,THA,Ratchaburi,2019,PM10,54.0,92.0,NA
+Thailand,THA,Ratchaburi,2019,NO2,13.0,89.0,NA
+Thailand,THA,Ratchaburi,2021,PM2.5,22.0,100.0,Urban
+Thailand,THA,Ratchaburi,2021,PM10,43.0,96.0,Urban
+Thailand,THA,Rayong,2014,PM10,41.0,92.0,NA
+Thailand,THA,Rayong,2016,PM10,31.276,31.0,NA
+Thailand,THA,Rayong,2017,PM10,33.59,36.0,NA
+Thailand,THA,Rayong,2019,PM2.5,19.2,77.0,NA
+Thailand,THA,Rayong,2019,PM10,44.4,97.0,NA
+Thailand,THA,Rayong,2019,NO2,21.0,90.0,NA
+Thailand,THA,Rayong,2021,PM2.5,18.4,100.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Rayong,2021,PM10,37.2,99.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Rayong,2021,NO2,18.561,95.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Sa Kaeo,2014,PM10,47.0,98.0,NA
+Thailand,THA,Sa Kaeo,2016,PM10,33.659,77.0,NA
+Thailand,THA,Sa Kaeo,2017,PM10,34.756,3.0,NA
+Thailand,THA,Sa Kaeo,2019,PM2.5,20.0,98.0,NA
+Thailand,THA,Sa Kaeo,2019,PM10,40.0,96.0,NA
+Thailand,THA,Sa Kaeo,2021,PM2.5,16.0,100.0,Urban
+Thailand,THA,Sa Kaeo,2021,PM10,32.0,100.0,Urban
+Thailand,THA,Sa Kaeo,2021,NO2,8.396,95.0,Urban
+Malaysia,MYS,Sabah,2019,PM2.5,12.191,,NA
+Malaysia,MYS,Sabah,2019,PM10,20.569,,NA
+Malaysia,MYS,Sabah,2019,NO2,0.004,,NA
+Kamboja,KHM,Saen Monourom Mondulkiri Province,2020,PM2.5,17.0,,NA
+Kamboja,KHM,Saen Monourom Mondulkiri Province,2021,PM2.5,15.0,,NA
+Thailand,THA,Sakon Nakhon,2021,PM2.5,14.0,52.0,Urban
+Thailand,THA,Sakon Nakhon,2021,PM10,21.0,53.0,Urban
+Thailand,THA,Sakon Nakhon,2021,NO2,7.436,50.0,Urban
+Thailand,THA,Samut Prakan,2014,PM10,50.75,97.0,NA
+Thailand,THA,Samut Prakan,2016,PM10,38.383,30.0,NA
+Thailand,THA,Samut Prakan,2017,PM10,37.121,31.0,NA
+Thailand,THA,Samut Prakan,2019,PM2.5,25.8,89.0,NA
+Thailand,THA,Samut Prakan,2019,PM10,44.4,80.0,NA
+Thailand,THA,Samut Prakan,2019,NO2,29.6,76.0,NA
+Thailand,THA,Samut Prakan,2021,PM2.5,24.2,99.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Samut Prakan,2021,PM10,41.4,99.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Samut Prakan,2021,NO2,27.372,95.0,"Urban, Urban, Urban, Urban, Urban"
+Thailand,THA,Samut Sakhon,2014,PM10,54.5,94.0,NA
+Thailand,THA,Samut Sakhon,2016,PM10,44.208,49.0,NA
+Thailand,THA,Samut Sakhon,2016,NO2,32.617,1.0,NA
+Thailand,THA,Samut Sakhon,2017,PM10,44.539,28.0,NA
+Thailand,THA,Samut Sakhon,2019,PM2.5,29.0,98.0,NA
+Thailand,THA,Samut Sakhon,2019,PM10,49.5,98.0,NA
+Thailand,THA,Samut Sakhon,2019,NO2,35.5,93.0,NA
+Thailand,THA,Samut Sakhon,2021,PM2.5,27.0,98.0,"Urban, Urban"
+Thailand,THA,Samut Sakhon,2021,PM10,49.5,99.0,"Urban, Urban"
+Thailand,THA,Samut Sakhon,2021,NO2,36.012,50.0,"Urban, Urban"
+Thailand,THA,Samut Songkhram,2021,PM2.5,16.0,98.0,Urban
+Thailand,THA,Samut Songkhram,2021,PM10,27.0,98.0,Urban
+Thailand,THA,Samut Songkhram,2021,NO2,14.567,93.0,Urban
+Filipina,PHL,San Carlos,2013,PM10,61.0,,NA
+Thailand,THA,Saraburi,2014,PM10,56.5,96.0,NA
+Thailand,THA,Saraburi,2016,PM10,76.431,78.0,NA
+Thailand,THA,Saraburi,2016,NO2,31.926,1.0,NA
+Thailand,THA,Saraburi,2017,PM10,70.729,60.0,NA
+Thailand,THA,Saraburi,2019,PM2.5,23.0,93.0,NA
+Thailand,THA,Saraburi,2019,PM10,55.0,94.0,NA
+Thailand,THA,Saraburi,2019,NO2,32.0,92.0,NA
+Thailand,THA,Saraburi,2021,PM2.5,26.0,98.0,"Urban, Urban"
+Thailand,THA,Saraburi,2021,PM10,72.5,99.0,"Urban, Urban"
+Thailand,THA,Saraburi,2021,NO2,41.441,94.0,"Urban, Urban"
+Malaysia,MYS,Sarawak,2019,PM2.5,17.848,,NA
+Malaysia,MYS,Sarawak,2019,PM10,27.193,,NA
+Malaysia,MYS,Sarawak,2019,NO2,0.005,,NA
+Thailand,THA,Satun,2019,PM2.5,14.0,100.0,NA
+Thailand,THA,Satun,2019,PM10,25.0,100.0,NA
+Thailand,THA,Satun,2019,NO2,6.0,95.0,NA
+Thailand,THA,Satun,2021,PM2.5,12.0,98.0,Urban
+Thailand,THA,Satun,2021,PM10,29.0,99.0,Urban
+Thailand,THA,Satun,2021,NO2,5.9,95.0,Urban
+Malaysia,MYS,Selangor,2019,PM2.5,29.726,,NA
+Malaysia,MYS,Selangor,2019,PM10,38.982,,NA
+Malaysia,MYS,Selangor,2019,NO2,0.017,,NA
+Malaysia,MYS,Senai,2014,PM10,30.32,42.0,NA
+Kamboja,KHM,Siem Reap,2019,PM2.5,21.0,,NA
+Kamboja,KHM,Siem Reap,2020,PM2.5,28.0,,NA
+Kamboja,KHM,Siem Reap,2021,PM2.5,37.0,,NA
+Kamboja,KHM,Sihanouk Vil,2019,PM2.5,32.0,,NA
+Kamboja,KHM,Sihanouk Vil,2020,PM2.5,12.0,,NA
+Kamboja,KHM,Sihanouk Vil,2021,PM2.5,19.0,,NA
+Singapura,SGP,Singapore,2010,PM2.5,17.0,100.0,NA
+Singapura,SGP,Singapore,2010,NO2,23.0,100.0,NA
+Singapura,SGP,Singapore,2011,PM2.5,17.0,100.0,NA
+Singapura,SGP,Singapore,2011,NO2,25.0,100.0,NA
+Singapura,SGP,Singapore,2012,PM2.5,19.0,100.0,NA
+Singapura,SGP,Singapore,2012,NO2,25.0,100.0,NA
+Singapura,SGP,Singapore,2013,PM2.5,20.0,100.0,NA
+Singapura,SGP,Singapore,2013,NO2,25.0,100.0,NA
+Singapura,SGP,Singapore,2014,PM2.5,17.985,,NA
+Singapura,SGP,Singapore,2014,PM10,30.0,,NA
+Singapura,SGP,Singapore,2014,NO2,24.0,100.0,NA
+Singapura,SGP,Singapore,2015,PM2.5,24.376,100.0,NA
+Singapura,SGP,Singapore,2015,NO2,22.0,100.0,NA
+Singapura,SGP,Singapore,2016,PM2.5,14.87,100.0,NA
+Singapura,SGP,Singapore,2016,NO2,26.0,100.0,NA
+Singapura,SGP,Singapore,2017,PM2.5,13.923,100.0,NA
+Singapura,SGP,Singapore,2017,NO2,25.0,100.0,NA
+Singapura,SGP,Singapore,2018,PM2.5,15.01,100.0,NA
+Singapura,SGP,Singapore,2018,PM10,29.0,100.0,NA
+Singapura,SGP,Singapore,2018,NO2,26.0,100.0,NA
+Singapura,SGP,Singapore,2019,PM2.5,16.309,100.0,NA
+Singapura,SGP,Singapore,2019,NO2,23.0,100.0,NA
+Singapura,SGP,Singapore,2020,PM2.5,11.048,100.0,NA
+Singapura,SGP,Singapore,2020,NO2,20.0,100.0,NA
+Singapura,SGP,Singapore,2021,PM2.5,12.0,,Urban
+Singapura,SGP,Singapore,2021,PM10,28.0,,Urban
+Singapura,SGP,Singapore,2021,NO2,25.0,,Urban
+Thailand,THA,Songkhla,2014,PM10,44.0,93.0,NA
+Thailand,THA,Songkhla,2016,PM10,41.552,64.0,NA
+Thailand,THA,Songkhla,2016,NO2,17.623,1.0,NA
+Thailand,THA,Songkhla,2017,PM10,39.335,26.0,NA
+Thailand,THA,Songkhla,2019,PM2.5,23.0,50.0,NA
+Thailand,THA,Songkhla,2019,PM10,33.0,50.0,NA
+Thailand,THA,Songkhla,2019,NO2,13.0,50.0,NA
+Thailand,THA,Songkhla,2021,PM2.5,17.0,100.0,Urban
+Thailand,THA,Songkhla,2021,PM10,34.0,100.0,Urban
+Thailand,THA,Songkhla,2021,NO2,12.148,94.0,Urban
+Indonesia,IDN,South Sumatera,2017,PM2.5,11.145,81.0,Urban
+Indonesia,IDN,South Sumatera,2017,PM10,36.503,84.0,Urban
+Indonesia,IDN,South Sumatera,2017,NO2,23.0,92.0,Urban
+Indonesia,IDN,South Sumatera,2018,PM2.5,13.489,88.0,Urban
+Indonesia,IDN,South Sumatera,2018,PM10,22.285,87.0,Urban
+Indonesia,IDN,South Sumatera,2018,NO2,15.42,87.0,Urban
+Indonesia,IDN,South Sumatera,2019,PM2.5,42.695,99.0,Urban
+Indonesia,IDN,South Sumatera,2019,PM10,45.945,99.0,Urban
+Indonesia,IDN,South Sumatera,2019,NO2,11.98,99.0,Urban
+Indonesia,IDN,South Sumatera,2020,PM2.5,13.568,90.0,Urban
+Indonesia,IDN,South Sumatera,2020,PM10,13.61,89.0,Urban
+Indonesia,IDN,South Sumatera,2020,NO2,7.1,98.0,Urban
+Indonesia,IDN,South Sumatera,2021,PM2.5,20.692,73.0,Urban
+Indonesia,IDN,South Sumatera,2021,PM10,18.991,88.0,Urban
+Indonesia,IDN,South Sumatera,2021,NO2,10.53,65.0,Urban
+Indonesia,IDN,South Tangerang,2011,PM2.5,17.0,,NA
+Kamboja,KHM,Sralab Tbong Khmom Province,2020,PM2.5,9.0,,NA
+Kamboja,KHM,Sralab Tbong Khmom Province,2021,PM2.5,7.0,,NA
+Kamboja,KHM,Steung Treng,2020,PM2.5,18.0,,NA
+Kamboja,KHM,Steung Treng,2021,PM2.5,35.0,,NA
+Thailand,THA,Suphun Buri,2021,PM2.5,21.0,100.0,Urban
+Thailand,THA,Suphun Buri,2021,PM10,37.0,100.0,Urban
+Thailand,THA,Suphun Buri,2021,NO2,13.774,96.0,Urban
+Thailand,THA,Surat Thani,2014,PM10,39.0,86.0,NA
+Thailand,THA,Surat Thani,2016,PM10,34.04,77.0,NA
+Thailand,THA,Surat Thani,2016,NO2,3.292,1.0,NA
+Thailand,THA,Surat Thani,2017,PM10,30.798,62.0,NA
+Thailand,THA,Surat Thani,2019,PM2.5,17.0,99.0,NA
+Thailand,THA,Surat Thani,2019,PM10,32.0,98.0,NA
+Thailand,THA,Surat Thani,2021,PM2.5,18.0,97.0,Urban
+Thailand,THA,Surat Thani,2021,PM10,35.0,96.0,Urban
+Thailand,THA,Surat Thani,2021,NO2,7.906,11.0,Urban
+Kamboja,KHM,Svay Rieng,2020,PM2.5,16.0,,NA
+Kamboja,KHM,Svay Rieng,2021,PM2.5,26.0,,NA
+Kamboja,KHM,Ta Khmau Cambodge Krong Ta Khmau Kandal Province,2019,PM2.5,21.0,,NA
+Kamboja,KHM,Ta Khmau Cambodge Krong Ta Khmau Kandal Province,2020,PM2.5,21.0,,NA
+Kamboja,KHM,Ta Khmau Cambodge Krong Ta Khmau Kandal Province,2021,PM2.5,20.0,,NA
+Filipina,PHL,Taguig,2016,PM2.5,23.0,,NA
+Thailand,THA,Tak,2019,PM2.5,28.0,99.0,NA
+Thailand,THA,Tak,2019,PM10,54.0,99.0,NA
+Thailand,THA,Tak,2019,NO2,11.0,93.0,NA
+Kamboja,KHM,Takeo,2020,PM2.5,13.0,,NA
+Kamboja,KHM,Takeo,2021,PM2.5,11.0,,NA
+Malaysia,MYS,Tanah Rata,2014,PM10,19.567,75.0,NA
+Myanmar,MMR,Taungoo,2013,PM10,137.0,,NA
+Malaysia,MYS,Terengganu,2019,PM2.5,17.578,,NA
+Malaysia,MYS,Terengganu,2019,PM10,26.18,,NA
+Malaysia,MYS,Terengganu,2019,NO2,0.003,,NA
+Thailand,THA,Trang,2021,PM2.5,10.0,52.0,Urban
+Thailand,THA,Trang,2021,PM10,19.0,52.0,Urban
+Thailand,THA,Trang,2021,NO2,5.42,49.0,Urban
+Thailand,THA,Ubon Ratchathani,2021,PM2.5,26.0,99.0,Urban
+Thailand,THA,Ubon Ratchathani,2021,PM10,43.0,99.0,Urban
+Thailand,THA,Ubon Ratchathani,2021,NO2,13.184,95.0,Urban
+Thailand,THA,Udon Thani,2021,PM2.5,13.0,53.0,Urban
+Thailand,THA,Udon Thani,2021,PM10,24.0,53.0,Urban
+Thailand,THA,Udon Thani,2021,NO2,8.964,49.0,Urban
+Filipina,PHL,Urdaneta,2013,PM10,45.0,,NA
+Thailand,THA,Uttaradit,2021,PM2.5,15.0,50.0,Urban
+Thailand,THA,Uttaradit,2021,PM10,30.0,51.0,Urban
+Thailand,THA,Uttaradit,2021,NO2,12.001,50.0,Urban
+Filipina,PHL,Valenzuela,2016,PM2.5,20.0,,NA
+Laos,LAO,Vientiane,2019,PM2.5,25.766,44.0,NA
+Vietnam,VNM,Viet Tri,2013,PM10,27.0,,NA
+Vietnam,VNM,Viet Tri,2014,PM10,22.0,,NA
+Malaysia,MYS,W P Labuan,2019,PM2.5,13.63,,NA
+Malaysia,MYS,W P Labuan,2019,PM10,19.451,,NA
+Malaysia,MYS,W P Labuan,2019,NO2,0.002,,NA
+Indonesia,IDN,West Kalimantan,2017,PM2.5,7.49,38.0,Urban
+Indonesia,IDN,West Kalimantan,2017,PM10,9.8,42.0,Urban
+Indonesia,IDN,West Kalimantan,2017,NO2,8.38,47.0,Urban
+Indonesia,IDN,West Kalimantan,2018,PM2.5,14.02,94.0,Urban
+Indonesia,IDN,West Kalimantan,2018,PM10,18.376,94.0,Urban
+Indonesia,IDN,West Kalimantan,2018,NO2,13.11,66.0,Urban
+Indonesia,IDN,West Kalimantan,2019,PM2.5,37.233,77.0,Urban
+Indonesia,IDN,West Kalimantan,2019,PM10,42.304,77.0,Urban
+Indonesia,IDN,West Kalimantan,2019,NO2,22.09,81.0,Urban
+Indonesia,IDN,West Kalimantan,2020,PM2.5,14.809,21.0,Urban
+Indonesia,IDN,West Kalimantan,2020,PM10,10.217,80.0,Urban
+Indonesia,IDN,West Kalimantan,2020,NO2,18.71,68.0,Urban
+Indonesia,IDN,West Kalimantan,2021,PM2.5,23.522,92.0,Urban
+Indonesia,IDN,West Kalimantan,2021,PM10,23.884,88.0,Urban
+Indonesia,IDN,West Kalimantan,2021,NO2,26.82,96.0,Urban
+Thailand,THA,Yala,2014,PM10,23.0,79.0,NA
+Thailand,THA,Yala,2016,PM10,32.139,59.0,NA
+Thailand,THA,Yala,2017,PM10,26.48,22.0,NA
+Thailand,THA,Yala,2019,PM2.5,15.5,74.0,NA
+Thailand,THA,Yala,2019,PM10,24.0,50.0,NA
+Thailand,THA,Yala,2021,PM2.5,12.5,98.0,"Urban, Urban"
+Thailand,THA,Yala,2021,PM10,27.0,97.0,"Urban, Urban"
+Myanmar,MMR,Yangon,2014,PM10,66.944,35.0,NA
+Myanmar,MMR,Yangon,2015,PM10,62.182,100.0,NA
+Myanmar,MMR,Yangon,2015,NO2,6.071,1.0,NA
+Myanmar,MMR,Yangon,2016,PM10,47.037,94.0,NA
+Myanmar,MMR,Yangon,2016,NO2,4.601,1.0,NA
+Myanmar,MMR,Yangon,2017,PM10,22.614,87.0,NA
+Myanmar,MMR,Yangon,2018,PM2.5,20.0,,Urban
+Myanmar,MMR,Yangon,2019,PM2.5,22.0,,Urban
+Myanmar,MMR,Yangon,2020,PM2.5,20.0,,Urban
+Myanmar,MMR,Yangon,2021,PM2.5,28.0,,Urban
+Filipina,PHL,Zamboanga,2013,PM10,48.5,,NA

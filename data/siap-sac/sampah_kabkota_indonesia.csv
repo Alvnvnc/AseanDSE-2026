@@ -1,0 +1,515 @@
+provinsi,kab_kota,jenis_tpa,nama_tpa,kelompok,bsu_aktif,bsu_tidak_aktif,sampah_terkelola_bsu_ton,bsi_aktif,bsi_tidak_aktif,sampah_terkelola_bsi_ton,status_rips,verifikasi_lapangan,nilai_kinerja_ps,progress_sa,timbulan_ton_per_hari,persen_terkelola,persen_belum_terkelola
+Jawa Barat,Kabupaten Bogor,Open Dumping,,343 TPA (353 Kota/Kab),380.0,0.0,190.0,6.0,0.0,30.0,Ada (Draft) tapi Belum Disahkan,Sudah,,54.15,2784.0,22.1,77.9
+Banten,Kabupaten Tangerang,Open Dumping,,343 TPA (353 Kota/Kab),123.0,29.0,1.7,1.0,0.0,108.0,Ada tapi Belum Disahkan,Sudah,,66.2,2663.0,4.38,95.62
+DKI Jakarta,Kota Jakarta Timur,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),333.0,0.0,5.55,1.0,0.0,0.08,Ada dan Sudah Disahkan,Sudah,,,2455.0,16.28,83.72
+Jawa Barat,Kabupaten Bekasi,Open Dumping,,343 TPA (353 Kota/Kab),257.0,225.0,25.7,0.0,0.0,0.0,Ada dan Sudah Disahkan,Sudah,,43.85,2404.0,2.58,97.42
+DKI Jakarta,Kota Jakarta Selatan,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),495.0,0.0,10.57,1.0,0.0,0.62,Ada dan Sudah Disahkan,Sudah,,,2005.0,19.97,80.03
+DKI Jakarta,Kota Jakarta Barat,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),415.0,177.0,9.0,1.0,0.0,0.46,Ada dan Sudah Disahkan,Sudah,,,1943.0,25.94,74.06
+Jawa Timur,Kota Surabaya,Sanitary Landfill,,Diluar 343 TPA (171 Kota/Kab),660.0,660.0,5.24,1.0,0.0,1.48,Ada (Draft) tapi Belum Disahkan,Sudah,,,1811.0,98.26,1.74
+Jawa Barat,Kota Bekasi,Open Dumping,,343 TPA (353 Kota/Kab),260.0,153.0,2.14,1.0,0.0,1.74,Tidak Ada,Sudah,,60.8,1801.0,5.52,94.48
+Jawa Barat,Kabupaten Bandung,Open Dumping,,343 TPA (353 Kota/Kab),57.0,295.0,2.8,2.0,0.0,8.1,Ada tapi Belum Disahkan,Sudah,,,1762.0,7.77,92.23
+Sumatera Utara,Kota Medan,Sanitary Landfill,,Diluar 343 TPA (171 Kota/Kab),12.0,0.0,2.27,2.0,0.0,1.24,Ada tapi Belum Disahkan,Sudah,,,1740.0,71.37,28.63
+Jawa Barat,Kota Bandung,Open Dumping,,343 TPA (353 Kota/Kab),390.0,108.0,5.76,1.0,0.0,2.91,Ada dan Sudah Disahkan,Sudah,,72.0,1574.0,22.18,77.82
+DKI Jakarta,Kota Jakarta Utara,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),517.0,272.0,12.41,1.0,0.0,0.24,Ada dan Sudah Disahkan,Sudah,,,1411.0,21.49,78.51
+Banten,Kota Tangerang,Open Dumping,,343 TPA (353 Kota/Kab),160.0,0.0,16.0,1.0,0.0,6.0,Ada tapi Belum Disahkan,Sudah,,85.5,1370.0,11.09,88.91
+Jawa Barat,Kabupaten Cianjur,Open Dumping,,343 TPA (353 Kota/Kab),7.0,2.0,2.94,0.0,0.0,0.0,Ada dan Sudah Disahkan,Sudah,,51.9,1305.0,2.67,97.33
+Jawa Barat,Kota Depok,Open Dumping,,343 TPA (353 Kota/Kab),421.0,0.0,3.31,2.0,0.0,7.5,Ada dan Sudah Disahkan,Sudah,,16.45,1277.0,17.36,82.64
+Sumatera Selatan,Kota Palembang,Open Dumping,,343 TPA (353 Kota/Kab),85.0,1.0,7.81,1.0,0.0,0.49,Ada tapi Belum Disahkan,Sudah,,51.5,1261.0,21.18,78.82
+Jawa Barat,Kabupaten Cirebon,Open Dumping,,343 TPA (353 Kota/Kab),42.0,11.0,4.2,2.0,0.0,1.0,Ada (Draft) tapi Belum Disahkan,Sudah,,56.8,1250.0,3.18,96.82
+Banten,Kabupaten Serang,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),33.0,15.0,0.49,1.0,0.0,0.01,Ada (Draft) tapi Belum Disahkan,Sudah,,,1191.0,0.99,99.01
+Jawa Tengah,Kota Semarang,Open Dumping,,343 TPA (353 Kota/Kab),857.0,0.0,20.12,1.0,0.0,0.38,Ada dan Sudah Disahkan,Sudah,,,1190.0,8.27,91.73
+Kepulauan Riau,Kota Batam,Open Dumping,,343 TPA (353 Kota/Kab),163.0,0.0,1.67,1.0,0.0,2.0,Tidak Ada,Sudah,,66.65,1161.0,5.45,94.55
+Jawa Barat,Kabupaten Garut,Open Dumping,,343 TPA (353 Kota/Kab),23.0,30.0,9.93,3.0,0.0,7.6,Ada tapi Belum Disahkan,Sudah,,,1141.0,13.98,86.02
+Jawa Barat,Kabupaten Sukabumi,Open Dumping,,343 TPA (353 Kota/Kab),48.0,15.0,1.6,2.0,2.0,0.07,Tidak Ada,Sudah,,21.4,1128.0,23.94,76.06
+Jawa Barat,Kabupaten Indramayu,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),7.0,0.0,1.47,0.0,1.0,0.0,Ada dan Sudah Disahkan,Sudah,,37.2,1122.0,8.59,91.41
+Jawa Timur,Kabupaten Malang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),195.0,15.0,4.87,1.0,0.0,0.0,Tidak Ada,Sudah,,,1094.0,48.88,51.12
+Jawa Barat,Kabupaten Karawang,Open Dumping,,343 TPA (353 Kota/Kab),106.0,52.0,0.1,7.0,0.0,7.0,Ada dan Sudah Disahkan,Sudah,,31.5,1067.0,3.69,96.31
+Riau,Kota Pekanbaru,Open Dumping,,343 TPA (353 Kota/Kab),55.0,45.0,1.81,5.0,0.0,9.9,Ada tapi Belum Disahkan,Sudah,,10.7,1051.0,22.05,77.95
+Jawa Timur,Kabupaten Jember,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),120.0,4.0,0.79,1.0,0.0,0.96,Dalam Perencanaan,Sudah,,,1046.0,1.89,98.11
+Sulawesi Selatan,Kota Makassar,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),348.0,302.0,2.04,1.0,0.0,1.16,Ada tapi Belum Disahkan,Sudah,,,1034.0,7.84,92.16
+Jawa Tengah,Kabupaten Brebes,Open Dumping,,343 TPA (353 Kota/Kab),3.0,175.0,0.55,0.0,1.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,55.75,1033.0,2.32,97.68
+Bali,Kota Denpasar,Open Dumping,,343 TPA (353 Kota/Kab),338.0,0.0,3.16,3.0,0.0,2.71,Ada dan Sudah Disahkan,Sudah,,86.7,1033.0,10.73,89.27
+Banten,Kota Tangerang Selatan,Open Dumping,,343 TPA (353 Kota/Kab),316.0,172.0,3.08,0.0,0.0,0.0,Tidak Ada,Sudah,,40.05,1029.0,58.46,41.54
+Sumatera Utara,Kabupaten Deli Serdang,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,,Sudah,,,1024.0,22.9,77.1
+Jawa Tengah,Kabupaten Cilacap,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),269.0,6.0,2.02,1.0,0.0,0.01,Tidak Ada,Sudah,,,964.0,18.39,81.61
+Jawa Barat,Kabupaten Majalengka,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,,Sudah,,,938.0,1.53,98.47
+Jawa Timur,Kabupaten Sidoarjo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),221.0,16.0,5.54,1.0,0.0,2.18,Ada tapi Belum Disahkan,Sudah,,,892.0,90.3,9.7
+Bali,Kabupaten Badung,Open Dumping,,343 TPA (353 Kota/Kab),98.0,41.0,0.98,1.0,0.0,7.0,Ada tapi Belum Disahkan,Sudah,,,876.0,17.03,82.97
+Jawa Tengah,Kabupaten Grobogan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),278.0,127.0,183.81,1.0,0.0,0.0,Tidak Ada,Sudah,,,859.0,52.5,47.5
+DKI Jakarta,Kota Jakarta Pusat,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),619.0,214.0,6.1,1.0,0.0,0.36,Ada dan Sudah Disahkan,Sudah,,,858.0,17.68,82.32
+Jawa Timur,Kabupaten Banyuwangi,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),170.0,0.0,10.35,1.0,0.0,0.76,Ada (Draft) tapi Belum Disahkan,Sudah,,,839.0,47.88,52.12
+Jawa Timur,Kabupaten Pasuruan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),177.0,52.0,1.21,,,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,834.0,30.61,69.39
+Jawa Barat,Kabupaten Tasikmalaya,Open Dumping,,343 TPA (353 Kota/Kab),14.0,37.0,5.43,1.0,0.0,0.41,Tidak Ada,Sudah,,14.0,798.0,0.96,99.04
+Lampung,Kabupaten Lampung Selatan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),8.0,1.0,1.08,3.0,0.0,0.5,Tidak Ada,Sudah,,,787.0,90.77,9.23
+Jawa Barat,Kabupaten Bandung Barat,Open Dumping,,343 TPA (353 Kota/Kab),69.0,0.0,7.54,1.0,0.0,4.5,Ada dan Sudah Disahkan,Sudah,,,763.0,6.88,93.12
+Sumatera Utara,Kabupaten Langkat,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.1,1.0,0.0,0.3,Tidak Ada,Sudah,,,763.0,0.07,99.93
+Jawa Barat,Kota Bogor,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),122.0,0.0,1.44,1.0,0.0,0.9,Ada (Draft) tapi Belum Disahkan,Sudah,,,755.0,25.32,74.68
+Jawa Timur,Kabupaten Nganjuk,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),281.0,0.0,9.35,1.0,0.0,1.03,Ada tapi Belum Disahkan,Sudah,,,744.0,49.42,50.58
+Jawa Tengah,Kabupaten Banyumas,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),46.0,0.0,0.3,0.0,1.0,0.0,Ada tapi Belum Disahkan,Sudah,,,731.0,70.6,29.4
+Jawa Timur,Kota Malang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),239.0,282.0,0.31,1.0,0.0,0.5,Ada (Draft) tapi Belum Disahkan,Sudah,,,731.0,99.11,0.89
+Lampung,Kota Bandar Lampung,Open Dumping,,343 TPA (353 Kota/Kab),12.0,5.0,0.38,2.0,0.0,0.77,Tidak Ada,Sudah,,27.85,700.0,7.3,92.7
+Jawa Tengah,Kabupaten Kebumen,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),204.0,7.0,4.65,1.0,,0.25,Ada tapi Belum Disahkan,Sudah,,63.2,699.0,36.5,63.5
+Lampung,Kabupaten Lampung Tengah,Open Dumping,,343 TPA (353 Kota/Kab),6.0,3.0,0.78,0.0,0.0,0.0,Tidak Ada,Sudah,,66.6,694.0,9.79,90.21
+Jawa Tengah,Kabupaten Pati,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),21.0,46.0,0.01,1.0,0.0,0.4,Ada (Draft) tapi Belum Disahkan,Sudah,,,691.0,16.9,83.1
+Jawa Timur,Kabupaten Kediri,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),43.0,0.0,1.0,1.0,0.0,2.17,Ada tapi Belum Disahkan,Sudah,,,677.0,59.8,40.2
+Jawa Tengah,Kabupaten Magelang,Open Dumping,,343 TPA (353 Kota/Kab),557.0,22.0,2.76,2.0,0.0,1.38,Ada dan Sudah Disahkan,Sudah,,,671.0,54.21,45.79
+Sumatera Barat,Kota Padang,Controlled Landfill,,343 TPA (353 Kota/Kab),134.0,4.0,1.8,2.0,0.0,0.6,Ada dan Sudah Disahkan,Sudah,,,669.0,98.94,1.06
+Jawa Tengah,Kabupaten Tegal,Open Dumping,,343 TPA (353 Kota/Kab),39.0,0.0,0.53,1.0,0.0,2.0,Ada dan Sudah Disahkan,Sudah,,40.6,662.0,11.22,88.78
+Jawa Barat,Kabupaten Subang,Open Dumping,,343 TPA (353 Kota/Kab),19.0,16.0,1.9,1.0,0.0,0.1,Tidak Ada,Sudah,,40.3,660.0,3.63,96.37
+Jawa Tengah,Kabupaten Klaten,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),20.0,42.0,2.5,1.0,0.0,2.5,Ada tapi Belum Disahkan,Sudah,,,650.0,25.61,74.39
+Jawa Tengah,Kabupaten Demak,Open Dumping,,343 TPA (353 Kota/Kab),175.0,61.0,175.0,1.0,0.0,1.0,Ada dan Sudah Disahkan,Sudah,,41.7,626.0,29.82,70.18
+Banten,Kabupaten Lebak,Open Dumping,,343 TPA (353 Kota/Kab),2.0,7.0,0.42,1.0,0.0,1.5,Tidak Ada,Sudah,,46.0,613.0,22.93,77.07
+Kalimantan Timur,Kota Samarinda,Open Dumping,,343 TPA (353 Kota/Kab),74.0,0.0,0.55,1.0,0.0,0.06,Tidak Ada,Sudah,,63.8,608.0,0.36,99.64
+DI Yogyakarta,Kabupaten Sleman,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),494.0,22.0,2.78,1.0,0.0,0.01,Dalam Perencanaan,Sudah,,,585.0,22.24,77.76
+Nusa Tenggara Barat,Kabupaten Lombok Timur,Controlled Landfill,,343 TPA (353 Kota/Kab),25.0,10.0,2.8,0.0,0.0,0.0,Dalam Perencanaan,Sudah,,,583.0,25.31,74.69
+Lampung,Kabupaten Lampung Timur,Controlled Landfill,,343 TPA (353 Kota/Kab),3.0,50.0,1.71,0.0,1.0,0.0,Tidak Ada,Sudah,,,571.0,4.66,95.34
+Banten,Kabupaten Pandeglang,Open Dumping,,343 TPA (353 Kota/Kab),7.0,13.0,7.0,1.0,0.0,5.3,Ada (Draft) tapi Belum Disahkan,Sudah,,63.65,566.0,2.88,97.12
+Bali,Kabupaten Gianyar,Open Dumping,,343 TPA (353 Kota/Kab),161.0,2.0,1.6,3.0,0.0,0.95,Ada dan Sudah Disahkan,Sudah,,,562.0,30.67,69.33
+Jawa Timur,Kabupaten Lamongan,Open Dumping,,343 TPA (353 Kota/Kab),230.0,0.0,29.9,1.0,0.0,0.33,Belum ada informasi,Sudah,,,555.0,35.31,64.69
+Jawa Timur,Kabupaten Lumajang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),28.0,0.0,27.32,2.0,0.0,0.12,Ada tapi Belum Disahkan,Sudah,,,553.0,58.36,41.64
+Jawa Tengah,Kabupaten Semarang,Open Dumping,,343 TPA (353 Kota/Kab),170.0,30.0,0.83,1.0,0.0,0.05,Ada tapi Belum Disahkan,Sudah,,51.6,544.0,13.07,86.93
+Kalimantan Timur,Kota Balikpapan,Sanitary Landfill,,Diluar 343 TPA (171 Kota/Kab),169.0,22.0,2.03,2.0,0.0,0.05,Ada dan Sudah Disahkan,Sudah,,,541.0,99.46,0.54
+Riau,Kabupaten Kampar,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,,Sudah,,,539.0,8.84,91.16
+Sumatera Selatan,Kabupaten Banyuasin,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),11.0,0.0,0.33,1.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,533.0,0.06,99.94
+Jawa Timur,Kabupaten Jombang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),139.0,38.0,1.18,1.0,0.0,1.18,Ada dan Sudah Disahkan,Sudah,,,531.0,69.36,30.64
+Jawa Timur,Kabupaten Tuban,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),57.0,35.0,0.71,1.0,0.0,0.98,Ada dan Sudah Disahkan,Sudah,,,529.0,66.37,33.63
+Jawa Tengah,Kabupaten Purbalingga,Open Dumping,,343 TPA (353 Kota/Kab),52.0,23.0,2.97,0.0,0.0,0.0,Ada dan Sudah Disahkan,Sudah,,84.0,524.0,30.66,69.34
+Banten,Kota Serang,Controlled Landfill,,343 TPA (353 Kota/Kab),82.0,23.0,32.8,4.0,0.0,5.15,Ada tapi Belum Disahkan,Sudah,,,521.0,79.9,20.1
+Sumatera Utara,Kabupaten Simalungun,Open Dumping,,343 TPA (353 Kota/Kab),5.0,1.0,1.23,0.0,0.0,0.0,Ada dan Sudah Disahkan,Sudah,,53.6,518.0,0.31,99.69
+Jawa Barat,Kabupaten Ciamis,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),254.0,36.0,12.6,2.0,0.0,3.31,Tidak Ada,Sudah,,,501.0,80.17,19.83
+Jawa Barat,Kabupaten Sumedang,Open Dumping,,343 TPA (353 Kota/Kab),21.0,7.0,0.01,1.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,42.3,491.0,14.32,85.68
+Jawa Barat,Kabupaten Kuningan,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),15.0,2.0,0.92,2.0,1.0,0.1,Tidak Ada,Sudah,,,486.0,12.11,87.89
+Kalimantan Selatan,Kota Banjarmasin,Open Dumping,,343 TPA (353 Kota/Kab),8.0,26.0,0.04,1.0,0.0,0.37,Tidak Sesuai,Sudah,,76.65,477.0,2.2,97.8
+Jawa Timur,Kabupaten Probolinggo,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),24.0,13.0,2.96,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,477.0,4.32,95.68
+Jawa Tengah,Kabupaten Batang,Open Dumping,,343 TPA (353 Kota/Kab),14.0,26.0,0.01,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,46.9,472.0,5.02,94.98
+Jawa Tengah,Kabupaten Pemalang,Open Dumping,,343 TPA (353 Kota/Kab),39.0,21.0,0.04,0.0,1.0,0.0,Tidak Sesuai,Sudah,,57.1,468.0,33.92,66.08
+Jawa Timur,Kabupaten Tulungagung,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),95.0,10.0,0.6,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,455.0,7.97,92.03
+Nusa Tenggara Barat,Kabupaten Lombok Tengah,Controlled Landfill,,343 TPA (353 Kota/Kab),5.0,13.0,0.5,1.0,0.0,5.0,Tidak Ada,Sudah,,,451.0,38.75,61.25
+Jawa Timur,Kabupaten Mojokerto,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),171.0,145.0,1.63,1.0,0.0,1.76,Belum ada informasi,Sudah,,,450.0,53.1,46.9
+Jambi,Kota Jambi,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),44.0,0.0,2.45,1.0,0.0,1.12,Ada tapi Belum Disahkan,Sudah,,,447.0,94.26,5.74
+Kalimantan Barat,Kabupaten Kubu Raya,Open Dumping,,343 TPA (353 Kota/Kab),10.0,2.0,0.02,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,26.8,443.0,0.0,100.0
+Jawa Tengah,Kabupaten Kudus,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),57.0,2.0,1.89,1.0,0.0,0.01,Tidak Ada,Sudah,,,440.0,29.59,70.41
+Jawa Tengah,Kabupaten Kendal,Open Dumping,,343 TPA (353 Kota/Kab),11.0,58.0,0.15,1.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,59.1,437.0,2.81,97.19
+Jawa Tengah,Kabupaten Jepara,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),46.0,78.0,2.25,1.0,0.0,1.38,Ada tapi Belum Disahkan,Sudah,,,433.0,55.41,44.59
+Jawa Tengah,Kabupaten Banjarnegara,Open Dumping,,343 TPA (353 Kota/Kab),34.0,56.0,47.78,1.0,0.0,4.0,Tidak Ada,Sudah,,60.95,429.0,24.29,75.71
+Jawa Tengah,Kabupaten Wonogiri,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),84.0,0.0,22.32,1.0,0.0,2.0,Ada tapi Belum Disahkan,Sudah,,,422.0,6.2,93.8
+DI Yogyakarta,Kabupaten Bantul,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),564.0,256.0,5.27,1.0,0.0,0.03,Ada dan Sudah Disahkan,Sudah,,,422.0,44.29,55.71
+Jawa Barat,Kabupaten Purwakarta,Open Dumping,,343 TPA (353 Kota/Kab),34.0,4.0,0.1,1.0,0.0,0.1,Ada dan Sudah Disahkan,Sudah,,38.35,420.0,7.46,92.54
+Jawa Timur,Kabupaten Bangkalan,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),17.0,6.0,1.0,1.0,0.0,0.1,Tidak Ada,Sudah,,40.1,418.0,22.74,77.26
+Jawa Timur,Kabupaten Blitar,Open Dumping,,343 TPA (353 Kota/Kab),164.0,0.0,1.06,1.0,0.0,0.02,Ada tapi Belum Disahkan,Sudah,,58.0,417.0,2.65,97.35
+Bali,Kabupaten Buleleng,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),107.0,0.0,0.0,1.0,0.0,0.23,Tidak Ada,Sudah,,,414.0,12.68,87.32
+Sulawesi Selatan,Kabupaten Bone,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),78.0,1.0,0.85,1.0,0.0,0.23,Ada tapi Belum Disahkan,Sudah,,,414.0,73.1,26.9
+Kalimantan Barat,Kota Pontianak,Open Dumping,,343 TPA (353 Kota/Kab),18.0,4.0,0.34,1.0,0.0,0.26,Tidak Ada,Sudah,,57.15,412.0,25.19,74.81
+Jawa Tengah,Kabupaten Temanggung,Open Dumping,,343 TPA (353 Kota/Kab),118.0,0.0,0.07,0.0,0.0,0.0,Ada dan Sudah Disahkan,Sudah,,,411.0,32.28,67.72
+Sumatera Utara,Kabupaten Asahan,Open Dumping,,343 TPA (353 Kota/Kab),21.0,0.0,0.21,1.0,0.0,0.32,Tidak Ada,Sudah,,31.05,407.0,5.63,94.37
+Sulawesi Selatan,Kabupaten Gowa,Open Dumping,,343 TPA (353 Kota/Kab),79.0,3.0,0.35,1.0,0.0,0.0,Tidak Ada,Sudah,,32.7,403.0,0.25,99.75
+Jawa Tengah,Kabupaten Pekalongan,Open Dumping,,343 TPA (353 Kota/Kab),17.0,18.0,0.68,1.0,0.0,0.05,Ada (Draft) tapi Belum Disahkan,Sudah,,34.05,403.0,26.33,73.67
+Jawa Tengah,Kabupaten Sragen,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),236.0,39.0,4.55,3.0,0.0,5.43,Ada tapi Belum Disahkan,Sudah,,,402.0,17.64,82.36
+Jawa Tengah,Kabupaten Blora,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),127.0,38.0,1.99,1.0,0.0,3.94,Ada tapi Belum Disahkan,Sudah,,,402.0,23.79,76.21
+Jawa Timur,Kabupaten Gresik,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),320.0,388.0,6.16,14.0,4.0,5.0,Ada dan Sudah Disahkan,Sudah,,,401.0,75.42,24.58
+Jawa Timur,Kabupaten Ponorogo,Open Dumping,,343 TPA (353 Kota/Kab),29.0,27.0,0.5,1.0,0.0,0.26,Tidak Ada,Sudah,,47.8,391.0,28.7,71.3
+Jawa Tengah,Kabupaten Karanganyar,Open Dumping,,343 TPA (353 Kota/Kab),37.0,23.0,0.47,0.0,0.0,0.0,Tidak Ada,Sudah,,73.85,382.0,2.65,97.35
+Lampung,Kabupaten Tanggamus,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),38.0,0.0,0.11,1.0,0.0,0.11,Ada tapi Belum Disahkan,Sudah,,,374.0,12.0,88.0
+Kalimantan Timur,Kabupaten Kutai Kartanegara,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),54.0,7.0,9.76,1.0,0.0,0.5,Ada dan Sudah Disahkan,Sudah,,52.55,373.0,7.31,92.69
+Jawa Timur,Kabupaten Ngawi,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),47.0,37.0,0.29,1.0,0.0,0.8,Ada tapi Belum Disahkan,Sudah,,,372.0,27.46,72.54
+DI Yogyakarta,Kabupaten Gunung Kidul,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),287.0,80.0,3.62,2.0,1.0,1.48,Ada dan Sudah Disahkan,Sudah,,,369.0,38.16,61.84
+Jawa Tengah,Kabupaten Wonosobo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),534.0,0.0,33.97,1.0,0.0,2.0,Ada tapi Belum Disahkan,Sudah,,,368.0,69.7,30.3
+Jawa Timur,Kabupaten Bojonegoro,Open Dumping,,343 TPA (353 Kota/Kab),88.0,88.0,0.6,0.0,1.0,0.0,Ada tapi Belum Disahkan,Sudah,,,368.0,31.6,68.4
+Jawa Tengah,Kabupaten Sukoharjo,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),268.0,6.0,1.69,1.0,0.0,0.07,Ada dan Sudah Disahkan,Sudah,,,367.0,16.3,83.7
+Kalimantan Selatan,Kabupaten Banjar,Open Dumping,,343 TPA (353 Kota/Kab),88.0,256.0,2.4,1.0,0.0,0.38,Ada tapi Belum Disahkan,Sudah,,91.7,365.0,51.3,48.7
+Jawa Timur,Kabupaten Sumenep,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),4.0,18.0,0.04,1.0,0.0,0.04,Dalam Perencanaan,Sudah,,,361.0,17.3,82.7
+Riau,Kabupaten Indragiri Hilir,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.0,1.0,0.0,0.25,Tidak Ada,Sudah,,22.8,348.0,18.71,81.29
+Riau,Kabupaten Rokan Hilir,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),10.0,0.0,6.0,1.0,0.0,8.0,Ada dan Sudah Disahkan,Sudah,,,347.0,16.06,83.94
+Banten,Kota Cilegon,Open Dumping,,343 TPA (353 Kota/Kab),37.0,11.0,1.42,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,65.45,336.0,9.4,90.6
+Jawa Barat,Kota Tasikmalaya,Open Dumping,,343 TPA (353 Kota/Kab),64.0,0.0,0.7,1.0,0.0,0.03,Tidak Ada,Sudah,,,333.0,17.71,82.29
+DI Yogyakarta,Kota Yogyakarta,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),660.0,35.0,3.84,1.0,0.0,0.51,Ada dan Sudah Disahkan,Sudah,,,332.0,56.6,43.4
+Kalimantan Barat,Kabupaten Sambas,Open Dumping,,343 TPA (353 Kota/Kab),4.0,13.0,0.18,0.0,0.0,0.0,Tidak Ada,Sudah,,,329.0,2.07,97.93
+Jawa Tengah,Kabupaten Purworejo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),118.0,48.0,1.41,1.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,324.0,73.21,26.79
+Sumatera Selatan,Kabupaten Ogan Komering Ilir,Open Dumping,,343 TPA (353 Kota/Kab),0.0,24.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,324.0,5.4,94.6
+Jawa Timur,Kabupaten Bondowoso,Open Dumping,,343 TPA (353 Kota/Kab),4.0,55.0,0.01,1.0,0.0,0.01,Tidak Ada,Sudah,,25.7,315.0,0.13,99.87
+Nusa Tenggara Barat,Kabupaten Lombok Barat,Controlled Landfill,,343 TPA (353 Kota/Kab),3.0,36.0,0.67,3.0,3.0,0.36,Dalam Perencanaan,Sudah,,,305.0,28.88,71.12
+Nusa Tenggara Barat,Kota Mataram,Controlled Landfill,,343 TPA (353 Kota/Kab),27.0,0.0,3.14,1.0,0.0,1.42,Dalam Perencanaan,Sudah,,,305.0,93.35,6.65
+Jawa Timur,Kabupaten Trenggalek,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),95.0,10.0,0.71,1.0,0.0,1.1,Tidak Sesuai,Sudah,,,302.0,52.83,47.17
+Jawa Tengah,Kabupaten Boyolali,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),172.0,34.0,1.04,1.0,0.0,0.02,Dalam Perencanaan,Sudah,,,301.0,13.26,86.74
+Jawa Timur,Kabupaten Pacitan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),4.0,29.0,0.77,1.0,0.0,0.05,Tidak Ada,Sudah,,,300.0,31.44,68.56
+Kalimantan Barat,Kabupaten Ketapang,Open Dumping,,343 TPA (353 Kota/Kab),4.0,2.0,1.32,0.0,0.0,0.0,Tidak Ada,Sudah,,50.05,296.0,0.64,99.36
+Sulawesi Utara,Kota Manado,Open Dumping,,343 TPA (353 Kota/Kab),58.0,0.0,4.92,2.0,0.0,0.38,Ada dan Sudah Disahkan,Sudah,,76.65,296.0,4.57,95.43
+Jawa Timur,Kabupaten Madiun,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),194.0,54.0,3.27,1.0,0.0,1.2,Ada (Draft) tapi Belum Disahkan,Sudah,,,295.0,61.23,38.77
+Nusa Tenggara Barat,Kabupaten Sumbawa,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,10.0,0.05,2.0,10.0,0.6,Tidak Ada,Sudah,,,290.0,3.09,96.91
+Riau,Kabupaten Rokan Hulu,Open Dumping,,343 TPA (353 Kota/Kab),1.0,1.0,0.2,1.0,0.0,1.0,Tidak Ada,Sudah,,25.0,283.0,7.11,92.89
+Bali,Kabupaten Karangasem,Open Dumping,,343 TPA (353 Kota/Kab),19.0,0.0,0.43,2.0,0.0,0.64,Tidak Ada,Sudah,,45.25,281.0,23.48,76.52
+Jawa Timur,Kabupaten Pamekasan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),11.0,0.0,0.23,2.0,0.0,0.84,Ada tapi Belum Disahkan,Sudah,,,281.0,61.23,38.77
+Sumatera Utara,Kabupaten Serdang Bedagai,Open Dumping,,343 TPA (353 Kota/Kab),0.0,2.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,35.5,279.0,0.01,99.99
+Sumatera Selatan,Kabupaten Ogan Komering Ulu Timur,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),7.0,28.0,0.03,1.0,0.0,0.09,Ada (Draft) tapi Belum Disahkan,Sudah,,,278.0,48.51,51.49
+Sumatera Utara,Kabupaten Karo,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,16.0,8.0,0.68,Tidak Ada,Sudah,,31.6,277.0,0.25,99.75
+Jawa Timur,Kabupaten Magetan,Controlled Landfill,,343 TPA (353 Kota/Kab),111.0,0.0,0.31,1.0,0.0,0.92,Tidak Ada,Sudah,,,277.0,70.62,29.38
+Jawa Tengah,Kabupaten Rembang,Open Dumping,,343 TPA (353 Kota/Kab),35.0,31.0,0.07,0.0,1.0,0.0,Ada dan Sudah Disahkan,Sudah,,55.1,273.0,14.28,85.72
+Riau,Kabupaten Bengkalis,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),8.0,0.0,3.35,1.0,1.0,0.26,Tidak Ada,Sudah,,,273.0,17.88,82.12
+Sumatera Selatan,Kabupaten Musi Banyuasin,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),17.0,52.0,1.04,1.0,0.0,0.07,Belum ada informasi,Sudah,,,270.0,38.75,61.25
+Lampung,Kabupaten Lampung Utara,Open Dumping,,343 TPA (353 Kota/Kab),4.0,0.0,0.03,0.0,0.0,0.0,Tidak Ada,Sudah,,51.1,267.0,8.11,91.89
+Sumatera Utara,Kabupaten Labuhan Batu,Open Dumping,,343 TPA (353 Kota/Kab),5.0,1.0,0.25,0.0,0.0,0.0,Tidak Ada,Sudah,,48.1,260.0,3.98,96.02
+Aceh,Kota Banda Aceh,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),24.0,0.0,0.11,1.0,0.0,5.03,Ada tapi Belum Disahkan,Sudah,,,259.0,2.63,97.37
+Jawa Timur,Kabupaten Situbondo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),65.0,21.0,1.4,1.0,0.0,0.34,Dalam Perencanaan,Sudah,,,257.0,72.69,27.31
+Kepulauan Riau,Kabupaten Karimun,Open Dumping,,343 TPA (353 Kota/Kab),4.0,5.0,0.05,1.0,0.0,0.0,Tidak Ada,Sudah,,62.15,254.0,10.01,89.99
+Kalimantan Barat,Kabupaten Sanggau,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.01,0.0,0.0,0.0,Tidak Ada,Sudah,,30.3,254.0,0.0,100.0
+Aceh,Kabupaten Aceh Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,25.8,253.0,4.73,95.27
+Sumatera Barat,Kabupaten Padang Pariaman,Open Dumping,,343 TPA (353 Kota/Kab),3.0,7.0,0.08,1.0,0.0,0.11,Ada tapi Belum Disahkan,Sudah,,38.75,248.0,9.81,90.19
+Maluku,Kota Ambon,Open Dumping,,343 TPA (353 Kota/Kab),19.0,7.0,0.1,1.0,1.0,0.2,Ada tapi Belum Disahkan,Sudah,,61.85,248.0,4.41,95.59
+Sulawesi Barat,Kabupaten Polewali Mandar,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),37.0,36.0,0.02,1.0,1.0,1.76,Ada (Draft) tapi Belum Disahkan,Sudah,,,246.0,5.41,94.59
+Kalimantan Tengah,Kabupaten Kotawaringin Timur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.75,Tidak Ada,Sudah,,96.35,245.0,2.67,97.33
+Nusa Tenggara Barat,Kabupaten Bima,Open Dumping,,343 TPA (353 Kota/Kab),3.0,32.0,1.09,1.0,2.0,2.5,Tidak Ada,Sudah,,,245.0,1.47,98.53
+Jawa Timur,Kabupaten Sampang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),10.0,4.0,0.4,1.0,0.0,1.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,241.0,10.58,89.42
+Sulawesi Selatan,Kabupaten Pinrang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),19.0,11.0,0.03,1.0,0.0,0.5,Ada dan Sudah Disahkan,Sudah,,,239.0,66.8,33.2
+Bali,Kabupaten Tabanan,Open Dumping,,343 TPA (353 Kota/Kab),48.0,0.0,0.17,2.0,0.0,0.99,Ada tapi Belum Disahkan,Sudah,,55.95,239.0,9.39,90.61
+Sumatera Selatan,Kabupaten Muara Enim,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,7.0,0.04,1.0,0.0,0.15,Belum ada informasi,Sudah,,,238.0,51.62,48.38
+Nusa Tenggara Timur,Kota Kupang,Open Dumping,,343 TPA (353 Kota/Kab),17.0,0.0,3.74,1.0,0.0,1.0,Tidak Ada,Sudah,,58.1,237.0,13.32,86.68
+Jawa Barat,Kota Cimahi,Open Dumping,,343 TPA (353 Kota/Kab),235.0,0.0,38.3,1.0,0.0,1.27,Ada dan Sudah Disahkan,Sudah,,,234.0,49.6,50.4
+Sumatera Barat,Kabupaten Agam,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,23.0,0.02,1.0,0.0,1.0,Ada tapi Belum Disahkan,Sudah,,,232.0,33.79,66.21
+Sulawesi Tengah,Kabupaten Parigi Moutong,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),5.0,0.0,0.48,1.0,,0.08,Belum ada informasi,Sudah,,,232.0,12.93,87.07
+Kalimantan Timur,Kabupaten Kutai Timur,Open Dumping,,343 TPA (353 Kota/Kab),48.0,23.0,1.2,1.0,0.0,0.7,Belum ada informasi,Sudah,,59.25,224.0,1.52,98.48
+Sulawesi Tengah,Kota Palu,Controlled Landfill,,343 TPA (353 Kota/Kab),12.0,0.0,2.53,1.0,0.0,0.6,Ada tapi Belum Disahkan,Sudah,,,218.0,96.61,3.39
+DI Yogyakarta,Kabupaten Kulon Progo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),96.0,38.0,0.92,3.0,0.0,0.1,Ada (Draft) tapi Belum Disahkan,Sudah,,,217.0,49.3,50.7
+Kalimantan Barat,Kabupaten Sintang,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.92,0.0,0.0,0.0,Tidak Ada,Sudah,,37.5,217.0,3.4,96.6
+Jawa Barat,Kota Cirebon,Open Dumping,,343 TPA (353 Kota/Kab),26.0,42.0,0.16,2.0,0.0,0.04,Ada (Draft) tapi Belum Disahkan,Sudah,,71.8,216.0,6.03,93.97
+Maluku,Kabupaten Maluku Tengah,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,20.1,216.0,0.0,100.0
+Kalimantan Tengah,Kabupaten Kapuas,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.41,1.0,0.0,1.98,Tidak Ada,Sudah,,,215.0,11.54,88.46
+Jambi,Kabupaten Muaro Jambi,Open Dumping,,343 TPA (353 Kota/Kab),10.0,0.0,10.2,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,40.75,214.0,11.89,88.11
+Sulawesi Selatan,Kabupaten Jeneponto,Open Dumping,,343 TPA (353 Kota/Kab),4.0,0.0,0.16,0.0,0.0,0.0,Ada tapi Tidak Lengkap,Sudah,,55.95,212.0,0.08,99.92
+Sulawesi Selatan,Kabupaten Maros,Controlled Landfill,,343 TPA (353 Kota/Kab),10.0,14.0,0.15,1.0,0.0,1.2,Ada tapi Belum Disahkan,Sudah,,,207.0,52.54,47.46
+Sulawesi Selatan,Kabupaten Wajo,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),9.0,23.0,0.05,1.0,0.0,0.1,Tidak Ada,Sudah,,,205.0,58.75,41.25
+Papua,Kota Jayapura,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,202.0,0.0,100.0
+Kalimantan Selatan,Kota Banjarbaru,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),24.0,0.0,0.21,4.0,0.0,0.22,Ada tapi Belum Disahkan,Sudah,,,200.0,10.97,89.03
+Sumatera Utara,Kabupaten Mandailing Natal,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,199.0,0.0,100.0
+Riau,Kabupaten Siak,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.33,1.0,0.0,1.0,Ada tapi Tidak Lengkap,Sudah,,,198.0,0.67,99.33
+Lampung,Kabupaten Way Kanan,Controlled Landfill,,343 TPA (353 Kota/Kab),18.0,10.0,0.01,2.0,0.0,0.2,Ada tapi Belum Disahkan,Sudah,,,198.0,12.32,87.68
+Lampung,Kabupaten Pesawaran,Open Dumping,,343 TPA (353 Kota/Kab),22.0,0.0,0.48,1.0,0.0,0.34,Dalam Perencanaan,Sudah,,46.2,198.0,7.11,92.89
+Sumatera Utara,Kabupaten Tapanuli Tengah,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.2,0.0,0.0,0.0,Tidak Ada,Sudah,,47.0,197.0,0.1,99.9
+Papua Tengah,Kabupaten Mimika,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,2.36,Tidak Ada,Sudah,,,197.0,43.75,56.25
+Nusa Tenggara Timur,Kabupaten Timor Tengah Selatan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.24,0.0,0.0,0.0,Tidak Ada,Sudah,,60.75,196.0,53.06,46.94
+Sumatera Utara,Kabupaten Nias Selatan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,22.75,195.0,0.81,99.19
+Riau,Kabupaten Indragiri Hulu,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.14,1.0,0.0,0.08,Tidak Ada,Sudah,,25.5,195.0,25.01,74.99
+Sumatera Utara,Kabupaten Padang Lawas,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,13.2,193.0,0.0,100.0
+Sulawesi Selatan,Kabupaten Bulukumba,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),14.0,5.0,0.28,1.0,0.0,0.13,Tidak Ada,Sudah,,,192.0,22.1,77.9
+Sulawesi Selatan,Kabupaten Luwu,Open Dumping,,343 TPA (353 Kota/Kab),4.0,1.0,0.01,0.0,0.0,0.0,Tidak Ada,Sudah,,77.5,192.0,0.1,99.9
+Jambi,Kabupaten Bungo,Controlled Landfill,,343 TPA (353 Kota/Kab),11.0,4.0,0.17,2.0,0.0,0.83,Ada tapi Tidak Lengkap,Sudah,,,190.0,26.33,73.67
+Sulawesi Tengah,Kabupaten Banggai,Open Dumping,,343 TPA (353 Kota/Kab),1.0,38.0,0.01,1.0,0.0,0.04,Ada tapi Belum Disahkan,Sudah,,88.45,189.0,0.7,99.3
+Sulawesi Tenggara,Kota Kendari,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),41.0,2.0,1.4,1.0,0.0,0.21,Ada tapi Belum Disahkan,Sudah,,,189.0,53.1,46.9
+Jambi,Kabupaten Merangin,Open Dumping,,343 TPA (353 Kota/Kab),3.0,3.0,0.25,0.0,1.0,0.0,Tidak Ada,Sudah,,87.7,187.0,0.2,99.8
+Jawa Barat,Kota Sukabumi,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.04,1.0,0.0,4.98,Dalam Perencanaan,Sudah,,54.1,186.0,14.23,85.77
+Bengkulu,Kabupaten Bengkulu Utara,Controlled Landfill,,343 TPA (353 Kota/Kab),17.0,0.0,0.62,1.0,0.0,0.6,Ada (Draft) tapi Belum Disahkan,Sudah,,,186.0,80.34,19.66
+Sumatera Barat,Kabupaten Pasaman Barat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,26.35,185.0,5.14,94.86
+Aceh,Kabupaten Aceh Timur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,41.2,185.0,0.0,100.0
+Sumatera Utara,Kabupaten Batu Bara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,10.5,184.0,0.0,100.0
+Jawa Timur,Kota Kediri,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),65.0,74.0,0.84,1.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,,182.0,8.43,91.57
+Aceh,Kabupaten Bireuen,Open Dumping,,343 TPA (353 Kota/Kab),15.0,1.0,0.15,0.0,1.0,0.0,Tidak Ada,Sudah,,9.75,181.0,33.45,66.55
+Aceh,Kabupaten Pidie,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.02,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,92.9,181.0,12.34,87.66
+Lampung,Kabupaten Tulang Bawang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),3.0,3.0,0.11,0.0,0.0,0.0,Tidak Ada,Sudah,,,180.0,10.13,89.87
+Sumatera Selatan,Kabupaten Lahat,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),3.0,0.0,4.0,1.0,0.0,3.35,Ada dan Sudah Disahkan,Sudah,,,180.0,58.37,41.63
+Kalimantan Utara,Kota Tarakan,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),3.0,0.0,0.07,0.0,0.0,0.0,Tidak Ada,Sudah,,,179.0,17.88,82.12
+Sumatera Selatan,Kabupaten Ogan Ilir,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.0,Dalam Perencanaan,Sudah,,54.45,178.0,0.0,100.0
+Jawa Barat,Kabupaten Pangandaran,Open Dumping,,343 TPA (353 Kota/Kab),27.0,17.0,0.03,1.0,0.0,1.2,Tidak Ada,Sudah,,41.0,178.0,36.53,63.47
+Riau,Kota Dumai,Open Dumping,,343 TPA (353 Kota/Kab),34.0,0.0,0.17,7.0,0.0,0.17,Ada tapi Belum Disahkan,Sudah,,61.75,178.0,22.92,77.08
+Sulawesi Utara,Kabupaten Minahasa,Open Dumping,,343 TPA (353 Kota/Kab),3.0,1.0,0.63,1.0,0.0,0.01,Tidak Ada,Sudah,,10.2,177.0,0.36,99.64
+Jawa Tengah,Kota Tegal,Open Dumping,,343 TPA (353 Kota/Kab),48.0,117.0,0.17,1.0,0.0,0.03,Ada (Draft) tapi Belum Disahkan,Sudah,,57.55,177.0,32.06,67.94
+Kalimantan Selatan,Kabupaten Tanah Bumbu,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),31.0,0.0,0.12,1.0,0.0,0.27,Ada tapi Belum Disahkan,Sudah,,,176.0,73.16,26.84
+Lampung,Kabupaten Pringsewu,Open Dumping,,343 TPA (353 Kota/Kab),3.0,16.0,0.15,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,175.0,7.6,92.4
+Riau,Kabupaten Pelalawan,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),3.0,17.0,0.07,1.0,0.0,0.02,Tidak Ada,Sudah,,,174.0,2.49,97.51
+Sumatera Selatan,Kabupaten Musi Rawas,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.08,1.0,0.0,0.03,Ada dan Sudah Disahkan,Sudah,,50.35,172.0,20.06,79.94
+Papua Barat Daya,Kota Sorong,,,343 TPA (353 Kota/Kab),8.0,0.0,0.04,1.0,0.0,0.06,Tidak Ada,Sudah,,,172.0,17.15,82.85
+Sumatera Selatan,Kabupaten Ogan Komering Ulu Selatan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,4.0,0.01,0.0,0.0,0.0,Tidak Ada,Sudah,,,169.0,54.76,45.24
+Gorontalo,Kabupaten Gorontalo,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,,2.0,5.0,3.0,2.0,Tidak Ada,Sudah,,,169.0,21.37,78.63
+Jambi,Kabupaten Tanjung Jabung Barat,Open Dumping,,343 TPA (353 Kota/Kab),5.0,1.0,0.02,0.0,0.0,0.0,Tidak Ada,Sudah,,48.9,167.0,0.04,99.96
+Sulawesi Selatan,Kabupaten Luwu Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.1,Tidak Ada,Sudah,,22.1,167.0,1.18,98.82
+Kalimantan Barat,Kabupaten Landak,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,52.9,166.0,0.45,99.55
+Sulawesi Selatan,Kabupaten Sidenreng Rappang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),39.0,0.0,1.6,1.0,0.0,0.21,Ada tapi Belum Disahkan,Sudah,,,165.0,71.49,28.51
+Sumatera Utara,Kota Padangsidimpuan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,4.0,0.01,1.0,0.0,0.08,Tidak Ada,Sudah,,,165.0,15.78,84.22
+Sumatera Utara,Kabupaten Dairi,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.0,0.0,6.0,0.0,Tidak Ada,Sudah,,,165.0,1.51,98.49
+Sumatera Barat,Kabupaten Lima Puluh Kota,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),2.0,23.0,0.01,1.0,0.0,0.7,Tidak Ada,Sudah,,,164.0,11.3,88.7
+Sumatera Barat,Kabupaten Solok,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),7.0,,0.1,1.0,,0.02,Tidak Ada,Sudah,,,164.0,26.92,73.08
+Bali,Kabupaten Jembrana,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),4.0,14.0,0.05,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,164.0,34.59,65.41
+Sulawesi Tenggara,Kabupaten Konawe Selatan,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,163.0,9.91,90.09
+Kalimantan Tengah,Kota Palangka Raya,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),33.0,11.0,1.52,1.0,0.0,0.05,Ada tapi Belum Disahkan,Sudah,,,162.0,75.19,24.81
+Jawa Tengah,Kota Pekalongan,Open Dumping,,343 TPA (353 Kota/Kab),29.0,0.0,0.37,1.0,0.0,0.92,Ada tapi Belum Disahkan,Sudah,,28.45,162.0,39.85,60.15
+Sulawesi Selatan,Kabupaten Luwu Timur,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),15.0,34.0,0.24,1.0,0.0,0.03,Ada (Draft) tapi Belum Disahkan,Sudah,,,162.0,79.15,20.85
+Sumatera Barat,Kabupaten Pesisir Selatan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),8.0,0.0,0.05,1.0,0.0,1.5,Ada (Draft) tapi Belum Disahkan,Sudah,,,162.0,28.07,71.93
+Sumatera Utara,Kabupaten Tapanuli Selatan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.28,0.0,0.0,0.0,Tidak Ada,Sudah,,64.9,161.0,0.17,99.83
+Sumatera Selatan,Kota Lubuklinggau,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,2.0,0.0,,,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,161.0,0.02,99.98
+Sumatera Utara,Kota Pematang Siantar,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,54.2,161.0,7.07,92.93
+Sumatera Utara,Kabupaten Labuhan Batu Utara,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.85,0.0,0.0,0.0,Tidak Ada,Sudah,,51.0,160.0,3.46,96.54
+Sulawesi Selatan,Kabupaten Takalar,Open Dumping,,343 TPA (353 Kota/Kab),0.0,2.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,38.75,159.0,1.07,98.93
+Bengkulu,Kota Bengkulu,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),9.0,2.0,0.1,5.0,0.0,2.0,Ada tapi Belum Disahkan,Sudah,,,159.0,1.33,98.67
+Sulawesi Tengah,Kabupaten Donggala,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),3.0,0.0,0.08,1.0,0.0,2.8,Tidak Ada,Sudah,,,157.0,24.81,75.19
+Nusa Tenggara Timur,Kabupaten Kupang,Tidak memiliki TPA,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.5,Tidak Ada,Sudah,,,156.0,52.32,47.68
+Sumatera Selatan,Kabupaten Ogan Komering Ulu,Open Dumping,,343 TPA (353 Kota/Kab),0.0,96.0,0.0,1.0,0.0,0.03,Tidak Ada,Sudah,,36.35,156.0,0.08,99.92
+Kepulauan Riau,Kota Tanjung Pinang,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),32.0,38.0,1.22,1.0,0.0,2.35,Ada (Draft) tapi Belum Disahkan,Sudah,,,156.0,29.0,71.0
+Sumatera Utara,Kota Binjai,Open Dumping,,343 TPA (353 Kota/Kab),5.0,15.0,0.03,1.0,0.0,0.03,Tidak Ada,Sudah,,32.75,154.0,21.43,78.57
+Kalimantan Timur,Kabupaten Berau,Open Dumping,,343 TPA (353 Kota/Kab),12.0,10.0,1.46,1.0,0.0,0.04,Ada (Draft) tapi Belum Disahkan,Sudah,,87.48,150.0,10.86,89.14
+Jawa Timur,Kota Pasuruan,Controlled Landfill,,343 TPA (353 Kota/Kab),89.0,0.0,0.28,1.0,0.0,0.03,Ada tapi Belum Disahkan,Sudah,,,149.0,92.82,7.18
+Aceh,Kabupaten Aceh Besar,Open Dumping,,343 TPA (353 Kota/Kab),7.0,3.0,0.1,0.0,0.0,0.0,Tidak Ada,Sudah,,35.7,149.0,1.9,98.1
+Papua Pegunungan,Kabupaten Yahukimo,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,149.0,0.0,100.0
+Sulawesi Barat,Kabupaten Mamuju,Open Dumping,,343 TPA (353 Kota/Kab),23.0,0.0,0.03,1.0,0.0,0.03,Tidak Ada,Sudah,,71.85,149.0,5.15,94.85
+Riau,Kabupaten Kuantan Singingi,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,1.0,0.1,1.0,0.0,0.04,Ada tapi Belum Disahkan,Sudah,,,146.0,25.34,74.66
+Kalimantan Selatan,Kabupaten Tanah Laut,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),15.0,0.0,0.05,1.0,1.0,0.0,Ada tapi Belum Disahkan,Sudah,,,146.0,28.56,71.44
+Sulawesi Selatan,Kabupaten Pangkajene Kepulauan,Controlled Landfill,,343 TPA (353 Kota/Kab),7.0,5.0,0.02,1.0,0.0,0.01,Tidak Ada,Sudah,,,145.0,52.74,47.26
+Bengkulu,Kabupaten Rejang Lebong,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,144.0,0.42,99.58
+Gorontalo,Kota Gorontalo,Controlled Landfill,,343 TPA (353 Kota/Kab),2.0,1.0,1.71,0.0,1.0,0.0,Tidak Ada,Sudah,,,143.0,66.04,33.96
+Jambi,Kabupaten Tebo,Controlled Landfill,,343 TPA (353 Kota/Kab),3.0,1.0,6.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,143.0,32.82,67.18
+Kalimantan Tengah,Kabupaten Kotawaringin Barat,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),19.0,2.0,0.62,2.0,0.0,6.2,Ada tapi Belum Disahkan,Sudah,,,141.0,69.67,30.33
+Nusa Tenggara Timur,Kabupaten Sikka,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,35.8,139.0,23.14,76.86
+Kepulauan Bangka Belitung,Kabupaten Bangka,Open Dumping,,343 TPA (353 Kota/Kab),6.0,0.0,0.05,1.0,0.0,0.07,Tidak Ada,Sudah,,59.2,139.0,7.12,92.88
+Kalimantan Selatan,Kabupaten Tabalong,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),14.0,0.0,3.15,1.0,0.0,3.75,Belum ada informasi,Sudah,,,139.0,66.31,33.69
+Sulawesi Tengah,Kabupaten Sigi,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),5.0,0.0,1.5,1.0,0.0,5.0,Tidak Ada,Sudah,,,139.0,31.41,68.59
+Sulawesi Selatan,Kabupaten Sinjai,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),6.0,9.0,1.81,1.0,0.0,0.15,Dalam Perencanaan,Sudah,,,138.0,9.42,90.58
+Sumatera Barat,Kota Bukittinggi,Tidak memiliki TPA,,Diluar 343 TPA (171 Kota/Kab),3.0,0.0,0.07,1.0,0.0,0.5,Ada tapi Belum Disahkan,Sudah,,,136.0,14.11,85.89
+Nusa Tenggara Timur,Kabupaten Manggarai,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,14.25,136.0,30.61,69.39
+Kalimantan Selatan,Kabupaten Hulu Sungai Tengah,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),10.0,9.0,0.34,2.0,0.0,0.69,Ada dan Sudah Disahkan,Sudah,,,135.0,52.0,48.0
+Sumatera Selatan,Kabupaten Empat Lawang,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,5.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,135.0,0.88,99.12
+Sulawesi Selatan,Kabupaten Toraja Utara,Controlled Landfill,,343 TPA (353 Kota/Kab),2.0,137.0,0.2,0.0,0.0,0.0,Tidak Ada,Sudah,,,133.0,35.04,64.96
+Sulawesi Tenggara,Kabupaten Konawe,Open Dumping,,343 TPA (353 Kota/Kab),18.0,0.0,0.0,1.0,1.0,0.67,Tidak Ada,Sudah,,84.65,133.0,14.09,85.91
+Sumatera Utara,Kabupaten Tapanuli Utara,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,42.85,132.0,0.05,99.95
+Sumatera Utara,Kabupaten Labuhan Batu Selatan,Open Dumping,,343 TPA (353 Kota/Kab),11.0,1.0,1.1,1.0,0.0,0.9,Tidak Ada,Sudah,,40.55,132.0,5.74,94.26
+Kalimantan Selatan,Kabupaten Kota Baru,Open Dumping,,343 TPA (353 Kota/Kab),3.0,16.0,0.03,1.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,,132.0,8.35,91.65
+Sumatera Barat,Kabupaten Tanah Datar,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),15.0,27.0,1.55,1.0,1.0,4.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,131.0,58.96,41.04
+Sulawesi Selatan,Kabupaten Tana Toraja,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.3,1.0,0.0,0.1,Tidak Ada,Sudah,,41.6,129.0,66.11,33.89
+Maluku Utara,Kabupaten Halmahera Selatan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,68.6,129.0,1.01,98.99
+Nusa Tenggara Timur,Kabupaten Sumba Barat Daya,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,129.0,32.49,67.51
+Sulawesi Utara,Kota Bitung,Open Dumping,,343 TPA (353 Kota/Kab),4.0,10.0,0.02,1.0,0.0,0.04,Belum ada informasi,Sudah,,90.35,129.0,4.94,95.06
+Sulawesi Utara,Kabupaten Bolaang Mongondow,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.8,0.0,3.0,0.0,Tidak Sesuai,Sudah,,,129.0,0.89,99.11
+Sulawesi Utara,Kabupaten Bolaang Mongondow Timur,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,129.0,0.0,100.0
+Kalimantan Timur,Kabupaten Paser,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),28.0,0.0,3.87,1.0,0.0,0.95,Ada tapi Belum Disahkan,Sudah,,,128.0,73.49,26.51
+Sulawesi Tengah,Kabupaten Poso,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,,Sudah,,,128.0,30.09,69.91
+Jambi,Kabupaten Kerinci,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.8,2.0,0.0,2.9,Tidak Ada,Sudah,,,128.0,38.91,61.09
+Sumatera Utara,Kota Tebing Tinggi,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.3,2.0,0.0,1.3,Ada tapi Tidak Lengkap,Sudah,,,128.0,96.91,3.09
+Sumatera Barat,Kabupaten Pasaman,Open Dumping,,343 TPA (353 Kota/Kab),6.0,1.0,0.36,2.0,0.0,5.85,Tidak Ada,Sudah,,89.25,127.0,21.93,78.07
+Jambi,Kabupaten Batang Hari,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,127.0,0.0,100.0
+Lampung,Kabupaten Lampung Barat,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.02,Belum ada informasi,Sudah,,,126.0,28.1,71.9
+Sulawesi Tenggara,Kabupaten Kolaka,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,1.0,0.0,1.0,Tidak Ada,Sudah,,,126.0,65.4,34.6
+Aceh,Kabupaten Aceh Tamiang,Sanitary Landfill,,343 TPA (353 Kota/Kab),2.0,3.0,0.0,1.0,0.0,1.5,Tidak Ada,Sudah,,,124.0,28.12,71.88
+Jambi,Kabupaten Sarolangun,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,,Sudah,,,123.0,0.93,99.07
+Jawa Timur,Kota Probolinggo,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),48.0,0.0,0.17,1.0,0.0,0.28,Ada (Draft) tapi Belum Disahkan,Sudah,,,122.0,22.88,77.12
+Jawa Timur,Kota Batu,Open Dumping,,343 TPA (353 Kota/Kab),179.0,50.0,0.88,1.0,0.0,0.05,Ada tapi Belum Disahkan,Sudah,,74.55,122.0,59.66,40.34
+Sumatera Barat,Kabupaten Dharmasraya,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.11,2.0,0.0,3.0,Tidak Ada,Sudah,,36.75,122.0,24.47,75.53
+Sulawesi Selatan,Kabupaten Soppeng,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),60.0,0.0,0.59,1.0,0.0,0.1,Ada tapi Belum Disahkan,Sudah,,,121.0,70.96,29.04
+Aceh,Kabupaten Aceh Tengah,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,54.0,121.0,8.76,91.24
+Sulawesi Utara,Kabupaten Minahasa Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,2.0,0.0,0.06,Ada tapi Belum Disahkan,Sudah,,,120.0,0.66,99.34
+Kalimantan Barat,Kabupaten Bengkayang,Open Dumping,,343 TPA (353 Kota/Kab),0.0,3.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,28.55,120.0,0.0,100.0
+Kalimantan Selatan,Kabupaten Hulu Sungai Selatan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),28.0,0.0,0.3,1.0,0.0,1.87,Ada dan Sudah Disahkan,Sudah,,,119.0,55.07,44.93
+Kalimantan Selatan,Kabupaten Hulu Sungai Utara,Controlled Landfill,,343 TPA (353 Kota/Kab),6.0,213.0,0.0,1.0,0.0,0.04,Tidak Ada,Sudah,,,119.0,33.69,66.31
+Jambi,Kabupaten Tanjung Jabung Timur,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.2,0.0,0.0,0.0,Tidak Ada,Sudah,,71.65,118.0,0.34,99.66
+Lampung,Kabupaten Tulang Bawang Barat,Open Dumping,,343 TPA (353 Kota/Kab),11.0,6.0,3.87,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,68.75,118.0,3.27,96.73
+Sulawesi Tengah,Kabupaten Toli-toli,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,35.95,118.0,2.03,97.97
+Nusa Tenggara Timur,Kabupaten Manggarai Barat,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.27,0.0,0.0,0.0,Dalam Perencanaan,Sudah,,,118.0,41.81,58.19
+Nusa Tenggara Timur,Kabupaten Manggarai Timur,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,118.0,59.61,40.39
+Papua Tengah,Kabupaten Puncak Jaya,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,118.0,0.0,100.0
+Nusa Tenggara Timur,Kabupaten Flores Timur,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,2.96,0.0,0.0,0.0,Tidak Ada,Sudah,,43.8,117.0,36.74,63.26
+Kepulauan Bangka Belitung,Kabupaten Bangka Tengah,Open Dumping,,343 TPA (353 Kota/Kab),8.0,0.0,0.04,0.0,0.0,0.0,Tidak Ada,Sudah,,36.85,116.0,18.6,81.4
+Aceh,Kabupaten Aceh Tenggara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Ada tapi Belum Disahkan,Sudah,,45.8,116.0,28.36,71.64
+Jawa Tengah,Kota Salatiga,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),119.0,0.0,5.03,1.0,0.0,0.38,Ada tapi Belum Disahkan,Sudah,,,115.0,30.78,69.22
+Sulawesi Tenggara,Kabupaten Muna,Open Dumping,,343 TPA (353 Kota/Kab),1.0,1.0,0.03,1.0,0.0,0.5,Belum ada informasi,Sudah,,76.85,114.0,3.8,96.2
+Bali,Kabupaten Bangli,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),198.0,15.0,4.87,1.0,0.0,4.01,Ada (Draft) tapi Belum Disahkan,Sudah,,,114.0,27.45,72.55
+Nusa Tenggara Timur,Kabupaten Ende,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,9.35,114.0,42.98,57.02
+Papua Pegunungan,Kabupaten Jayawijaya,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,113.0,0.0,100.0
+Nusa Tenggara Barat,Kabupaten Dompu,Open Dumping,,343 TPA (353 Kota/Kab),46.0,0.0,0.13,2.0,1.0,1.17,Tidak Ada,Sudah,,19.05,113.0,1.15,98.85
+Bali,Kabupaten Klungkung,Open Dumping,,343 TPA (353 Kota/Kab),29.0,0.0,0.22,4.0,0.0,2.06,Ada tapi Belum Disahkan,Sudah,,51.2,112.0,58.13,41.87
+Lampung,Kota Metro,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),23.0,0.0,0.97,1.0,0.0,0.77,Tidak Ada,Sudah,,,112.0,11.98,88.02
+Jawa Timur,Kota Madiun,Open Dumping,,343 TPA (353 Kota/Kab),30.0,2.0,0.23,1.0,0.0,0.55,Ada tapi Tidak Lengkap,Sudah,,,111.0,11.21,88.79
+Nusa Tenggara Timur,Kabupaten Sumba Timur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,22.25,111.0,22.33,77.67
+Kalimantan Barat,Kabupaten Kapuas Hulu,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,55.85,110.0,0.91,99.09
+Maluku,Kabupaten Seram Bagian Barat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,25.5,109.0,0.98,99.02
+Sulawesi Selatan,Kabupaten Bantaeng,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),42.0,3.0,5.62,1.0,0.0,2.4,Tidak Ada,Sudah,,,109.0,55.63,44.37
+Sumatera Utara,Kabupaten Toba Samosir,Open Dumping,,343 TPA (353 Kota/Kab),60.0,,0.0,2.0,,0.52,Tidak Ada,Sudah,,,108.0,0.48,99.52
+Bengkulu,Kabupaten Seluma,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,,Sudah,,,108.0,0.47,99.53
+Kalimantan Timur,Kota Bontang,Sanitary Landfill,,Diluar 343 TPA (171 Kota/Kab),316.0,0.0,0.7,1.0,0.0,0.6,Ada dan Sudah Disahkan,Sudah,,,107.0,99.25,0.75
+Nusa Tenggara Timur,Kabupaten Timor Tengah Utara,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,106.0,49.06,50.94
+Kepulauan Bangka Belitung,Kota Pangkal Pinang,Open Dumping,,343 TPA (353 Kota/Kab),2.0,3.0,0.01,1.0,0.0,0.03,Ada dan Sudah Disahkan,Sudah,,37.85,106.0,4.94,95.06
+Maluku Utara,Kota Ternate,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.2,2.0,0.0,0.13,Ada dan Sudah Disahkan,Sudah,,,105.0,5.74,94.26
+Nusa Tenggara Barat,Kabupaten Lombok Utara,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.2,0.0,1.0,0.0,Tidak Ada,Sudah,,65.05,105.0,12.85,87.15
+Aceh,Kabupaten Aceh Barat,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,0.0,0.05,1.0,0.0,0.01,Tidak Ada,Sudah,,,105.0,63.16,36.84
+Papua Barat,Kabupaten Manokwari,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,104.0,0.0,100.0
+Sumatera Utara,Kabupaten Humbang Hasundutan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.03,0.0,0.0,0.0,Tidak Ada,Sudah,,,104.0,37.89,62.11
+Maluku Utara,Kabupaten Halmahera Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.3,Tidak Ada,Sudah,,50.6,103.0,14.34,85.66
+Papua Selatan,Kabupaten Merauke,,,343 TPA (353 Kota/Kab),1.0,2.0,0.07,0.0,0.0,0.0,Tidak Ada,Sudah,,,102.0,9.26,90.74
+Aceh,Kota Lhokseumawe,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,36.3,102.0,12.45,87.55
+Papua,Kabupaten Jayapura,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,4.93,Tidak Ada,Sudah,,,102.0,4.84,95.16
+Sumatera Selatan,Kota Prabumulih,Open Dumping,,343 TPA (353 Kota/Kab),34.0,4.0,0.6,1.0,0.0,0.25,Tidak Ada,Sudah,,70.0,102.0,21.86,78.14
+Sumatera Barat,Kabupaten Sijunjung,Open Dumping,,343 TPA (353 Kota/Kab),53.0,2.0,2.18,1.0,0.0,0.6,Ada tapi Belum Disahkan,Sudah,,52.6,101.0,47.98,52.02
+Kalimantan Timur,Kabupaten Penajam Paser Utara,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),92.0,0.0,0.12,1.0,0.0,0.17,Ada tapi Belum Disahkan,Sudah,,,101.0,69.55,30.45
+Bengkulu,Kabupaten Mukomuko,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Belum ada informasi,Sudah,,41.1,101.0,0.05,99.95
+Kalimantan Selatan,Kabupaten Barito Kuala,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),76.0,15.0,0.05,1.0,1.0,1.13,Belum ada informasi,Sudah,,,100.0,30.24,69.76
+Jawa Timur,Kota Mojokerto,Open Dumping,,343 TPA (353 Kota/Kab),82.0,103.0,0.13,1.0,0.0,0.17,Ada dan Sudah Disahkan,Sudah,,,99.0,13.17,86.83
+Kepulauan Bangka Belitung,Kabupaten Belitung,Open Dumping,,343 TPA (353 Kota/Kab),4.0,2.0,0.08,1.0,0.0,0.04,Ada tapi Belum Disahkan,Sudah,,58.65,99.0,0.89,99.11
+Papua Pegunungan,Kabupaten Tolikara,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,99.0,0.0,100.0
+Sumatera Barat,Kota Payakumbuh,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),6.0,1.0,0.74,1.0,0.0,2.44,Tidak Ada,Sudah,,42.5,98.0,20.77,79.23
+Sulawesi Utara,Kabupaten Minahasa Selatan,Open Dumping,,343 TPA (353 Kota/Kab),3.0,4.0,0.07,1.0,0.0,0.4,Tidak Ada,Sudah,,19.0,98.0,3.06,96.94
+Lampung,Kabupaten Mesuji,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,78.0,98.0,0.86,99.14
+Kalimantan Barat,Kabupaten Melawi,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,42.5,97.0,5.78,94.22
+Kalimantan Barat,Kota Singkawang,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.0,1.0,0.0,0.39,Tidak Ada,Sudah,,46.35,97.0,11.87,88.13
+Aceh,Kabupaten Aceh Selatan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,2.0,1.0,0.53,Tidak Ada,Sudah,,15.95,97.0,0.55,99.45
+Sumatera Utara,Kota Gunungsitoli,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,51.05,97.0,0.05,99.95
+Sulawesi Barat,Kabupaten Majene,Open Dumping,,343 TPA (353 Kota/Kab),4.0,4.0,0.01,1.0,0.0,0.0,Dalam Perencanaan,Sudah,,84.75,96.0,1.04,98.96
+Sumatera Utara,Kota Tanjung Balai,Open Dumping,,343 TPA (353 Kota/Kab),2.0,2.0,0.02,0.0,1.0,0.0,Dalam Perencanaan,Sudah,,47.95,94.0,3.81,96.19
+Nusa Tenggara Timur,Kabupaten Belu,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.34,0.0,0.0,0.0,Tidak Ada,Sudah,,38.5,93.0,31.8,68.2
+Nusa Tenggara Timur,Kabupaten Alor,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,72.25,93.0,25.17,74.83
+Kalimantan Timur,Kabupaten Kutai Barat,Open Dumping,,343 TPA (353 Kota/Kab),6.0,0.0,0.03,1.0,0.0,0.59,Ada dan Sudah Disahkan,Sudah,,49.6,93.0,1.87,98.13
+Sulawesi Selatan,Kabupaten Enrekang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,7.0,1.1,1.0,0.0,0.1,Belum ada informasi,Sudah,,,93.0,43.48,56.52
+Aceh,Kota Langsa,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),50.0,0.0,0.05,1.0,0.0,0.05,Ada (Draft) tapi Belum Disahkan,Sudah,,,92.0,63.65,36.35
+Sulawesi Selatan,Kota Palopo,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),33.0,2.0,0.08,1.0,0.0,0.01,Tidak Ada,Sudah,,,91.0,5.69,94.31
+Kalimantan Barat,Kabupaten Sekadau,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Belum ada informasi,Sudah,,26.85,90.0,1.05,98.95
+Kalimantan Utara,Kabupaten Bulungan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,5.0,0.0,1.0,0.0,0.01,Ada (Draft) tapi Belum Disahkan,Sudah,,,88.0,52.3,47.7
+Kalimantan Tengah,Kabupaten Seruyan,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.01,0.0,0.0,0.0,Tidak Ada,Sudah,,45.3,87.0,0.07,99.93
+Bengkulu,Kabupaten Bengkulu Selatan,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,87.0,0.0,100.0
+Sulawesi Tengah,Kabupaten Morowali,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),21.0,0.0,0.16,2.0,0.0,0.96,Tidak Ada,Sudah,,,87.0,89.72,10.28
+Kepulauan Bangka Belitung,Kabupaten Bangka Selatan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),3.0,8.0,0.01,1.0,0.0,0.02,Ada tapi Belum Disahkan,Sudah,,,86.0,65.79,34.21
+Sulawesi Tengah,Kabupaten Tojo Una-una,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,86.0,11.88,88.12
+Riau,Kabupaten Kepulauan Meranti,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,3.0,0.0,,,0.0,Tidak Ada,Belum,,,85.0,1.74,98.26
+Kepulauan Bangka Belitung,Kabupaten Bangka Barat,Open Dumping,,343 TPA (353 Kota/Kab),4.0,0.0,0.24,1.0,0.0,0.15,Tidak Ada,Sudah,,64.4,85.0,0.63,99.37
+Jawa Tengah,Kota Magelang,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),88.0,0.0,0.38,1.0,0.0,2.23,Ada tapi Belum Disahkan,Sudah,,,85.0,7.02,92.98
+Sumatera Utara,Kabupaten Padang Lawas Utara,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Belum ada informasi,Sudah,,,84.0,0.0,100.0
+Sulawesi Tenggara,Kabupaten Bombana,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,7.0,0.0,0.0,2.0,0.0,Tidak Ada,Sudah,,,84.0,25.35,74.65
+Jawa Barat,Kota Banjar,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),34.0,0.0,0.07,1.0,0.0,0.03,Ada tapi Belum Disahkan,Sudah,,,84.0,89.37,10.63
+Sumatera Selatan,Kabupaten Penukal Abab Lematang Ilir,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,1.0,1.08,Tidak Ada,Sudah,,51.15,84.0,4.17,95.83
+Sulawesi Barat,Kabupaten Mamasa,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,18.55,84.0,0.29,99.71
+Papua Pegunungan,Kabupaten Lanny Jaya,Controlled Landfill,,343 TPA (353 Kota/Kab),39.0,0.0,15.0,4.0,0.0,18.5,Ada dan Sudah Disahkan,Belum,,,83.0,90.28,9.72
+Nusa Tenggara Barat,Kota Bima,Open Dumping,,343 TPA (353 Kota/Kab),10.0,3.0,5.0,1.0,0.0,2.0,Tidak Ada,Sudah,,27.0,83.0,15.14,84.86
+Kalimantan Barat,Kabupaten Mempawah,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,40.8,82.0,0.0,100.0
+Sulawesi Tenggara,Kota Baubau,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,3.0,1.55,1.0,0.0,1.8,Ada (Draft) tapi Belum Disahkan,Sudah,,,82.0,98.77,1.23
+Sulawesi Barat,Kabupaten Pasangkayu,Open Dumping,,343 TPA (353 Kota/Kab),15.0,3.0,0.26,1.0,0.0,0.32,Tidak Ada,Sudah,,81.0,82.0,20.59,79.41
+Sulawesi Selatan,Kota Parepare,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),12.0,3.0,2.05,2.0,0.0,4.4,Ada tapi Belum Disahkan,Sudah,,,82.0,98.57,1.43
+Sumatera Selatan,Kabupaten Musi Rawas Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,14.5,81.0,1.84,98.16
+Sulawesi Selatan,Kabupaten Barru,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,5.0,0.01,1.0,0.0,0.85,Tidak Ada,Sudah,,,79.0,63.28,36.72
+Sumatera Selatan,Kota Pagar Alam,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,0.0,0.05,0.0,0.0,0.0,Tidak Ada,Sudah,,,78.0,62.73,37.27
+Nusa Tenggara Timur,Kabupaten Sumba Barat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,46.94,78.0,16.1,83.9
+Aceh,Kabupaten Aceh Barat Daya,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,27.7,78.0,13.56,86.44
+Jawa Timur,Kota Blitar,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,,Sudah,,,77.0,97.7,2.3
+Nusa Tenggara Timur,Kabupaten Malaka,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,14.25,77.0,32.0,68.0
+Sulawesi Tengah,Kabupaten Buol,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,47.75,77.0,2.13,97.87
+Kalimantan Selatan,Kabupaten Tapin,Open Dumping,,343 TPA (353 Kota/Kab),9.0,1.0,0.0,1.0,0.0,0.02,Belum ada informasi,Sudah,,91.2,76.0,3.77,96.23
+Gorontalo,Kabupaten Boalemo,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,40.2,76.0,0.0,100.0
+Sulawesi Tengah,Kabupaten Morowali Utara,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,,75.0,0.39,99.61
+Kalimantan Tengah,Kabupaten Barito Timur,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.5,0.0,0.0,0.0,Tidak Ada,Sudah,,28.05,73.0,2.33,97.67
+Aceh,Kabupaten Nagan Raya,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.03,1.0,0.0,0.03,Tidak Ada,Sudah,,,72.0,73.23,26.77
+Kalimantan Tengah,Kabupaten Pulang Pisau,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.6,0.0,1.0,0.0,Tidak Ada,Sudah,,58.05,72.0,0.9,99.1
+Papua Tengah,Kabupaten Intan Jaya,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,72.0,0.0,100.0
+Sulawesi Tenggara,Kabupaten Kolaka Utara,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.0,1.0,0.0,0.42,Tidak Ada,Sudah,,,72.0,22.17,77.83
+Sulawesi Barat,Kabupaten Mamuju Tengah,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,46.15,72.0,27.71,72.29
+Sulawesi Selatan,Kabupaten Kepulauan Selayar,Open Dumping,,343 TPA (353 Kota/Kab),0.0,2.0,0.0,1.0,0.0,0.02,Tidak Ada,Sudah,,46.25,72.0,1.45,98.55
+Papua Tengah,Kabupaten Nabire,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,71.0,2.25,97.75
+Maluku,Kabupaten Buru,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,71.0,8.15,91.85
+Maluku,Kabupaten Seram Bagian Timur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,49.3,70.0,0.0,100.0
+Maluku Utara,Kabupaten Halmahera Barat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.0,Tidak Ada,Sudah,,47.2,70.0,1.24,98.76
+Nusa Tenggara Timur,Kabupaten Ngada,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.5,1.0,0.0,0.69,Tidak Ada,Sudah,,,70.0,68.35,31.65
+Kalimantan Selatan,Kabupaten Balangan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),45.0,39.0,0.62,1.0,0.0,0.0,Tidak Ada,Sudah,,,69.0,66.68,33.32
+Lampung,Kabupaten Pesisir Barat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,54.0,69.0,0.4,99.6
+Aceh,Kabupaten Bener Meriah,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.01,1.0,0.0,3.0,Tidak Ada,Sudah,,48.3,69.0,13.82,86.18
+Kalimantan Tengah,Kabupaten Barito Selatan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.01,1.0,0.0,0.02,Tidak Ada,Sudah,,87.5,68.0,1.89,98.11
+Kalimantan Tengah,Kabupaten Katingan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.43,1.0,0.0,0.0,Tidak Ada,Sudah,,59.3,68.0,1.31,98.69
+Kalimantan Barat,Kabupaten Kayong Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Sesuai,Sudah,,58.8,68.0,0.0,100.0
+Gorontalo,Kabupaten Gorontalo Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,2.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,68.85,67.0,0.0,100.0
+Kalimantan Tengah,Kabupaten Gunung Mas,Open Dumping,,343 TPA (353 Kota/Kab),0.0,2.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,56.4,67.0,0.0,100.0
+Sumatera Barat,Kabupaten Solok Selatan,Open Dumping,,343 TPA (353 Kota/Kab),2.0,0.0,0.3,0.0,0.0,0.0,Ada tapi File Belum Terlampir,Sudah,,68.75,67.0,27.7,72.3
+Nusa Tenggara Timur,Kabupaten Nagekeo,Tidak memiliki TPA,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,66.0,58.78,41.22
+Aceh,Kabupaten Pidie Jaya,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,32.0,66.0,1.51,98.49
+Kalimantan Tengah,Kabupaten Barito Utara,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.05,1.0,0.0,0.08,Tidak Ada,Sudah,,,65.0,1.68,98.32
+Sulawesi Utara,Kota Kotamobagu,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,8.0,0.0,1.0,0.0,0.95,Belum ada informasi,Sudah,,,65.0,5.05,94.95
+Maluku,Kabupaten Tanimbar,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,42.2,65.0,0.12,99.88
+Sulawesi Tenggara,Kabupaten Kolaka Timur,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada tapi File Belum Terlampir,Sudah,,,65.0,9.26,90.74
+Maluku,Kabupaten Maluku Tenggara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,79.6,65.0,0.77,99.23
+Nusa Tenggara Barat,Kabupaten Sumbawa Barat,Open Dumping,,343 TPA (353 Kota/Kab),2.0,8.0,0.25,0.0,0.0,0.0,Dalam Perencanaan,Sudah,,67.95,64.0,12.15,87.85
+Gorontalo,Kabupaten Pohuwato,Controlled Landfill,,343 TPA (353 Kota/Kab),7.0,2.0,0.07,1.0,0.0,0.45,Tidak Ada,Sudah,,,64.0,46.17,53.83
+Sumatera Utara,Kabupaten Nias Utara,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,63.0,0.0,100.0
+Papua Tengah,Kabupaten Dogiyai,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,63.0,0.0,100.0
+Bengkulu,Kabupaten Kepahiang,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.04,0.0,0.0,0.0,Tidak Ada,Sudah,,46.2,62.0,1.29,98.71
+Kalimantan Tengah,Kabupaten Murung Raya,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.01,Tidak Ada,Sudah,,,62.0,21.09,78.91
+Bengkulu,Kabupaten Bengkulu Tengah,Tidak memiliki TPA,,Diluar 343 TPA (171 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,61.0,1.57,98.43
+Papua Tengah,Kabupaten Puncak,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,61.0,0.0,100.0
+Sulawesi Tenggara,Kabupaten Buton,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,88.0,61.0,0.0,100.0
+Maluku Utara,Kota Tidore Kepulauan,Controlled Landfill,,343 TPA (353 Kota/Kab),7.0,29.0,0.04,1.0,0.0,0.07,Ada tapi Belum Disahkan,Sudah,,,61.0,51.64,48.36
+Sulawesi Tengah,Kabupaten Banggai Kepulauan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.01,0.0,0.0,0.0,Tidak Ada,Sudah,,28.4,61.0,0.05,99.95
+Nusa Tenggara Timur,Kabupaten Lembata,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.07,Tidak Ada,Sudah,,,61.0,40.18,59.82
+Sulawesi Tenggara,Kabupaten Buton Tengah,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,60.0,0.0,100.0
+Nusa Tenggara Timur,Kabupaten Rote Ndao,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,53.0,60.0,30.13,69.87
+Papua,Kabupaten Biak Numfor,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.05,1.0,0.0,1.7,Tidak Ada,Sudah,,,60.0,16.16,83.84
+Kepulauan Riau,Kabupaten Bintan,Controlled Landfill,,343 TPA (353 Kota/Kab),13.0,5.0,0.28,2.0,0.0,1.97,Ada (Draft) tapi Belum Disahkan,Sudah,,,60.0,82.78,17.22
+Sulawesi Tenggara,Kabupaten Wakatobi,Open Dumping,,343 TPA (353 Kota/Kab),22.0,0.0,0.05,1.0,0.0,0.93,Belum ada informasi,Sudah,,71.85,59.0,32.04,67.96
+Sumatera Utara,Kabupaten Nias,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,55.3,59.0,0.59,99.41
+Sumatera Barat,Kota Solok,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),13.0,0.0,5.09,1.0,0.0,0.08,Ada (Draft) tapi Belum Disahkan,Sudah,,,59.0,84.25,15.75
+Papua Selatan,Kabupaten Asmat,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,58.0,0.0,100.0
+Sumatera Utara,Kabupaten Samosir,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),1.0,0.0,0.2,0.0,0.0,0.0,Belum ada informasi,Sudah,,,57.0,87.1,12.9
+Gorontalo,Kabupaten Bone Bolango,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,10.0,0.02,0.0,0.0,0.0,Tidak Ada,Sudah,,,57.0,48.65,51.35
+Maluku,Kabupaten Kepulauan Aru,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,26.2,56.0,1.6,98.4
+Sulawesi Utara,Kabupaten Kepulauan Sangihe,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,1.0,0.01,1.0,0.0,0.0,Tidak Ada,Sudah,,,56.0,46.19,53.81
+Papua Selatan,Kabupaten Mappi,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,55.0,0.0,100.0
+Aceh,Kabupaten Aceh Singkil,Open Dumping,,343 TPA (353 Kota/Kab),1.0,2.0,0.2,1.0,0.0,0.2,Tidak Ada,Sudah,,,55.0,4.35,95.65
+Bengkulu,Kabupaten Kaur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,43.05,53.0,3.94,96.06
+Maluku Utara,Kabupaten Halmahera Tengah,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.04,1.0,0.0,0.3,Tidak Ada,Sudah,,82.1,53.0,4.64,95.36
+Papua Tengah,Kabupaten Deiyai,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,53.0,0.0,100.0
+Kepulauan Bangka Belitung,Kabupaten Belitung Timur,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),2.0,0.0,0.01,1.0,0.0,0.54,Ada (Draft) tapi Belum Disahkan,Sudah,,,53.0,1.08,98.92
+Aceh,Kota Subulussalam,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,23.8,53.0,4.17,95.83
+Maluku Utara,Kabupaten Kepulauan Sula,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,74.75,53.0,0.0,100.0
+Sulawesi Utara,Kota Tomohon,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,7.0,0.0,1.0,1.0,1.0,Belum ada informasi,Sudah,,,52.0,84.34,15.66
+Papua Barat Daya,Kabupaten Sorong,,,343 TPA (353 Kota/Kab),4.0,2.0,0.64,0.0,0.0,0.0,Tidak Ada,Sudah,,,52.0,13.13,86.87
+Sulawesi Tenggara,Kabupaten Buton Selatan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,20.7,51.0,0.0,100.0
+Sumatera Barat,Kota Padang Panjang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),5.0,2.0,0.05,1.0,0.0,0.1,Tidak Ada,Sudah,,,51.0,80.97,19.03
+Jambi,Kota Sungai Penuh,Open Dumping,,343 TPA (353 Kota/Kab),6.0,0.0,0.18,2.0,0.0,0.1,Tidak Ada,Sudah,,79.6,51.0,23.75,76.25
+Kepulauan Riau,Kabupaten Lingga,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,1.0,0.21,1.0,0.0,4.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,51.0,38.68,61.32
+Aceh,Kabupaten Aceh Jaya,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,41.85,51.0,1.69,98.31
+Papua Tengah,Kabupaten Paniai,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,50.0,0.0,100.0
+Maluku Utara,Kabupaten Halmahera Timur,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,51.3,50.0,4.68,95.32
+Sulawesi Utara,Kabupaten Minahasa Tenggara,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,0.0,0.07,0.0,0.0,0.0,Tidak Ada,Sudah,,,48.0,59.45,40.55
+Papua,Kabupaten Kepulauan Yapen,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,,46.0,0.0,100.0
+Bengkulu,Kabupaten Lebong,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,40.6,46.0,0.0,100.0
+Kalimantan Utara,Kabupaten Nunukan,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),6.0,4.0,0.05,1.0,0.0,3.5,Ada tapi Belum Disahkan,Sudah,,,46.0,37.89,62.11
+Papua Pegunungan,Kabupaten Nduga,Controlled Landfill,,343 TPA (353 Kota/Kab),32.0,0.0,10.0,3.0,0.0,8.2,Ada dan Sudah Disahkan,Belum,,,45.0,90.36,9.64
+Kalimantan Tengah,Kabupaten Lamandau,Open Dumping,,343 TPA (353 Kota/Kab),3.0,1.0,0.0,1.0,0.0,0.03,Tidak Ada,Sudah,,84.6,43.0,1.12,98.88
+Papua Pegunungan,Kabupaten Yalimo,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,43.0,0.0,100.0
+Aceh,Kabupaten Gayo Lues,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,36.0,42.0,0.0,100.0
+Sumatera Utara,Kota Sibolga,Open Dumping,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,1.0,0.0,0.1,Tidak Ada,Sudah,,61.3,41.0,0.65,99.35
+Sumatera Barat,Kota Pariaman,Open Dumping,,343 TPA (353 Kota/Kab),3.0,0.0,0.75,0.0,0.0,0.0,Dalam Perencanaan,Sudah,,42.5,41.0,25.66,74.34
+Sulawesi Utara,Kabupaten Kepulauan Talaud,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,40.1,40.0,0.0,100.0
+Sumatera Utara,Kabupaten Nias Barat,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,39.0,0.25,99.75
+Sumatera Barat,Kabupaten Kepulauan Mentawai,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),1.0,3.0,0.0,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,39.0,4.52,95.48
+Sulawesi Tenggara,Kabupaten Konawe Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,39.0,0.0,100.0
+Maluku,Kabupaten Maluku Barat Daya,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,38.0,0.0,100.0
+Papua Barat,Kabupaten Fakfak,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.12,Tidak Ada,Sudah,,,38.0,0.32,99.68
+Nusa Tenggara Timur,Kabupaten Sumba Tengah,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,37.0,38.98,61.02
+Sulawesi Tenggara,Kabupaten Buton Utara,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,31.45,37.0,0.0,100.0
+Sulawesi Tenggara,Kabupaten Muna Barat,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,37.0,0.0,100.0
+Maluku,Kota Tual,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada tapi Belum Disahkan,Sudah,,56.75,37.0,0.38,99.62
+Papua Barat,Kabupaten Teluk Bintuni,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,36.0,0.0,100.0
+Sulawesi Utara,Kabupaten Bolaang Mongondow Utara,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),1.0,1.0,0.02,1.0,0.0,0.05,Tidak Ada,Sudah,,,34.0,0.44,99.56
+Kalimantan Utara,Kabupaten Malinau,Open Dumping,,343 TPA (353 Kota/Kab),2.0,4.0,0.33,0.0,0.0,0.0,Tidak Ada,Sudah,,69.85,34.0,0.97,99.03
+Papua Pegunungan,Kabupaten Pegunungan Bintang,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Sudah,,,33.0,0.0,100.0
+Kepulauan Riau,Kabupaten Natuna,Open Dumping,,343 TPA (353 Kota/Kab),8.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,46.8,33.0,0.0,100.0
+Maluku Utara,Kabupaten Pulau Taliabu,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,33.0,0.0,100.0
+Maluku Utara,Kabupaten Pulau Morotai,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Sudah,,,33.0,3.01,96.99
+Maluku,Kabupaten Buru Selatan,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,17.6,33.0,0.0,100.0
+Sulawesi Tengah,Kabupaten Banggai Laut,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,45.7,31.0,1.94,98.06
+Sulawesi Utara,Kabupaten Bolaang Mongondow Selatan,Controlled Landfill,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,30.0,10.45,89.55
+DKI Jakarta,Kabupaten Kepulauan Seribu,Open Dumping,,Diluar 343 TPA (171 Kota/Kab),23.0,0.0,0.28,1.0,0.0,0.02,Ada dan Sudah Disahkan,Sudah,,,30.0,32.73,67.27
+Papua Barat Daya,Kabupaten Raja Ampat,,,343 TPA (353 Kota/Kab),12.0,0.0,2.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,29.0,7.2,92.8
+Papua Selatan,Kabupaten Boven Digoel,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,1.0,0.0,Tidak Ada,Belum,,,29.0,0.28,99.72
+Nusa Tenggara Timur,Kabupaten Sabu Raijua,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,6.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,21.0,28.0,21.17,78.83
+Sulawesi Utara,Kabupaten Siau Tagulandang Biaro,Open Dumping,,343 TPA (353 Kota/Kab),1.0,1.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,37.3,28.0,0.04,99.96
+Kalimantan Tengah,Kabupaten Sukamara,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,2.0,0.0,0.0,1.0,1.43,Tidak Ada,Sudah,,,27.0,69.58,30.42
+Papua Barat,Kabupaten Kaimana,,,Diluar 343 TPA (171 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,26.0,0.0,100.0
+Sumatera Utara,Kabupaten Pakpak Bharat,Open Dumping,,343 TPA (353 Kota/Kab),1.0,0.0,0.08,0.0,0.0,0.0,Tidak Ada,Sudah,,15.0,23.0,13.84,86.16
+Sulawesi Tenggara,Kabupaten Konawe Kepulauan,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,22.0,0.0,100.0
+Papua Barat Daya,Kabupaten Sorong Selatan,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,22.0,0.0,100.0
+Papua Pegunungan,Kabupaten Mamberamo Tengah,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,21.0,0.0,100.0
+Sumatera Barat,Kota Sawah Lunto,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),8.0,0.0,0.06,2.0,0.0,1.31,Tidak Ada,Sudah,,,19.0,93.21,6.79
+Kalimantan Timur,Kabupaten Mahakam Hulu,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Ada (Draft) tapi Belum Disahkan,Sudah,,,19.0,0.0,100.0
+Papua Barat Daya,Kabupaten Maybrat,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,19.0,0.0,100.0
+Aceh,Kota Sabang,Controlled Landfill,,Diluar 343 TPA (171 Kota/Kab),0.0,0.0,0.0,1.0,0.0,0.1,Tidak Ada,Sudah,,,18.0,97.11,2.89
+Papua,Kabupaten Sarmi,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,17.0,0.0,100.0
+Papua Barat,Kabupaten Teluk Wondama,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,16.0,0.0,100.0
+Papua Barat,Kabupaten Pegunungan Arfak,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,16.0,0.0,100.0
+Papua Barat Daya,Kabupaten Tambrauw,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,16.0,0.0,100.0
+Papua,Kabupaten Mamberamo Raya,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,Tidak Ada,Belum,,,16.0,0.0,100.0
+Papua Barat,Kabupaten Manokwari Selatan,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,16.0,0.0,100.0
+Papua,Kabupaten Waropen,,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Belum,,,15.0,0.0,100.0
+Kepulauan Riau,Kabupaten Kepulauan Anambas,Tidak memiliki TPA,,343 TPA (353 Kota/Kab),4.0,0.0,0.15,0.0,0.0,0.0,Tidak Ada,Sudah,,,15.0,14.23,85.77
+Kalimantan Utara,Kabupaten Tana Tidung,Controlled Landfill,,343 TPA (353 Kota/Kab),1.0,0.0,0.05,0.0,0.0,0.0,Tidak Ada,Sudah,,,12.0,68.53,31.47
+Papua,Kabupaten Supiori,Open Dumping,,343 TPA (353 Kota/Kab),0.0,0.0,0.0,0.0,0.0,0.0,Tidak Ada,Sudah,,,10.0,0.0,100.0
+,,,,,,,0.0,,,0.0,,,,,0.0,0.0,100.0
+,,,,,,,0.0,,,0.0,,,,,0.0,0.0,100.0
+Aceh,Kabupaten Simeulue,,,343 TPA (353 Kota/Kab),,,0.0,,,0.0,,Sudah,,,0.0,13.0,87.0
