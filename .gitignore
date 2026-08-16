@@ -1,0 +1,31 @@
+# --- rahasia: JANGAN PERNAH di-commit ---
+.env
+.env.*
+!.env.contoh
+*.key
+*_secret*
+
+# --- lingkungan Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- data mentah asli (bisa diunduh ulang: bash data/unduh.sh) ---
+# Beberapa berkas di sini 53-480 MB, melewati batas 100 MB GitHub.
+# Yang di-commit hanya hasil olahannya di data/siap-sac/.
+data/kesehatan/
+data/kota/
+data/wash/
+data/iklim/
+data/penduduk/
+data/sampah/
+data/bencana/
+
+# --- sistem & editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

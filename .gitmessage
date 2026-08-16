@@ -1,0 +1,12 @@
+
+# <tipe>(<cakupan>): <deskripsi imperatif, huruf kecil, <=72 karakter, tanpa titik>
+#
+# Badan — KENAPA perubahan ini (bukan apa). Kalau angka storyboard berubah,
+# tulis lama -> baru.
+#
+# Catatan kaki — Refs #12 / BREAKING CHANGE: ...
+#
+# Tipe   : data | analisis | docs | feat | fix | chore
+# Cakupan: siap-sac | notebook | storyboard | ekspor | bps | repo
+#
+# Selengkapnya: CONTRIBUTING.md
