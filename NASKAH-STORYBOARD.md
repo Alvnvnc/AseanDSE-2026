@@ -3,7 +3,10 @@
 Teks slide dalam **bahasa Inggris** (salin apa adanya ke SAC); catatan kerja, resep grafik,
 dan antisipasi juri dalam **bahasa Indonesia**.
 
-- Sumber angka: `ekspor-xlsx/ASEAN_DSE_hasil_analisis.xlsx` (21 lembar, urutannya = urutan halaman ini).
+- Sumber angka: `ekspor-xlsx/ASEAN_DSE_hasil_analisis.xlsx` (21 lembar, urutannya = urutan halaman ini);
+  versi CSV per dataset untuk diimpor ke SAC ada di `ekspor-csv/` (daftar: `ekspor-csv/IMPOR-SAC.md`).
+  Seluruh isi berkas .xlsx — nama lembar, nama kolom, dan isi sel kategori — **berbahasa Inggris**,
+  jadi label yang muncul di grafik SAC bisa langsung dipakai. CSV kerja tetap bahasa Indonesia.
 - Setiap angka di naskah ini sudah diverifikasi `analisis/analisis_storyboard.ipynb`. **Jangan menambah angka baru** yang tidak ada di berkas itu.
 - Purwarupa visual tiap halaman ada di `analisis/gambar/` — pakai sebagai acuan bentuk, tapi **grafik final wajib dibuat di SAC**.
 
@@ -20,33 +23,36 @@ dan antisipasi juri dalam **bahasa Indonesia**.
 
 ## Sebelum mulai: urutan impor dataset ke SAC
 
-SAC hanya menerima **satu lembar per dataset**, jadi ulangi *Create Dataset from File* untuk tiap
-lembar di bawah. **Delapan lembar pertama sudah menutup 15 halaman**; sisanya opsional.
+SAC hanya menerima **satu dataset per berkas**, jadi lembar-lembar di bawah sudah dipecah jadi
+CSV satu-satu di **`ekspor-csv/`** — nama berkasnya sama persis dengan nama lembar di tabel ini,
+jadi *Create Dataset from File* langsung memberi nama yang benar. Daftar lengkapnya, termasuk
+tipe kolom yang harus dibetulkan, ada di **`ekspor-csv/IMPOR-SAC.md`**.
+**Delapan lembar pertama sudah menutup 15 halaman**; sisanya opsional.
 
 | # | Lembar (Sheet) | Untuk halaman |
 |---|---|---|
-| 1 | `Deret bulanan IDN-THA` | 6, 7, 10, 11 — impor duluan, paling banyak dipakai |
-| 2 | `Fase ENSO - rerata` | 7 (kartu as) |
-| 3 | `Kalender risiko IDN` | 8, 10 |
-| 4 | `Dengue nasional tahunan` | 2 |
-| 5 | `Musiman IDN-THA` | 5 |
-| 6 | `Insidens provinsi 18-20` | 9, 12 |
-| 7 | `Aturan pemicu - evaluasi` | 11 |
-| 8 | `Dampak moneter` | 13 |
-| 9 | `Korelasi jeda - nasional` + `Korelasi jeda - anomali` | 6, 7 |
-| 10 | `Konsistensi provinsi IDN` | 7 (cadangan pertanyaan juri) |
-| 11 | `Kerentanan kota banjir`, `WASH negara` | 9 |
-| 12 | `Aturan pemicu - luar sampel`, `Aturan vs kanal endemis`, `Tolok ukur EWS` | 12 |
-| 13 | `Episode El Nino - tenggang` | 13 |
-| 14 | `Kekeringan x akses air` | 14 |
+| 1 | `Monthly series IDN-THA` | 6, 7, 10, 11 — impor duluan, paling banyak dipakai |
+| 2 | `ENSO phase - averages` | 7 (kartu as) |
+| 3 | `Risk calendar IDN` | 8, 10 |
+| 4 | `Dengue national annual` | 2 |
+| 5 | `Seasonality IDN-THA` | 5 |
+| 6 | `Province incidence 18-20` | 9, 12 |
+| 7 | `Trigger rules - evaluation` | 11 |
+| 8 | `Monetary impact` | 13 |
+| 9 | `Lag correlation - national` + `Lag correlation - anomaly` | 6, 7 |
+| 10 | `Province consistency IDN` | 7 (cadangan pertanyaan juri) |
+| 11 | `City flood vulnerability`, `WASH by country` | 9 |
+| 12 | `Trigger rules - out of sample`, `Rules vs endemic channel`, `EWS benchmark` | 12 |
+| 13 | `El Nino episodes - lead time` | 13 |
+| 14 | `Drought x water access` | 14 |
 
 **Tiga setelan yang wajib dicek di layar impor** (kalau tidak, grafiknya salah):
 
-1. `tanggal` → ubah tipe ke **Date**, format `yyyy-MM-dd`. Kolom `periode` biarkan teks.
-2. Kolom angka yang sebenarnya label — `bulan`, `urutan`, `status_kode`, `tahun`, `jeda` —
+1. `date` → ubah tipe ke **Date**, format `yyyy-MM-dd`. Kolom `period` biarkan teks.
+2. Kolom angka yang sebenarnya label — `month`, `order`, `status_code`, `year`, `lag` —
    ubah dari **Measure** ke **Dimension**.
-3. `nama_bulan` dan `fase_enso_jeda4` akan terurut alfabetis (Agu, Apr, Des…). Perbaiki dengan
-   *Sort → by* `bulan` / `urutan`, atau pakai kolom angkanya di sumbu.
+3. `month_name` dan `enso_phase_lag4` akan terurut alfabetis (Apr, Aug, Dec…). Perbaiki dengan
+   *Sort → by* `month` / `order`, atau pakai kolom angkanya di sumbu.
 
 Palet konsisten satu cerita: biru `#2A78D6` (kasus/normal), oranye `#E8833A` (alarm/El Niño),
 merah `#C53232` (puncak/wabah), abu `#8A8F98` (konteks, ambang).
@@ -81,13 +87,13 @@ merah `#C53232` (puncak/wabah), abu `#8A8F98` (konteks, ambang).
 > Source: OpenDengue V1.3 (national totals, complete-reporting years only)
 
 **Grafik utama** — *Line chart*
-- Dataset: `Dengue nasional tahunan`
-- Filter: `lengkap` = True; `tahun` 2000–2024
-- Measure: `kasus` (Sum) · Dimension (sumbu X): `tahun`
+- Dataset: `Dengue national annual`
+- Filter: `complete` = True; `year` 2000–2024
+- Measure: `cases` (Sum) · Dimension (sumbu X): `year`
 - Beri **Reference line** di 2019 + label "record in our data"
 
 **Grafik pendamping** — *Bar chart horizontal*
-- Measure `kasus` · Dimension `negara`, filter tahun lengkap terbaru per negara (2022–2023)
+- Measure `cases` · Dimension `country`, filter tahun lengkap terbaru per negara (2022–2023)
 - Urutkan menurun, warna biru, sorot Indonesia dengan oranye
 
 **Catatan penyaji**: jangan pernah bilang "rekor 2023–24" dari data kita — Vietnam & Filipina
@@ -157,10 +163,10 @@ the seasonal cycle before believing any correlation". Itu pembeda di mata juri a
 > Source: national monthly means, complete years only (IDN 2010–2023, THA 2010–2022)
 
 **Grafik** — *Combination chart (Column & Line)*, dua widget bersebelahan (Indonesia | Thailand)
-- Dataset: `Musiman IDN-THA` · Filter `negara`
-- Column (kiri, sumbu utama): `kasus_rerata` — biru
-- Line (kanan, sumbu sekunder): `hujan_rerata_mm` — abu putus-putus
-- Dimension sumbu X: `bulan` (bukan `nama_bulan`, supaya urut) — ganti labelnya lewat *Sort by* `bulan`
+- Dataset: `Seasonality IDN-THA` · Filter `country`
+- Column (kiri, sumbu utama): `mean_cases` — biru
+- Line (kanan, sumbu sekunder): `mean_rain_mm` — abu putus-putus
+- Dimension sumbu X: `month` (bukan `month_name`, supaya urut) — ganti labelnya lewat *Sort by* `month`
 - Sorot 4 kolom tertinggi dengan warna merah
 
 **Catatan penyaji**: hati-hati — di Thailand puncak **hujan** justru September, sesudah puncak
@@ -189,13 +195,13 @@ tidak berhenti di sini. Halaman 7 menunjukkan apa yang tersisa setelah musim dib
 > Source: monthly national series, 2010+ (n = 172 months Indonesia)
 
 **Grafik utama** — *Heat map*
-- Dataset: `Korelasi jeda - nasional` · Filter `iso3` = IDN (widget kedua: THA)
-- Dimension baris: `prediktor` · Dimension kolom: `jeda` · Measure: `r`
+- Dataset: `Lag correlation - national` · Filter `iso3` = IDN (widget kedua: THA)
+- Dimension baris: `predictor` · Dimension kolom: `lag` · Measure: `r`
 - Skala warna diverging −0,7 … +0,7, tampilkan nilai di sel
 
 **Grafik pendamping** — *Scatterplot*
-- Dataset: `Deret bulanan IDN-THA` · Filter `negara` = Indonesia
-- X: `suhu_jeda2` · Y: `kasus` · Warna titik: `fase_jeda4`
+- Dataset: `Monthly series IDN-THA` · Filter `country` = Indonesia
+- X: `temp_c_lag2` · Y: `cases` · Warna titik: `enso_phase_lag4`
 - Aktifkan *Trend line → Linear*
 
 **Catatan penyaji**: kalimat kunci yang harus diucapkan pelan-pelan — *"the lag is the
@@ -217,16 +223,16 @@ opportunity"*. Itu jembatan ke seluruh separuh kedua cerita.
 > Source: 172 months, Indonesia 2010–2024 · NOAA CPC definition: El Niño = ONI ≥ 0.5
 
 **Grafik utama** — *Bar chart*
-- Dataset: `Fase ENSO - rerata`
-- Measure: `rerata_kasus_per_bulan` · Dimension: `fase_enso_jeda4`, *Sort by* `urutan`
+- Dataset: `ENSO phase - averages`
+- Measure: `mean_cases_per_month` · Dimension: `enso_phase_lag4`, *Sort by* `order`
 - Warna bertingkat biru → oranye → merah; label data aktif
-- Tambahkan **Reference line** di nilai Netral (7,597)
+- Tambahkan **Reference line** di nilai `Neutral` (7,597)
 - Beri catatan kaki kecil: "La Niña kuat: only 3 months observed — too thin to conclude"
 
 **Grafik pendamping (siapkan di halaman cadangan, munculkan kalau ditanya)**
-- *Heat map* dari `Korelasi jeda - anomali` (bukti "bukan musim")
-- *Bar horizontal* dari `Konsistensi provinsi IDN`: Measure `rasio_nino_vs_lain`, Dimension
-  `provinsi`, reference line di 1,0 — 33 dari 34 batang ada di kanan garis
+- *Heat map* dari `Lag correlation - anomaly` (bukti "bukan musim")
+- *Bar horizontal* dari `Province consistency IDN`: Measure `ratio_nino_vs_other`, Dimension
+  `province`, reference line di 1,0 — 33 dari 34 batang ada di kanan garis
 
 **Catatan penyaji**: ini halaman kartu as. Urutan bicaranya: (1) angka besar 2,8×, (2) "kami
 sudah menduga Anda akan bilang ini cuma musim — jadi kami buang musimnya, dan sinyalnya
@@ -252,9 +258,9 @@ dengan cara yang berbeda, di halaman 12."
 > Source: share of annual cases by calendar month, per province
 
 **Grafik** — *Heat map*, dua widget (Indonesia | Thailand)
-- Dataset: `Kalender risiko IDN` / `Kalender risiko THA`
-- Dimension baris: `provinsi` (urutkan menurut bulan puncak, bukan alfabetis)
-- Dimension kolom: `bulan` · Measure: `share_persen`
+- Dataset: `Risk calendar IDN` / `Risk calendar THA`
+- Dimension baris: `province` (urutkan menurut bulan puncak, bukan alfabetis)
+- Dimension kolom: `month` · Measure: `share_percent`
 - Skala warna sekuensial putih → merah; sorot baris Bali dengan garis tebal
 
 **Catatan penyaji**: Bali adalah anekdot terbaik di seluruh dek — provinsi dengan insidens
@@ -276,15 +282,15 @@ hanya "some provinces".
 > Sources: BPS denominators (2018–2020 only) · WHO/UNICEF JMP · GHSL
 
 **Grafik utama** — *Bar chart horizontal*
-- Dataset: `Insidens provinsi 18-20` · Measure `rata2` · Dimension `provinsi`, urut menurun, ambil 10 teratas + 3 terbawah
+- Dataset: `Province incidence 18-20` · Measure `mean` · Dimension `province`, urut menurun, ambil 10 teratas + 3 terbawah
 - Warna merah untuk 3 teratas
 
 **Grafik pendamping** — *Bar chart*
-- Dataset: `WASH negara` · Measure `air_perpipaan_%` · Dimension `negara`, urut menaik
+- Dataset: `WASH by country` · Measure `piped_water_%` · Dimension `country`, urut menaik
 - Indonesia paling kiri, warna oranye — visual yang langsung "menampar"
 
-**Grafik ketiga (opsional, kalau ruang cukup)** — *Bubble/bar* dari `Kerentanan kota banjir`:
-Measure `terpapar_2020`, Dimension `kota`, 8 kota teratas
+**Grafik ketiga (opsional, kalau ruang cukup)** — *Bubble/bar* dari `City flood vulnerability`:
+Measure `exposed_2020`, Dimension `city`, 8 kota teratas
 
 **Catatan penyaji**: kalimat "we use this to target, not to explain" wajib diucapkan — itu yang
 mencegah juri menuduh kita mengklaim kausalitas WASH yang tidak kita punya buktinya.
@@ -307,12 +313,12 @@ penduduk."
 >
 > Source: 5 El Niño episodes, 2009–2024
 
-**Grafik utama** — *Heat map* `Kalender risiko IDN` difilter 6 provinsi prioritas
+**Grafik utama** — *Heat map* `Risk calendar IDN` difilter 6 provinsi prioritas
 (Bali, Kalimantan Utara, Kalimantan Timur, Gorontalo, DKI Jakarta, Jawa Barat),
-Measure `status_kode`, palet 3 warna (0 abu, 1 kuning, 2 merah)
+Measure `status_code`, palet 3 warna (0 abu, 1 kuning, 2 merah)
 
-**Grafik pendamping** — *Time series* dari `Deret bulanan IDN-THA` (Indonesia):
-Line `kasus`, Reference line `ambang_P75` (11,932), warna titik/latar menurut `alarm_El_Nino`
+**Grafik pendamping** — *Time series* dari `Monthly series IDN-THA` (Indonesia):
+Line `cases`, Reference line `threshold_p75` (11,932), warna titik/latar menurut `alarm_el_nino`
 
 **Catatan penyaji**: framing yang benar dan sudah diuji — alarm ini memprediksi **separah apa**
 musim yang datang, bukan menggeser tanggal mulainya. Jangan menjanjikan "3 bulan lebih awal"
@@ -333,12 +339,12 @@ sebagai angka tunggal; katakan 0–3 bulan pada ONI teramati, lebih panjang pada
 > Source: Indonesia 2010–2024, 172 months · threshold ONI ≥ 0.5 is NOAA's own El Niño definition
 
 **Grafik utama** — *Bar chart* perbandingan aturan
-- Dataset: `Aturan pemicu - evaluasi`
-- Measures: `presisi_%` dan `cakupan_alarm_%` · Dimension: `aturan`
+- Dataset: `Trigger rules - evaluation`
+- Measures: `precision_%` dan `alarm_coverage_%` · Dimension: `rule`
 - Sorot baris D dengan merah, sisanya abu — ceritanya: aturan D menyala paling jarang tapi paling tepat
 
-**Grafik pendamping** — *Time series* `Deret bulanan IDN-THA` (Indonesia), Line `kasus`,
-warna menurut `alarm_aturan_D`, Reference line `ambang_P75`
+**Grafik pendamping** — *Time series* `Monthly series IDN-THA` (Indonesia), Line `cases`,
+warna menurut `alarm_rule_d`, Reference line `threshold_p75`
 
 **Catatan penyaji**: tekankan "no model, no code". Pesaing akan menjanjikan machine learning;
 nilai jual kita adalah **bisa benar-benar dijalankan** dinkes provinsi minggu depan.
@@ -358,10 +364,10 @@ nilai jual kita adalah **bisa benar-benar dijalankan** dinkes provinsi minggu de
 > **Adoption in three phases**: 1) Bali, N. & E. Kalimantan pilot · 2) all 38 provinces · 3) ASEAN peers
 > **Cost**: open data, monthly refresh, existing staff
 
-**Grafik utama** — *Bar chart* `Aturan pemicu - luar sampel`:
-Measures `presisi_%`, `sensitivitas_%` · Dimension `periode` (latih vs UJI), dikelompokkan per `negara`
+**Grafik utama** — *Bar chart* `Trigger rules - out of sample`:
+Measures `precision_%`, `sensitivity_%` · Dimension `period` (latih vs UJI), dikelompokkan per `country`
 
-**Grafik pendamping** — *Table widget* `Tolok ukur EWS` apa adanya (5 baris), kolom sumber
+**Grafik pendamping** — *Table widget* `EWS benchmark` apa adanya (5 baris), kolom sumber
 ditampilkan — kejujuran pembanding ini yang dinilai
 
 **Catatan penyaji**: kalimat pembuka halaman ini — *"We tried to break our own rule"* — adalah
@@ -390,11 +396,11 @@ tetap berjalan."
 > Sources: cost per case from peer-reviewed Indonesian studies; case counts from our panel
 
 **Grafik utama** — *Bar chart bertingkat*
-- Dataset: `Dampak moneter` · Measures `rawat inap bawah (US$316)` & `rawat inap atas (US$791)`
-  · Dimension `skenario`
+- Dataset: `Monetary impact` · Measures `hospitalisation low (US$316)` & `hospitalisation high (US$791)`
+  · Dimension `scenario`
 - Tambahkan **Numeric Point (KPI tile)** besar: `4,656 cases/year prevented`
 
-**Grafik pendamping** — *Table* `Episode El Nino - tenggang` (5 baris): kolom episode,
+**Grafik pendamping** — *Table* `El Nino episodes - lead time` (5 baris): kolom episode,
 alarm_menyala, kasus_lewat_P75, tenggang_bulan
 
 **Catatan penyaji**: selalu sebut skenario 10% sebagai **skenario paling konservatif**, dan
@@ -418,8 +424,8 @@ dan 44% di musim puncak. Efektivitas intervensi 10% kami ambil sebagai skenario 
 > - **Flood/disaster records look correlated with dengue (r = +0.66) — until you divide by population** (r = −0.14). We report the null.
 > - Correlation is not causation: this is an **early-warning** claim, with mechanism cited from the literature.
 
-**Grafik** — *Scatterplot* `Kekeringan x akses air`:
-X `perpipaan_%`, Y `r_kering`, ukuran bubble `pengganda_nino`, label `negara`
+**Grafik** — *Scatterplot* `Drought x water access`:
+X `piped_water_%`, Y `r_drought`, ukuran bubble `nino_multiplier`, label `country`
 — sengaja ditampilkan **tanpa** garis tren, dengan judul "no relationship (ρ = +0.34, p = 0.46, n = 7)"
 
 **Catatan penyaji**: halaman ini adalah senjata, bukan permintaan maaf. Nada bicaranya bangga:

@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""Ekspor semua data proyek ke berkas Excel (.xlsx).
+"""Ekspor semua data proyek ke berkas Excel (.xlsx) berbahasa Inggris.
 
 Menghasilkan dua hal di `ekspor-xlsx/`:
 
 1. `ASEAN_DSE_hasil_analisis.xlsx` — satu buku kerja berisi seluruh tabel hasil
-   analisis (`analisis/keluaran/*.csv`) plus lembar "Daftar isi" dan "Angka kunci".
+   analisis (`analisis/keluaran/*.csv`) plus lembar "Contents" dan "Key figures".
    Ini yang dipakai menulis naskah storyboard / bikin grafik cepat di Excel.
 2. `sac/<nama>.xlsx` — satu berkas per himpunan data mentah (`data/siap-sac/*.csv`),
    karena SAP Analytics Cloud mengimpor satu himpunan data per berkas.
+
+Storyboard dinilai dalam bahasa Inggris, jadi SELURUH isi .xlsx (nama lembar,
+nama kolom, isi sel kategori, dan lembar angka kunci) diterjemahkan di sini lewat
+`istilah_en.py`. CSV kerja tetap berbahasa Indonesia — notebook dan `siapkan.py`
+tidak ikut berubah. Nama diri (provinsi, kab/kota, kota) tidak diterjemahkan.
 
 Jalankan: .venv/bin/python analisis/ekspor_xlsx.py
 """
@@ -15,11 +20,15 @@ Jalankan: .venv/bin/python analisis/ekspor_xlsx.py
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import istilah_en as en  # noqa: E402
 
 AKAR = Path(__file__).resolve().parent.parent
 KELUARAN = AKAR / "analisis" / "keluaran"
@@ -29,62 +38,67 @@ TUJUAN = AKAR / "ekspor-xlsx"
 WARNA_KEPALA = PatternFill("solid", fgColor="1F4E79")
 FONT_KEPALA = Font(bold=True, color="FFFFFF")
 
-# Urutan lembar = urutan halaman storyboard.
+# Urutan lembar = urutan halaman storyboard. Nama lembar & keterangan berbahasa
+# Inggris karena langsung terbaca juri lewat storyboard.
 # asal "csv:<nama>" dibaca dari analisis/keluaran/, "hitung" dihasilkan lembar_grafik()
 # (definisi identik dengan analisis_storyboard.ipynb).
 URUTAN: list[tuple[str, str, str, str]] = [
-    ("csv:dengue_asean_nasional_tahunan", "Dengue nasional tahunan", "2",
-     "Kasus dengue per negara per tahun (9 negara ASEAN); kolom 'lengkap' menandai tahun yang boleh dibandingkan."),
-    ("hitung", "Musiman IDN-THA", "5",
-     "Rata-rata kasus, hujan, dan suhu per bulan kalender (tahun lengkap 2010+) — kurva musiman."),
-    ("csv:korelasi_jeda_nasional", "Korelasi jeda - nasional", "6",
-     "Korelasi kasus vs suhu/hujan/ONI pada jeda 0-8 bulan, deret mentah (musim belum dibuang)."),
-    ("hitung", "Deret bulanan IDN-THA", "6, 7, 10, 11",
-     "Tulang punggung: deret bulanan nasional 2010+ — kasus, anomali, ONI/suhu/hujan berjeda, ambang P75, status alarm."),
-    ("hitung", "Fase ENSO - rerata", "7",
-     "Kartu as: rata-rata kasus/bulan Indonesia menurut fase ENSO 4 bulan sebelumnya (El Nino kuat vs netral)."),
-    ("csv:korelasi_jeda_anomali", "Korelasi jeda - anomali", "7",
-     "Korelasi yang sama tapi atas ANOMALI (efek musim dibuang) — bukti sinyalnya bukan sekadar musim."),
-    ("hitung", "Konsistensi provinsi IDN", "7",
-     "Rasio kasus bulan El Nino / bulan lain per provinsi — bukti efeknya bukan artefak agregat nasional."),
-    ("csv:kalender_risiko_idn", "Kalender risiko IDN", "8, 10",
-     "Pangsa kasus tiap bulan per provinsi Indonesia + status Puncak/Waspada/Normal (status_kode 2/1/0)."),
-    ("csv:kalender_risiko_tha", "Kalender risiko THA", "8",
-     "Kalender risiko yang sama untuk 77 provinsi Thailand (replikasi lintas negara)."),
-    ("csv:insidens_provinsi_2018_2020", "Insidens provinsi 18-20", "9, 12",
-     "Insidens per 100rb penduduk, HANYA 2018-2020 (penyebut resmi BPS). Dasar prioritas wilayah."),
-    ("hitung", "Kerentanan kota banjir", "9",
-     "25 kota ASEAN dengan penduduk terbanyak di zona banjir 100 tahunan (2020 & proyeksi 2030)."),
-    ("hitung", "WASH negara", "9",
-     "Akses air perpipaan, air minum, dan sanitasi per negara (tahun terbaru) — lapisan SDG 6."),
-    ("csv:ambang_pemicu_evaluasi", "Aturan pemicu - evaluasi", "11",
-     "Perbandingan aturan alarm A-D pada data penuh 2010-2024: cakupan, sensitivitas, presisi, lift."),
-    ("csv:ambang_pemicu_luar_sampel", "Aturan pemicu - luar sampel", "12",
-     "Uji buta: aturan disusun dari 2010-2016, diuji pada 2017-2024 (Indonesia & Thailand)."),
-    ("csv:ambang_pemicu_vs_kanal_endemis", "Aturan vs kanal endemis", "12",
-     "Aturan diuji terhadap definisi wabah standar WHO/PAHO (kanal endemis, mean+2SD 5 tahun)."),
-    ("csv:benchmark_ews", "Tolok ukur EWS", "12",
-     "Kinerja aturan kami disandingkan dengan sistem peringatan dini dengue terpublikasi."),
-    ("csv:episode_elnino_tenggang", "Episode El Nino - tenggang", "13",
-     "Tiap episode El Nino sejak 2009: kapan alarm menyala, kapan kasus melewati P75, berapa bulan tenggangnya."),
-    ("csv:dampak_moneter", "Dampak moneter", "13",
-     "Skenario 10/20/30% kasus musim puncak tercegah -> nilai US$ dan Rp per tahun."),
-    ("csv:inovasi_kekeringan_akses_air", "Kekeringan x akses air", "14",
-     "Uji sudut inovasi kekeringan x akses air — EKSPLORATIF (n=7) dan GUGUR sebagai klaim kausal."),
+    ("csv:dengue_asean_nasional_tahunan", "Dengue national annual", "2",
+     "Dengue cases by country and year (9 ASEAN countries); the 'complete' column flags the years that are safe to compare."),
+    ("hitung", "Seasonality IDN-THA", "5",
+     "Mean cases, rainfall and temperature per calendar month (complete years from 2010) — the seasonal curve."),
+    ("csv:korelasi_jeda_nasional", "Lag correlation - national", "6",
+     "Correlation of cases against temperature/rainfall/ONI at lags of 0-8 months, raw series (seasonality still in)."),
+    ("hitung", "Monthly series IDN-THA", "6, 7, 10, 11",
+     "The backbone: national monthly series from 2010 — cases, anomaly, lagged ONI/temperature/rainfall, P75 threshold, alarm status."),
+    ("hitung", "ENSO phase - averages", "7",
+     "The ace card: mean cases per month in Indonesia by the ENSO phase 4 months earlier (strong El Nino vs neutral)."),
+    ("csv:korelasi_jeda_anomali", "Lag correlation - anomaly", "7",
+     "The same correlations but on ANOMALIES (seasonal effect removed) — evidence the signal is more than seasonality."),
+    ("hitung", "Province consistency IDN", "7",
+     "Ratio of cases in El Nino months to other months per province — evidence the effect is not an artefact of national aggregation."),
+    ("csv:kalender_risiko_idn", "Risk calendar IDN", "8, 10",
+     "Share of cases per month per Indonesian province + Peak/Watch/Normal status (status_code 2/1/0)."),
+    ("csv:kalender_risiko_tha", "Risk calendar THA", "8",
+     "The same risk calendar for Thailand's 77 provinces (cross-country replication)."),
+    ("csv:insidens_provinsi_2018_2020", "Province incidence 18-20", "9, 12",
+     "Incidence per 100k population, 2018-2020 ONLY (official BPS denominator). Basis for geographic prioritisation."),
+    ("hitung", "City flood vulnerability", "9",
+     "The 25 ASEAN cities with the largest population inside the 100-year flood zone (2020 & 2030 projection)."),
+    ("hitung", "WASH by country", "9",
+     "Piped water, drinking water and sanitation access by country (latest year) — the SDG 6 layer."),
+    ("csv:ambang_pemicu_evaluasi", "Trigger rules - evaluation", "11",
+     "Alarm rules A-D compared on the full 2010-2024 data: coverage, sensitivity, precision, lift."),
+    ("csv:ambang_pemicu_luar_sampel", "Trigger rules - out of sample", "12",
+     "Blind test: rules built on 2010-2016, tested on 2017-2024 (Indonesia & Thailand)."),
+    ("csv:ambang_pemicu_vs_kanal_endemis", "Rules vs endemic channel", "12",
+     "The rules tested against the standard WHO/PAHO outbreak definition (endemic channel, 5-year mean+2SD)."),
+    ("csv:benchmark_ews", "EWS benchmark", "12",
+     "Our rule's performance set beside published dengue early warning systems."),
+    ("csv:episode_elnino_tenggang", "El Nino episodes - lead time", "13",
+     "Every El Nino episode since 2009: when the alarm fires, when cases cross P75, how many months of lead time that buys."),
+    ("csv:dampak_moneter", "Monetary impact", "13",
+     "Scenarios of 10/20/30% of peak-season cases averted -> value in US$ and Rp per year."),
+    ("csv:inovasi_kekeringan_akses_air", "Drought x water access", "14",
+     "Test of the drought x water-access innovation angle — EXPLORATORY (n=7) and DROPPED as a causal claim."),
+    ("csv:banjir_vs_dengue_uji", "Flood vs dengue tests", "14",
+     "Nine tests of the flood/disaster -> dengue link. The raw correlation (+0.66) is a population artefact: it vanishes per capita (-0.14). Reported as a NULL result."),
+    ("csv:banjir_vs_dengue_panel", "Flood vs dengue panel", "14",
+     "The province-year panel behind those tests (33 provinces x 2018-2020) — feeds the raw-vs-per-capita scatter pair."),
 ]
 
 KETERANGAN_SAC: dict[str, str] = {
-    "dengue_asean": "Kasus dengue ASEAN mentah dari OpenDengue (semua resolusi ruang & waktu).",
-    "dengue_iklim_bulanan": "Tabel analisis utama: kasus bulanan + suhu/hujan/ONI dengan jeda 0-4 bulan.",
-    "iklim_bulanan_asean": "Suhu dan curah hujan bulanan per negara, 1950-sekarang.",
-    "enso_oni_bulanan": "Indeks ONI bulanan NOAA/CPC + fase ENSO (ambang resmi 0,5).",
-    "penduduk_provinsi_indonesia": "Penduduk provinsi Indonesia (BPS WebAPI) — penyebut insidens 2018-2020.",
-    "wash_rumahtangga_asean": "Akses air minum & sanitasi rumah tangga (JMP WHO/UNICEF).",
-    "wash_fasyankes_asean": "Akses air & sanitasi di fasilitas layanan kesehatan (JMP WHO/UNICEF).",
-    "bencana_kabkota_indonesia": "Kejadian bencana per kabupaten/kota Indonesia (BNPB).",
-    "sampah_kabkota_indonesia": "Timbulan & pengelolaan sampah per kabupaten/kota (SIPSN KLHK).",
-    "kota_asean_paparan_banjir": "Penduduk kota ASEAN yang terpapar banjir (GHSL).",
-    "kota_asean_kualitas_udara": "Konsentrasi PM2.5/PM10/NO2 kota ASEAN (WHO Ambient Air Quality).",
+    "dengue_asean": "Raw ASEAN dengue cases from OpenDengue (all space & time resolutions).",
+    "dengue_iklim_bulanan": "Main analysis table: monthly cases + temperature/rainfall/ONI at lags 0-4 months.",
+    "iklim_bulanan_asean": "Monthly temperature and rainfall by country, 1950-present.",
+    "enso_oni_bulanan": "Monthly NOAA/CPC ONI index + ENSO phase (official 0.5 threshold).",
+    "penduduk_provinsi_indonesia": "Indonesian province population (BPS WebAPI) — incidence denominator 2018-2020.",
+    "wash_rumahtangga_asean": "Household drinking water & sanitation access (JMP WHO/UNICEF).",
+    "wash_fasyankes_asean": "Water & sanitation access in health-care facilities (JMP WHO/UNICEF).",
+    "bencana_kabkota_indonesia": "Disaster events per Indonesian district/city (BNPB).",
+    "sampah_kabkota_indonesia": "Waste generation & management per district/city (SIPSN KLHK).",
+    "kota_asean_paparan_banjir": "ASEAN city population exposed to flooding (GHSL).",
+    "kota_asean_kualitas_udara": "PM2.5/PM10/NO2 concentrations in ASEAN cities (WHO Ambient Air Quality).",
 }
 
 POLA_RIBUAN = re.compile(r"^-?\d{1,3}(,\d{3})+$")
@@ -104,6 +118,8 @@ def rapikan(df: pd.DataFrame, nama: str) -> pd.DataFrame:
 
 
 def tulis(df: pd.DataFrame, penulis: pd.ExcelWriter, lembar: str, bekukan: bool = True) -> None:
+    """Tulis satu lembar; penerjemahan ke bahasa Inggris terjadi di sini."""
+    df = en.terjemahkan(df)
     df.to_excel(penulis, sheet_name=lembar, index=False)
     ws = penulis.book[lembar]
     for sel in ws[1]:
@@ -133,7 +149,7 @@ def baca_angka_kunci() -> pd.DataFrame:
             baris[-1]["poin"] += " " + teks.strip()
     df = pd.DataFrame(baris)
     df["poin"] = df["poin"].str.replace("**", "", regex=False).str.replace("`", "", regex=False)
-    return df
+    return df.map(en.prosa)
 
 
 NAMA_BULAN = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"]
@@ -206,7 +222,7 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
     dr = pd.concat(deret)[kol].reset_index(drop=True)
     num = dr.select_dtypes("number").columns
     dr[num] = dr[num].round(3)
-    hasil["Deret bulanan IDN-THA"] = dr
+    hasil["Monthly series IDN-THA"] = dr
 
     # --- 2. profil musiman (tahun lengkap 2010+) ---
     baris = []
@@ -223,7 +239,7 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
                           "hujan_rerata_mm": round(r["hujan_rerata_mm"], 1),
                           "suhu_rerata_c": round(r["suhu_rerata_c"], 2),
                           "jendela_tahun_lengkap": f"{th[0]}-{th[-1]} (n={len(th)})"})
-    hasil["Musiman IDN-THA"] = pd.DataFrame(baris)
+    hasil["Seasonality IDN-THA"] = pd.DataFrame(baris)
 
     # --- 3. rata-rata kasus menurut fase ENSO jeda-4 (kartu as halaman 7) ---
     s = seri_nasional("IDN", d, ik, oni)
@@ -231,13 +247,13 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
     v = s[s.index >= "2010-01"].dropna(subset=["kasus", "fase_j4"])
     tab = v.groupby("fase_j4")["kasus"].agg(["mean", "count"]).reindex(FASE_URUT)
     netral = tab.loc["Netral", "mean"]
-    hasil["Fase ENSO - rerata"] = pd.DataFrame({
+    hasil["ENSO phase - averages"] = pd.DataFrame({
         "fase_enso_jeda4": FASE_URUT,
         "urutan": range(1, 6),
         "rerata_kasus_per_bulan": tab["mean"].round().astype(int).values,
         "n_bulan": tab["count"].astype(int).values,
         "rasio_thd_netral": (tab["mean"] / netral).round(2).values,
-        "cukup_data": ["Tidak (n=3)" if n < 10 else "Ya" for n in tab["count"]],
+        "cukup_data": [f"Tidak (n={n:.0f})" if n < 10 else "Ya" for n in tab["count"]],
     })
 
     # --- 4. konsistensi antar provinsi Indonesia ---
@@ -252,9 +268,9 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
                           "n_bulan_nino": int(nino.sum()),
                           "arah": "Naik saat El Nino" if g.loc[nino, "kasus"].mean() >
                                   g.loc[~nino, "kasus"].mean() else "Tidak naik"})
-    hasil["Konsistensi provinsi IDN"] = (pd.DataFrame(baris)
-                                         .sort_values("rasio_nino_vs_lain", ascending=False)
-                                         .reset_index(drop=True))
+    hasil["Province consistency IDN"] = (pd.DataFrame(baris)
+                                        .sort_values("rasio_nino_vs_lain", ascending=False)
+                                        .reset_index(drop=True))
 
     # --- 5. paparan banjir kota (halaman 9) ---
     b = pd.read_csv(SIAP_SAC / "kota_asean_paparan_banjir.csv")
@@ -271,9 +287,9 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
     piv[["penduduk_kota_2025", "terpapar_2020", "terpapar_2030"]] = \
         piv[["penduduk_kota_2025", "terpapar_2020", "terpapar_2030"]].round(0)
     piv[["persen_2020", "pertumbuhan_2020_2030_%"]] = piv[["persen_2020", "pertumbuhan_2020_2030_%"]].round(1)
-    hasil["Kerentanan kota banjir"] = piv[["negara", "kota", "penduduk_kota_2025",
-                                           "terpapar_2020", "persen_2020", "terpapar_2030",
-                                           "pertumbuhan_2020_2030_%"]].reset_index(drop=True)
+    hasil["City flood vulnerability"] = piv[["negara", "kota", "penduduk_kota_2025",
+                                            "terpapar_2020", "persen_2020", "terpapar_2030",
+                                            "pertumbuhan_2020_2030_%"]].reset_index(drop=True)
 
     # --- 6. WASH per negara, tahun terbaru (halaman 9) ---
     w = pd.read_csv(SIAP_SAC / "wash_rumahtangga_asean.csv")
@@ -291,7 +307,7 @@ def lembar_grafik() -> dict[str, pd.DataFrame]:
         tab = sub if tab is None else tab.merge(sub, on="negara", how="outer")
     tab.insert(1, "tahun_data", max(tahun_maks.values()))
     tab = tab[["negara", "tahun_data"] + [k for _, _, k in pilih]]
-    hasil["WASH negara"] = tab.sort_values("air_perpipaan_%").round(1).reset_index(drop=True)
+    hasil["WASH by country"] = tab.sort_values("air_perpipaan_%").round(1).reset_index(drop=True)
     return hasil
 
 
@@ -300,32 +316,32 @@ def buku_analisis() -> Path:
     isi = []
     with pd.ExcelWriter(keluar, engine="openpyxl") as penulis:
         # tempat penampung; daftar isi ditulis ulang di akhir agar berada di depan
-        pd.DataFrame({"a": [0]}).to_excel(penulis, sheet_name="Daftar isi", index=False)
-        tulis(baca_angka_kunci(), penulis, "Angka kunci")
-        penulis.book["Angka kunci"].column_dimensions["B"].width = 110
-        for sel in penulis.book["Angka kunci"]["B"]:
+        pd.DataFrame({"a": [0]}).to_excel(penulis, sheet_name="Contents", index=False)
+        tulis(baca_angka_kunci(), penulis, "Key figures")
+        penulis.book["Key figures"].column_dimensions["B"].width = 110
+        for sel in penulis.book["Key figures"]["B"]:
             sel.alignment = Alignment(wrap_text=True, vertical="top")
 
         grafik = lembar_grafik()
         for asal, lembar, halaman, ket in URUTAN:
             if asal == "hitung":
-                df, sumber = grafik[lembar], "dihitung ulang dari data/siap-sac/"
+                df, sumber = grafik[lembar], "recomputed from data/siap-sac/"
             else:
                 nama = asal.split(":", 1)[1]
                 df, sumber = rapikan(pd.read_csv(KELUARAN / f"{nama}.csv"), nama), f"{nama}.csv"
             tulis(df, penulis, lembar)
-            isi.append({"lembar": lembar, "halaman": halaman, "isi": ket,
-                        "baris": len(df), "kolom": df.shape[1], "berkas asal": sumber})
+            isi.append({"sheet": lembar, "page": halaman, "contents": ket,
+                        "rows": len(df), "columns": df.shape[1], "source file": sumber})
 
-        del penulis.book["Daftar isi"]
+        del penulis.book["Contents"]
         df_isi = pd.DataFrame(
-            [{"lembar": "Angka kunci", "halaman": "semua",
-              "isi": "Semua angka yang dikutip di storyboard, dikelompokkan per halaman.",
-              "baris": "-", "kolom": "-", "berkas asal": "angka_kunci_storyboard.md"}] + isi)
-        tulis(df_isi, penulis, "Daftar isi", bekukan=False)
-        penulis.book.move_sheet("Daftar isi", offset=-(len(penulis.book.sheetnames) - 1))
-        penulis.book["Daftar isi"].column_dimensions["C"].width = 95
-        for sel in penulis.book["Daftar isi"]["C"]:
+            [{"sheet": "Key figures", "page": "all",
+              "contents": "Every number quoted in the storyboard, grouped by storyboard page.",
+              "rows": "-", "columns": "-", "source file": "angka_kunci_storyboard.md"}] + isi)
+        tulis(df_isi, penulis, "Contents", bekukan=False)
+        penulis.book.move_sheet("Contents", offset=-(len(penulis.book.sheetnames) - 1))
+        penulis.book["Contents"].column_dimensions["C"].width = 95
+        for sel in penulis.book["Contents"]["C"]:
             sel.alignment = Alignment(wrap_text=True, vertical="top")
     return keluar
 
@@ -341,12 +357,13 @@ def buku_sac() -> list[tuple[str, int, int, float]]:
             tulis(df, penulis, csv.stem[:31])
         hasil.append((csv.stem, len(df), df.shape[1], keluar.stat().st_size / 1e6))
         print(f"  {keluar.name:<45} {len(df):>7,} baris  {keluar.stat().st_size/1e6:>5.1f} MB")
+        print(f"  {'':<45} {KETERANGAN_SAC.get(csv.stem, '')}")
     return hasil
 
 
 if __name__ == "__main__":
     TUJUAN.mkdir(parents=True, exist_ok=True)
-    print("Buku kerja hasil analisis:")
+    print("Buku kerja hasil analisis (isi berbahasa Inggris):")
     berkas = buku_analisis()
     print(f"  {berkas.relative_to(AKAR)}  ({berkas.stat().st_size/1e6:.1f} MB)")
     print("\nHimpunan data untuk SAC (satu berkas per himpunan data):")
