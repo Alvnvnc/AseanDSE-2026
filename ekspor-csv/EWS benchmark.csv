@@ -1,0 +1,6 @@
+system,sensitivity,specificity,precision/PPV,source
+Our rule D vs P75 (out-of-sample test 2017-2024),44%,-,100%,this notebook
+Our rule D vs endemic channel (2010-2024),29%,91%,30%,this notebook
+Range across 17 dengue EWS (systematic review),50-100%,74-95%,43-86%,Baharom et al. 2022
+"WHO-TDR EWARS, Mexico (dengue)",100%,-,83%,Cardenas et al. 2021
+"EWARS-csd, 11 Colombian cities (median)",97%,94%,75%,Schlesinger et al. 2024

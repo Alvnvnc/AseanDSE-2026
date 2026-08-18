@@ -23,6 +23,12 @@ data/penduduk/
 data/sampah/
 data/bencana/
 
+# --- ekspor yang bisa dibangun ulang ---
+# Duplikat bahasa Inggris dari data/siap-sac/ (~17 MB), dihasilkan ulang kapan saja
+# oleh: .venv/bin/python analisis/ekspor_csv.py
+# Yang tetap dilacak: 21 tabel siap grafik di akar ekspor-csv/ + IMPOR-SAC.md.
+ekspor-csv/sumber/
+
 # --- sistem & editor ---
 .DS_Store
 Thumbs.db

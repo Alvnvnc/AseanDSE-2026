@@ -8,6 +8,7 @@ dikonversi ke CSV format panjang (*long format*) siap impor ke SAP Analytics Clo
 **Naskah 15 halaman siap eksekusi: `NASKAH-STORYBOARD.md`.**
 **Bedah 15 dek finalis 2024–2025 + celah dek kita: `ANALISIS-FINALIS.md`.**
 **Dek PDF (LaTeX, 16:9, slot grafik SAC): `storyboard/` — jalankan `storyboard/bangun.sh`.**
+**Daftar CSV siap impor SAC + urutan & tipe kolomnya: `ekspor-csv/IMPOR-SAC.md`.**
 
 ## Tenggat
 
@@ -103,12 +104,34 @@ Hanya Thailand & Indonesia yang berlanjut setelah 2010; sisanya berhenti di 2010
 - Jalankan: `.venv/bin/jupyter lab analisis/analisis_storyboard.ipynb`
   (venv: `python3 -m venv .venv && .venv/bin/pip install pandas matplotlib scipy jupyterlab nbformat nbconvert ipykernel openpyxl`).
 
+### `ekspor-csv/` — CSV siap impor SAP Analytics Cloud (berbahasa Inggris)
+
+SAC mengimpor **satu dataset per berkas**, jadi buku kerja 23 lembar tidak bisa dipakai
+langsung. Folder ini memecahnya: **21 tabel siap grafik** di akarnya (nama berkas = nama
+dataset yang dipakai `NASKAH-STORYBOARD.md`, jadi kolom *Name* di layar impor SAC sudah
+benar sejak awal), plus **11 himpunan data sumber** di `sumber/` — yang terakhir ini
+**tidak dilacak git** (17 MB duplikat bahasa Inggris dari `data/siap-sac/`); jalankan
+`analisis/ekspor_csv.py` untuk membuatnya.
+
+**`ekspor-csv/IMPOR-SAC.md` adalah daftar siap salinnya**: urutan impor (delapan pertama
+sudah menutup 15 halaman), 23 slot grafik → dataset mana, dan tipe kolom yang harus
+dibetulkan di layar impor (`year`/`month`/`lag` ditebak SAC sebagai Measure lalu
+dijumlahkan — grafiknya salah kalau dibiarkan).
+
+### `ekspor-xlsx/` — versi Excel
+
+`ASEAN_DSE_hasil_analisis.xlsx` (23 lembar, urutan = urutan halaman naskah) untuk menulis
+naskah dan cek angka cepat, plus `sac/*.xlsx` per himpunan data sumber. Isi sama dengan
+`ekspor-csv/`; untuk impor ke SAC pakai CSV-nya.
+
 ### Skrip
 
 - `data/unduh.sh` — mengunduh ulang semua sumber mentah yang ✅ (idempoten)
 - `data/unduh_bps.py` — penduduk provinsi dari WebAPI BPS (perlu kunci)
 - `data/siapkan.py` — mengubah mentah menjadi CSV siap SAC
   (bagian WASH butuh `openpyxl`; tanpa itu bagian tersebut dilewati otomatis)
+- `analisis/ekspor_csv.py` — membangun ulang `ekspor-csv/` **dan** `IMPOR-SAC.md`
+- `analisis/ekspor_xlsx.py` — membangun ulang `ekspor-xlsx/`
 
 ### Cara mengambil data penduduk BPS
 

@@ -1,0 +1,24 @@
+section,point
+Headline (page 7),Strong El Nino = 21.4k cases/month vs neutral 7.6k in Indonesia (2.8x); moderate El Nino 12.3k.
+Headline (page 7),The signal is NOT seasonality alone: the correlation between ONI at lag 3-4 and case anomalies (seasonality removed) is still r = +0.56.
+Headline (page 7),The effect is consistent across provinces: 33/34 Indonesian provinces (sign test p = 2e-09) and 70/77 Thai provinces (p = 1.8e-14) record higher cases in El Nino months.
+Alarm rules (pages 11-12),"""Peak season (Jan-Apr) AND ONI lag-4 >= 0.5"" on full data for 2010-2024: precision 100%, lift 4x, fires in only 11.6% of months."
+Alarm rules (pages 11-12),"Out-of-sample test (rule built on 2010-2016, blind-tested on 2017-2024): precision 100%, sensitivity 44%, lift 3.91."
+Alarm rules (pages 11-12),"Thailand replication (""Jun/Jul/Aug/Sep AND temperature two months earlier above normal): test lift 2.67."
+Real-world lead time (pages 10-11),"El Nino episode 2023-24: alarm fires 2023-09, cases crossed P75 in 2023-12 -> 3 months of lead time; peaking at 32,049 cases/month."
+Real-world lead time (pages 10-11),All episodes since 2009 are listed in episode_elnino_tenggang.csv; use forecast ONI (not observed) for even longer lead time.
+"Geographic priorities (pages 9, 12)","Highest incidence 2018-2020: Bali (134/100k), Kalimantan Utara (115), Kalimantan Timur (112)."
+"Geographic priorities (pages 9, 12)","Most common peak month: Indonesia Jan (20 prov), Feb (8 prov) of 35 provinces; Thailand Jul (38 prov), Aug (16 prov) of 77 provinces."
+Impact (page 13),"Average 104,753 cases/year (Indonesia, complete years 2015-2023); 44% falls in Jan-Apr."
+Impact (page 13),"Scenarios: 10% of peak-season cases averted = ~4,656 cases/year; 20% = ~9,312; 30% = ~13,968."
+"Innovation angle: drought x water access (page 9 / innovation) — exploratory, n=7","Drought effect by country (most negative anomaly r, lag 3-8): Indonesia -0.31 (lag 7, piped 20%); Thailand -0.18 (lag 5, piped 50%); Vietnam -0.14 (lag 7, piped 15%); Cambodia -0.18 (lag 5, piped 10%); Laos -0.06 (lag 4, piped 21%); Malaysia -0.14 (lag 8, piped 93%); Singapore -0.14 (lag 8, piped 100%)."
+"Innovation angle: drought x water access (page 9 / innovation) — exploratory, n=7",Moderation by piped-water access: Spearman rho = +0.34 (p = 0.46); vs El Nino multiplier: rho = +0.54 (p = 0.22). Small n -> report as a DIRECTION only.
+"Innovation angle: drought x water access (page 9 / innovation) — exploratory, n=7",Indonesia: drought effect at lag-7 r -0.31; after controlling for ONI lag-4 the partial r is -0.15.
+Standards & benchmarks (pages 11-12),ONI threshold >= 0.5 in our rule = the official NOAA/CPC El Nino definition - not an invented threshold.
+Standards & benchmarks (pages 11-12),"Against the STANDARD outbreak definition (WHO/PAHO endemic channel, 5-year mean+2SD): 21 outbreak months since 2010; rule D: sensitivity 29%, specificity 91%, precision 30%, lift 2.46."
+Standards & benchmarks (pages 11-12),"Published EWS benchmarks (for context, not a like-for-like contest): PPV 43-86% (review of 17 EWS, Baharom 2022); EWARS Mexico PPV 83% (Cardenas 2021); EWARS-csd Colombia median PPV 75% (Schlesinger 2024). Details: benchmark_ews.csv."
+Impact in dollars (page 13),"10% of peak-season cases averted (~4,656 cases) = US$1.5-3.7 million/year (Rp 24-59 billion; hospitalisation cost anchor US$316-791: Wilastonegoro 2020, Nadjib 2019). Most conservative anchor (US$90/episode): US$0.42M."
+Impact in dollars (page 13),"For comparison, national dengue burden: US$381M (2015) - US$681M (2017) per year."
+Data honesty (page 14),"Record in the data = 2019 (1.26M cases, 9 countries); the 2023-24 totals are not comparable (VNM & PHL complete only through 2022) -> cite WHO/Tian et al. for 2023-24."
+Data honesty (page 14),"Incidence only for 2018-2020 (official BPS denominator); outside that window the numbers are raw cases, do not rank regions."
+Data honesty (page 14),Correlation is not causation -> frame as early warning; mechanism from the literature.

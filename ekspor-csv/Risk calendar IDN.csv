@@ -1,0 +1,421 @@
+country,province,month,month_name,share_percent,status,status_code
+Indonesia,Bangka Belitung,1,Jan,16.3,Peak,2
+Indonesia,Bangka Belitung,2,Feb,11.5,Peak,2
+Indonesia,Bangka Belitung,3,Mar,7.8,Normal,0
+Indonesia,Bangka Belitung,4,Apr,6.1,Normal,0
+Indonesia,Bangka Belitung,5,May,6.5,Normal,0
+Indonesia,Bangka Belitung,6,Jun,6.2,Normal,0
+Indonesia,Bangka Belitung,7,Jul,5.6,Normal,0
+Indonesia,Bangka Belitung,8,Aug,5.6,Normal,0
+Indonesia,Bangka Belitung,9,Sep,7.1,Normal,0
+Indonesia,Bangka Belitung,10,Oct,6.1,Normal,0
+Indonesia,Bangka Belitung,11,Nov,9.1,Normal,0
+Indonesia,Bangka Belitung,12,Dec,12.1,Peak,2
+Indonesia,Banten,1,Jan,10.1,Peak,2
+Indonesia,Banten,2,Feb,10.1,Peak,2
+Indonesia,Banten,3,Mar,9.1,Normal,0
+Indonesia,Banten,4,Apr,8.9,Normal,0
+Indonesia,Banten,5,May,9.1,Normal,0
+Indonesia,Banten,6,Jun,8.1,Normal,0
+Indonesia,Banten,7,Jul,8.7,Normal,0
+Indonesia,Banten,8,Aug,7.1,Normal,0
+Indonesia,Banten,9,Sep,6.7,Normal,0
+Indonesia,Banten,10,Oct,6.6,Normal,0
+Indonesia,Banten,11,Nov,7.7,Normal,0
+Indonesia,Banten,12,Dec,7.9,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,1,Jan,15.3,Peak,2
+Indonesia,Daerah Istimewa Yogyakarta,2,Feb,11.0,Peak,2
+Indonesia,Daerah Istimewa Yogyakarta,3,Mar,10.1,Peak,2
+Indonesia,Daerah Istimewa Yogyakarta,4,Apr,10.0,Watch,1
+Indonesia,Daerah Istimewa Yogyakarta,5,May,9.8,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,6,Jun,7.6,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,7,Jul,6.4,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,8,Aug,5.1,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,9,Sep,4.5,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,10,Oct,5.6,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,11,Nov,6.6,Normal,0
+Indonesia,Daerah Istimewa Yogyakarta,12,Dec,8.1,Normal,0
+Indonesia,Jambi,1,Jan,14.3,Peak,2
+Indonesia,Jambi,2,Feb,9.4,Normal,0
+Indonesia,Jambi,3,Mar,9.0,Normal,0
+Indonesia,Jambi,4,Apr,6.8,Normal,0
+Indonesia,Jambi,5,May,5.8,Normal,0
+Indonesia,Jambi,6,Jun,5.5,Normal,0
+Indonesia,Jambi,7,Jul,4.9,Normal,0
+Indonesia,Jambi,8,Aug,6.9,Normal,0
+Indonesia,Jambi,9,Sep,7.0,Normal,0
+Indonesia,Jambi,10,Oct,8.9,Normal,0
+Indonesia,Jambi,11,Nov,11.2,Peak,2
+Indonesia,Jambi,12,Dec,10.3,Peak,2
+Indonesia,Jawa Barat,1,Jan,13.2,Peak,2
+Indonesia,Jawa Barat,2,Feb,10.0,Normal,0
+Indonesia,Jawa Barat,3,Mar,9.7,Normal,0
+Indonesia,Jawa Barat,4,Apr,10.1,Peak,2
+Indonesia,Jawa Barat,5,May,10.5,Peak,2
+Indonesia,Jawa Barat,6,Jun,9.2,Normal,0
+Indonesia,Jawa Barat,7,Jul,7.7,Normal,0
+Indonesia,Jawa Barat,8,Aug,6.8,Normal,0
+Indonesia,Jawa Barat,9,Sep,5.5,Normal,0
+Indonesia,Jawa Barat,10,Oct,5.3,Normal,0
+Indonesia,Jawa Barat,11,Nov,5.7,Normal,0
+Indonesia,Jawa Barat,12,Dec,6.3,Normal,0
+Indonesia,Jawa Tengah,1,Jan,13.7,Peak,2
+Indonesia,Jawa Tengah,2,Feb,11.0,Peak,2
+Indonesia,Jawa Tengah,3,Mar,10.1,Watch,1
+Indonesia,Jawa Tengah,4,Apr,10.7,Peak,2
+Indonesia,Jawa Tengah,5,May,9.0,Normal,0
+Indonesia,Jawa Tengah,6,Jun,6.8,Normal,0
+Indonesia,Jawa Tengah,7,Jul,6.8,Normal,0
+Indonesia,Jawa Tengah,8,Aug,5.1,Normal,0
+Indonesia,Jawa Tengah,9,Sep,4.7,Normal,0
+Indonesia,Jawa Tengah,10,Oct,6.1,Normal,0
+Indonesia,Jawa Tengah,11,Nov,6.9,Normal,0
+Indonesia,Jawa Tengah,12,Dec,9.0,Normal,0
+Indonesia,Jawa Timur,1,Jan,18.5,Peak,2
+Indonesia,Jawa Timur,2,Feb,14.4,Peak,2
+Indonesia,Jawa Timur,3,Mar,11.7,Peak,2
+Indonesia,Jawa Timur,4,Apr,9.1,Normal,0
+Indonesia,Jawa Timur,5,May,8.3,Normal,0
+Indonesia,Jawa Timur,6,Jun,6.5,Normal,0
+Indonesia,Jawa Timur,7,Jul,4.7,Normal,0
+Indonesia,Jawa Timur,8,Aug,4.1,Normal,0
+Indonesia,Jawa Timur,9,Sep,3.8,Normal,0
+Indonesia,Jawa Timur,10,Oct,4.9,Normal,0
+Indonesia,Jawa Timur,11,Nov,6.3,Normal,0
+Indonesia,Jawa Timur,12,Dec,7.7,Normal,0
+Indonesia,Kalimantan Selatan,1,Jan,21.2,Peak,2
+Indonesia,Kalimantan Selatan,2,Feb,14.5,Peak,2
+Indonesia,Kalimantan Selatan,3,Mar,8.1,Normal,0
+Indonesia,Kalimantan Selatan,4,Apr,4.9,Normal,0
+Indonesia,Kalimantan Selatan,5,May,3.7,Normal,0
+Indonesia,Kalimantan Selatan,6,Jun,3.4,Normal,0
+Indonesia,Kalimantan Selatan,7,Jul,3.6,Normal,0
+Indonesia,Kalimantan Selatan,8,Aug,3.9,Normal,0
+Indonesia,Kalimantan Selatan,9,Sep,3.5,Normal,0
+Indonesia,Kalimantan Selatan,10,Oct,5.8,Normal,0
+Indonesia,Kalimantan Selatan,11,Nov,9.7,Normal,0
+Indonesia,Kalimantan Selatan,12,Dec,17.6,Peak,2
+Indonesia,Kalimantan Tengah,1,Jan,18.2,Peak,2
+Indonesia,Kalimantan Tengah,2,Feb,12.0,Peak,2
+Indonesia,Kalimantan Tengah,3,Mar,8.5,Normal,0
+Indonesia,Kalimantan Tengah,4,Apr,6.1,Normal,0
+Indonesia,Kalimantan Tengah,5,May,5.1,Normal,0
+Indonesia,Kalimantan Tengah,6,Jun,5.1,Normal,0
+Indonesia,Kalimantan Tengah,7,Jul,4.2,Normal,0
+Indonesia,Kalimantan Tengah,8,Aug,4.1,Normal,0
+Indonesia,Kalimantan Tengah,9,Sep,5.3,Normal,0
+Indonesia,Kalimantan Tengah,10,Oct,6.4,Normal,0
+Indonesia,Kalimantan Tengah,11,Nov,11.4,Watch,1
+Indonesia,Kalimantan Tengah,12,Dec,13.7,Peak,2
+Indonesia,Kalimantan Timur,1,Jan,13.1,Peak,2
+Indonesia,Kalimantan Timur,2,Feb,10.7,Peak,2
+Indonesia,Kalimantan Timur,3,Mar,9.3,Normal,0
+Indonesia,Kalimantan Timur,4,Apr,8.2,Normal,0
+Indonesia,Kalimantan Timur,5,May,8.9,Normal,0
+Indonesia,Kalimantan Timur,6,Jun,7.6,Normal,0
+Indonesia,Kalimantan Timur,7,Jul,7.0,Normal,0
+Indonesia,Kalimantan Timur,8,Aug,6.5,Normal,0
+Indonesia,Kalimantan Timur,9,Sep,6.7,Normal,0
+Indonesia,Kalimantan Timur,10,Oct,7.4,Normal,0
+Indonesia,Kalimantan Timur,11,Nov,7.0,Normal,0
+Indonesia,Kalimantan Timur,12,Dec,7.5,Normal,0
+Indonesia,Kepulauan Riau,1,Jan,12.1,Peak,2
+Indonesia,Kepulauan Riau,2,Feb,9.1,Normal,0
+Indonesia,Kepulauan Riau,3,Mar,6.3,Normal,0
+Indonesia,Kepulauan Riau,4,Apr,5.6,Normal,0
+Indonesia,Kepulauan Riau,5,May,7.6,Normal,0
+Indonesia,Kepulauan Riau,6,Jun,8.4,Normal,0
+Indonesia,Kepulauan Riau,7,Jul,8.6,Normal,0
+Indonesia,Kepulauan Riau,8,Aug,8.1,Normal,0
+Indonesia,Kepulauan Riau,9,Sep,7.9,Normal,0
+Indonesia,Kepulauan Riau,10,Oct,8.4,Normal,0
+Indonesia,Kepulauan Riau,11,Nov,9.4,Normal,0
+Indonesia,Kepulauan Riau,12,Dec,8.7,Normal,0
+Indonesia,Lampung,1,Jan,18.0,Peak,2
+Indonesia,Lampung,2,Feb,15.6,Peak,2
+Indonesia,Lampung,3,Mar,10.9,Peak,2
+Indonesia,Lampung,4,Apr,6.3,Normal,0
+Indonesia,Lampung,5,May,6.1,Normal,0
+Indonesia,Lampung,6,Jun,6.0,Normal,0
+Indonesia,Lampung,7,Jul,6.2,Normal,0
+Indonesia,Lampung,8,Aug,5.2,Normal,0
+Indonesia,Lampung,9,Sep,4.6,Normal,0
+Indonesia,Lampung,10,Oct,4.6,Normal,0
+Indonesia,Lampung,11,Nov,7.0,Normal,0
+Indonesia,Lampung,12,Dec,9.5,Normal,0
+Indonesia,Maluku Utara,1,Jan,11.4,Peak,2
+Indonesia,Maluku Utara,2,Feb,11.1,Peak,2
+Indonesia,Maluku Utara,3,Mar,9.8,Normal,0
+Indonesia,Maluku Utara,4,Apr,6.5,Normal,0
+Indonesia,Maluku Utara,5,May,6.6,Normal,0
+Indonesia,Maluku Utara,6,Jun,9.4,Normal,0
+Indonesia,Maluku Utara,7,Jul,7.9,Normal,0
+Indonesia,Maluku Utara,8,Aug,9.9,Normal,0
+Indonesia,Maluku Utara,9,Sep,7.5,Normal,0
+Indonesia,Maluku Utara,10,Oct,6.1,Normal,0
+Indonesia,Maluku Utara,11,Nov,6.4,Normal,0
+Indonesia,Maluku Utara,12,Dec,7.3,Normal,0
+Indonesia,Nusa Tenggara Barat,1,Jan,19.2,Peak,2
+Indonesia,Nusa Tenggara Barat,2,Feb,16.5,Peak,2
+Indonesia,Nusa Tenggara Barat,3,Mar,14.0,Peak,2
+Indonesia,Nusa Tenggara Barat,4,Apr,10.3,Watch,1
+Indonesia,Nusa Tenggara Barat,5,May,9.6,Normal,0
+Indonesia,Nusa Tenggara Barat,6,Jun,6.7,Normal,0
+Indonesia,Nusa Tenggara Barat,7,Jul,4.9,Normal,0
+Indonesia,Nusa Tenggara Barat,8,Aug,2.9,Normal,0
+Indonesia,Nusa Tenggara Barat,9,Sep,2.5,Normal,0
+Indonesia,Nusa Tenggara Barat,10,Oct,3.0,Normal,0
+Indonesia,Nusa Tenggara Barat,11,Nov,3.9,Normal,0
+Indonesia,Nusa Tenggara Barat,12,Dec,6.4,Normal,0
+Indonesia,Papua,1,Jan,21.3,Peak,2
+Indonesia,Papua,2,Feb,11.6,Peak,2
+Indonesia,Papua,3,Mar,8.4,Normal,0
+Indonesia,Papua,4,Apr,6.5,Normal,0
+Indonesia,Papua,5,May,6.7,Normal,0
+Indonesia,Papua,6,Jun,6.7,Normal,0
+Indonesia,Papua,7,Jul,11.6,Peak,2
+Indonesia,Papua,8,Aug,6.1,Normal,0
+Indonesia,Papua,9,Sep,5.2,Normal,0
+Indonesia,Papua,10,Oct,5.1,Normal,0
+Indonesia,Papua,11,Nov,5.8,Normal,0
+Indonesia,Papua,12,Dec,5.2,Normal,0
+Indonesia,Sulawesi Barat,1,Jan,13.6,Peak,2
+Indonesia,Sulawesi Barat,2,Feb,13.1,Peak,2
+Indonesia,Sulawesi Barat,3,Mar,7.0,Normal,0
+Indonesia,Sulawesi Barat,4,Apr,9.1,Normal,0
+Indonesia,Sulawesi Barat,5,May,5.4,Normal,0
+Indonesia,Sulawesi Barat,6,Jun,9.8,Normal,0
+Indonesia,Sulawesi Barat,7,Jul,6.8,Normal,0
+Indonesia,Sulawesi Barat,8,Aug,5.8,Normal,0
+Indonesia,Sulawesi Barat,9,Sep,6.5,Normal,0
+Indonesia,Sulawesi Barat,10,Oct,6.4,Normal,0
+Indonesia,Sulawesi Barat,11,Nov,8.3,Normal,0
+Indonesia,Sulawesi Barat,12,Dec,8.4,Normal,0
+Indonesia,Sulawesi Selatan,1,Jan,14.3,Peak,2
+Indonesia,Sulawesi Selatan,2,Feb,12.8,Peak,2
+Indonesia,Sulawesi Selatan,3,Mar,10.9,Peak,2
+Indonesia,Sulawesi Selatan,4,Apr,8.3,Normal,0
+Indonesia,Sulawesi Selatan,5,May,8.3,Normal,0
+Indonesia,Sulawesi Selatan,6,Jun,8.7,Normal,0
+Indonesia,Sulawesi Selatan,7,Jul,7.1,Normal,0
+Indonesia,Sulawesi Selatan,8,Aug,5.8,Normal,0
+Indonesia,Sulawesi Selatan,9,Sep,5.0,Normal,0
+Indonesia,Sulawesi Selatan,10,Oct,5.4,Normal,0
+Indonesia,Sulawesi Selatan,11,Nov,6.3,Normal,0
+Indonesia,Sulawesi Selatan,12,Dec,7.2,Normal,0
+Indonesia,Sulawesi Utara,1,Jan,21.0,Peak,2
+Indonesia,Sulawesi Utara,2,Feb,14.2,Peak,2
+Indonesia,Sulawesi Utara,3,Mar,10.3,Peak,2
+Indonesia,Sulawesi Utara,4,Apr,7.1,Normal,0
+Indonesia,Sulawesi Utara,5,May,6.0,Normal,0
+Indonesia,Sulawesi Utara,6,Jun,6.1,Normal,0
+Indonesia,Sulawesi Utara,7,Jul,5.5,Normal,0
+Indonesia,Sulawesi Utara,8,Aug,5.7,Normal,0
+Indonesia,Sulawesi Utara,9,Sep,5.2,Normal,0
+Indonesia,Sulawesi Utara,10,Oct,5.8,Normal,0
+Indonesia,Sulawesi Utara,11,Nov,6.5,Normal,0
+Indonesia,Sulawesi Utara,12,Dec,6.5,Normal,0
+Indonesia,Sumatera Barat,1,Jan,10.7,Peak,2
+Indonesia,Sumatera Barat,2,Feb,8.8,Normal,0
+Indonesia,Sumatera Barat,3,Mar,8.1,Normal,0
+Indonesia,Sumatera Barat,4,Apr,8.0,Normal,0
+Indonesia,Sumatera Barat,5,May,7.7,Normal,0
+Indonesia,Sumatera Barat,6,Jun,7.8,Normal,0
+Indonesia,Sumatera Barat,7,Jul,7.5,Normal,0
+Indonesia,Sumatera Barat,8,Aug,7.4,Normal,0
+Indonesia,Sumatera Barat,9,Sep,7.7,Normal,0
+Indonesia,Sumatera Barat,10,Oct,8.9,Normal,0
+Indonesia,Sumatera Barat,11,Nov,8.6,Normal,0
+Indonesia,Sumatera Barat,12,Dec,8.9,Normal,0
+Indonesia,Sumatera Selatan,1,Jan,15.7,Peak,2
+Indonesia,Sumatera Selatan,2,Feb,12.5,Peak,2
+Indonesia,Sumatera Selatan,3,Mar,9.3,Normal,0
+Indonesia,Sumatera Selatan,4,Apr,7.5,Normal,0
+Indonesia,Sumatera Selatan,5,May,7.5,Normal,0
+Indonesia,Sumatera Selatan,6,Jun,5.9,Normal,0
+Indonesia,Sumatera Selatan,7,Jul,5.5,Normal,0
+Indonesia,Sumatera Selatan,8,Aug,5.5,Normal,0
+Indonesia,Sumatera Selatan,9,Sep,5.0,Normal,0
+Indonesia,Sumatera Selatan,10,Oct,6.8,Normal,0
+Indonesia,Sumatera Selatan,11,Nov,8.3,Normal,0
+Indonesia,Sumatera Selatan,12,Dec,10.6,Peak,2
+Indonesia,Bengkulu,1,Jan,9.9,Normal,0
+Indonesia,Bengkulu,2,Feb,10.4,Peak,2
+Indonesia,Bengkulu,3,Mar,7.2,Normal,0
+Indonesia,Bengkulu,4,Apr,6.5,Normal,0
+Indonesia,Bengkulu,5,May,7.8,Normal,0
+Indonesia,Bengkulu,6,Jun,8.0,Normal,0
+Indonesia,Bengkulu,7,Jul,7.8,Normal,0
+Indonesia,Bengkulu,8,Aug,8.4,Normal,0
+Indonesia,Bengkulu,9,Sep,7.1,Normal,0
+Indonesia,Bengkulu,10,Oct,7.8,Normal,0
+Indonesia,Bengkulu,11,Nov,8.9,Normal,0
+Indonesia,Bengkulu,12,Dec,10.2,Peak,2
+Indonesia,Gorontalo,1,Jan,16.0,Peak,2
+Indonesia,Gorontalo,2,Feb,17.3,Peak,2
+Indonesia,Gorontalo,3,Mar,10.1,Peak,2
+Indonesia,Gorontalo,4,Apr,9.1,Normal,0
+Indonesia,Gorontalo,5,May,6.4,Normal,0
+Indonesia,Gorontalo,6,Jun,6.7,Normal,0
+Indonesia,Gorontalo,7,Jul,4.7,Normal,0
+Indonesia,Gorontalo,8,Aug,4.2,Normal,0
+Indonesia,Gorontalo,9,Sep,6.0,Normal,0
+Indonesia,Gorontalo,10,Oct,6.3,Normal,0
+Indonesia,Gorontalo,11,Nov,5.2,Normal,0
+Indonesia,Gorontalo,12,Dec,8.0,Normal,0
+Indonesia,Maluku,1,Jan,11.1,Peak,2
+Indonesia,Maluku,2,Feb,22.2,Peak,2
+Indonesia,Maluku,3,Mar,17.2,Peak,2
+Indonesia,Maluku,4,Apr,9.9,Normal,0
+Indonesia,Maluku,5,May,9.5,Normal,0
+Indonesia,Maluku,6,Jun,6.2,Normal,0
+Indonesia,Maluku,7,Jul,3.3,Normal,0
+Indonesia,Maluku,8,Aug,3.2,Normal,0
+Indonesia,Maluku,9,Sep,1.9,Normal,0
+Indonesia,Maluku,10,Oct,1.7,Normal,0
+Indonesia,Maluku,11,Nov,5.0,Normal,0
+Indonesia,Maluku,12,Dec,8.8,Normal,0
+Indonesia,Nusa Tenggara Timur,1,Jan,27.6,Peak,2
+Indonesia,Nusa Tenggara Timur,2,Feb,28.9,Peak,2
+Indonesia,Nusa Tenggara Timur,3,Mar,16.5,Peak,2
+Indonesia,Nusa Tenggara Timur,4,Apr,5.5,Normal,0
+Indonesia,Nusa Tenggara Timur,5,May,2.7,Normal,0
+Indonesia,Nusa Tenggara Timur,6,Jun,1.5,Normal,0
+Indonesia,Nusa Tenggara Timur,7,Jul,0.7,Normal,0
+Indonesia,Nusa Tenggara Timur,8,Aug,0.5,Normal,0
+Indonesia,Nusa Tenggara Timur,9,Sep,1.4,Normal,0
+Indonesia,Nusa Tenggara Timur,10,Oct,2.5,Normal,0
+Indonesia,Nusa Tenggara Timur,11,Nov,5.1,Normal,0
+Indonesia,Nusa Tenggara Timur,12,Dec,7.0,Normal,0
+Indonesia,Papua Barat,1,Jan,11.5,Peak,2
+Indonesia,Papua Barat,2,Feb,14.6,Peak,2
+Indonesia,Papua Barat,3,Mar,8.1,Normal,0
+Indonesia,Papua Barat,4,Apr,10.0,Normal,0
+Indonesia,Papua Barat,5,May,10.9,Peak,2
+Indonesia,Papua Barat,6,Jun,5.5,Normal,0
+Indonesia,Papua Barat,7,Jul,8.5,Normal,0
+Indonesia,Papua Barat,8,Aug,6.9,Normal,0
+Indonesia,Papua Barat,9,Sep,6.2,Normal,0
+Indonesia,Papua Barat,10,Oct,4.9,Normal,0
+Indonesia,Papua Barat,11,Nov,9.1,Normal,0
+Indonesia,Papua Barat,12,Dec,3.8,Normal,0
+Indonesia,Papua Tengah,1,Jan,5.0,Normal,0
+Indonesia,Papua Tengah,2,Feb,24.1,Peak,2
+Indonesia,Papua Tengah,3,Mar,13.4,Watch,1
+Indonesia,Papua Tengah,4,Apr,9.9,Normal,0
+Indonesia,Papua Tengah,5,May,18.0,Peak,2
+Indonesia,Papua Tengah,6,Jun,16.1,Peak,2
+Indonesia,Papua Tengah,7,Jul,13.4,Watch,1
+Indonesia,Papua Tengah,8,Aug,0.0,Normal,0
+Indonesia,Papua Tengah,9,Sep,0.0,Normal,0
+Indonesia,Papua Tengah,10,Oct,0.0,Normal,0
+Indonesia,Papua Tengah,11,Nov,0.0,Normal,0
+Indonesia,Papua Tengah,12,Dec,0.0,Normal,0
+Indonesia,Sulawesi Tengah,1,Jan,10.7,Peak,2
+Indonesia,Sulawesi Tengah,2,Feb,11.7,Peak,2
+Indonesia,Sulawesi Tengah,3,Mar,10.0,Normal,0
+Indonesia,Sulawesi Tengah,4,Apr,7.5,Normal,0
+Indonesia,Sulawesi Tengah,5,May,7.6,Normal,0
+Indonesia,Sulawesi Tengah,6,Jun,6.7,Normal,0
+Indonesia,Sulawesi Tengah,7,Jul,7.6,Normal,0
+Indonesia,Sulawesi Tengah,8,Aug,7.6,Normal,0
+Indonesia,Sulawesi Tengah,9,Sep,7.1,Normal,0
+Indonesia,Sulawesi Tengah,10,Oct,7.9,Normal,0
+Indonesia,Sulawesi Tengah,11,Nov,7.6,Normal,0
+Indonesia,Sulawesi Tengah,12,Dec,8.1,Normal,0
+Indonesia,Sulawesi Tenggara,1,Jan,14.4,Peak,2
+Indonesia,Sulawesi Tenggara,2,Feb,17.1,Peak,2
+Indonesia,Sulawesi Tenggara,3,Mar,14.6,Peak,2
+Indonesia,Sulawesi Tenggara,4,Apr,10.5,Watch,1
+Indonesia,Sulawesi Tenggara,5,May,8.7,Normal,0
+Indonesia,Sulawesi Tenggara,6,Jun,6.6,Normal,0
+Indonesia,Sulawesi Tenggara,7,Jul,5.4,Normal,0
+Indonesia,Sulawesi Tenggara,8,Aug,5.6,Normal,0
+Indonesia,Sulawesi Tenggara,9,Sep,4.2,Normal,0
+Indonesia,Sulawesi Tenggara,10,Oct,3.6,Normal,0
+Indonesia,Sulawesi Tenggara,11,Nov,4.5,Normal,0
+Indonesia,Sulawesi Tenggara,12,Dec,4.9,Normal,0
+Indonesia,Dki Jakarta,1,Jan,9.8,Normal,0
+Indonesia,Dki Jakarta,2,Feb,9.8,Normal,0
+Indonesia,Dki Jakarta,3,Mar,13.1,Peak,2
+Indonesia,Dki Jakarta,4,Apr,13.4,Peak,2
+Indonesia,Dki Jakarta,5,May,13.1,Peak,2
+Indonesia,Dki Jakarta,6,Jun,8.9,Normal,0
+Indonesia,Dki Jakarta,7,Jul,7.5,Normal,0
+Indonesia,Dki Jakarta,8,Aug,6.3,Normal,0
+Indonesia,Dki Jakarta,9,Sep,4.5,Normal,0
+Indonesia,Dki Jakarta,10,Oct,4.2,Normal,0
+Indonesia,Dki Jakarta,11,Nov,4.4,Normal,0
+Indonesia,Dki Jakarta,12,Dec,5.1,Normal,0
+Indonesia,Bali,1,Jan,10.4,Watch,1
+Indonesia,Bali,2,Feb,12.1,Peak,2
+Indonesia,Bali,3,Mar,12.0,Watch,1
+Indonesia,Bali,4,Apr,12.6,Peak,2
+Indonesia,Bali,5,May,12.7,Peak,2
+Indonesia,Bali,6,Jun,10.2,Watch,1
+Indonesia,Bali,7,Jul,7.4,Normal,0
+Indonesia,Bali,8,Aug,5.2,Normal,0
+Indonesia,Bali,9,Sep,4.3,Normal,0
+Indonesia,Bali,10,Oct,4.1,Normal,0
+Indonesia,Bali,11,Nov,4.4,Normal,0
+Indonesia,Bali,12,Dec,4.7,Normal,0
+Indonesia,Sumatera Utara,1,Jan,9.1,Normal,0
+Indonesia,Sumatera Utara,2,Feb,7.7,Normal,0
+Indonesia,Sumatera Utara,3,Mar,6.7,Normal,0
+Indonesia,Sumatera Utara,4,Apr,6.2,Normal,0
+Indonesia,Sumatera Utara,5,May,7.5,Normal,0
+Indonesia,Sumatera Utara,6,Jun,8.0,Normal,0
+Indonesia,Sumatera Utara,7,Jul,8.3,Normal,0
+Indonesia,Sumatera Utara,8,Aug,9.0,Normal,0
+Indonesia,Sumatera Utara,9,Sep,10.0,Peak,2
+Indonesia,Sumatera Utara,10,Oct,10.9,Peak,2
+Indonesia,Sumatera Utara,11,Nov,9.4,Normal,0
+Indonesia,Sumatera Utara,12,Dec,7.0,Normal,0
+Indonesia,Aceh,1,Jan,10.3,Peak,2
+Indonesia,Aceh,2,Feb,9.4,Normal,0
+Indonesia,Aceh,3,Mar,7.4,Normal,0
+Indonesia,Aceh,4,Apr,6.1,Normal,0
+Indonesia,Aceh,5,May,6.3,Normal,0
+Indonesia,Aceh,6,Jun,5.9,Normal,0
+Indonesia,Aceh,7,Jul,6.7,Normal,0
+Indonesia,Aceh,8,Aug,7.2,Normal,0
+Indonesia,Aceh,9,Sep,8.2,Normal,0
+Indonesia,Aceh,10,Oct,10.4,Peak,2
+Indonesia,Aceh,11,Nov,12.2,Peak,2
+Indonesia,Aceh,12,Dec,9.8,Normal,0
+Indonesia,Kalimantan Barat,1,Jan,12.6,Peak,2
+Indonesia,Kalimantan Barat,2,Feb,8.5,Normal,0
+Indonesia,Kalimantan Barat,3,Mar,6.7,Normal,0
+Indonesia,Kalimantan Barat,4,Apr,5.5,Normal,0
+Indonesia,Kalimantan Barat,5,May,5.4,Normal,0
+Indonesia,Kalimantan Barat,6,Jun,4.8,Normal,0
+Indonesia,Kalimantan Barat,7,Jul,5.3,Normal,0
+Indonesia,Kalimantan Barat,8,Aug,6.1,Normal,0
+Indonesia,Kalimantan Barat,9,Sep,8.3,Normal,0
+Indonesia,Kalimantan Barat,10,Oct,12.8,Peak,2
+Indonesia,Kalimantan Barat,11,Nov,14.9,Peak,2
+Indonesia,Kalimantan Barat,12,Dec,9.3,Normal,0
+Indonesia,Riau,1,Jan,11.0,Peak,2
+Indonesia,Riau,2,Feb,9.6,Normal,0
+Indonesia,Riau,3,Mar,6.7,Normal,0
+Indonesia,Riau,4,Apr,6.0,Normal,0
+Indonesia,Riau,5,May,5.8,Normal,0
+Indonesia,Riau,6,Jun,5.6,Normal,0
+Indonesia,Riau,7,Jul,6.4,Normal,0
+Indonesia,Riau,8,Aug,6.5,Normal,0
+Indonesia,Riau,9,Sep,7.5,Normal,0
+Indonesia,Riau,10,Oct,9.9,Normal,0
+Indonesia,Riau,11,Nov,13.4,Peak,2
+Indonesia,Riau,12,Dec,11.7,Peak,2
+Indonesia,Kalimantan Utara,1,Jan,8.8,Normal,0
+Indonesia,Kalimantan Utara,2,Feb,7.9,Normal,0
+Indonesia,Kalimantan Utara,3,Mar,8.6,Normal,0
+Indonesia,Kalimantan Utara,4,Apr,8.5,Normal,0
+Indonesia,Kalimantan Utara,5,May,9.1,Normal,0
+Indonesia,Kalimantan Utara,6,Jun,7.9,Normal,0
+Indonesia,Kalimantan Utara,7,Jul,6.7,Normal,0
+Indonesia,Kalimantan Utara,8,Aug,7.1,Normal,0
+Indonesia,Kalimantan Utara,9,Sep,7.4,Normal,0
+Indonesia,Kalimantan Utara,10,Oct,9.1,Normal,0
+Indonesia,Kalimantan Utara,11,Nov,8.3,Normal,0
+Indonesia,Kalimantan Utara,12,Dec,10.5,Peak,2

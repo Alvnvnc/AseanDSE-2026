@@ -1,0 +1,6 @@
+enso_phase_lag4,order,mean_cases_per_month,n_months,ratio_vs_neutral,enough_data
+Strong La Nina,1,7189,3,0.95,No (n=3)
+La Nina,2,8111,50,1.07,Yes
+Neutral,3,7597,68,1.0,Yes
+El Nino,4,12338,35,1.62,Yes
+Strong El Nino,5,21383,16,2.81,Yes

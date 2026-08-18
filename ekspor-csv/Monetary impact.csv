@@ -1,0 +1,4 @@
+scenario,cases/year,"conservative (avg episode, US$90)",hospitalisation low (US$316),hospitalisation high (US$791),Rp/year (hospitalisation anchor)
+10% of peak-season cases averted,4656,US$0.42M,US$1.47M,US$3.68M,Rp 24-59 billion
+20% of peak-season cases averted,9312,US$0.84M,US$2.94M,US$7.37M,Rp 47-118 billion
+30% of peak-season cases averted,13968,US$1.26M,US$4.42M,US$11.05M,Rp 71-177 billion

@@ -1,0 +1,10 @@
+test,denominator,r,p_value,n,verdict
+Disaster events vs dengue cases,Raw (no denominator),0.66,0.0,99,Misleading: population artefact
+Houses flooded vs dengue cases,Raw (no denominator),0.54,0.0,99,Misleading: population artefact
+Houses flooded vs dengue incidence,Per 100k population,-0.14,0.168,99,No relationship
+Disaster events vs dengue incidence,Per 100k population,0.01,0.899,99,No relationship
+Houses flooded in year T vs incidence in year T+1,Per 100k population,-0.05,0.678,66,No relationship
+Year-on-year change within the same province (houses flooded),Per 100k population,-0.3,0.016,66,Opposite direction
+Year-on-year change within the same province (events),Per 100k population,-0.33,0.008,66,Opposite direction
+Population vs dengue cases,Raw (no denominator),0.79,0.0,99,Source of the artefact
+Population vs disaster events,Raw (no denominator),0.83,0.0,99,Source of the artefact
