@@ -192,13 +192,25 @@ banjir meninggalkan genangan, dan genangan adalah tempat berkembang biak nyamuk:
 `bencana_kabkota_indonesia.csv` (478 kab/kota, 2018–2020) menggoda untuk dipakai
 membuktikan "banjir → genangan → dengue". **Jangan** — sudah saya uji dan hasilnya nol:
 
-| Uji | Korelasi |
-|---|---|
-| Angka **mentah**: rumah terendam vs kasus dengue | **r = +0,54** ⚠️ menyesatkan |
-| Angka mentah: jumlah kejadian vs kasus | **r = +0,66** ⚠️ menyesatkan |
-| **Per 100 rb penduduk**: rumah terendam vs insidens | r = −0,14 |
-| Jeda 1 tahun (banjir T → dengue T+1), per kapita | r = −0,05 |
-| Perubahan antar-tahun **dalam provinsi yang sama** | r = −0,16 |
+Dihitung ulang di `analisis/analisis_storyboard.ipynb` (Pendalaman 6b) — panel
+33 provinsi × 2018–2020 = 99 baris; hasilnya diekspor ke
+`analisis/keluaran/banjir_vs_dengue_uji.csv` dan `banjir_vs_dengue_panel.csv`.
+
+| Uji | Korelasi | p |
+|---|---|---|
+| Angka **mentah**: rumah terendam vs kasus dengue | **r = +0,54** ⚠️ menyesatkan | <0,001 |
+| Angka mentah: jumlah kejadian vs kasus | **r = +0,66** ⚠️ menyesatkan | <0,001 |
+| **Per 100 rb penduduk**: rumah terendam vs insidens | r = −0,14 | 0,17 |
+| Per 100 rb: jumlah kejadian vs insidens | r = +0,01 | 0,90 |
+| Jeda 1 tahun (banjir T → dengue T+1), per kapita | r = −0,05 | 0,68 |
+| Perubahan antar-tahun **dalam provinsi yang sama** | r = −0,30 | 0,016 |
+
+> **Koreksi (18 Agu 2026):** baris terakhir sebelumnya ditulis −0,16; hitungan ulang
+> di notebook memberi **−0,30** (rumah terendam) dan **−0,33** (jumlah kejadian),
+> keduanya signifikan. Empat baris lainnya reproduksi persis. Arah negatif yang
+> signifikan itu **bukan** bukti banjir menekan dengue — dugaan terkuat adalah artefak
+> pelaporan (tahun bencana berat = surveilans DBD terganggu). Tetap dilaporkan sebagai
+> **hasil nol**, bukan temuan.
 
 Korelasi mentah yang tampak kuat itu **artefak ukuran penduduk**: Jawa Barat punya
 banyak bencana *dan* banyak kasus dengue semata-mata karena penduduknya 50 juta.

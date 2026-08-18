@@ -216,10 +216,15 @@ Semua catatan di bawah ini **diverifikasi langsung pada berkas yang ada di folde
   gaya Inggris, kebalikan dari SIPSN yang bergaya Indonesia. Tiap berkas punya baris
   "Jumlah"; `siapkan.py` memakainya sebagai uji silang (hasilnya **114/114 berkas cocok**)
   lalu membuangnya dari keluaran supaya tidak terhitung dua kali.
-- **Struktur provinsi bencana berbeda dengan dengue.** Ekspornya memakai 38 provinsi
-  (Papua sudah terpecah enam) **mundur sampai 2018**, sedangkan dengue 2018–2020 masih
-  memakai Papua & Papua Barat lama. Kolom `provinsi_setara_dengue` menggabungkan kembali
-  Papua Selatan/Tengah/Pegunungan → PAPUA dan Papua Barat Daya → PAPUA BARAT.
-  Pakai kolom itu untuk menggabung, bukan kolom `provinsi`.
+- **Struktur provinsi bencana berbeda dengan dengue.** Ekspornya memuat **34 label
+  provinsi** — Papua sudah terpecah sebagian (`Papua Tengah` muncul terpisah) **mundur
+  sampai 2018**, sedangkan dengue 2018–2020 masih memakai Papua lama. Kolom
+  `provinsi_setara_dengue` menggabungkannya kembali (Papua Tengah → PAPUA); pakai kolom
+  itu untuk menggabung, bukan kolom `provinsi`. **Papua Barat sama sekali tidak ada** di
+  ekspor bencana, jadi irisan dengan dengue tinggal **33 provinsi**.
+- **Panel dengue Indonesia bolong satu bulan di dua tahun**: **2016 tanpa Februari** dan
+  **2020 tanpa September** — hilang untuk *seluruh* provinsi sekaligus, jadi total tahunan
+  2016 & 2020 kurang ±1/12. Karena bolongnya seragam, perbandingan antar-provinsi di tahun
+  yang sama tidak terganggu; yang harus hati-hati adalah perbandingan **antar tahun**.
 - **IHME GBD** butuh akun dan dikirim lewat surel (batas 100.000 baris per permintaan) —
   dihindari dalam paket ini karena tenggat 4 September terlalu dekat.

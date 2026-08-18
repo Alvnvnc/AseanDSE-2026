@@ -1,0 +1,10 @@
+uji,penyebut,r,nilai_p,n,kesimpulan
+Jumlah kejadian bencana vs kasus dengue,Mentah,0.66,0.0,99,Menyesatkan: artefak penduduk
+Rumah terendam vs kasus dengue,Mentah,0.54,0.0,99,Menyesatkan: artefak penduduk
+Rumah terendam vs insidens dengue,Per 100 rb penduduk,-0.14,0.168,99,Tidak ada hubungan
+Jumlah kejadian vs insidens dengue,Per 100 rb penduduk,0.01,0.899,99,Tidak ada hubungan
+Rumah terendam tahun T vs insidens tahun T+1,Per 100 rb penduduk,-0.05,0.678,66,Tidak ada hubungan
+Perubahan antar-tahun dalam provinsi sama (rumah terendam),Per 100 rb penduduk,-0.3,0.016,66,Berlawanan arah
+Perubahan antar-tahun dalam provinsi sama (kejadian),Per 100 rb penduduk,-0.33,0.008,66,Berlawanan arah
+Penduduk vs kasus dengue,Mentah,0.79,0.0,99,Penyebab artefak
+Penduduk vs jumlah kejadian bencana,Mentah,0.83,0.0,99,Penyebab artefak
