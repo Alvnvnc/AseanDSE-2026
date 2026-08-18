@@ -5,6 +5,9 @@ masih rencana (belum ada di folder ini). Tidak ada yang butuh login; yang tersed
 dikonversi ke CSV format panjang (*long format*) siap impor ke SAP Analytics Cloud.
 
 **Ide storyboard terpilih & argumennya: lihat `IDE-STORYBOARD.md`.**
+**Naskah 15 halaman siap eksekusi: `NASKAH-STORYBOARD.md`.**
+**Bedah 15 dek finalis 2024–2025 + celah dek kita: `ANALISIS-FINALIS.md`.**
+**Dek PDF (LaTeX, 16:9, slot grafik SAC): `storyboard/` — jalankan `storyboard/bangun.sh`.**
 
 ## Tenggat
 
