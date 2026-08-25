@@ -10,6 +10,7 @@ dikonversi ke CSV format panjang (*long format*) siap impor ke SAP Analytics Clo
 **Dek PDF (LaTeX, 16:9, slot grafik SAC): `storyboard/` — jalankan `storyboard/bangun.sh`.**
 **Daftar CSV siap impor SAC + urutan & tipe kolomnya: `ekspor-csv/IMPOR-SAC.md`.**
 **Panduan kerja membangun 23 grafik di SAC: `storyboard/panduan-sac.pdf`.**
+**Membangun grafiknya otomatis (tanpa mengklik satu per satu): `otomasi-sac/`.**
 
 ## Tenggat
 
@@ -125,6 +126,28 @@ dijumlahkan — grafiknya salah kalau dibiarkan).
 naskah dan cek angka cepat, plus `sac/*.xlsx` per himpunan data sumber. Isi sama dengan
 `ekspor-csv/`; untuk impor ke SAC pakai CSV-nya.
 
+### `otomasi-sac/` — membangun 23 grafik SAC tanpa mengklik satu per satu
+
+Merakit 23 grafik dengan tangan di SAC makan waktu berjam-jam dan tidak bisa diulang:
+satu perubahan resep berarti mengklik ulang semuanya. Folder ini menulis langsung ke
+story lewat REST internal SAC, lalu menangkap tiap halaman jadi PNG 2x:
+
+```sh
+otomasi-sac/edge-mulai.sh                     # Edge kedua yang bisa dikendalikan CDP
+.venv/bin/python otomasi-sac/bangun-story.py  # bangun/segarkan 23 grafiknya
+.venv/bin/python otomasi-sac/tangkap.py       # tangkap PNG ke storyboard/gambar-sac/
+bash storyboard/bangun.sh                     # susun ulang dek + cek aturan panitia
+```
+
+**Aturan panitia tetap terpenuhi**: grafiknya benar-benar dirender SAP Analytics Cloud —
+yang diotomasi hanya penyusunan dan pengambilannya, bukan penggambarannya.
+
+Resep tiap grafik ada di `otomasi-sac/resep.py` (dataset, feed, filter, urutan, warna).
+Ubah di situ lalu jalankan ulang dua perintah pertama — tidak ada langkah manual di SAC.
+`otomasi-sac/README.md` memuat cara kerjanya beserta **26 jebakan** yang sudah dilewati;
+baca itu dulu sebelum menebak-nebak kalau SAC berubah. Langkah manual di
+`storyboard/panduan-sac.pdf` tetap berlaku sebagai cadangan.
+
 ### Skrip
 
 - `data/unduh.sh` — mengunduh ulang semua sumber mentah yang ✅ (idempoten)
@@ -135,6 +158,11 @@ naskah dan cek angka cepat, plus `sac/*.xlsx` per himpunan data sumber. Isi sama
 - `analisis/ekspor_xlsx.py` — membangun ulang `ekspor-xlsx/`
 - `storyboard/panduan_sac.py` — membangun ulang `storyboard/panduan-sac.pdf`
   (resep grafiknya dibaca dari `storyboard.tex`, tidak diketik ulang)
+- `otomasi-sac/bangun-story.py` — membangun 23 grafik di SAC dari `resep.py`
+- `otomasi-sac/tangkap.py` — menangkap tiap grafik jadi PNG ke `storyboard/gambar-sac/`
+- `otomasi-sac/periksa-gambar.py` — uji mutu PNG (ukuran, berat, deteksi gambar kosong)
+- `ekspor-csv/perbaikan.py` — membangun ulang `ekspor-csv/perbaikan/` (tabel yang perlu
+  format panjang atau label yang dipendekkan sebelum diimpor ke SAC)
 
 ### Cara mengambil data penduduk BPS
 
