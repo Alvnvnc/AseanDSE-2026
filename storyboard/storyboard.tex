@@ -14,8 +14,8 @@
 %
 %  ATURAN YANG DIPATUHI BERKAS INI
 %   - PDF landscape 16:9 (960 x 540 bp), maks. 20 MB
-%   - 14 halaman isi + 1 halaman cadangan = 15 (batas resmi, sudah termasuk
-%     sampul); halaman Referensi DI LUAR hitungan itu
+%   - 15 halaman isi (batas resmi, sudah termasuk sampul); halaman Referensi
+%     DI LUAR hitungan itu
 %   - Sampul memuat 6 unsur wajib: judul, nama tim, institusi, negara,
 %     SDG, deskripsi singkat
 %   - SEMUA grafik wajib hasil SAP Analytics Cloud. Berkas ini hanya
@@ -58,6 +58,11 @@
 \newcommand{\NamaTim}{[NAMA TIM]}
 \newcommand{\Institusi}{[NAMA INSTITUSI]}
 \newcommand{\Negara}{Indonesia}
+
+% Nama produk di halaman 15. Ganti di sini saja kalau tim memilih nama lain.
+% "Waspada" = kata Indonesia/Melayu untuk "siap siaga", sekaligus tingkat
+% pertama pada tangga peringatan bahaya Indonesia (Waspada > Siaga > Awas).
+\newcommand{\Produk}{Waspada}
 
 % ---------------------------------------------------------------- palet
 % Palet naskah: biru kasus, oranye alarm, merah puncak, abu konteks
@@ -290,13 +295,20 @@
     {Can a freely available climate index tell a health office how bad the coming
      season will be --- early enough to act?};
 
-  \teks{36}{306}{300}{\bodyfont
+  \teks{36}{306}{300}{\smlfont
     \begin{blist}
-      \item \textbf{SDG 3} Health --- reduce dengue burden
-      \item \textbf{SDG 13} Climate --- use climate information for adaptation
-      \item \textbf{SDG 6} Water --- target the most vulnerable districts
+      \item \textbf{SDG target 3.3} --- end the epidemics of neglected tropical
+            diseases; dengue is one of them
+      \item \textbf{SDG target 13.1} --- resilience and adaptive capacity to
+            climate-related hazards
+      \item \textbf{SDG target 6.1} --- safe water for all; without piped water
+            households store it, and \textit{Aedes} breeds in the store
     \end{blist}
-    \vspace{14bp}
+    \vspace{9bp}
+    \textbf{ASEAN priority.} Dengue sits under \textbf{ASEAN Health Cluster 2}
+    --- \emph{Responding to All Hazards and Emerging Threats} --- whose ASEAN
+    Dengue Day statements ask member states for earlier, multi-sector action.
+    \par\vspace{9bp}
     \textcolor{muted}{Our test: does the signal survive when we remove the seasonal
     cycle, hold out unseen years, and use the WHO outbreak definition?}}
 
@@ -766,31 +778,102 @@
 \end{halaman}
 
 % =====================================================================
-% HALAMAN 15 — CADANGAN (kuota resmi 15 halaman masih sisa satu)
-% Hapus halaman ini, atau isi dengan halaman produk/prototipe.
-% Semua 15 dek finalis yang kami analisa punya produk bernama + mockup UI.
+% HALAMAN 15 — PRODUK
+% Menutup tiga sub-kriteria sekaligus: Innovation/Integration (AI & teknologi
+% digital), Viability/Stakeholder Analysis (peran pemerintah, NGO, swasta),
+% dan saran panitia agar tim mengajukan app/prototipe.
+% Nama produknya ada di makro \Produk (dekat data tim di bagian atas berkas).
 % =====================================================================
 \begin{halaman}
-  \navbar{0}
-  \kepala{Halaman cadangan}{Kuota resmi 15 halaman --- satu halaman masih kosong}
+  \navbar{5}
+  \kepala{The product}{\Produk{} --- the rule, delivered on the first of every month}
 
-  \draw[rounded corners=4bp, fill=soft, draw=line, dashed, line width=0.9bp]
-       (36,\CTOP) rectangle ++(888,-330);
-  \teks{60}{398}{840}{\bodyfont
-    Halaman 1--14 sudah memakai 14 dari 15 halaman yang diizinkan
-    (halaman Referensi tidak dihitung). \textbf{Satu halaman masih tersisa.}\\[16bp]
-    Dari 15 dek finalis ASEAN DSE 2024--2025 yang dianalisa, \textbf{seluruhnya}
-    menutup bagian solusi dengan sebuah \textbf{produk bernama beserta mockup
-    antarmuka} --- CircularEat, Agrigrow, MentaLink, GreenLoop, Nurture Hub.
-    Panitia sendiri menyatakan tim ``encouraged to create an app or technological
-    prototype'' untuk memperkuat pencalonan di National Finals.\\[16bp]
-    Storyboard ini berhenti pada \emph{aturan}, bukan \emph{produk}. Halaman ini
-    adalah tempatnya: satu nama, satu mockup dashboard SAC atau aplikasi, dan
-    siapa yang menekan tombolnya.\\[16bp]
-    \textcolor{muted}{Isi halaman ini, atau hapus seluruh blok
-    \texttt{halaman} ini di berkas .tex --- dek tetap sah dengan 14 halaman.}};
+  % ---- pita nama produk
+  \draw[rounded corners=4bp, fill=deep, draw=none] (\ML,\CTOP) rectangle ++(\CW,-62);
+  \node[anchor=north west, text=white, font=\fontsize{23}{27}\selectfont\bfseries]
+       at (54,412) {\Produk};
+  \node[anchor=north west, text width=706bp, align=left, text=white, font=\smlfont]
+       at (196,410)
+    {\emph{waspada} --- Indonesian and Malay for \emph{stay alert}, and the first
+     rung of Indonesia's own hazard ladder. One SAC page a district officer opens
+     on the 1st, plus an automatic WhatsApp advisory. It escalates; it never
+     declares an emergency.};
 
-  \kaki{Catatan kerja internal --- jangan ikut disubmit dalam keadaan seperti ini.}{15}
+  % ---- lapis digital (sub-kriteria Innovation: integration of AI & digital tech)
+  \node[anchor=north west, text width=\CW bp, align=left, text=ink, font=\smlfont]
+       at (\ML,348)
+    {\textbf{The digital layer does the fetching, not the deciding.} SAC refreshes
+     the NOAA ONI feed and the office's own case calendar on a schedule, and SAC
+     Smart Predict runs beside the rule as a second opinion. The alert itself stays
+     the two-condition rule --- auditable by hand, so nobody has to trust a model
+     they cannot inspect.};
+
+  % ---- mockup dashboard
+  \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (\ML,308)
+    {What Bali opens on 1 October 2026};
+
+  \draw[rounded corners=5bp, fill=white, draw=line, line width=0.9bp]
+       (\ML,290) rectangle ++(444,-226);
+  \draw[fill=soft, draw=none] (\ML,290) rectangle ++(444,-26);
+  \draw[line, line width=0.6bp] (\ML,264) -- ({\ML+444},264);
+  \foreach \dx in {12,24,36}{\fill[line] ({\ML+\dx},277) circle (3bp);}
+  \node[anchor=west, text=muted, font=\tnyfont\bfseries] at ({\ML+52},277)
+    {\Produk\ $\cdot$ Dinkes Prov.\ Bali $\cdot$ Oct 2026 $\cdot$
+     next refresh 1 Nov};
+
+  % banner peringatan
+  \draw[rounded corners=3bp, fill=peak, draw=none] (48,254) rectangle ++(420,-34);
+  \node[anchor=north west, text width=396bp, align=left, text=white, font=\smlfont\bfseries]
+       at (60,250)
+    {ALERT --- Jan--Apr 2027. ONI in Sep 2026 was $+1.3$ ($\geq 0.5$).};
+  \node[anchor=north west, text width=396bp, align=left, text=white, font=\tnyfont]
+       at (60,234) {Expect a top-quartile season. Act now, not in January.};
+
+  % grafik SAC di dalam mockup — bukti bahwa isinya keluaran SAC sungguhan
+  \IfFileExists{gambar-sac/h11-deret-aturan.png}{%
+    \node[anchor=north west] at (48,214)
+      {\includegraphics[width=420bp]{gambar-sac/h11-deret-aturan}};
+  }{%
+    \draw[rounded corners=3bp, fill=soft, draw=line, dashed] (48,214) rectangle ++(420,-142);
+  }
+
+  % ---- tabel pemangku kepentingan (sub-kriteria Viability: peran yang jelas)
+  \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (516,308)
+    {Who presses which button};
+
+  \node[anchor=north west] at (516,288) {%
+    \begin{minipage}{408bp}
+      \smlfont
+      \setlength{\arrayrulewidth}{0.5bp}
+      \arrayrulecolor{line}
+      \renewcommand{\arraystretch}{1.34}
+      \begin{tabular}{@{}>{\raggedright\arraybackslash}p{104bp}@{\hspace{12bp}}>{\raggedright\arraybackslash}p{292bp}@{}}
+        \thd{Who} & \thd{Role}\\[-2bp]
+        \hline
+        \textbf{District health office} \textcolor{muted}{gov't}
+          & Reads the advisory; moves PSN/3M, larviciding and stockpiles
+            \emph{forward} into the alerted window\\
+        \textbf{Ministry of Health $\cdot$ BMKG} \textcolor{muted}{gov't}
+          & Own the monthly refresh; BMKG's forecast ONI stretches the notice
+            past four months\\
+        \textbf{\emph{Jumantik} cadres} \textcolor{muted}{NGO \& community}
+          & Larval checks and household messaging concentrated in the alerted
+            months instead of spread thin all year\\
+        \textbf{Cloud \& telco partners} \textcolor{muted}{private}
+          & Host the SAC tenant and the broadcast --- one analyst-hour a month,
+            no data team\\
+        \hline
+      \end{tabular}
+    \end{minipage}};
+
+  \draw[rounded corners=4bp, fill=soft, draw=none] (516,122) rectangle ++(408,-58);
+  \node[anchor=north west, text=alarm, font=\eyefont] at (532,108) {SCALES BY SWAPPING ONE INPUT};
+  \teks{532}{90}{376}{\tnyfont
+    Thailand already validates with its own predictor (temperature anomaly,
+    lag 2, lift 2.7). Any ASEAN member repeats the fit on its own records.}
+
+  \kaki{The rule is the product's engine, not a feature of it: strip the dashboard
+        away and a health office can still run \Produk{} on paper.}{15}
 \end{halaman}
 
 % =====================================================================

@@ -112,9 +112,10 @@ kami buktikan sendiri."
 
 > ## Climate data arrives months before patients do
 > **Can a freely available climate index tell a health office how bad the coming season will be — early enough to act?**
-> - **SDG 3** Health: reduce dengue burden
-> - **SDG 13** Climate: use climate information for adaptation
-> - **SDG 6** Water: target the most vulnerable districts
+> - **SDG target 3.3** — end the epidemics of neglected tropical diseases; dengue is one of them
+> - **SDG target 13.1** — resilience and adaptive capacity to climate-related hazards
+> - **SDG target 6.1** — safe water for all; without piped water households store it, and *Aedes* breeds in the store
+> **ASEAN priority.** Dengue sits under **ASEAN Health Cluster 2** — *Responding to All Hazards and Emerging Threats* — whose ASEAN Dengue Day statements ask member states for earlier, multi-sector action.
 > Our test: does the signal survive when we remove the seasonal cycle, hold out unseen years, and use the WHO outbreak definition?
 
 **Visual**: tanpa dataset. Diagram alur di SAC (Shapes + Text):
@@ -122,6 +123,11 @@ kami buktikan sendiri."
 
 **Catatan penyaji**: tiga syarat uji yang disebut di halaman ini adalah janji yang ditagih juri
 di halaman 7, 12, dan 14 — pastikan ketiganya benar-benar dijawab.
+
+Dua baris kecil di halaman ini menutup dua sub-kriteria **Problem Definition (10%)** yang
+disebut panitia secara harfiah: *"explicit link to specific UN SDG targets/indicators"* dan
+*"alignment to specific ASEAN work plan/priority"*. Menyebut "SDG 3" saja tidak memenuhi
+yang pertama.
 
 ---
 
@@ -434,7 +440,42 @@ melakukan ini, dan juri analisis mengenalinya seketika.
 
 ---
 
-# Halaman 15 — References (di luar hitungan 15 halaman)
+# Halaman 15 — The product
+
+**On-slide text**
+
+> ## Waspada — the rule, delivered on the first of every month
+> *waspada* — Indonesian and Malay for *stay alert*, and the first rung of Indonesia's own hazard ladder. One SAC page a district officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates; it never declares an emergency.
+> **The digital layer does the fetching, not the deciding.** SAC refreshes the NOAA ONI feed and the office's own case calendar on a schedule, and SAC Smart Predict runs beside the rule as a second opinion. The alert itself stays the two-condition rule — auditable by hand.
+>
+> | Who | Role |
+> |---|---|
+> | District health office *(gov't)* | Reads the advisory; moves PSN/3M, larviciding and stockpiles **forward** into the alerted window |
+> | Ministry of Health · BMKG *(gov't)* | Own the monthly refresh; BMKG's forecast ONI stretches the notice past four months |
+> | *Jumantik* cadres *(NGO & community)* | Larval checks and household messaging concentrated in the alerted months instead of spread thin all year |
+> | Cloud & telco partners *(private)* | Host the SAC tenant and the broadcast — one analyst-hour a month, no data team |
+>
+> Scales by swapping one input: Thailand already validates with its own predictor (temperature anomaly, lag 2, lift 2.7).
+
+**Visual** — mockup dashboard (kotak digambar di LaTeX) yang **memuat grafik SAC sungguhan**
+di dalamnya: `h11-deret-aturan` (time series bulan-bulan aturan menyala). Jadi mockup-nya
+bukan gambar hiasan — isinya keluaran SAC yang sama dengan halaman 11.
+
+**Kenapa halaman ini ada**: menutup tiga hal sekaligus —
+*Innovation → "integration of AI and digital technology"* (15%),
+*Viability → "clear roles for govt, NGOs, or private sectors"* (15%), dan saran resmi panitia
+di halaman The Competition: *"We advise your team to create an app using any technological
+product/prototype … to get a better chance of being shortlisted for the National Finals."*
+
+**Catatan penyaji**: jangan biarkan produk menelan aturannya. Urutan bicaranya tetap
+aturan dulu (halaman 11), produk belakangan — kaki halaman ini sengaja berbunyi
+*"strip the dashboard away and a health office can still run Waspada on paper."*
+Nama produk ada di makro `\Produk` pada `storyboard/storyboard.tex`; ganti di satu tempat itu
+kalau tim memilih nama lain.
+
+---
+
+# Referensi (di luar hitungan 15 halaman)
 
 > **Data**: OpenDengue V1.3 (doi:10.6084/m9.figshare.24259573.v4) · World Bank CCKP (ERA5 0.25°) ·
 > NOAA CPC Oceanic Niño Index · WHO/UNICEF JMP 2025 · BPS Indonesia (WebAPI) · GHSL (JRC) · SIPSN KLHK · BNPB
@@ -460,3 +501,7 @@ consensus.app dengan DOI jurnal** sebelum submit.
 - [ ] Sensitivitas 44% disebutkan, tidak disembunyikan
 - [ ] Skenario 10% ditandai sebagai asumsi
 - [ ] Sumber tercantum di kaki tiap halaman berdata
+- [ ] `\NamaTim` dan `\Institusi` di `storyboard.tex` sudah diisi — sampul masih `[NAMA TIM]`
+- [ ] Nama produk di `\Produk` sudah disetujui tim
+- [ ] Pranala consensus.app di halaman referensi sudah diganti DOI jurnal
+- [ ] Berkas dinamai `INDONESIA_<NAMA TIM>.pdf`
