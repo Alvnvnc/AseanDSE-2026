@@ -1,0 +1,292 @@
+{
+ "storyId": "6DF8C286FA84B921135153D13929606B",
+ "halaman": [
+  {
+   "berkas": "h03-alur",
+   "pageId": "6e4ac527-6f01-4ac1-b478-0178753d6335",
+   "widgetId": "709c1307-798e-458d-9721-119011add52f",
+   "widgetIds": [
+    "709c1307-798e-458d-9721-119011add52f",
+    "42fe20b0-43f4-4a33-a556-25281fcc0649",
+    "83da82f5-749a-4b9a-a60d-fde3407c1dcd",
+    "24ccb582-ea96-41e9-8192-72fd4a4e450f",
+    "e01900cf-bbf1-4308-9d90-fe21032ec730",
+    "f6444984-8554-40b6-81c6-1f733fa558db",
+    "34a935ca-096e-429c-88bd-31c1d542d701",
+    "4e21ddd9-f8af-4cff-839c-1f74518da656",
+    "288cf608-2271-4505-9bd4-3c39bd94f3b6",
+    "6d8c4e9a-8c56-43b1-9511-7886efc36111",
+    "6dc7c67a-8a74-4c85-ab02-6c43c51c381f"
+   ],
+   "lebar": 1400,
+   "tinggi": 620,
+   "rasio": 2.4051724137931036,
+   "dataset": null,
+   "tipe": "shapes+text"
+  },
+  {
+   "berkas": "h02-tren-tahunan",
+   "pageId": "cb0fc387-4818-4de4-bc21-1dfc679bd88e",
+   "widgetId": "2a94e49e-f3cc-47a7-9b38-c4e520954f3a",
+   "widgetIds": [
+    "2a94e49e-f3cc-47a7-9b38-c4e520954f3a"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Dengue national annual",
+   "tipe": "line"
+  },
+  {
+   "berkas": "h02-per-negara",
+   "pageId": "cf493d77-dc40-455c-a607-4bb19dc86e0d",
+   "widgetId": "3faf0700-bf93-4ca1-b7f1-0e1ab6bd5817",
+   "widgetIds": [
+    "3faf0700-bf93-4ca1-b7f1-0e1ab6bd5817"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Dengue national annual",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h05-musiman-idn",
+   "pageId": "ab103963-1432-41c6-8dc0-0a0d5becdbd4",
+   "widgetId": "12df586d-8c61-4006-bf38-a025d3efd690",
+   "widgetIds": [
+    "12df586d-8c61-4006-bf38-a025d3efd690"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Seasonality IDN-THA",
+   "tipe": "combstackedbcl"
+  },
+  {
+   "berkas": "h05-musiman-tha",
+   "pageId": "1e079752-2e40-4320-9cc7-5157f273d664",
+   "widgetId": "7333c32e-8002-42c6-a671-eb9f6dfa4f39",
+   "widgetIds": [
+    "7333c32e-8002-42c6-a671-eb9f6dfa4f39"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Seasonality IDN-THA",
+   "tipe": "combstackedbcl"
+  },
+  {
+   "berkas": "h06-heatmap-jeda",
+   "pageId": "c5044c70-c367-418f-a1d1-132ba57d03c7",
+   "widgetId": "c6f9c35e-5720-486d-a98d-13275bd12ad6",
+   "widgetIds": [
+    "c6f9c35e-5720-486d-a98d-13275bd12ad6"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Lag correlation - national FIX",
+   "tipe": "heatmap"
+  },
+  {
+   "berkas": "h06-scatter-suhu",
+   "pageId": "88f98899-8571-4a5b-8275-c93353ff2329",
+   "widgetId": "f1efdf4e-8df5-4486-a270-19403092ee77",
+   "widgetIds": [
+    "f1efdf4e-8df5-4486-a270-19403092ee77"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Monthly series IDN-THA",
+   "tipe": "scatterplot"
+  },
+  {
+   "berkas": "h07-fase-enso",
+   "pageId": "175e178b-6240-4f60-9cc3-6289ebcf3533",
+   "widgetId": "f46e18b3-1764-4849-9adc-2a4f85f0ee21",
+   "widgetIds": [
+    "f46e18b3-1764-4849-9adc-2a4f85f0ee21"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "ENSO phase - averages",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h07-anomali",
+   "pageId": "56475dc5-23d1-43ce-be59-40d5769aa52d",
+   "widgetId": "abaa4ed1-5b14-47cd-9366-c4437ac4778c",
+   "widgetIds": [
+    "abaa4ed1-5b14-47cd-9366-c4437ac4778c"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Lag correlation - anomaly FIX",
+   "tipe": "heatmap"
+  },
+  {
+   "berkas": "h08-kalender-idn",
+   "pageId": "2db0d2bf-2755-4e62-845d-eb7609060c5a",
+   "widgetId": "511c59be-131b-45c4-b822-5a1520059674",
+   "widgetIds": [
+    "511c59be-131b-45c4-b822-5a1520059674"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Risk calendar IDN",
+   "tipe": "heatmap"
+  },
+  {
+   "berkas": "h08-kalender-tha",
+   "pageId": "3900ea2a-f3ac-4e74-b4e0-2f1b422879c5",
+   "widgetId": "2614e01c-548e-4553-97d6-a408ab0b680d",
+   "widgetIds": [
+    "2614e01c-548e-4553-97d6-a408ab0b680d"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Risk calendar THA",
+   "tipe": "heatmap"
+  },
+  {
+   "berkas": "h09-insidens",
+   "pageId": "b690d7bb-e9c7-46e8-8fed-a4a9b445fe14",
+   "widgetId": "301470ff-873d-4687-8577-fac06cc378dc",
+   "widgetIds": [
+    "301470ff-873d-4687-8577-fac06cc378dc"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Province incidence 18-20",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h09-wash",
+   "pageId": "a6f6efb5-f73a-49b2-8495-ef15a55e29f1",
+   "widgetId": "6386f6d9-def5-4bdc-be27-34da70ae7fea",
+   "widgetIds": [
+    "6386f6d9-def5-4bdc-be27-34da70ae7fea"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "WASH by country",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h09-banjir",
+   "pageId": "e3a5adce-d1d3-4e50-b9bf-aa104765f2fa",
+   "widgetId": "290a58a0-0f57-4486-8ee9-222c8400d352",
+   "widgetIds": [
+    "290a58a0-0f57-4486-8ee9-222c8400d352"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "City flood vulnerability",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h10-kalender-prioritas",
+   "pageId": "f73d5a94-6712-4ffe-86b7-e5c474979ec0",
+   "widgetId": "c127d002-e346-42c6-b244-14f66a75eeab",
+   "widgetIds": [
+    "c127d002-e346-42c6-b244-14f66a75eeab"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Risk calendar IDN",
+   "tipe": "heatmap"
+  },
+  {
+   "berkas": "h10-deret-alarm",
+   "pageId": "a23619a6-d5da-4f2c-9ab9-22fe1cfef886",
+   "widgetId": "c9f484b3-5a5e-4e42-8600-d05e38c8211a",
+   "widgetIds": [
+    "c9f484b3-5a5e-4e42-8600-d05e38c8211a"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Monthly series IDN-THA",
+   "tipe": "line"
+  },
+  {
+   "berkas": "h11-deret-aturan",
+   "pageId": "93b07c8b-6eb8-47bb-b2f7-e25153192fd1",
+   "widgetId": "8f48264e-d4a9-4d99-a7ba-073e25344a42",
+   "widgetIds": [
+    "8f48264e-d4a9-4d99-a7ba-073e25344a42"
+   ],
+   "lebar": 1400,
+   "tinggi": 467,
+   "dataset": "Monthly series IDN-THA",
+   "tipe": "line"
+  },
+  {
+   "berkas": "h11-aturan",
+   "pageId": "50bba8e6-95fb-4b96-8aea-c8861e56fda9",
+   "widgetId": "81a804fd-5cdc-4a79-8219-70f695d2bc16",
+   "widgetIds": [
+    "81a804fd-5cdc-4a79-8219-70f695d2bc16"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Trigger rules - evaluation LONG",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h12-luar-sampel",
+   "pageId": "79a440bc-c814-442c-8385-cb5d90e8bfa6",
+   "widgetId": "833c755c-5ac7-483b-a003-6a8fb9be41b4",
+   "widgetIds": [
+    "833c755c-5ac7-483b-a003-6a8fb9be41b4"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Trigger rules - out of sample LONG",
+   "tipe": "barcolumn"
+  },
+  {
+   "berkas": "h12-tolok-ukur",
+   "pageId": "43ec2d1c-35f2-4a03-967b-fc6765442837",
+   "widgetId": "1526f940-5285-4229-8b27-90894fdab417",
+   "widgetIds": [
+    "1526f940-5285-4229-8b27-90894fdab417"
+   ],
+   "lebar": 820,
+   "tinggi": 1000,
+   "dataset": "EWS benchmark TABLE",
+   "tipe": "tabel"
+  },
+  {
+   "berkas": "h13-dampak",
+   "pageId": "ffb20869-7787-4dc7-9c99-e706b94120b6",
+   "widgetId": "178d4f59-b382-4f8c-aa4a-7fc2479a1333",
+   "widgetIds": [
+    "178d4f59-b382-4f8c-aa4a-7fc2479a1333"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Monetary impact STACK",
+   "tipe": "stackedbar"
+  },
+  {
+   "berkas": "h13-tenggang",
+   "pageId": "ebc60685-5924-4973-ad23-b37c5f298712",
+   "widgetId": "6efe3446-086a-4257-a0f2-b95cf85c5321",
+   "widgetIds": [
+    "6efe3446-086a-4257-a0f2-b95cf85c5321"
+   ],
+   "lebar": 820,
+   "tinggi": 1000,
+   "dataset": "El Nino lead time TABLE",
+   "tipe": "tabel"
+  },
+  {
+   "berkas": "h14-kekeringan",
+   "pageId": "f6272d92-5a9f-4cac-9616-9ff0fd380d95",
+   "widgetId": "1c58b9a1-1fbe-4c18-8ae3-9d63717f295c",
+   "widgetIds": [
+    "1c58b9a1-1fbe-4c18-8ae3-9d63717f295c"
+   ],
+   "lebar": 1400,
+   "tinggi": 1400,
+   "dataset": "Drought x water access",
+   "tipe": "scatterplot"
+  }
+ ]
+}

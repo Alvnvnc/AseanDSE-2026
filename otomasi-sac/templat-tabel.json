@@ -1,0 +1,147 @@
+{
+ "id": "30910990-6834-4725-8335-810743144101",
+ "class": "sap.fpa.ui.story.entity.table.TableWidget",
+ "definition": {
+  "entityId": "6b14a5ad-c43d-4ada-8372-0f0725b6f8e3",
+  "content": {
+   "dataSource": {
+    "__data__": {
+     "querySource": "/t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33/Cpco6l1nqg1ocm2b2fo5qqjeg33_qs",
+     "cubeId": "CUBE:t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33:Cpco6l1nqg1ocm2b2fo5qqjeg33",
+     "schemaName": "TENANT_O",
+     "packageName": "t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33",
+     "EPMModel": "/t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33/Cpco6l1nqg1ocm2b2fo5qqjeg33",
+     "queryId": "planning:[TENANT_O][][/t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33/Cpco6l1nqg1ocm2b2fo5qqjeg33_qs]",
+     "isRemote": false,
+     "systemName": null,
+     "remoteObjectType": "CALCULATIONSCENARIO",
+     "remoteObjectName": "sap.dataset.conf_5B171050DF500D001A0032069967D971_view",
+     "remotePackageName": "",
+     "remoteSchemaName": "TENANT_O",
+     "name": "Cpco6l1nqg1ocm2b2fo5qqjeg33",
+     "shortDescription": "Seasonality IDN-THA",
+     "description": ""
+    }
+   }
+  },
+  "canCreateStoryFromWidget": false,
+  "autoJoinWidgetGroup": true,
+  "pauseRefresh": 0,
+  "tableDefinition": {
+   "userPreferences": {
+    "showThresholdTooltip": true,
+    "style": {
+     "editableCellFillColor": "transparent"
+    },
+    "quickActionsVisibility": {
+     "visible": true,
+     "settingsSeq": [
+      "tableDetail",
+      "selectConversions",
+      "conditions",
+      "drill",
+      "freeze",
+      "swapAxis",
+      "resizeTableToFitContent",
+      "massDataEntry",
+      "distributeValue",
+      "dataLocks",
+      "enforceIgnoreDataLocks",
+      "manageDataLocks",
+      "valueLockManagement",
+      "removeCellReference",
+      "commenting",
+      "showHide",
+      "exportToCsv",
+      "fullscreen",
+      "selectHierarchy",
+      "sorting",
+      "displayOptions",
+      "showUnbookedCombinations",
+      "addMultiNewLines",
+      "filtering",
+      "undoRedo",
+      "revert",
+      "history",
+      "publish",
+      "version",
+      "lockCell",
+      "ranking",
+      "addCalculation",
+      "gotoHyperLink",
+      "technicalInformation",
+      "simulateWithCompass",
+      "variableDialog",
+      "undo",
+      "redo",
+      "copy",
+      "analyzeData",
+      "turnTo"
+     ],
+     "tableDetail": true,
+     "selectConversions": true,
+     "conditions": true,
+     "drill": true,
+     "freeze": true,
+     "swapAxis": true,
+     "resizeTableToFitContent": true,
+     "massDataEntry": true,
+     "distributeValue": true,
+     "dataLocks": true,
+     "enforceIgnoreDataLocks": true,
+     "manageDataLocks": true,
+     "valueLockManagement": true,
+     "removeCellReference": true,
+     "commenting": true,
+     "showHide": true,
+     "exportToCsv": true,
+     "fullscreen": true,
+     "selectHierarchy": true,
+     "sorting": true,
+     "displayOptions": true,
+     "showUnbookedCombinations": true,
+     "addMultiNewLines": true,
+     "filtering": true,
+     "undoRedo": true,
+     "revert": true,
+     "history": true,
+     "publish": true,
+     "version": true,
+     "lockCell": true,
+     "ranking": true,
+     "addCalculation": true,
+     "gotoHyperLink": true,
+     "technicalInformation": true,
+     "simulateWithCompass": true,
+     "variableDialog": true,
+     "undo": true,
+     "redo": true,
+     "copy": true,
+     "analyzeData": true,
+     "turnTo": true
+    }
+   },
+   "resultSetLimitConfig": {
+    "isAspectRatio": true,
+    "isDefault": true,
+    "maxRows": 500,
+    "maxColumns": 60
+   },
+   "customSorts": {},
+   "legacyVersionSorts": [],
+   "allPrimaryMembersSelected": {
+    "[{\"datasetId\":\"planning:[TENANT_O][][/t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33/Cpco6l1nqg1ocm2b2fo5qqjeg33_qs]\"}]": false
+   },
+   "allSecondaryMembersSelected": false,
+   "entityFormatInfos": [
+    {
+     "entityId": "[{\"datasetId\":\"planning:[TENANT_O][][/t.O.Cpco6l1nqg1ocm2b2fo5qqjeg33/Cpco6l1nqg1ocm2b2fo5qqjeg33_qs]\"},{\"dimensionId\":\"CustomDimension1\"}]",
+     "format": "description"
+    }
+   ]
+  }
+ },
+ "themeClasses": [],
+ "dimension": null,
+ "serviceValidationHashes": {}
+}

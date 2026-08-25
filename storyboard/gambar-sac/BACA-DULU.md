@@ -1,8 +1,25 @@
 # Folder ekspor grafik SAP Analytics Cloud
 
+> **Panduan kerja lengkapnya ada di `storyboard/panduan-sac.pdf`** — alur 5 langkah,
+> palet, syarat ekspor, katalog 23 slot beserta resepnya, dan cek terakhir sebelum
+> submit. Berkas ini hanya daftar ringkasnya.
+
 Setiap kotak putus-putus di `storyboard.pdf` adalah **slot** yang menunggu satu berkas
 PNG di folder ini. Begitu berkasnya ada, `pdflatex` otomatis memasang gambarnya
 menggantikan kotak placeholder — tidak perlu menyunting `storyboard.tex`.
+
+> **Sekarang ada jalur otomatis.** Grafiknya dibangun di SAC lewat REST internal
+> (story `swalloy-grafik`, satu grafik per halaman) lalu ditangkap jadi PNG
+> dengan nama yang persis seperti daftar di bawah:
+>
+> ```sh
+> otomasi-sac/edge-mulai.sh                    # Edge kedua yang bisa dikendalikan
+> .venv/bin/python otomasi-sac/bangun-story.py # bangun/segarkan grafiknya
+> .venv/bin/python otomasi-sac/tangkap.py      # tangkap PNG ke folder ini
+> ```
+>
+> Langkah manual di bawah tetap berlaku sebagai cadangan. Rinciannya:
+> `otomasi-sac/README.md`.
 
 ## Cara kerja
 

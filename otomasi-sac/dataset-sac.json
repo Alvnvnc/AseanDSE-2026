@@ -1,0 +1,2125 @@
+{
+ "City flood vulnerability": {
+  "resourceId": "2B706A86FA8190A8977248AD18456F7C",
+  "cube": "Cmdo6l1nqg7edvqnevgggohi65g",
+  "relationName": "sap.dataset.conf_9D6E0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_276E0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "city_population_2025",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "exposed_2020",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "percent_2020",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "exposed_2030",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "growth_2020_2030_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "city",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "city"
+  ],
+  "olap_measure": [
+   "city_population_2025",
+   "exposed_2020",
+   "percent_2020",
+   "exposed_2030",
+   "growth_2020_2030_"
+  ],
+  "agregasi": {
+   "city_population_2025": "SUM",
+   "exposed_2020": "SUM",
+   "percent_2020": "SUM",
+   "exposed_2030": "SUM",
+   "growth_2020_2030_": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Dengue national annual": {
+  "resourceId": "FB206A86FA8723D8049707112520D86E",
+  "cube": "Cfck6l1nqg35g3qjqvbkeds4b6o",
+  "relationName": "sap.dataset.conf_F1A60D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_01650D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "cases",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "iso3",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "source_resolution",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "complete",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "source_resolution",
+   "complete",
+   "iso3",
+   "country",
+   "year"
+  ],
+  "olap_measure": [
+   "cases"
+  ],
+  "agregasi": {
+   "cases": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Drought x water access": {
+  "resourceId": "A3986A86FA82AE7DC00610F16767A9C7",
+  "cube": "C4ec6l1nqgc1uobsegjr6tll45",
+  "relationName": "sap.dataset.conf_E6730D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_56730D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "r_drought",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lag_drought",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "r_oni_lag4",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "nino_multiplier",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "piped_water_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "piped_water_year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "window",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "window"
+  ],
+  "olap_measure": [
+   "r_drought",
+   "lag_drought",
+   "r_oni_lag4",
+   "nino_multiplier",
+   "piped_water_",
+   "piped_water_year"
+  ],
+  "agregasi": {
+   "r_drought": "SUM",
+   "lag_drought": "SUM",
+   "r_oni_lag4": "SUM",
+   "nino_multiplier": "SUM",
+   "piped_water_": "SUM",
+   "piped_water_year": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "ENSO phase - averages": {
+  "resourceId": "DB106A86FA820396095947F1E98FA295",
+  "cube": "Cec86l1nqgdhi2dsdn7m9mhu35v",
+  "relationName": "sap.dataset.conf_DC620D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_5D620D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "enso_phase_lag4",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "order",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "mean_cases_per_month",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "ratio_vs_neutral",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "enough_data",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "enso_phase_lag4",
+   "enough_data"
+  ],
+  "olap_measure": [
+   "order",
+   "mean_cases_per_month",
+   "n_months",
+   "ratio_vs_neutral"
+  ],
+  "agregasi": {
+   "order": "SUM",
+   "mean_cases_per_month": "SUM",
+   "n_months": "SUM",
+   "ratio_vs_neutral": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "EWS benchmark": {
+  "resourceId": "BB886A86FA843A5F0EE3F8DFC38B7258",
+  "cube": "C8e46l1nqgkmsts6v8pofe0274p",
+  "relationName": "sap.dataset.conf_14720D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_99710D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "system",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "sensitivity",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "specificity",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "precision_PPV",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "source",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "system",
+   "sensitivity",
+   "specificity",
+   "precision_PPV",
+   "source"
+  ],
+  "olap_measure": [],
+  "agregasi": {},
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "EWS benchmark FIX": {
+  "resourceId": "C680C286FA8237093EF227AC401BF650",
+  "cube": "C8q0c51nqgf9q1l8lg1j9n7ah2f",
+  "relationName": "sap.dataset.conf_5FD01850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_5AD01850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "system",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "sensitivity_low",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "sensitivity_high",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "specificity_low",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "specificity_high",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "precision_low",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "precision_high",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "source",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "sensitivity_text",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "specificity_text",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "precision_text",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "system",
+   "source",
+   "sensitivity_text",
+   "specificity_text",
+   "precision_text"
+  ],
+  "olap_measure": [
+   "sensitivity_low",
+   "sensitivity_high",
+   "specificity_low",
+   "specificity_high",
+   "precision_low",
+   "precision_high"
+  ],
+  "agregasi": {
+   "sensitivity_low": "SUM",
+   "sensitivity_high": "SUM",
+   "specificity_low": "SUM",
+   "specificity_high": "SUM",
+   "precision_low": "SUM",
+   "precision_high": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "EWS benchmark TABLE": {
+  "resourceId": "9A48D286FA81FFF010B801A0217BBE2E",
+  "cube": "C494d51nqg8pp9e9f701qprqp5s",
+  "relationName": "sap.dataset.conf_3A491A50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_35491A50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "system",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "sensitivity_low",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "sensitivity_high",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "precision_low",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "precision_high",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "source",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "system",
+   "source"
+  ],
+  "olap_measure": [
+   "sensitivity_low",
+   "sensitivity_high",
+   "precision_low",
+   "precision_high"
+  ],
+  "agregasi": {
+   "sensitivity_low": "SUM",
+   "sensitivity_high": "SUM",
+   "precision_low": "SUM",
+   "precision_high": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "El Nino episodes - lead time": {
+  "resourceId": "3B906A86FA849016955415D8755983D4",
+  "cube": "Cne86l1nqgh1rpec8b855vd1746",
+  "relationName": "sap.dataset.conf_F1720D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_89720D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "episode",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "oni_peak",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "alarm_fires",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "cases_cross_p75",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "lead_time_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "peak_cases_12m",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   }
+  ],
+  "olap_dimensi": [
+   "episode",
+   "alarm_fires",
+   "cases_cross_p75"
+  ],
+  "olap_measure": [
+   "oni_peak",
+   "lead_time_months",
+   "peak_cases_12m"
+  ],
+  "agregasi": {
+   "oni_peak": "SUM",
+   "lead_time_months": "SUM",
+   "peak_cases_12m": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "El Nino lead time TABLE": {
+  "resourceId": "A250D286FA804CD980F1C25E90CD58E7",
+  "cube": "Cc98d51nqg6l2sdhou4mk670c13",
+  "relationName": "sap.dataset.conf_234A1A50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_1A4A1A50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "episode",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "alarm",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "cases_cross",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "lead_time_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   }
+  ],
+  "olap_dimensi": [
+   "episode",
+   "alarm",
+   "cases_cross"
+  ],
+  "olap_measure": [
+   "lead_time_months"
+  ],
+  "agregasi": {
+   "lead_time_months": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Flood vs dengue panel": {
+  "resourceId": "8BA06A86FA826C710506874153D44B2E",
+  "cube": "Cn83agrt879t39uogtnqaolm2",
+  "relationName": "sap.dataset.conf_B9740D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_53740D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "province",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "cases",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "population",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "incidence_per_100k",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "houses_flooded",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "disaster_events",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "houses_flooded_per_100k",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "disaster_events_per_100k",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "province"
+  ],
+  "olap_measure": [
+   "year",
+   "cases",
+   "population",
+   "n_months",
+   "incidence_per_100k",
+   "houses_flooded",
+   "disaster_events",
+   "houses_flooded_per_100k",
+   "disaster_events_per_100k"
+  ],
+  "agregasi": {
+   "year": "SUM",
+   "cases": "SUM",
+   "population": "SUM",
+   "n_months": "SUM",
+   "incidence_per_100k": "SUM",
+   "houses_flooded": "SUM",
+   "disaster_events": "SUM",
+   "houses_flooded_per_100k": "SUM",
+   "disaster_events_per_100k": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Flood vs dengue tests": {
+  "resourceId": "F3E06A86FA846D47CD30C16EA8DF49D1",
+  "cube": "Cefg6l1nqgksk61lmkroqm0n935",
+  "relationName": "sap.dataset.conf_097D0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_A07C0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "test",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "r",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "p_value",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "denominator",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "verdict",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "test",
+   "denominator",
+   "verdict"
+  ],
+  "olap_measure": [
+   "r",
+   "p_value",
+   "n"
+  ],
+  "agregasi": {
+   "r": "SUM",
+   "p_value": "SUM",
+   "n": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Lag correlation - anomaly": {
+  "resourceId": "2B506A86FA87C97FD9D669F37123E5C8",
+  "cube": "Ctd86l1nqgv28p5ltr8damel7",
+  "relationName": "sap.dataset.conf_706B0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_E96A0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "iso3",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "r",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "predictor",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "iso3",
+   "predictor"
+  ],
+  "olap_measure": [
+   "lag",
+   "r",
+   "n_months"
+  ],
+  "agregasi": {
+   "lag": "SUM",
+   "r": "SUM",
+   "n_months": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Lag correlation - anomaly FIX": {
+  "resourceId": "9688C286FA86BFDB9A231EC6F6DCA460",
+  "cube": "C2q4c51nqgtgtdprdbrlbichgj",
+  "relationName": "sap.dataset.conf_D9D11850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_D4D11850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "iso3",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "r",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "predictor",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag_label",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "iso3",
+   "predictor",
+   "lag_label"
+  ],
+  "olap_measure": [
+   "lag",
+   "r",
+   "n_months"
+  ],
+  "agregasi": {
+   "lag": "SUM",
+   "r": "SUM",
+   "n_months": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Lag correlation - national": {
+  "resourceId": "1B606A86FA8122B9FA03B2779A7A97A7",
+  "cube": "Ckdg6l1nqg5qluffo170oov1f5u",
+  "relationName": "sap.dataset.conf_AA6C0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_256C0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "iso3",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "r",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "predictor",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "iso3",
+   "predictor"
+  ],
+  "olap_measure": [
+   "lag",
+   "r",
+   "n_months"
+  ],
+  "agregasi": {
+   "lag": "SUM",
+   "r": "SUM",
+   "n_months": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Lag correlation - national FIX": {
+  "resourceId": "BE78C286FA80CFCBEEB8130D4FE00C64",
+  "cube": "Cepsc51nqg7uulnlv5hugc4epb",
+  "relationName": "sap.dataset.conf_20CF1850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_1ACF1850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "iso3",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "r",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "predictor",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "lag_label",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "iso3",
+   "predictor",
+   "lag_label"
+  ],
+  "olap_measure": [
+   "lag",
+   "r",
+   "n_months"
+  ],
+  "agregasi": {
+   "lag": "SUM",
+   "r": "SUM",
+   "n_months": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Monetary impact": {
+  "resourceId": "D3486A86FA82EE2663A898CA18AED727",
+  "cube": "Cad46l1nqgc8mc6n9abfs8nir5v",
+  "relationName": "sap.dataset.conf_0B6A0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_5C690D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "scenario",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "cases_year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "conservative_avg_episode_US_90_",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "hospitalisation_low_US_316_",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "hospitalisation_high_US_791_",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "Rp_year_hospitalisation_anchor_",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "scenario",
+   "conservative_avg_episode_US_90_",
+   "hospitalisation_low_US_316_",
+   "hospitalisation_high_US_791_",
+   "Rp_year_hospitalisation_anchor_"
+  ],
+  "olap_measure": [
+   "cases_year"
+  ],
+  "agregasi": {
+   "cases_year": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Monetary impact FIX": {
+  "resourceId": "4E90C286FA842C2EE8E8B97BBC98BE6F",
+  "cube": "Cpq8c51nqggvsh8lbqv1jo62i41",
+  "relationName": "sap.dataset.conf_90D21850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_8BD21850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "scenario",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "cases_year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "conservative_usd_m",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "hospitalisation_low_usd_m",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "hospitalisation_high_usd_m",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "rp_low_billion",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "rp_high_billion",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "rp_text",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "scenario",
+   "hospitalisation_low_usd_m",
+   "hospitalisation_high_usd_m",
+   "rp_text"
+  ],
+  "olap_measure": [
+   "cases_year",
+   "conservative_usd_m",
+   "rp_low_billion",
+   "rp_high_billion"
+  ],
+  "agregasi": {
+   "cases_year": "SUM",
+   "conservative_usd_m": "SUM",
+   "rp_low_billion": "SUM",
+   "rp_high_billion": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Monetary impact LONG": {
+  "resourceId": "B6A8C286FA86DBC90EBC77E06E7F2A3A",
+  "cube": "C8qkc51nqgvuet6esdqcr1fat7n",
+  "relationName": "sap.dataset.conf_DFD51850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_DAD51850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "scenario",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "usd_thousand",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "metric",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "scenario",
+   "metric"
+  ],
+  "olap_measure": [
+   "usd_thousand"
+  ],
+  "agregasi": {
+   "usd_thousand": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Monetary impact STACK": {
+  "resourceId": "79D8D286FA844018A6CF95588DE260FA",
+  "cube": "Cv7cd51nqggd87ipikt1cjkcm4k",
+  "relationName": "sap.dataset.conf_963B1A50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_913B1A50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "scenario",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "usd_thousand",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "metric",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "scenario",
+   "metric"
+  ],
+  "olap_measure": [
+   "usd_thousand"
+  ],
+  "agregasi": {
+   "usd_thousand": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Monthly series IDN-THA": {
+  "resourceId": "DB086A86FA81B79A35CEF734CAE2FD4B",
+  "cube": "Cbc46l1nqgb3svja2v1nnb5nm1g",
+  "relationName": "sap.dataset.conf_C7610D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_3D610D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "period",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "date",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "month",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "cases",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "cases_anomaly_z",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "threshold_p75",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "oni",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "oni_lag3",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "oni_lag4",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "temp_c",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "temp_c_lag2",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "rain_mm",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "rain_mm_lag1",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "month_name",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "peak_case_month",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "alarm_rule_d",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "alarm_el_nino",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "enso_phase_lag4",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "period",
+   "date",
+   "month_name",
+   "peak_case_month",
+   "alarm_rule_d",
+   "alarm_el_nino",
+   "enso_phase_lag4"
+  ],
+  "olap_measure": [
+   "year",
+   "month",
+   "cases",
+   "cases_anomaly_z",
+   "threshold_p75",
+   "oni",
+   "oni_lag3",
+   "oni_lag4",
+   "temp_c",
+   "temp_c_lag2",
+   "rain_mm",
+   "rain_mm_lag1"
+  ],
+  "agregasi": {
+   "year": "SUM",
+   "month": "SUM",
+   "cases": "SUM",
+   "cases_anomaly_z": "SUM",
+   "threshold_p75": "SUM",
+   "oni": "SUM",
+   "oni_lag3": "SUM",
+   "oni_lag4": "SUM",
+   "temp_c": "SUM",
+   "temp_c_lag2": "SUM",
+   "rain_mm": "SUM",
+   "rain_mm_lag1": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Province consistency IDN": {
+  "resourceId": "DBD86A86FA8352EF4D368C6A326F3ECD",
+  "cube": "Cbfc6l1nqgikgopmiv5cqrcv63v",
+  "relationName": "sap.dataset.conf_137C0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_7D7B0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "province",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "ratio_nino_vs_other",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "n_months_nino",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "direction",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "province",
+   "direction"
+  ],
+  "olap_measure": [
+   "ratio_nino_vs_other",
+   "n_months_nino"
+  ],
+  "agregasi": {
+   "ratio_nino_vs_other": "SUM",
+   "n_months_nino": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Province incidence 18-20": {
+  "resourceId": "EB386A86FA803E15DC71E9BBDED001AC",
+  "cube": "Cdcs6l1nqg5imoqne3l121j681d",
+  "relationName": "sap.dataset.conf_7F670D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_1F670D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "province",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "Col_2018",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "Col_2019",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "Col_2020",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "mean",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "peak_month",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "province",
+   "peak_month"
+  ],
+  "olap_measure": [
+   "Col_2018",
+   "Col_2019",
+   "Col_2020",
+   "mean"
+  ],
+  "agregasi": {
+   "Col_2018": "SUM",
+   "Col_2019": "SUM",
+   "Col_2020": "SUM",
+   "mean": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Risk calendar IDN": {
+  "resourceId": "53186A86FA8273B4F20653E100586DF8",
+  "cube": "Cqcc6l1nqg9tgj69bnmq6lckb7f",
+  "relationName": "sap.dataset.conf_77640D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_4C630D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "month",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "share_percent",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "status_code",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "province",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "month_name",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "status",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "province",
+   "month_name",
+   "status"
+  ],
+  "olap_measure": [
+   "month",
+   "share_percent",
+   "status_code"
+  ],
+  "agregasi": {
+   "month": "SUM",
+   "share_percent": "SUM",
+   "status_code": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Risk calendar THA": {
+  "resourceId": "FB686A86FA808640ED53A1C820F9A3E7",
+  "cube": "Chdk6l1nqg6808kje5dvjdgjv5t",
+  "relationName": "sap.dataset.conf_9A6D0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_226D0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "month",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "share_percent",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "status_code",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "province",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "month_name",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "status",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "province",
+   "month_name",
+   "status"
+  ],
+  "olap_measure": [
+   "month",
+   "share_percent",
+   "status_code"
+  ],
+  "agregasi": {
+   "month": "SUM",
+   "share_percent": "SUM",
+   "status_code": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Rules vs endemic channel": {
+  "resourceId": "CB806A86FA85A2FDCFCCE3B8CED39B00",
+  "cube": "Cfe06l1nqgotrmp2rgpfor7rv8",
+  "relationName": "sap.dataset.conf_32710D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_BF700D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "rule",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "coverage_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "specificity_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "rule",
+   "coverage_",
+   "sensitivity_",
+   "specificity_"
+  ],
+  "olap_measure": [
+   "precision_",
+   "lift"
+  ],
+  "agregasi": {
+   "precision_": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Rules vs endemic channel FIX": {
+  "resourceId": "BE98C286FA81617D6FC92DC2D3561597",
+  "cube": "C7qcc51nqg8on2alnc2n8mkj237",
+  "relationName": "sap.dataset.conf_3ED31850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_39D31850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "rule",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "coverage_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "specificity_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_pct",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "rule",
+   "coverage_pct",
+   "sensitivity_pct",
+   "specificity_pct"
+  ],
+  "olap_measure": [
+   "precision_pct",
+   "lift"
+  ],
+  "agregasi": {
+   "precision_pct": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Seasonality IDN-THA": {
+  "resourceId": "4B306A86FA809E94492555FA22CD90DC",
+  "cube": "Cpco6l1nqg1ocm2b2fo5qqjeg33",
+  "relationName": "sap.dataset.conf_5B171050DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_0B660D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "month",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "mean_cases",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "mean_rain_mm",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "mean_temp_c",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "month_name",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "complete_years_window",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "month_name",
+   "complete_years_window",
+   "month"
+  ],
+  "olap_measure": [
+   "mean_cases",
+   "mean_rain_mm",
+   "mean_temp_c"
+  ],
+  "agregasi": {
+   "mean_cases": "SUM",
+   "mean_rain_mm": "SUM",
+   "mean_temp_c": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - evaluation": {
+  "resourceId": "3806A86FA823441EFCF7ADCAD25D42A",
+  "cube": "Cke06l1nqg1r1a7ig7r0mgg903c",
+  "relationName": "sap.dataset.conf_62700D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_06700D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "rule",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "alarm_coverage_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "rule",
+   "alarm_coverage_",
+   "sensitivity_"
+  ],
+  "olap_measure": [
+   "precision_",
+   "lift"
+  ],
+  "agregasi": {
+   "precision_": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - evaluation FIX": {
+  "resourceId": "5EA0C286FA81D7F3EE9A1426282D0F81",
+  "cube": "Csqgc51nqg73pg48v6l7m20e01h",
+  "relationName": "sap.dataset.conf_33D41850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_2ED41850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "rule",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "alarm_coverage_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_pct",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "rule",
+   "alarm_coverage_pct",
+   "sensitivity_pct"
+  ],
+  "olap_measure": [
+   "precision_pct",
+   "lift"
+  ],
+  "agregasi": {
+   "precision_pct": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - evaluation LONG": {
+  "resourceId": "3EB0C286FA84AE97D5D59FDE606EAC51",
+  "cube": "Cnqoc51nqggogj02tg8acir3q3d",
+  "relationName": "sap.dataset.conf_8ED61850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_89D61850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "rule",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "value",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "metric",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "rule",
+   "metric"
+  ],
+  "olap_measure": [
+   "value"
+  ],
+  "agregasi": {
+   "value": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - out of sample": {
+  "resourceId": "CB386A86FA8728494425ABBFEADFD59E",
+  "cube": "Cad06l1nqg0iqs81hnspk2s1bj",
+  "relationName": "sap.dataset.conf_68680D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_FB670D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "period",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "coverage_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "period",
+   "coverage_",
+   "sensitivity_",
+   "country"
+  ],
+  "olap_measure": [
+   "n_months",
+   "precision_",
+   "lift"
+  ],
+  "agregasi": {
+   "n_months": "SUM",
+   "precision_": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - out of sample FIX": {
+  "resourceId": "D6A0C286FA873E24F07751317EE1105B",
+  "cube": "Caqkc51nqg1ooe1mp14tlknk963",
+  "relationName": "sap.dataset.conf_01D51850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_FCD41850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "period",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "n_months",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "coverage_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "sensitivity_pct",
+    "tipe": "date",
+    "storage": "DATE"
+   },
+   {
+    "nama": "precision_pct",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "lift",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "period",
+   "coverage_pct",
+   "sensitivity_pct",
+   "country"
+  ],
+  "olap_measure": [
+   "n_months",
+   "precision_pct",
+   "lift"
+  ],
+  "agregasi": {
+   "n_months": "SUM",
+   "precision_pct": "SUM",
+   "lift": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "Trigger rules - out of sample LONG": {
+  "resourceId": "B6B8C286FA826B288C986C8D048DC46F",
+  "cube": "C6qsc51nqgcvhb6jua37gdbnk7i",
+  "relationName": "sap.dataset.conf_5DD71850DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_58D71850DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "value",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "period",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "metric",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   }
+  ],
+  "olap_dimensi": [
+   "country",
+   "period",
+   "metric"
+  ],
+  "olap_measure": [
+   "value"
+  ],
+  "agregasi": {
+   "value": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ },
+ "WASH by country": {
+  "resourceId": "C3786A86FA8138CBC741B6247FCCD173",
+  "cube": "C8ds6l1nqgb499r19dg47cghv3i",
+  "relationName": "sap.dataset.conf_956F0D50DF500D001A0032069967D971_view",
+  "relationSchema": "TENANT_O",
+  "datasetId": "ds_3A6F0D50DF500D001A0032069967D971",
+  "kolom": [
+   {
+    "nama": "country",
+    "tipe": "string",
+    "storage": "NVARCHAR"
+   },
+   {
+    "nama": "data_year",
+    "tipe": "integer",
+    "storage": "BIGINT"
+   },
+   {
+    "nama": "piped_water_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "at_least_basic_water_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "safely_managed_water_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   },
+   {
+    "nama": "at_least_basic_sanitation_",
+    "tipe": "number",
+    "storage": "DECIMAL"
+   }
+  ],
+  "olap_dimensi": [
+   "country"
+  ],
+  "olap_measure": [
+   "data_year",
+   "piped_water_",
+   "at_least_basic_water_",
+   "safely_managed_water_",
+   "at_least_basic_sanitation_"
+  ],
+  "agregasi": {
+   "data_year": "SUM",
+   "piped_water_": "SUM",
+   "at_least_basic_water_": "SUM",
+   "safely_managed_water_": "SUM",
+   "at_least_basic_sanitation_": "SUM"
+  },
+  "olap_keys": [
+   "dimensions",
+   "measures",
+   "hierarchies",
+   "unmapped"
+  ]
+ }
+}
