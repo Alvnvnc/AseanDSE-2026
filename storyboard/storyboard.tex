@@ -229,8 +229,8 @@
         font=\subfont] at (60,320)
     {A freely available climate index gives ASEAN health offices months of
      warning before a dengue season turns severe. We turn that lag into a
-     two-condition alert rule any provincial health office can run today ---
-     no model, no code, no paid data.};
+     two-condition alert rule that any provincial health office can run today,
+     with no model, no code and no paid data.};
 
   \node[anchor=north west, font=\smlfont] at (60,222)
     {\sdgchip{peak}{SDG 3 Health}\hspace{6bp}\sdgchip{accent}{SDG 13 Climate}\hspace{6bp}\sdgchip{alarm}{SDG 6 Water}};
@@ -253,7 +253,7 @@
   \navbar{1}
   \kepala{The problem}{Dengue is ASEAN's fastest-moving climate-sensitive disease}
 
-  \kpi{36}{\CTOP}{300}{104}{1.26M}{cases in 2019 --- the worst year in our nine-country panel}{peak}
+  \kpi{36}{\CTOP}{300}{104}{1.26M}{cases in 2019, the worst year in our nine-country panel}{peak}
 
   \teks{36}{300}{300}{\bodyfont
     \begin{blist}
@@ -261,7 +261,7 @@
             \textcolor{muted}{(latest complete year per country)}
       \item The 2023--24 El Ni\~no added an estimated \textbf{9.6 million cases
             worldwide} \textcolor{muted}{(Tian et al., 2025)}
-      \item Outbreaks are still fought \textbf{reactively} --- after cases surge
+      \item Outbreaks are still fought \textbf{reactively}, only once cases surge
     \end{blist}}
 
   \sacslot{366}{\CTOP}{270}{348}{h02-tren-tahunan}{ASEAN dengue cases, 2000--2024}
@@ -276,9 +276,9 @@
      filter tahun lengkap terbaru (2022--2023) $\cdot$ urut menurun,
      biru; Indonesia disorot oranye}
 
-  \kaki{Source: OpenDengue V1.3 --- national totals, complete-reporting years only.
-        We do not claim a 2023--24 record: our panel is incomplete for Vietnam and
-        the Philippines after 2022.}{2}
+  \kaki{Source: OpenDengue V1.3, national totals, complete-reporting years only.
+        We do not claim a 2023--24 record, because our panel is incomplete for
+        Vietnam and the Philippines after 2022.}{2}
 \end{halaman}
 
 % =====================================================================
@@ -293,21 +293,21 @@
   \node[anchor=north west, text width=852bp, align=left, text=ink,
         font=\fontsize{20}{26}\selectfont\bfseries] at (54,404)
     {Can a freely available climate index tell a health office how bad the coming
-     season will be --- early enough to act?};
+     season will be, early enough to act?};
 
   \teks{36}{306}{300}{\smlfont
     \begin{blist}
-      \item \textbf{SDG target 3.3} --- end the epidemics of neglected tropical
-            diseases; dengue is one of them
-      \item \textbf{SDG target 13.1} --- resilience and adaptive capacity to
-            climate-related hazards
-      \item \textbf{SDG target 6.1} --- safe water for all; without piped water
-            households store it, and \textit{Aedes} breeds in the store
+      \item \textbf{SDG target 3.3}: end the epidemics of neglected tropical
+            diseases, of which dengue is one
+      \item \textbf{SDG target 13.1}: strengthen resilience and adaptive
+            capacity to climate-related hazards
+      \item \textbf{SDG target 6.1}: safe water for all. Where piped water is
+            absent, households store it, and \textit{Aedes} breeds in the store
     \end{blist}
     \vspace{9bp}
-    \textbf{ASEAN priority.} Dengue sits under \textbf{ASEAN Health Cluster 2}
-    --- \emph{Responding to All Hazards and Emerging Threats} --- whose ASEAN
-    Dengue Day statements ask member states for earlier, multi-sector action.
+    \textbf{ASEAN priority.} Dengue sits under \textbf{ASEAN Health Cluster 2},
+    \emph{Responding to All Hazards and Emerging Threats}, whose ASEAN Dengue Day
+    statements ask member states for earlier and better coordinated action.
     \par\vspace{9bp}
     \textcolor{muted}{Our test: does the signal survive when we remove the seasonal
     cycle, hold out unseen years, and use the WHO outbreak definition?}}
@@ -355,9 +355,9 @@
     {\sdgchip{peak}{SDG 3}\hspace{6bp}\sdgchip{accent}{SDG 13}\hspace{6bp}\sdgchip{alarm}{SDG 6}};
 
   \teks{36}{104}{564}{\smlfont
-    \textcolor{muted}{Every table joins on the same two keys ---
-    \texttt{iso3} + \texttt{year} (plus \texttt{period} for the monthly
-    dengue\,$\times$\,climate panel). Nothing is entered by hand.}}
+    \textcolor{muted}{Every table joins on the same two keys, \texttt{iso3} and
+    \texttt{year}, with \texttt{period} added for the monthly
+    dengue\,$\times$\,climate panel. Nothing is entered by hand.}}
 
   \draw[rounded corners=4bp, fill=soft, draw=none] (624,\CTOP) rectangle ++(300,-366);
   \node[anchor=north west, text=alarm, font=\eyefont] at (644,404) {METHOD};
@@ -365,8 +365,8 @@
     \begin{blist}
       \item Monthly national series, 2010+
       \item Lagged correlations, 0--4 months
-      \item \textbf{Anomalies} --- seasonal cycle removed before we believe any
-            correlation
+      \item \textbf{Anomalies}: the seasonal cycle is removed before we accept
+            any correlation
       \item A two-condition trigger rule
       \item Out-of-sample test on unseen years
       \item WHO/PAHO endemic-channel benchmark
@@ -387,28 +387,28 @@
 % =====================================================================
 \begin{halaman}
   \navbar{3}
-  \kepala{Analysis 1 --- the season}{Dengue has a calendar --- and it is not the same calendar everywhere}
+  \kepala{Analysis 1 $\cdot$ the season}{Dengue has a calendar, and it is not the same one everywhere}
 
   \teks{36}{\CTOP}{264}{\bodyfont
     \begin{blist}
       \item \textbf{Indonesia}: cases peak \textbf{Jan--Apr}
-            \textcolor{muted}{(Jan avg 15,099/month vs Sep 6,003 --- 2.5$\times$)},
+            \textcolor{muted}{(Jan avg 15,099/month against Sep 6,003, or 2.5$\times$)},
             right after the December rainfall peak
       \item \textbf{Thailand}: cases climb with the \textbf{onset} of the wet
             season and peak \textbf{Jun--Sep}
-            \textcolor{muted}{(Jul avg 8,110 vs Feb 1,465 --- 5.5$\times$)}
-      \item Same disease, opposite halves of the year $\rightarrow$ a regional
-            alarm must be \textbf{local in timing}
+            \textcolor{muted}{(Jul avg 8,110 against Feb 1,465, or 5.5$\times$)}
+      \item The same disease peaks in opposite halves of the year, so a regional
+            alarm has to be \textbf{local in its timing}
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{288}{348}{h05-musiman-idn}{Indonesia --- cases vs rainfall by month}
+  \sacslot{324}{\CTOP}{288}{348}{h05-musiman-idn}{Indonesia: cases vs rainfall by month}
     {Combination chart (Column \& Line) --- \textit{Seasonality IDN-THA}}
     {Filter \texttt{country}=Indonesia $\cdot$
      Column (kiri): \texttt{mean\_cases}, biru $\cdot$
      Line (kanan, sumbu sekunder): \texttt{mean\_rain\_mm}, abu putus-putus $\cdot$
      Dim X \texttt{month} (Sort by \texttt{month}) $\cdot$ 4 kolom tertinggi merah}
 
-  \sacslot{636}{\CTOP}{288}{348}{h05-musiman-tha}{Thailand --- cases vs rainfall by month}
+  \sacslot{636}{\CTOP}{288}{348}{h05-musiman-tha}{Thailand: cases vs rainfall by month}
     {Combination chart (Column \& Line) --- \textit{Seasonality IDN-THA}}
     {Setelan identik, filter \texttt{country}=Thailand.
      Catatan: puncak hujan Thailand justru September, \emph{sesudah} puncak
@@ -423,7 +423,7 @@
 % =====================================================================
 \begin{halaman}
   \navbar{3}
-  \kepala{Analysis 2 --- the lag}{The climate signal arrives 1--4 months before the cases}
+  \kepala{Analysis 2 $\cdot$ the lag}{The climate signal arrives 1--4 months before the cases}
 
   \node[anchor=north west] at (36,\CTOP) {%
     \begin{minipage}{300bp}
@@ -470,22 +470,22 @@
 % =====================================================================
 \begin{halaman}
   \navbar{3}
-  \kepala{Analysis 3 --- the ace card}{A strong El Ni\~no nearly triples Indonesia's monthly dengue burden}
+  \kepala{Analysis 3 $\cdot$ the strongest signal}{A strong El Ni\~no nearly triples Indonesia's monthly dengue burden}
 
   \kpi{36}{\CTOP}{264}{112}{2.8$\times$}{21,383 vs 7,597 cases per month, grouped by the ENSO phase four months earlier}{peak}
 
   \teks{36}{298}{264}{\smlfont
     \begin{blist}
-      \item Grouped by the phase \textbf{four months earlier} --- so this is a
-            forecast, not hindsight
-      \item \textbf{Not just seasonality}: after removing the seasonal cycle the
-            ONI correlation holds at \textbf{r = +0.56}
-      \item \textbf{Not an aggregation artefact}: cases are higher in El Ni\~no
-            months in \textbf{33 of 34 Indonesian provinces}
+      \item The grouping uses the ENSO phase \textbf{four months earlier}, so
+            this is a forecast rather than hindsight
+      \item \textbf{This is not merely seasonality.} With the seasonal cycle
+            removed, the ONI correlation still holds at \textbf{r = +0.56}
+      \item \textbf{Nor is it an aggregation artefact.} Cases run higher in
+            El Ni\~no months in \textbf{33 of 34 Indonesian provinces}
             \textcolor{muted}{(sign test p = 2\,\texttimes\,10\textsuperscript{-9})}
-            and 70 of 77 Thai provinces
-      \item Rainfall does \emph{not} survive the same test
-            (+0.40 $\rightarrow$ +0.24) --- we report that honestly
+            and in 70 of 77 Thai provinces
+      \item Rainfall does \emph{not} survive the same test, falling from +0.40
+            to +0.24, and we report that
     \end{blist}}
 
   \sacslot{324}{\CTOP}{330}{348}{h07-fase-enso}{Mean monthly cases by ENSO phase (lag 4)}
@@ -512,26 +512,26 @@
 % =====================================================================
 \begin{halaman}
   \navbar{3}
-  \kepala{Analysis 4 --- where and when}{The alarm must be set province by province}
+  \kepala{Analysis 4 $\cdot$ where and when}{The alarm must be set province by province}
 
   \teks{36}{\CTOP}{264}{\bodyfont
     \begin{blist}
       \item \textbf{Indonesia}: 20 of 35 provinces peak in \textbf{January},
-            8 in February --- but \textbf{Bali peaks in May} and North Kalimantan
+            8 in February, but \textbf{Bali peaks in May} and North Kalimantan
             in December
       \item \textbf{Thailand}: 38 of 77 provinces peak in \textbf{July},
             16 in August
       \item A single national alert date would be wrong for a third of Indonesia
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{288}{348}{h08-kalender-idn}{Indonesia --- share of annual cases by month}
+  \sacslot{324}{\CTOP}{288}{348}{h08-kalender-idn}{Indonesia: share of annual cases by month}
     {Heat map --- \textit{Risk calendar IDN}}
     {Dim baris \texttt{province} (urut menurut bulan puncak, \emph{bukan}
      alfabetis) $\cdot$ Dim kolom \texttt{month} $\cdot$
      Measure \texttt{share\_percent} $\cdot$ skala sekuensial putih $\rightarrow$
      merah $\cdot$ baris Bali diberi garis tebal}
 
-  \sacslot{636}{\CTOP}{288}{348}{h08-kalender-tha}{Thailand --- share of annual cases by month}
+  \sacslot{636}{\CTOP}{288}{348}{h08-kalender-tha}{Thailand: share of annual cases by month}
     {Heat map --- \textit{Risk calendar THA}}
     {Setelan identik. Kontras dua panel inilah pesannya: satu penyakit,
      dua kalender.}
@@ -544,16 +544,16 @@
 % =====================================================================
 \begin{halaman}
   \navbar{3}
-  \kepala{Analysis 5 --- who gets hit hardest}{The same alarm, aimed at the most exposed places}
+  \kepala{Analysis 5 $\cdot$ who is hit hardest}{The same alarm, aimed at the most exposed places}
 
   \teks{36}{\CTOP}{258}{\smlfont
     \begin{blist}
       \item Highest incidence 2018--2020: \textbf{Bali 134}, North Kalimantan 115,
-            East Kalimantan 112 per 100k --- \textbf{14$\times$ the lowest
+            East Kalimantan 112 per 100k, which is \textbf{14$\times$ the lowest
             province} (Papua, 9)
-      \item Indonesia has the \textbf{lowest piped-water access in ASEAN:
-            21.8\%} \textcolor{muted}{(JMP 2024)} --- households store water,
-            and stored water breeds \emph{Aedes}
+      \item Indonesia has the \textbf{lowest piped-water access in ASEAN} at
+            21.8\% \textcolor{muted}{(JMP 2024)}. Households therefore store
+            water, and stored water breeds \emph{Aedes}
       \item \textbf{12.9 million people in Bangkok} and 1.7 million in Jakarta
             live in the 1-in-100-year flood zone
       \item We use this to \textbf{target} the alarm, not to explain it
@@ -575,8 +575,8 @@
     {Measure \texttt{exposed\_2020} $\cdot$ Dim \texttt{city},
      8 kota teratas}
 
-  \kaki{Sources: BPS denominators (2018--2020 only --- the only years with official
-        provincial denominators) $\cdot$ WHO/UNICEF JMP $\cdot$ GHSL.
+  \kaki{Sources: BPS denominators, 2018--2020 only, the only years with official
+        provincial denominators $\cdot$ WHO/UNICEF JMP $\cdot$ GHSL.
         We never rank regions using raw case counts.}{9}
 \end{halaman}
 
@@ -589,13 +589,13 @@
 
   \teks{36}{\CTOP}{264}{\bodyfont
     \begin{blist}
-      \item Each province gets three states --- \textbf{Peak $\cdot$ Watch
-            $\cdot$ Normal} --- from its own case history
+      \item Each province is given three states, \textbf{Peak}, \textbf{Watch}
+            and \textbf{Normal}, derived from its own case history
       \item The El Ni\~no index sets \textbf{how severe} the coming peak will be;
             the calendar sets \textbf{when} it arrives
       \item Real lead times, every El Ni\~no episode since 2009:
-            \textbf{0--3 months} on observed ONI --- and longer on NOAA/BMKG
-            \emph{forecast} ONI
+            \textbf{0--3 months} on observed ONI, and longer still on NOAA and
+            BMKG \emph{forecast} ONI
     \end{blist}}
 
   \sacslot{324}{\CTOP}{288}{348}{h10-kalender-prioritas}{Risk calendar, six priority provinces}
@@ -611,7 +611,7 @@
      warna titik/latar menurut \texttt{alarm\_el\_nino}}
 
   \kaki{Source: 5 El Ni\~no episodes, 2009--2024. The alarm predicts how severe the
-        coming season will be --- it does not shift its start date.}{10}
+        coming season will be; it does not shift its start date.}{10}
 \end{halaman}
 
 % =====================================================================
@@ -628,16 +628,16 @@
      $\geq$ 0.5 $\rightarrow$ raise alert''};
 
   \kpi{36}{336}{204}{88}{11.6\%}{of months fire the alert}{accent}
-  \kpi{252}{336}{204}{88}{100\%}{precision --- every alert was a top-quartile dengue month}{peak}
+  \kpi{252}{336}{204}{88}{100\%}{precision: every alert fell in a top-quartile dengue month}{peak}
   \kpi{468}{336}{204}{88}{4\texttimes}{lift over the base rate}{alarm}
 
   \teks{36}{238}{636}{\smlfont
     \begin{blist}
       \item Both inputs are public and free: NOAA publishes ONI monthly, the
             calendar comes from the office's own records
-      \item Runs in a spreadsheet, a WhatsApp broadcast, or this SAC dashboard ---
-            competitors promise machine learning; we promise something a
-            provincial health office can start next week
+      \item It runs in a spreadsheet, a WhatsApp broadcast or the SAC dashboard
+            on page 15. Where a statistical forecast needs a trained model and a
+            data team, this can be started by a provincial office next week
     \end{blist}}
 
   \sacslot{36}{182}{636}{106}{h11-deret-aturan}{When the rule fired, 2010--2024}
@@ -667,13 +667,13 @@
       \item \textbf{Out-of-sample test}: rule built on 2010--2016, tested blind on
             2017--2024 $\rightarrow$ \textbf{precision still 100\%},
             sensitivity 44\%, lift 3.9
-      \item Against the \textbf{WHO/PAHO endemic-channel} definition --- which
-            removes seasonality by construction --- specificity \textbf{91\%},
-            lift 2.5, and \emph{all} of the value comes from the El Ni\~no
-            condition, not the season
-      \item Published dengue EWS report PPV 43--86\%
-            \textcolor{muted}{(17-system review)}; we reach a comparable PPV
-            \textbf{with no statistical model and monthly data}
+      \item Against the \textbf{WHO/PAHO endemic-channel} definition, which
+            removes seasonality by construction, specificity is \textbf{91\%}
+            and lift 2.5. \emph{All} of the value comes from the El Ni\~no
+            condition rather than from the season
+      \item Published dengue early-warning systems report PPV 43--86\%
+            \textcolor{muted}{(17-system review)}. We reach a comparable PPV
+            \textbf{using monthly data and no statistical model}
       \item Replicates in Thailand with its own best predictor
             (temperature anomaly, lag 2): lift 2.7
     \end{blist}}
@@ -706,7 +706,7 @@
 % =====================================================================
 \begin{halaman}
   \navbar{7}
-  \kepala{Impact --- Indonesia alone}{Acting 4--8 weeks earlier is worth US\$1.5--3.7 million a year}
+  \kepala{Impact $\cdot$ Indonesia alone}{Acting 4--8 weeks earlier is worth US\$1.5--3.7 million a year}
 
   \kpi{36}{\CTOP}{288}{104}{4,656}{cases/year prevented in Indonesia, under the most conservative scenario}{peak}
 
@@ -719,10 +719,11 @@
             \textcolor{muted}{(an assumption, not a finding)} $=$ 4,656 cases/year
       \item At Indonesia's published hospitalisation cost of US\$316--791/case
             $\rightarrow$ \textbf{US\$1.5--3.7\,M (Rp 24--59 billion)/year}
-      \item For scale: dengue costs Indonesia \textbf{US\$381--681\,M/year}
+      \item For scale, dengue costs Indonesia \textbf{US\$381--681\,M/year}
             \textcolor{muted}{(Nadjib 2019; Wilastonegoro 2020)}
-      \item Lead time is real: in the 2023--24 episode the alarm fired
-            \textbf{Sep 2023}; cases crossed the peak threshold \textbf{Dec 2023}
+      \item The lead time is observed, not assumed. In the 2023--24 episode the
+            alarm fired in \textbf{Sep 2023} and cases crossed the peak threshold
+            in \textbf{Dec 2023}
     \end{blist}}
 
   \sacslot{348}{\CTOP}{276}{348}{h13-dampak}{Avoided hospitalisation cost by scenario}
@@ -738,7 +739,7 @@
 
   \kaki{Sources: cost per case from peer-reviewed Indonesian studies; case counts
         from our own panel. The cheapest anchor (US\$90/episode) still gives
-        US\$0.42\,M --- we did not pick the most flattering number.}{13}
+        US\$0.42\,M, so we have not chosen the most flattering figure.}{13}
 \end{halaman}
 
 % =====================================================================
@@ -755,16 +756,16 @@
             controlling for El Ni\~no (partial r = $-$0.15) and showed no
             moderation by piped access ($\rho$ = +0.34, p = 0.46, n = 7).
             \textbf{We dropped the claim.}
-      \item \textbf{We do not claim a 2023--24 record} --- our panel is incomplete
-            for Vietnam and the Philippines after 2022.
+      \item \textbf{We do not claim a 2023--24 record}, because our panel is
+            incomplete for Vietnam and the Philippines after 2022.
       \item \textbf{Incidence only for 2018--2020}, the only years with official
             BPS denominators. Elsewhere we use raw counts and never rank regions
             by them.
       \item \textbf{Flood and disaster records look correlated with dengue
-            (r = +0.66) --- until you divide by population} (r = $-$0.14).
-            We report the null.
-      \item Correlation is not causation: this is an \textbf{early-warning}
-            claim, with mechanism cited from the literature.
+            (r = +0.66) until the counts are divided by population}, at which
+            point the association reverses (r = $-$0.14). We report the null.
+      \item Correlation is not causation. This is an \textbf{early-warning}
+            claim, and the mechanism is cited from the literature.
     \end{blist}}
 
   \sacslot{606}{\CTOP}{318}{348}{h14-kekeringan}{No relationship ($\rho$ = +0.34, p = 0.46, n = 7)}
@@ -773,8 +774,8 @@
      ukuran bubble \texttt{nino\_multiplier} $\cdot$ label \texttt{country} $\cdot$
      \textbf{sengaja tanpa garis tren} --- judul grafik menyatakan hasil nolnya}
 
-  \kaki{This page is a weapon, not an apology: we tested our own best idea, it
-        failed, and we removed it.}{14}
+  \kaki{This page is not an apology. We tested our own best idea, it failed the
+        test, and we removed it.}{14}
 \end{halaman}
 
 % =====================================================================
@@ -786,7 +787,7 @@
 % =====================================================================
 \begin{halaman}
   \navbar{5}
-  \kepala{The product}{\Produk{} --- the rule, delivered on the first of every month}
+  \kepala{The product}{\Produk: the rule, delivered on the first of every month}
 
   % ---- pita nama produk
   \draw[rounded corners=4bp, fill=deep, draw=none] (\ML,\CTOP) rectangle ++(\CW,-62);
@@ -794,19 +795,19 @@
        at (54,412) {\Produk};
   \node[anchor=north west, text width=706bp, align=left, text=white, font=\smlfont]
        at (196,410)
-    {\emph{pawang} --- the Indonesian and Malay word for someone who claims to know
-     the weather months ahead. This one shows its working: one SAC page a district
-     officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates;
-     it never declares an emergency.};
+    {\emph{Pawang} is the Indonesian and Malay word for someone who claims to know
+     the weather months ahead. This one shows its working: a single SAC page that
+     a district officer opens on the 1st, together with an automatic WhatsApp
+     advisory. It escalates; it never declares an emergency.};
 
   % ---- lapis digital (sub-kriteria Innovation: integration of AI & digital tech)
   \node[anchor=north west, text width=\CW bp, align=left, text=ink, font=\smlfont]
        at (\ML,348)
     {\textbf{The digital layer does the fetching, not the deciding.} SAC refreshes
      the NOAA ONI feed and the office's own case calendar on a schedule, and SAC
-     Smart Predict runs beside the rule as a second opinion. The alert itself stays
-     the two-condition rule --- auditable by hand, so nobody has to trust a model
-     they cannot inspect.};
+     Smart Predict runs beside the rule as a second opinion. The alert itself
+     remains the two-condition rule, which can be audited by hand, so no one has
+     to trust a model they cannot inspect.};
 
   % ---- mockup dashboard
   \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (\ML,308)
@@ -825,7 +826,7 @@
   \draw[rounded corners=3bp, fill=peak, draw=none] (48,254) rectangle ++(420,-34);
   \node[anchor=north west, text width=396bp, align=left, text=white, font=\smlfont\bfseries]
        at (60,250)
-    {ALERT --- Jan--Apr 2027. ONI in Sep 2026 was $+1.3$ ($\geq 0.5$).};
+    {ALERT: Jan--Apr 2027. ONI in Sep 2026 was $+1.3$ ($\geq 0.5$).};
   \node[anchor=north west, text width=396bp, align=left, text=white, font=\tnyfont]
        at (60,234) {Expect a top-quartile season. Act now, not in January.};
 
@@ -839,7 +840,7 @@
 
   % ---- tabel pemangku kepentingan (sub-kriteria Viability: peran yang jelas)
   \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (516,308)
-    {Who presses which button};
+    {Who does what};
 
   \node[anchor=north west] at (516,288) {%
     \begin{minipage}{408bp}
@@ -860,7 +861,7 @@
           & Larval checks and household messaging concentrated in the alerted
             months instead of spread thin all year\\
         \textbf{Cloud \& telco partners} \textcolor{muted}{private}
-          & Host the SAC tenant and the broadcast --- one analyst-hour a month,
+          & Host the SAC tenant and the broadcast; one analyst-hour a month,
             no data team\\
         \hline
       \end{tabular}
@@ -872,7 +873,7 @@
     Thailand already validates with its own predictor (temperature anomaly,
     lag 2, lift 2.7). Any ASEAN member repeats the fit on its own records.}
 
-  \kaki{The rule is the product's engine, not a feature of it: strip the dashboard
+  \kaki{The rule is the engine, not a feature of the product. Strip the dashboard
         away and a health office can still run \Produk{} on paper.}{15}
 \end{halaman}
 

@@ -79,10 +79,10 @@ merah `#C53232` (puncak/wabah), abu `#8A8F98` (konteks, ambang).
 **On-slide text**
 
 > ## Dengue is ASEAN's fastest-moving climate-sensitive disease
-> **1.26 million cases in 2019** — the worst year in our nine-country panel
+> **1.26 million cases in 2019**, the worst year in our nine-country panel
 > - Vietnam 368k · Philippines 220k · Thailand 159k (latest complete year per country)
 > - The 2023–24 El Niño added an estimated **9.6 million cases worldwide** (Tian et al., 2025)
-> - Outbreaks are still fought **reactively** — after cases surge
+> - Outbreaks are still fought **reactively**, only once cases surge
 >
 > Source: OpenDengue V1.3 (national totals, complete-reporting years only)
 
@@ -111,11 +111,11 @@ kami buktikan sendiri."
 **On-slide text**
 
 > ## Climate data arrives months before patients do
-> **Can a freely available climate index tell a health office how bad the coming season will be — early enough to act?**
-> - **SDG target 3.3** — end the epidemics of neglected tropical diseases; dengue is one of them
-> - **SDG target 13.1** — resilience and adaptive capacity to climate-related hazards
-> - **SDG target 6.1** — safe water for all; without piped water households store it, and *Aedes* breeds in the store
-> **ASEAN priority.** Dengue sits under **ASEAN Health Cluster 2** — *Responding to All Hazards and Emerging Threats* — whose ASEAN Dengue Day statements ask member states for earlier, multi-sector action.
+> **Can a freely available climate index tell a health office how bad the coming season will be, early enough to act?**
+> - **SDG target 3.3**: end the epidemics of neglected tropical diseases, of which dengue is one
+> - **SDG target 13.1**: strengthen resilience and adaptive capacity to climate-related hazards
+> - **SDG target 6.1**: safe water for all. Where piped water is absent, households store it, and *Aedes* breeds in the store
+> **ASEAN priority.** Dengue sits under **ASEAN Health Cluster 2**, *Responding to All Hazards and Emerging Threats*, whose ASEAN Dengue Day statements ask member states for earlier and better coordinated action.
 > Our test: does the signal survive when we remove the seasonal cycle, hold out unseen years, and use the WHO outbreak definition?
 
 **Visual**: tanpa dataset. Diagram alur di SAC (Shapes + Text):
@@ -161,9 +161,9 @@ the seasonal cycle before believing any correlation". Itu pembeda di mata juri a
 
 **On-slide text**
 
-> ## Dengue has a calendar — and it is not the same calendar everywhere
-> - **Indonesia**: cases peak **Jan–Apr** (Jan avg 15,099/month vs Sep 6,003 — 2.5×), right after the Dec rainfall peak
-> - **Thailand**: cases climb with the **onset** of the wet season and peak **Jun–Sep** (Jul avg 8,110 vs Feb 1,465 — 5.5×)
+> ## Dengue has a calendar, and it is not the same one everywhere
+> - **Indonesia**: cases peak **Jan–Apr** (Jan avg 15,099/month against Sep 6,003, or 2.5×), right after the Dec rainfall peak
+> - **Thailand**: cases climb with the **onset** of the wet season and peak **Jun–Sep** (Jul avg 8,110 against Feb 1,465, or 5.5×)
 > - Same disease, opposite halves of the year → a regional alarm must be **local in timing**
 >
 > Source: national monthly means, complete years only (IDN 2010–2023, THA 2010–2022)
@@ -220,11 +220,11 @@ opportunity"*. Itu jembatan ke seluruh separuh kedua cerita.
 **On-slide text**
 
 > ## A strong El Niño nearly triples Indonesia's monthly dengue burden
-> ### 21,383 vs 7,597 cases per month — 2.8×
-> - Grouped by the ENSO phase **four months earlier** — so this is a forecast, not a hindsight
+> ### 21,383 against 7,597 cases per month, or 2.8×
+> - The grouping uses the ENSO phase **four months earlier**, so this is a forecast rather than hindsight
 > - **Not just seasonality**: after removing the seasonal cycle, the ONI correlation holds at **r = +0.56**
 > - **Not an aggregation artefact**: cases are higher in El Niño months in **33 of 34 Indonesian provinces** (sign test p = 2×10⁻⁹) and 70 of 77 Thai provinces
-> - Rainfall does *not* survive the same test (+0.40 → +0.24) — we report that honestly
+> - Rainfall does *not* survive the same test, falling from +0.40 to +0.24, and we report that
 >
 > Source: 172 months, Indonesia 2010–2024 · NOAA CPC definition: El Niño = ONI ≥ 0.5
 
@@ -257,7 +257,7 @@ dengan cara yang berbeda, di halaman 12."
 **On-slide text**
 
 > ## The alarm must be set province by province
-> - **Indonesia**: 20 of 35 provinces peak in **January**, 8 in February — but **Bali peaks in May** and North Kalimantan in December
+> - **Indonesia**: 20 of 35 provinces peak in **January**, 8 in February, but **Bali peaks in May** and North Kalimantan in December
 > - **Thailand**: 38 of 77 provinces peak in **July**, 16 in August
 > - A single national alert date would be wrong for a third of Indonesia
 >
@@ -280,8 +280,8 @@ hanya "some provinces".
 **On-slide text**
 
 > ## The same alarm, aimed at the most exposed places
-> - Highest incidence 2018–2020: **Bali 134**, North Kalimantan 115, East Kalimantan 112 per 100k — **14× the lowest province** (Papua, 9)
-> - Indonesia has the **lowest piped-water access in ASEAN: 21.8%** (JMP 2024) — households store water, and stored water breeds *Aedes*
+> - Highest incidence 2018–2020: **Bali 134**, North Kalimantan 115, East Kalimantan 112 per 100k, which is **14× the lowest province** (Papua, 9)
+> - Indonesia has the **lowest piped-water access in ASEAN** at 21.8% (JMP 2024). Households therefore store water, and stored water breeds *Aedes*
 > - **12.9 million people in Bangkok** and 1.7 million in Jakarta live in the 1-in-100-year flood zone
 > - We use this to **target** the alarm, not to explain it (see p.14)
 >
@@ -313,9 +313,9 @@ penduduk."
 **On-slide text**
 
 > ## From signal to schedule: a risk calendar every health office can read
-> - Each province gets three states — **Peak · Watch · Normal** — from its own case history
+> - Each province is given three states, **Peak**, **Watch** and **Normal**, derived from its own case history
 > - The El Niño index sets **how severe** the coming peak will be; the calendar sets **when** it arrives
-> - Real lead times, every El Niño episode since 2009: **0–3 months** on observed ONI — and longer on NOAA/BMKG *forecast* ONI
+> - Real lead times, every El Niño episode since 2009: **0–3 months** on observed ONI, and longer still on NOAA and BMKG *forecast* ONI
 >
 > Source: 5 El Niño episodes, 2009–2024
 
@@ -338,7 +338,7 @@ sebagai angka tunggal; katakan 0–3 bulan pada ONI teramati, lebih panjang pada
 
 > ## Two conditions. No model. No code.
 > ### "If the month is Jan–Apr **AND** ONI four months ago was ≥ 0.5 → raise alert"
-> - Fires in only **11.6% of months** — and **every single one** was a top-quartile dengue month (**precision 100%, lift 4×**)
+> - It fires in only **11.6% of months**, and **every one of them** fell in a top-quartile dengue month (**precision 100%, lift 4×**)
 > - Both inputs are public and free: NOAA publishes ONI monthly, the calendar comes from the office's own records
 > - Runs in a spreadsheet, a WhatsApp broadcast, or this SAC dashboard
 >
@@ -363,8 +363,8 @@ nilai jual kita adalah **bisa benar-benar dijalankan** dinkes provinsi minggu de
 
 > ## We tried to break our own rule. It held.
 > - **Out-of-sample test**: rule built on 2010–2016, tested blind on 2017–2024 → **precision still 100%**, sensitivity 44%, lift 3.9
-> - Against the **WHO/PAHO endemic-channel** outbreak definition (which removes seasonality by construction): specificity **91%**, lift 2.5 — and *all* of the value comes from the El Niño condition, not the season
-> - Published dengue EWS report PPV 43–86% (17-system review) — we reach a comparable PPV **with no statistical model and monthly data**
+> - Against the **WHO/PAHO endemic-channel** outbreak definition (which removes seasonality by construction): specificity is **91%** and lift 2.5. *All* of the value comes from the El Niño condition rather than from the season
+> - Published dengue early-warning systems report PPV 43–86% (17-system review). We reach a comparable PPV **using monthly data and no statistical model**
 > - Replicates in Thailand with its own best predictor (temperature anomaly, lag 2): lift 2.7
 >
 > **Adoption in three phases**: 1) Bali, N. & E. Kalimantan pilot · 2) all 38 provinces · 3) ASEAN peers
@@ -392,7 +392,7 @@ tetap berjalan."
 
 **On-slide text**
 
-> ## Acting 4–8 weeks earlier is worth US$1.5–3.7 million a year — in Indonesia alone
+> ## Acting 4–8 weeks earlier is worth US$1.5–3.7 million a year in Indonesia alone
 > - Indonesia averages **104,753 cases/year** (complete years 2015–2023); **44% fall in Jan–Apr**
 > - Prevent just **10%** of peak-season cases = **4,656 cases/year**
 > - At Indonesia's published hospitalisation cost of US$316–791/case → **US$1.5–3.7 M (Rp 24–59 billion)/year**
@@ -425,9 +425,9 @@ dan 44% di musim puncak. Efektivitas intervensi 10% kami ambil sebagai skenario 
 
 > ## What we tested and threw away
 > - **We falsified our own innovation angle.** "Drought × water access" looked promising (r = −0.31) but collapsed after controlling for El Niño (partial r = −0.15) and showed no moderation by piped access (ρ = +0.34, p = 0.46, n = 7). We dropped the claim.
-> - **We do not claim a 2023–24 record** — our panel is incomplete for Vietnam and the Philippines after 2022.
+> - **We do not claim a 2023–24 record**, because our panel is incomplete for Vietnam and the Philippines after 2022.
 > - **Incidence only for 2018–2020**, the only years with official BPS denominators. Elsewhere we use raw counts and never rank regions by them.
-> - **Flood/disaster records look correlated with dengue (r = +0.66) — until you divide by population** (r = −0.14). We report the null.
+> - **Flood and disaster records look correlated with dengue (r = +0.66) until the counts are divided by population**, at which point the association reverses (r = −0.14). We report the null.
 > - Correlation is not causation: this is an **early-warning** claim, with mechanism cited from the literature.
 
 **Grafik** — *Scatterplot* `Drought x water access`:
@@ -444,16 +444,16 @@ melakukan ini, dan juri analisis mengenalinya seketika.
 
 **On-slide text**
 
-> ## Pawang — the rule, delivered on the first of every month
-> *pawang* — the Indonesian and Malay word for someone who claims to know the weather months ahead. This one shows its working. One SAC page a district officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates; it never declares an emergency.
-> **The digital layer does the fetching, not the deciding.** SAC refreshes the NOAA ONI feed and the office's own case calendar on a schedule, and SAC Smart Predict runs beside the rule as a second opinion. The alert itself stays the two-condition rule — auditable by hand.
+> ## Pawang: the rule, delivered on the first of every month
+> *Pawang* is the Indonesian and Malay word for someone who claims to know the weather months ahead. This one shows its working: a single SAC page that a district officer opens on the 1st, together with an automatic WhatsApp advisory. It escalates; it never declares an emergency.
+> **The digital layer does the fetching, not the deciding.** SAC refreshes the NOAA ONI feed and the office's own case calendar on a schedule, and SAC Smart Predict runs beside the rule as a second opinion. The alert itself remains the two-condition rule, which can be audited by hand.
 >
 > | Who | Role |
 > |---|---|
 > | District health office *(gov't)* | Reads the advisory; moves PSN/3M, larviciding and stockpiles **forward** into the alerted window |
 > | Ministry of Health · BMKG *(gov't)* | Own the monthly refresh; BMKG's forecast ONI stretches the notice past four months |
 > | *Jumantik* cadres *(NGO & community)* | Larval checks and household messaging concentrated in the alerted months instead of spread thin all year |
-> | Cloud & telco partners *(private)* | Host the SAC tenant and the broadcast — one analyst-hour a month, no data team |
+> | Cloud & telco partners *(private)* | Host the SAC tenant and the broadcast; one analyst-hour a month, no data team |
 >
 > Scales by swapping one input: Thailand already validates with its own predictor (temperature anomaly, lag 2, lift 2.7).
 
