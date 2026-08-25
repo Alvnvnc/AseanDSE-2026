@@ -1,0 +1,5 @@
+rule,coverage_pct,sensitivity_pct,specificity_pct,precision_pct,lift
+A. Season (Jan-Apr),33.7,28.6,65.6,10.3,0.85
+B. El Nino: ONI lag-4 >= 0.5,29.7,61.9,74.8,25.5,2.09
+C. A or B,51.7,61.9,49.7,14.6,1.2
+D. A and B (escalation),11.6,28.6,90.7,30.0,2.46

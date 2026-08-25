@@ -1,0 +1,4 @@
+scenario,cases_year,conservative_usd_m,hospitalisation_low_usd_m,hospitalisation_high_usd_m,rp_low_billion,rp_high_billion,rp_text
+10% of peak-season cases averted,4656,0.42,1.47,3.68,24,59,Rp 24-59 billion
+20% of peak-season cases averted,9312,0.84,2.94,7.37,47,118,Rp 47-118 billion
+30% of peak-season cases averted,13968,1.26,4.42,11.05,71,177,Rp 71-177 billion

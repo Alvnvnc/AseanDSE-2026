@@ -1,0 +1,6 @@
+system,source,sensitivity_low,sensitivity_high,precision_low,precision_high
+Rule D vs P75 (blind test),this notebook,44,44,100,100
+Rule D vs endemic channel,this notebook,29,29,30,30
+17 published EWS (range),Baharom et al. 2022,50,100,43,86
+"WHO-TDR EWARS, Mexico",Cardenas et al. 2021,100,100,83,83
+"EWARS-csd, Colombia",Schlesinger et al. 2024,97,97,75,75

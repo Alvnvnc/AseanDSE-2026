@@ -1,0 +1,13 @@
+country,period,metric,value
+Indonesia,train 2010-2016,coverage_%,12.2
+Indonesia,train 2010-2016,sensitivity_%,47.6
+Indonesia,train 2010-2016,precision_%,100.0
+Indonesia,TEST 2017-2024,coverage_%,11.1
+Indonesia,TEST 2017-2024,sensitivity_%,43.5
+Indonesia,TEST 2017-2024,precision_%,100.0
+Thailand,train 2010-2016,coverage_%,15.9
+Thailand,train 2010-2016,sensitivity_%,47.6
+Thailand,train 2010-2016,precision_%,76.9
+Thailand,TEST 2017-2022,coverage_%,16.7
+Thailand,TEST 2017-2022,sensitivity_%,44.4
+Thailand,TEST 2017-2022,precision_%,66.7

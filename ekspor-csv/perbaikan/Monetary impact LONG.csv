@@ -1,0 +1,10 @@
+scenario,metric,usd_thousand
+10% of peak-season cases averted,hospitalisation low,1470
+10% of peak-season cases averted,hospitalisation high,3680
+10% of peak-season cases averted,conservative,420
+20% of peak-season cases averted,hospitalisation low,2940
+20% of peak-season cases averted,hospitalisation high,7370
+20% of peak-season cases averted,conservative,840
+30% of peak-season cases averted,hospitalisation low,4420
+30% of peak-season cases averted,hospitalisation high,11050
+30% of peak-season cases averted,conservative,1260

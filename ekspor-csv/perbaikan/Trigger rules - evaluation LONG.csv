@@ -1,0 +1,13 @@
+rule,metric,value
+A. Season (Jan/Feb/Mar/Apr),alarm_coverage_%,33.7
+A. Season (Jan/Feb/Mar/Apr),sensitivity_%,67.4
+A. Season (Jan/Feb/Mar/Apr),precision_%,50.0
+B. El Nino: ONI lag-4 >= 0.5,alarm_coverage_%,29.7
+B. El Nino: ONI lag-4 >= 0.5,sensitivity_%,67.4
+B. El Nino: ONI lag-4 >= 0.5,precision_%,56.9
+C. Season OR El Nino,alarm_coverage_%,51.7
+C. Season OR El Nino,sensitivity_%,88.4
+C. Season OR El Nino,precision_%,42.7
+D. Season AND El Nino (escalation),alarm_coverage_%,11.6
+D. Season AND El Nino (escalation),sensitivity_%,46.5
+D. Season AND El Nino (escalation),precision_%,100.0
