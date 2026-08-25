@@ -9,6 +9,7 @@ dikonversi ke CSV format panjang (*long format*) siap impor ke SAP Analytics Clo
 **Bedah 15 dek finalis 2024–2025 + celah dek kita: `ANALISIS-FINALIS.md`.**
 **Dek PDF (LaTeX, 16:9, slot grafik SAC): `storyboard/` — jalankan `storyboard/bangun.sh`.**
 **Daftar CSV siap impor SAC + urutan & tipe kolomnya: `ekspor-csv/IMPOR-SAC.md`.**
+**Panduan kerja membangun 23 grafik di SAC: `storyboard/panduan-sac.pdf`.**
 
 ## Tenggat
 
@@ -132,6 +133,8 @@ naskah dan cek angka cepat, plus `sac/*.xlsx` per himpunan data sumber. Isi sama
   (bagian WASH butuh `openpyxl`; tanpa itu bagian tersebut dilewati otomatis)
 - `analisis/ekspor_csv.py` — membangun ulang `ekspor-csv/` **dan** `IMPOR-SAC.md`
 - `analisis/ekspor_xlsx.py` — membangun ulang `ekspor-xlsx/`
+- `storyboard/panduan_sac.py` — membangun ulang `storyboard/panduan-sac.pdf`
+  (resep grafiknya dibaca dari `storyboard.tex`, tidak diketik ulang)
 
 ### Cara mengambil data penduduk BPS
 

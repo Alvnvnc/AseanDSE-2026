@@ -4,3 +4,6 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# dibangkitkan panduan_sac.py dari storyboard.tex
+panduan-sac.tex
