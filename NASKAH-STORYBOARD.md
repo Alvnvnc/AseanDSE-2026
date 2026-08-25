@@ -444,8 +444,8 @@ melakukan ini, dan juri analisis mengenalinya seketika.
 
 **On-slide text**
 
-> ## Waspada — the rule, delivered on the first of every month
-> *waspada* — Indonesian and Malay for *stay alert*, and the first rung of Indonesia's own hazard ladder. One SAC page a district officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates; it never declares an emergency.
+> ## Pawang — the rule, delivered on the first of every month
+> *pawang* — the Indonesian and Malay word for someone who claims to know the weather months ahead. This one shows its working. One SAC page a district officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates; it never declares an emergency.
 > **The digital layer does the fetching, not the deciding.** SAC refreshes the NOAA ONI feed and the office's own case calendar on a schedule, and SAC Smart Predict runs beside the rule as a second opinion. The alert itself stays the two-condition rule — auditable by hand.
 >
 > | Who | Role |
@@ -469,7 +469,7 @@ product/prototype … to get a better chance of being shortlisted for the Nation
 
 **Catatan penyaji**: jangan biarkan produk menelan aturannya. Urutan bicaranya tetap
 aturan dulu (halaman 11), produk belakangan — kaki halaman ini sengaja berbunyi
-*"strip the dashboard away and a health office can still run Waspada on paper."*
+*"strip the dashboard away and a health office can still run Pawang on paper."*
 Nama produk ada di makro `\Produk` pada `storyboard/storyboard.tex`; ganti di satu tempat itu
 kalau tim memilih nama lain.
 
@@ -486,8 +486,8 @@ kalau tim memilih nama lain.
 > Hussain-Alkhateeb et al. 2018 (WHO-TDR EWARS) · Nadjib et al. 2019 *PLoS NTD* ·
 > Wilastonegoro et al. 2020 *AJTMH* · Sasmono et al. 2026 *IJID Regions* · Childs et al. 2025 *PNAS*
 
-Pranala DOI per klaim ada di `analisis/keluaran/referensi_per_klaim.md` — **ganti pranala
-consensus.app dengan DOI jurnal** sebelum submit.
+DOI per klaim ada di `analisis/keluaran/referensi_per_klaim.md` — seluruhnya sudah
+diresolusi lewat Crossref (25 Agu 2026) dan halaman referensi dek dibangun dari daftar itu.
 
 ---
 
@@ -503,5 +503,4 @@ consensus.app dengan DOI jurnal** sebelum submit.
 - [ ] Sumber tercantum di kaki tiap halaman berdata
 - [ ] `\NamaTim` dan `\Institusi` di `storyboard.tex` sudah diisi — sampul masih `[NAMA TIM]`
 - [ ] Nama produk di `\Produk` sudah disetujui tim
-- [ ] Pranala consensus.app di halaman referensi sudah diganti DOI jurnal
 - [ ] Berkas dinamai `INDONESIA_<NAMA TIM>.pdf`

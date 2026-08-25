@@ -54,15 +54,15 @@
 \raggedbottom
 
 % ---------------------------------------------------------------- data tim
-% >>> GANTI TIGA BARIS INI SEBELUM SUBMIT <<<
-\newcommand{\NamaTim}{[NAMA TIM]}
-\newcommand{\Institusi}{[NAMA INSTITUSI]}
+\newcommand{\NamaTim}{Swallowgank}
+\newcommand{\Institusi}{Institut Teknologi Sepuluh Nopember}
 \newcommand{\Negara}{Indonesia}
 
 % Nama produk di halaman 15. Ganti di sini saja kalau tim memilih nama lain.
-% "Waspada" = kata Indonesia/Melayu untuk "siap siaga", sekaligus tingkat
-% pertama pada tangga peringatan bahaya Indonesia (Waspada > Siaga > Awas).
-\newcommand{\Produk}{Waspada}
+% "Pawang" = kata Indonesia/Melayu untuk orang yang mengaku bisa membaca cuaca
+% berbulan-bulan di muka. Namanya kelakar; isinya justru kebalikannya —
+% aturannya terbuka dan bisa diperiksa tangan. Itu argumen dek ini.
+\newcommand{\Produk}{Pawang}
 
 % ---------------------------------------------------------------- palet
 % Palet naskah: biru kasus, oranye alarm, merah puncak, abu konteks
@@ -794,10 +794,10 @@
        at (54,412) {\Produk};
   \node[anchor=north west, text width=706bp, align=left, text=white, font=\smlfont]
        at (196,410)
-    {\emph{waspada} --- Indonesian and Malay for \emph{stay alert}, and the first
-     rung of Indonesia's own hazard ladder. One SAC page a district officer opens
-     on the 1st, plus an automatic WhatsApp advisory. It escalates; it never
-     declares an emergency.};
+    {\emph{pawang} --- the Indonesian and Malay word for someone who claims to know
+     the weather months ahead. This one shows its working: one SAC page a district
+     officer opens on the 1st, plus an automatic WhatsApp advisory. It escalates;
+     it never declares an emergency.};
 
   % ---- lapis digital (sub-kriteria Innovation: integration of AI & digital tech)
   \node[anchor=north west, text width=\CW bp, align=left, text=ink, font=\smlfont]
@@ -878,47 +878,124 @@
 
 % =====================================================================
 % REFERENSI — DI LUAR HITUNGAN 15 HALAMAN (aturan resmi panitia)
+% Seluruh DOI diverifikasi lewat Crossref (judul + penulis + tahun + jurnal
+% dicocokkan satu per satu), bukan disalin dari ingatan.
 % =====================================================================
+% REFERENSI — DI LUAR HITUNGAN 15 HALAMAN (aturan resmi panitia, boleh >1 hal.)
+% Seluruh DOI diverifikasi lewat Crossref (judul + penulis + tahun + jurnal
+% dicocokkan satu per satu), bukan disalin dari ingatan.
+% =====================================================================
+\newcommand{\rujuk}[1]{\par\vspace{4bp}#1}
+
 \begin{halaman}
   \navbar{0}
-  \kepala{References}{Data sources and literature}
+  \kepala{References 1/2}{Data sources}
 
-  \node[anchor=north west, text=alarm, font=\eyefont] at (36,\CTOP) {DATA};
-  \teks{36}{404}{424}{\smlfont
-    OpenDengue V1.3 (doi:10.6084/m9.figshare.24259573.v4) $\cdot$
-    World Bank Climate Change Knowledge Portal (ERA5 0.25\textdegree) $\cdot$
-    NOAA CPC Oceanic Ni\~no Index $\cdot$
-    WHO/UNICEF Joint Monitoring Programme 2025 $\cdot$
-    BPS Indonesia (WebAPI) $\cdot$
-    Global Human Settlement Layer (JRC) $\cdot$
-    SIPSN KLHK $\cdot$ BNPB.};
+  \node[anchor=north west, text=alarm, font=\eyefont] at (\ML,\CTOP) {DATA};
+  \teks{\ML}{406}{424}{\tnyfont
+    OpenDengue V1.3. doi:10.6084/m9.figshare.24259573.v4
+    \rujuk{World Bank Climate Change Knowledge Portal (ERA5 0.25\textdegree{}
+      monthly temperature and precipitation).}
+    \rujuk{NOAA Climate Prediction Center. Oceanic Ni\~no Index (ONI v5).}
+    \rujuk{WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation
+      and Hygiene, 2025 update.}
+    \rujuk{BPS-Statistics Indonesia. Provincial population, WebAPI.}
+    \rujuk{European Commission JRC. Global Human Settlement Layer
+      (GHS-UCDB R2019A).}
+    \rujuk{SIPSN, Ministry of Environment and Forestry, Indonesia.}
+    \rujuk{BNPB. Indonesian Disaster Data and Information (DIBI).}}
 
-  \node[anchor=north west, text=alarm, font=\eyefont] at (500,\CTOP) {LITERATURE};
-  \teks{500}{404}{424}{\smlfont
-    Tian et al.\ 2025 \emph{Nat Commun} $\cdot$
-    Djaafara et al.\ 2026 \emph{PLOS NTD} $\cdot$
-    Sutriyawan et al.\ 2025 $\cdot$
-    Lowe et al.\ 2021 \emph{Lancet Planet Health} $\cdot$
-    Gibb et al.\ 2023 \emph{Nat Commun} $\cdot$
-    Baharom et al.\ 2022 $\cdot$
-    C\'ardenas et al.\ 2021 $\cdot$
-    Schlesinger et al.\ 2024 $\cdot$
-    Hussain-Alkhateeb et al.\ 2018 (WHO-TDR EWARS) $\cdot$
-    Nadjib et al.\ 2019 \emph{PLoS NTD} $\cdot$
-    Wilastonegoro et al.\ 2020 \emph{AJTMH} $\cdot$
-    Sasmono et al.\ 2026 \emph{IJID Regions} $\cdot$
-    Childs et al.\ 2025 \emph{PNAS}.};
+  \node[anchor=north west, text=alarm, font=\eyefont] at (\ML,236) {METHOD REFERENCE};
+  \teks{\ML}{218}{424}{\tnyfont
+    Hussain-Alkhateeb L, et al.\ (2017). \emph{Early warning and response system
+    (EWARS) for dengue outbreaks: operational guide.} WHO/TDR technical document
+    --- no DOI assigned; the peer-reviewed description is Hussain-Alkhateeb 2018
+    on the next page.}
 
-  \draw[rounded corners=4bp, fill=soft, draw=none] (36,200) rectangle ++(888,-70);
-  \teks{54}{182}{852}{\smlfont
-    \textbf{TODO sebelum submit:} ganti seluruh pranala consensus.app di
-    \texttt{analisis/keluaran/referensi\_per\_klaim.md} dengan DOI jurnal, lalu
-    lengkapi sitasi di halaman ini menjadi format penuh (penulis, tahun, judul,
-    jurnal, DOI). Halaman referensi tidak dihitung dalam batas 15 halaman ---
-    boleh lebih dari satu halaman.};
+  \node[anchor=north west, text=alarm, font=\eyefont] at (500,\CTOP) {CLIMATE AND DENGUE};
+  \teks{500}{406}{424}{\tnyfont
+    Tian Y, et al.\ (2025). Rising dengue risk with increasing El
+    Ni\~no--Southern Oscillation amplitude and teleconnections.
+    \emph{Nat Commun}. doi:10.1038/s41467-025-63655-0
+    \rujuk{Djaafara B, et al.\ (2026). Dengue transmission heterogeneity across
+      Indonesia's archipelago: climate-driven spatiotemporal patterns and policy
+      implications. \emph{PLOS Negl Trop Dis}. doi:10.1371/journal.pntd.0014135}
+    \rujuk{Mokhtar S, et al.\ (2024). Global risk of dengue outbreaks and the
+      impact of El Ni\~no events. \emph{Environ Res}.
+      doi:10.1016/j.envres.2024.119830}
+    \rujuk{Sutriyawan A, et al.\ (2025). Impact of climate change on dengue
+      incidence: a systematic review of evidence from Southeast Asia.
+      \emph{J Popul Soc Stud}. doi:10.25133/jpssv342026.028}
+    \rujuk{Lowe R, et al.\ (2021). Combined effects of hydrometeorological
+      hazards and urbanisation on dengue risk in Brazil.
+      \emph{Lancet Planet Health}. doi:10.1016/S2542-5196(20)30292-8}
+    \rujuk{Gibb R, et al.\ (2023). Interactions between climate change, urban
+      infrastructure and mobility are driving dengue emergence in Vietnam.
+      \emph{Nat Commun}. doi:10.1038/s41467-023-43954-0}
+    \rujuk{Wang Y, et al.\ (2022). Impact of extreme weather on dengue fever
+      infection in four Asian countries. \emph{Environ Int}.
+      doi:10.1016/j.envint.2022.107518}
+    \rujuk{Choi Y, et al.\ (2016). Effects of weather factors on dengue fever
+      incidence and implications for interventions in Cambodia.
+      \emph{BMC Public Health}. doi:10.1186/s12889-016-2923-2}
+    \rujuk{Polrob P, et al.\ (2025). Nonlinear and lagged effects of climate
+      variability on dengue incidence in Bangkok. \emph{BMC Public Health}.
+      doi:10.1186/s12889-025-25420-2}}
 
-  \kaki{Reference page --- excluded from the 15-page limit per the official
-        storyboard requirements.}{R}
+  \kaki{Reference pages --- excluded from the 15-page limit per the official
+        storyboard requirements. Every DOI was resolved against Crossref.}{R1}
+\end{halaman}
+
+\begin{halaman}
+  \navbar{0}
+  \kepala{References 2/2}{Early-warning systems, cost, and validation}
+
+  \node[anchor=north west, text=alarm, font=\eyefont] at (\ML,\CTOP)
+    {EARLY-WARNING SYSTEMS};
+  \teks{\ML}{406}{424}{\tnyfont
+    Hussain-Alkhateeb L, et al.\ (2018). Early warning and response system
+    (EWARS) for dengue outbreaks: recent advancements towards widespread
+    applications in critical settings. \emph{PLOS ONE}.
+    doi:10.1371/journal.pone.0196811
+    \rujuk{Baharom M, et al.\ (2022). Dengue early warning system as outbreak
+      prediction tool: a systematic review. \emph{Risk Manag Healthc Policy}.
+      doi:10.2147/RMHP.S361106}
+    \rujuk{Benitez-Valladares D, et al.\ (2021). Validation of the early warning
+      and response system (EWARS) for dengue outbreaks: evidence from the
+      national vector control program in Mexico. \emph{PLOS Negl Trop Dis}.
+      doi:10.1371/journal.pntd.0009261}
+    \rujuk{C\'ardenas R, et al.\ (2022). The early warning and response system
+      (EWARS-TDR) for dengue outbreaks: can it also be applied to chikungunya
+      and Zika outbreak warning? \emph{BMC Infect Dis}.
+      doi:10.1186/s12879-022-07197-6}
+    \rujuk{Schlesinger P, et al.\ (2024). Enabling countries to manage outbreaks:
+      statistical, operational, and contextual analysis of the EWARS-csd for
+      dengue outbreaks. \emph{Front Public Health}. doi:10.3389/fpubh.2024.1323618}
+    \rujuk{Quan TM, et al.\ (2026). Climatic determinants and simple thresholds
+      for dengue early warning in Vietnam: a One Health perspective.
+      \emph{Sci One Health}. doi:10.1016/j.soh.2026.100159}}
+
+  \node[anchor=north west, text=alarm, font=\eyefont] at (500,\CTOP)
+    {BURDEN, COST, AND VALIDATION};
+  \teks{500}{406}{424}{\tnyfont
+    Nadjib M, et al.\ (2019). Economic burden of dengue in Indonesia.
+    \emph{PLOS Negl Trop Dis}. doi:10.1371/journal.pntd.0007038
+    \rujuk{Wilastonegoro NN, et al.\ (2020). Cost of dengue illness in Indonesia
+      across hospital, ambulatory, and not medically attended settings.
+      \emph{Am J Trop Med Hyg}. doi:10.4269/ajtmh.19-0855}
+    \rujuk{Shepard DS, et al.\ (2013). Economic and disease burden of dengue in
+      Southeast Asia. \emph{PLOS Negl Trop Dis}. doi:10.1371/journal.pntd.0002055}
+    \rujuk{Shepard DS, et al.\ (2016). The global economic burden of dengue: a
+      systematic analysis. \emph{Lancet Infect Dis}.
+      doi:10.1016/S1473-3099(16)00146-8}
+    \rujuk{Sasmono RT, et al.\ (2026). Understanding the epidemiological trends
+      and economic impact of dengue in Indonesia. \emph{IJID Regions}.
+      doi:10.1016/j.ijregi.2026.100860}
+    \rujuk{Childs ML, et al.\ (2025). Climate warming is expanding dengue burden
+      in the Americas and Asia. \emph{PNAS}. doi:10.1073/pnas.2512350122}}
+
+  \kaki{Reference pages --- excluded from the 15-page limit per the official
+        storyboard requirements. Every DOI was resolved against Crossref.}{R2}
 \end{halaman}
 
 \end{document}

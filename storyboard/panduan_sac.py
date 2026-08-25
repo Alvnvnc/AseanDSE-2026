@@ -305,7 +305,6 @@ def bangun_tex(slot: list[dict]) -> str:
         r"Sensitivitas 44\% disebutkan, tidak disembunyikan",
         r"Skenario 10\% ditandai sebagai asumsi, bukan temuan",
         r"Sumber tercantum di kaki tiap halaman berdata",
-        r"Pranala \texttt{consensus.app} di halaman referensi sudah diganti DOI jurnal",
         r"Berkas disalin jadi \texttt{INDONESIA\_<NAMA TIM>.pdf}",
     ]:
         t(r"\item " + butir)
