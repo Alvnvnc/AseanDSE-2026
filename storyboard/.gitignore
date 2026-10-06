@@ -8,9 +8,10 @@
 # dibangkitkan panduan_sac.py dari storyboard.tex
 panduan-sac.tex
 
-# salinan siap submit, dibuat bangun.sh dari storyboard.pdf
+# salinan siap submit, dibuat bangun.sh (PDF) dan ppt/bangun-ppt.js (PPTX)
 INDONESIA_*.pdf
+INDONESIA_*.pptx
 
-# hasil pangkasan siapkan-gambar.py dari gambar-sac/ — dibangun ulang oleh
-# bangun.sh, jadi tidak perlu ikut versi. Sumber kebenarannya gambar-sac/.
-gambar-siap/
+# gambar-siap/ (pangkasan siapkan-gambar.py) IKUT dilacak: dipakai build PPTX
+# (ppt/bangun-ppt.js) dan sebagai URL publik untuk ekspor Gamma API.
+# Sumber kebenarannya tetap gambar-sac/.
