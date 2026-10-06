@@ -9,7 +9,7 @@ sudah tertanam di tiap slide.
 ## Membangun
 
 ```bash
-node bangun-ppt.js ../INDONESIA_SWALLOWGANK.pptx
+node bangun-ppt.js ../INDONESIA_SWALLOWGANK-latex.pptx
 ```
 
 Kebutuhan: Node.js (paket `pptxgenjs` sudah di `node_modules/`) dan Python
@@ -19,8 +19,14 @@ dengan Pillow (untuk `ukur.py`; skrip mencari `../../.venv/bin/python` lalu
 Ekspor PDF (opsi kedua format yang diterima panitia):
 
 ```bash
-soffice --headless --convert-to pdf INDONESIA_SWALLOWGANK.pptx
+soffice --headless --convert-to pdf INDONESIA_SWALLOWGANK-latex.pptx
 ```
+
+## Jalur Gamma (dek versi desain modern)
+
+`gamma/` menyimpan jalur kedua: generate lewat API Gamma + sunting lokal →
+`../INDONESIA_SWALLOWGANK-gamma.pptx` (catatan pembicara ikut tersuntik).
+Lihat `gamma/README.md`.
 
 ## Isi
 

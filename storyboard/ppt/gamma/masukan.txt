@@ -1,0 +1,233 @@
+# Four Months' Notice
+Turning El Niño into a dengue early-warning alarm for ASEAN
+
+A freely available climate index gives ASEAN health offices months of warning before a dengue season turns severe. We turn that lag into a two-condition alert rule that any provincial health office can run today, with no model, no code and no paid data.
+
+Team Swallowgank · Institut Teknologi Sepuluh Nopember · Indonesia
+SDG 3 Health · SDG 13 Climate · SDG 6 Water
+All charts built in SAP Analytics Cloud.
+---
+# The problem: Dengue is ASEAN's fastest-moving climate-sensitive disease
+- 1.26M cases in 2019, the worst year in our nine-country panel
+- Vietnam 368k, Philippines 220k, Thailand 159k (latest complete year each)
+- The 2023–24 El Niño added an estimated 9.6 million cases worldwide (Tian et al., 2025)
+- Outbreaks are still fought reactively, only once cases surge
+
+ASEAN dengue cases, 2000–2024
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h02-tren-tahunan.png
+Cases by country, latest complete year
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h02-per-negara.png
+
+The burden is large, rising and spiky. Spikes are what an alarm can catch; a trend line is not something a health office can act on.
+Source: OpenDengue V1.3, national totals, complete-reporting years only. We do not claim a 2023–24 record, because our panel is incomplete for Vietnam and the Philippines after 2022.
+---
+# The question: Climate data arrives months before patients do
+"Can a freely available climate index tell a health office how bad the coming season will be, early enough to act?"
+
+- SDG target 3.3: end the epidemics of neglected tropical diseases, of which dengue is one
+- SDG target 13.1: strengthen resilience and adaptive capacity to climate-related hazards
+- SDG target 6.1: safe water for all. Where piped water is absent, households store it, and Aedes breeds in the store
+
+ASEAN priority: Dengue sits under ASEAN Health Cluster 2, Responding to All Hazards and Emerging Threats, whose ASEAN Dengue Day statements ask member states for earlier and better coordinated action.
+
+From public index to public action: Climate index (ONI, monthly, public) → 3–4 month lag → Dengue surge → Action window: PSN/3M, larviciding, stockpiles
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h03-alur.png
+
+What would make us wrong:
+- Signal is only the wet season (answered p. 7)
+- Rule was tuned on its own test years (answered p. 12)
+- Our innovation angle does not hold (answered p. 14)
+---
+# Data & method: Nine open datasets, one monthly panel, zero paid sources
+- Dengue cases (OpenDengue V1.3) — 70,397 rows — 10 countries, 1955–2025
+- Dengue × climate monthly panel — 55,329 rows — province-month, lags pre-computed
+- Temperature & rainfall (CCKP, ERA5) — 9,000 rows — monthly, 1950–2024
+- ONI El Niño index (NOAA CPC) — 918 rows — monthly, 1950–2026
+- Water & sanitation (WHO/UNICEF JMP) — 8,692 rows — 2000–2024
+- Population (BPS Indonesia) — 140 rows — provinces, denominators
+- Flood exposure (GHSL) — 30,348 rows — 836 cities, 1975–2030
+
+175k rows in the joined panel · 9 countries with monthly data · 212 provinces covered · 0 paid or login-only sources
+
+Method: monthly national series 2010+; lagged correlations 0–4 months; anomalies — the seasonal cycle is removed before we accept any correlation; a two-condition trigger rule; out-of-sample test on unseen years; WHO/PAHO endemic-channel benchmark. All charts built in SAP Analytics Cloud.
+Source: Nine sources, all public: OpenDengue · World Bank CCKP (ERA5) · NOAA CPC · WHO/UNICEF JMP · BPS · GHSL · SIPSN KLHK · BNPB. No licence, no login, no cost.
+---
+# Analysis 1 · The season: Dengue has a calendar, and it is not the same one everywhere
+- Indonesia peaks Jan–Apr, right after the December rainfall peak (Jan 15,099 cases/month against Sep 6,003 = 2.5×)
+- Thailand climbs with the onset of the wet season and peaks Jun–Sep (Jul 8,110 against Feb 1,465 = 5.5×)
+- One disease, two calendars in opposite halves of the year
+
+Indonesia: cases vs rainfall by month
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h05-musiman-idn.png
+Thailand: cases vs rainfall by month
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h05-musiman-tha.png
+
+A regional alarm has to be local in its timing.
+Rainfall alone cannot set the date: Thailand's rain peaks in September, two months after its cases. Something earlier in the chain is doing the work.
+Source: national monthly means, complete years only (IDN 2010–2023, THA 2010–2022).
+---
+# Analysis 2 · The lag: The climate signal arrives 1–4 months before the cases
+Predictor and lag, correlation r:
+- Indonesia — ONI (El Niño): lag 4 mo, r = +0.59; Temperature: lag 3 mo, +0.47; Rainfall: lag 1 mo, +0.40
+- Thailand — Temperature: lag 3 mo, +0.57; Rainfall: same mo, +0.48
+
+Correlation by predictor and lag
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h06-heatmap-jeda.png
+Temperature (lag 2) vs cases, Indonesia
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h06-scatter-suhu.png
+
+The lag is the opportunity: it is the time a health office has to act.
+Every predictor peaks at a lag of one month or more, so none of them is a coincident symptom. The best one, ONI, is also the one published earliest and freely.
+Source: monthly national series, 2010+ (n = 172 months, Indonesia).
+---
+# Analysis 3 · The strongest signal: A strong El Niño nearly triples Indonesia's monthly dengue burden
+- 2.8× — 21,383 vs 7,597 cases per month, grouped by the ENSO phase four months earlier
+- The grouping uses the ENSO phase four months earlier, so this is a forecast rather than hindsight
+- Not merely seasonality. With the seasonal cycle removed, the ONI correlation still holds at r = +0.56
+- Not an aggregation artefact. Cases run higher in El Niño months in 33 of 34 Indonesian provinces (sign test p = 2×10⁻⁹) and in 70 of 77 Thai provinces
+- Rainfall does not survive the same test, falling from +0.40 to +0.24, and we report that
+
+Mean monthly cases by ENSO phase (lag 4)
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h07-fase-enso.png
+Same signal, seasonality removed
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h07-anomali.png
+
+Strong El Niño: 21,383 cases/month
+Source: 172 months, Indonesia 2010–2024 · NOAA CPC definition: El Niño = ONI ≥ 0.5. We claim early-warning feasibility, not causation.
+---
+# Analysis 4 · Where and when: The alarm must be set province by province
+- Indonesia: 20 of 35 provinces peak in January, 8 in February, but Bali peaks in May and North Kalimantan in December
+- Thailand: 38 of 77 provinces peak in July, 16 in August
+- A single national alert date would be wrong for a third of Indonesia
+
+Indonesia: share of annual cases by month
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h08-kalender-idn.png
+Thailand: share of annual cases by month
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h08-kalender-tha.png
+
+Same colour scale, same twelve rows. Only the calendar moves.
+This is why the rule carries a month condition as well as a climate one. The index says how bad; the province's own calendar says when.
+Source: share of annual cases by calendar month, per province.
+---
+# Analysis 5 · Who is hit hardest: The same alarm, aimed at the most exposed places
+- Highest incidence 2018–2020: Bali 134, North Kalimantan 115, East Kalimantan 112 per 100k, which is 14× the lowest province (Papua, 9)
+- Indonesia has the lowest piped-water access in ASEAN at 21.8% (JMP 2024). Households therefore store water, and stored water breeds Aedes
+- 12.9 million people in Bangkok and 1.7 million in Jakarta live in the 1-in-100-year flood zone
+- We use these three layers to target the alarm, not to explain the disease. The one place we tried to explain it, the claim failed (p. 14)
+
+Incidence per 100k, 2018–2020
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h09-insidens.png
+Piped water access, ASEAN
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h09-wash.png
+Flood-zone population, top cities
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h09-banjir.png
+
+Sources: BPS denominators, 2018–2020 only, the only years with official provincial denominators · WHO/UNICEF JMP · GHSL. We never rank regions using raw case counts.
+---
+# Synthesis: From signal to schedule: a risk calendar every health office can read
+- Each province gets three states, Peak, Watch and Normal, derived from its own case history
+- The El Niño index sets how severe the coming peak will be; the calendar sets when it arrives
+- Real lead times, every El Niño episode since 2009: 0–3 months on observed ONI, longer still on NOAA and BMKG forecast ONI
+
+Risk calendar, six priority provinces
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h10-kalender-prioritas.png
+Cases vs the P75 outbreak threshold
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h10-deret-alarm.png
+
+Two public numbers, one page, no model to maintain.
+The threshold is the WHO-style P75 of the province's own history, not a number we picked. Everything above the orange line is what the alarm is trying to anticipate.
+Source: 5 El Niño episodes, 2009–2024. The alarm predicts how severe the coming season will be; it does not shift its start date.
+---
+# The solution: Two conditions. No model. No code.
+"If the month is Jan–Apr AND ONI four months ago was ≥ 0.5 → raise alert"
+- 11.6% of months fire the alert
+- 100% precision, every alert in a top-quartile month
+- 4× lift over the base rate
+- Both inputs are public and free: NOAA publishes ONI monthly, the calendar comes from the office's own records
+- It runs in a spreadsheet, a WhatsApp broadcast or the SAC page. Where a statistical forecast needs a trained model and a data team, a provincial office can start this next week
+
+When the rule fired, 2010–2024
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h11-deret-aturan.png
+Precision vs alert frequency, four rules
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h11-aturan.png
+
+Source: Indonesia 2010–2024, 172 months · the ONI ≥ 0.5 threshold is NOAA's own El Niño definition, not a value we tuned.
+---
+# Viability: We tried to break our own rule. It held.
+- Out-of-sample test: rule built on 2010–2016, tested blind on 2017–2024 → precision still 100%, sensitivity 44%, lift 3.9
+- Against the WHO/PAHO endemic-channel definition, specificity is 91% and lift 2.5. All of the value comes from the El Niño condition rather than from the season
+- Published dengue early-warning systems report PPV 43–86% (17-system review). We reach a comparable PPV using monthly data and no statistical model
+- Replicates in Thailand with its own best predictor (temperature anomaly, lag 2): lift 2.7
+
+Train vs blind test, Indonesia and Thailand
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h12-luar-sampel.png
+
+How we compare to published EWS — sensitivity % / PPV %: 17 published EWS (range, Baharom et al. 2022) 50–100 / 43–86; EWARS-csd Colombia (Schlesinger et al. 2024) 97 / 75; WHO/TDR EWARS Mexico (Cárdenas et al. 2021) 100 / 83; Rule D vs P75 (blind test, this deck) 44 / 100; Rule D vs endemic channel (this deck) 29 / 30.
+Adoption in three phases: 1 Bali, N. & E. Kalimantan pilot → 2 all 38 provinces → 3 ASEAN peers. Cost: open data, monthly refresh, existing staff. No new licence and no new headcount.
+We report the endemic-channel row even though it is our worst result. It is the harder benchmark, and hiding it would be the kind of selective reporting this deck argues against.
+We chose precision over sensitivity: a repeated false alarm is the fastest way to make a health office stop trusting the system. This rule is an escalation layer on top of routine surveillance, not a replacement.
+---
+# Impact · Indonesia alone: Acting 4–8 weeks earlier is worth US$1.5–3.7 million a year
+4,656 cases/year prevented in Indonesia, under the most conservative scenario
+- Indonesia averages 104,753 cases/year (complete years 2015–2023); 44% fall in Jan–Apr
+- Prevent just 10% of peak-season cases (an assumption, not a finding) = 4,656 cases/year
+- At Indonesia's published hospitalisation cost of US$316–791/case → US$1.5–3.7M (Rp 24–59 billion)/year
+- For scale, dengue costs Indonesia US$381–681M/year (Nadjib 2019; Wilastonegoro 2020)
+
+Avoided cost by scenario
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h13-dampak.png
+
+Lead time, every El Niño episode since 2009: 2009/10 — alarm Dec 2009, cases cross P75 Jan 2010, lead 1 month; 2014/16 — Feb 2015 / Feb 2015 / 0; 2018/19 — Jan 2019 / Jan 2019 / 0; 2019/20 — Mar 2020 / Mar 2020 / 0; 2023/24 — Sep 2023 / Dec 2023 / 3 months.
+The lead time is observed, not assumed. Three of five episodes gave zero months on observed ONI, and we print that. The value comes from the two that did not, and from the fact that NOAA and BMKG publish a forecast ONI months ahead of the observed one, on which the same rule fires earlier still.
+Sources: cost per case from peer-reviewed Indonesian studies; case counts from our own panel. The cheapest anchor (US$90/episode) still gives US$0.42M, so we have not chosen the most flattering figure.
+---
+# Limits & data ethics: What we tested and threw away
+- We falsified our own innovation angle. "Drought × water access" looked promising (r = −0.31) but collapsed after controlling for El Niño (partial r = −0.15) and showed no moderation by piped access (ρ = +0.34, p = 0.46, n = 7). We dropped the claim.
+- We do not claim a 2023–24 record, because our panel is incomplete for Vietnam and the Philippines after 2022.
+- Incidence only for 2018–2020, the only years with official BPS denominators. Elsewhere we use raw counts and never rank regions by them.
+- Flood and disaster records look correlated with dengue (r = +0.66) until the counts are divided by population, at which point the association reverses (r = −0.14). We report the null.
+- Correlation is not causation. This is an early-warning claim, and the mechanism is cited from the literature.
+
+No relationship (ρ = +0.34, p = 0.46, n = 7)
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h14-kekeringan.png
+
+A rule that survives its own falsification tests is worth more to a health office than a larger claim that has never been tested.
+This page is not an apology. We tested our own best idea, it failed the test, and we removed it.
+---
+# The product: Pawang: the rule, delivered on the first of every month
+Pawang is the Indonesian and Malay word for someone who claims to know the weather months ahead. This one shows its working: a single SAC page that a district officer opens on the 1st, together with an automatic WhatsApp advisory. It escalates; it never declares an emergency.
+The digital layer does the fetching, not the deciding. SAC refreshes the NOAA ONI feed and the office's own case calendar on a schedule, and SAC Smart Predict runs beside the rule as a second opinion. The alert itself remains the two-condition rule, which can be audited by hand, so no one has to trust a model they cannot inspect.
+What Bali opens on 1 October 2026: ALERT — Jan–Apr 2027. ONI in Sep 2026 was +1.3 (≥ 0.5). Expect a top-quartile season. Act now, not in January.
+
+When the rule fired, 2010–2024
+https://raw.githubusercontent.com/Alvnvnc/AseanDSE-2026/otomasi-sac/storyboard/gambar-siap/h11-deret-aturan.png
+
+Who does what:
+- District health office (gov't) — reads the advisory; moves PSN/3M, larviciding and stockpiles forward into the alerted window
+- Ministry of Health · BMKG (gov't) — own the monthly refresh; BMKG's forecast ONI stretches the notice past four months
+- Jumantik cadres (NGO & community) — larval checks and household messaging concentrated in the alerted months instead of spread thin all year
+- Cloud & telco partners (private) — host the SAC tenant and the broadcast; one analyst-hour a month, no data team
+
+Scales by swapping one input: Thailand already validates with its own predictor (temperature anomaly, lag 2, lift 2.7). Any ASEAN member repeats the fit on its own records.
+The rule is the engine, not a feature of the product. Strip the dashboard away and a health office can still run Pawang on paper.
+---
+# References 1/2: Data sources
+- OpenDengue V1.3. doi:10.6084/m9.figshare.24259573.v4
+- World Bank Climate Change Knowledge Portal (ERA5 0.25° monthly temperature and precipitation).
+- NOAA Climate Prediction Center. Oceanic Niño Index (ONI v5).
+- WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene, 2025 update.
+- BPS-Statistics Indonesia. Provincial population, WebAPI.
+- European Commission JRC. Global Human Settlement Layer (GHS-UCDB R2019A).
+- SIPSN, Ministry of Environment and Forestry, Indonesia.
+- BNPB. Indonesian Disaster Data and Information (DIBI).
+
+Method reference: Hussain-Alkhateeb L, et al. (2017). Early warning and response system (EWARS) for dengue outbreaks: operational guide. WHO/TDR technical document — no DOI assigned; the peer-reviewed description is Hussain-Alkhateeb 2018 on the next page.
+
+Climate and dengue: Tian Y, et al. (2025) Nat Commun doi:10.1038/s41467-025-63655-0 · Djaafara B, et al. (2026) PLOS Negl Trop Dis doi:10.1371/journal.pntd.0014135 · Mokhtar S, et al. (2024) Environ Res doi:10.1016/j.envres.2024.119830 · Sutriyawan A, et al. (2025) J Popul Soc Stud doi:10.25133/jpssv342026.028 · Lowe R, et al. (2021) Lancet Planet Health doi:10.1016/S2542-5196(20)30292-8 · Gibb R, et al. (2023) Nat Commun doi:10.1038/s41467-023-43954-0 · Wang Y, et al. (2022) Environ Int doi:10.1016/j.envint.2022.107518 · Choi Y, et al. (2016) BMC Public Health doi:10.1186/s12889-016-2923-2 · Polrob P, et al. (2025) BMC Public Health doi:10.1186/s12889-025-25420-2
+---
+# References 2/2: Early-warning systems, cost, and validation
+Early-warning systems: Hussain-Alkhateeb L, et al. (2018) PLOS ONE doi:10.1371/journal.pone.0196811 · Baharom M, et al. (2022) Risk Manag Healthc Policy doi:10.2147/RMHP.S361106 · Benitez-Valladares D, et al. (2021) PLOS Negl Trop Dis doi:10.1371/journal.pntd.0009261 · Cárdenas R, et al. (2022) BMC Infect Dis doi:10.1186/s12879-022-07197-6 · Schlesinger P, et al. (2024) Front Public Health doi:10.3389/fpubh.2024.1323618 · Quan TM, et al. (2026) Sci One Health doi:10.1016/j.soh.2026.100159
+
+Burden, cost, and validation: Nadjib M, et al. (2019) PLOS Negl Trop Dis doi:10.1371/journal.pntd.0007038 · Wilastonegoro NN, et al. (2020) Am J Trop Med Hyg doi:10.4269/ajtmh.19-0855 · Shepard DS, et al. (2013) PLOS Negl Trop Dis doi:10.1371/journal.pntd.0002055 · Shepard DS, et al. (2016) Lancet Infect Dis doi:10.1016/S1473-3099(16)00146-8 · Sasmono RT, et al. (2026) IJID Regions doi:10.1016/j.ijregi.2026.100860 · Childs ML, et al. (2025) PNAS doi:10.1073/pnas.2512350122
+
+Reference pages — excluded from the 15-page limit per the official storyboard requirements. Every DOI was resolved against Crossref.
