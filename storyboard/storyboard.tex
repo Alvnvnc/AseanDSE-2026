@@ -162,31 +162,85 @@
 }
 
 % -------------------------------------------------- SLOT GRAFIK SAC
-% \sacslot{x}{y}{lebar}{tinggi}{nama-berkas}{judul grafik}{jenis + dataset}{resep}
-% Kalau gambar-sac/<nama-berkas>.png ada  -> gambar dipasang.
-% Kalau belum ada                          -> kotak placeholder berisi resep SAC.
-% Judul dipasang sebagai node bernama; kotak digantung dari anchor south-west-nya,
-% jadi judul satu baris maupun dua baris sama-sama tidak pernah menabrak kotak.
-% (Catatan: \sbox/\settoheight TIDAK bisa dipakai di dalam tikzpicture.)
-\newcommand{\sacslot}[8]{%
-  \node[anchor=north west, text width=#3bp, align=left, text=ink,
-        font=\smlfont\bfseries] (cap#5) at (#1,#2) {#6};
-  \coordinate (tl#5) at ($(cap#5.south west)+(0,-5)$);
-  \pgfmathsetmacro{\tw}{#3-32}%
-  \IfFileExists{gambar-sac/#5.png}{%
-    \node[anchor=north west] at (tl#5)
-      {\includegraphics[width=#3bp,height=#4bp,keepaspectratio]{gambar-sac/#5}};
+% Ekspor SAC selalu membawa judulnya sendiri, chrome widget, dan margin putih
+% yang lebar. siapkan-gambar.py memangkas semua itu ke gambar-siap/ dan
+% menuliskan rasio lebar/tinggi hasil pangkasnya ke gambar-siap/rasio.tex.
+%
+% Slot di sini digerakkan TINGGI, bukan lebar. Alasannya: grafik SAC hampir
+% semuanya persegi, dan pada halaman 16:9 yang selalu habis lebih dulu adalah
+% tinggi. Dengan tinggi sebagai patokan, lebar dihitung dari rasio, dan kartu
+% pembungkusnya bisa digambar persis sebesar gambarnya -- tidak ada lagi pita
+% putih sisa keepaspectratio.
+%
+% \sacslot{x}{y}{tinggi}{berkas}{judul}{jenis + dataset}{resep}
+%   x  = tepi KIRI kotak gambar
+%   y  = garis atas judul slot
+% \sacslotk sama persis, hanya x = tepi KANAN. Dipakai untuk grafik kedua pada
+% halaman dua-grafik supaya tepi kanannya rata dengan margin halaman, berapa
+% pun rasionya.
+\IfFileExists{gambar-siap/rasio.tex}{\input{gambar-siap/rasio.tex}}{}
+
+\newcommand{\JUDULSLOT}{16}   % tinggi baris judul slot + jaraknya ke gambar
+
+\newcommand{\sacrasio}[1]{%
+  \ifcsname rasio@#1\endcsname\csname rasio@#1\endcsname\else 1.05\fi}
+
+% mesin bersama; #1 = 0 (jangkar kiri) atau 1 (jangkar kanan)
+\newcommand{\sacslotinti}[8]{%
+  \pgfmathsetmacro{\slotw}{#4*\sacrasio{#5}}%
+  \ifnum#1=1 \pgfmathsetmacro{\slotx}{#2-\slotw}\else \pgfmathsetmacro{\slotx}{#2}\fi
+  \pgfmathsetmacro{\sloty}{#3-\JUDULSLOT}%
+  \node[anchor=north west, text width=\slotw bp, align=left, text=ink,
+        font=\smlfont\bfseries] at (\slotx,#3) {#6};
+  \IfFileExists{gambar-siap/#5.png}{%
+    \node[anchor=north west] at (\slotx,\sloty)
+      {\includegraphics[width=\slotw bp, height=#4bp]{gambar-siap/#5}};
+    \draw[rounded corners=3bp, draw=line, line width=0.6bp]
+         (\slotx,\sloty) rectangle ++(\slotw,-#4);
   }{%
+    \pgfmathsetmacro{\tw}{\slotw-32}%
     \draw[rounded corners=4bp, fill=soft, draw=line, dashed, line width=0.9bp]
-         (tl#5) rectangle ++(#3,-#4);
+         (\slotx,\sloty) rectangle ++(\slotw,-#4);
     \node[anchor=north west, fill=accent, text=white, rounded corners=2bp,
           inner xsep=5bp, inner ysep=3bp, font=\tnyfont\bfseries]
-         at ($(tl#5)+(10,-10)$) {SAC};
+         at ({\slotx+10},{\sloty-10}) {SAC};
     \node[anchor=north west, text width=\tw bp, align=left, text=ink, font=\tnyfont]
-         at ($(tl#5)+(10,-34)$) {\textbf{#7}\\[4bp]\textcolor{muted}{#8}};
+         at ({\slotx+10},{\sloty-34}) {\textbf{#7}\\[4bp]\textcolor{muted}{#8}};
     \node[anchor=south east, text=muted, font=\tnyfont]
-         at ($(tl#5)+({#3-10},{-#4+8})$) {\texttt{gambar-sac/#5.png}};
+         at ({\slotx+\slotw-10},{\sloty-#4+8}) {\texttt{gambar-sac/#5.png}};
   }%
+}
+\newcommand{\sacslot}[7]{\sacslotinti{0}{#1}{#2}{#3}{#4}{#5}{#6}{#7}}
+\newcommand{\sacslotk}[7]{\sacslotinti{1}{#1}{#2}{#3}{#4}{#5}{#6}{#7}}
+
+% -------------------------------------------------- pita simpulan
+% Mengisi sisa pita di bawah grafik dengan satu kalimat "jadi apa", supaya
+% bidang bawah halaman tidak menganga kosong seperti versi sebelumnya.
+% \simpulan{x}{y}{lebar}{isi}
+\newcommand{\simpulan}[4]{%
+  \pgfmathsetmacro{\simpw}{#3-14}%
+  \draw[alarm, line width=2.4bp] (#1,#2) -- (#1,{#2-24});
+  \node[anchor=north west, text width=\simpw bp, align=left, text=ink,
+        font=\smlfont] at ({#1+12},#2)
+       {\hyphenpenalty=10000\exhyphenpenalty=10000\relax #4};
+}
+
+% -------------------------------------------------- kutipan tarik
+% \kutip{x}{y atas}{y bawah}{lebar}{isi}
+% Pemenggalan kata dimatikan: pada rail selebar 198bp, TeX memilih memenggal
+% ("of-fice", "cal-endar") dan itu terbaca sebagai cacat, bukan sebagai rapi.
+\newcommand{\kutip}[5]{%
+  \draw[alarm, line width=3bp] (#1,#2) -- (#1,#3);
+  \node[anchor=north west, text width=#4bp, align=left, text=ink,
+        font=\fontsize{14}{19}\selectfont\bfseries] at ({#1+14},#2)
+       {\hyphenpenalty=10000\exhyphenpenalty=10000\relax #5};
+}
+
+% -------------------------------------------------- chip anotasi
+% Angka kunci ditempel di atas kartu grafik. \chip{x}{y}{warna}{isi}
+\newcommand{\chip}[4]{%
+  \node[anchor=north west, fill=#3, text=white, rounded corners=3bp,
+        inner xsep=7bp, inner ysep=4bp, font=\tnyfont\bfseries] at (#1,#2) {#4};
 }
 
 % chip SDG
@@ -198,7 +252,6 @@
 \newcommand{\thd}[1]{\textcolor{muted}{\tnyfont\bfseries\MakeUppercase{#1}}}
 
 \begin{document}
-
 % =====================================================================
 % HALAMAN 1 — SAMPUL
 % Enam unsur wajib panitia: judul, tim, institusi, negara, SDG, deskripsi
@@ -209,72 +262,83 @@
   \fill[accent] (852,0) rectangle (888,\PH);
   \fill[alarm]  (888,0) rectangle (924,\PH);
   \fill[peak]   (924,0) rectangle (\PW,\PH);
-  % blok bayangan halus supaya sisi kanan tidak kosong
-  \fill[accent, opacity=0.10] (620,0) rectangle (852,\PH);
 
-  \node[anchor=north west, text=alarm, font=\eyefont] at (60,478)
+  % Angka pembuka. Sampul lama hanya berisi teks; satu angka besar memberi
+  % juri sesuatu yang bisa dipegang sebelum halaman kedua.
+  \node[anchor=north east, text=white, opacity=0.13,
+        font=\fontsize{150}{150}\selectfont\bfseries] at (836,424) {4};
+  \node[anchor=north east, text width=230bp, align=right, text=white,
+        opacity=0.42, font=\smlfont] at (836,262)
+    {months of public notice before a dengue season turns severe};
+
+  \node[anchor=north west, text=alarm, font=\eyefont] at (60,486)
     {ASEAN DATA SCIENCE EXPLORERS 2026};
 
-  \node[anchor=north west, text width=740bp, align=left, text=white,
-        font=\fontsize{54}{58}\selectfont\bfseries] at (60,450)
+  \node[anchor=north west, text width=720bp, align=left, text=white,
+        font=\fontsize{56}{60}\selectfont\bfseries] at (60,458)
     {Four Months' Notice};
 
-  \node[anchor=north west, text width=700bp, align=left, text=white,
-        font=\fontsize{21}{27}\selectfont] at (60,380)
+  \node[anchor=north west, text width=600bp, align=left, text=white,
+        font=\fontsize{21}{27}\selectfont] at (60,388)
     {Turning El Ni\~no into a dengue early-warning alarm for ASEAN};
 
-  \draw[alarm, line width=3bp] (60,340) -- (160,340);
+  \draw[alarm, line width=3bp] (60,348) -- (160,348);
 
-  \node[anchor=north west, text width=640bp, align=left, text=white,
-        font=\subfont] at (60,320)
+  \node[anchor=north west, text width=580bp, align=left, text=white,
+        font=\subfont] at (60,328)
     {A freely available climate index gives ASEAN health offices months of
      warning before a dengue season turns severe. We turn that lag into a
      two-condition alert rule that any provincial health office can run today,
      with no model, no code and no paid data.};
 
-  \node[anchor=north west, font=\smlfont] at (60,222)
+  \node[anchor=north west, font=\smlfont] at (60,226)
     {\sdgchip{peak}{SDG 3 Health}\hspace{6bp}\sdgchip{accent}{SDG 13 Climate}\hspace{6bp}\sdgchip{alarm}{SDG 6 Water}};
 
-  \draw[white, opacity=0.30, line width=0.6bp] (60,168) -- (800,168);
+  \draw[white, opacity=0.30, line width=0.6bp] (60,172) -- (836,172);
 
   \node[anchor=north west, text width=700bp, align=left, text=white,
-        font=\bodyfont] at (60,148)
+        font=\bodyfont] at (60,152)
     {\textbf{Team \NamaTim} \quad\textcolor{line}{|}\quad \Institusi
      \quad\textcolor{line}{|}\quad \Negara};
 
   \node[anchor=south west, text=line, font=\smlfont] at (60,40)
-    {All charts built in SAP Analytics Cloud \ $\cdot$ \ 100\% open data};
+    {All charts built in SAP Analytics Cloud};
 \end{halaman}
 
 % =====================================================================
 % HALAMAN 2 — THE PROBLEM (bobot 10%)
+% Grid dua-grafik: rail teks 198bp di x=36, grafik dari x=252 sampai x=924.
+% Tinggi grafik dipilih supaya jumlah lebar kedua grafik + sela = 672bp.
 % =====================================================================
 \begin{halaman}
   \navbar{1}
   \kepala{The problem}{Dengue is ASEAN's fastest-moving climate-sensitive disease}
 
-  \kpi{36}{\CTOP}{300}{104}{1.26M}{cases in 2019, the worst year in our nine-country panel}{peak}
+  \kpi{36}{\CTOP}{198}{100}{1.26M}{cases in 2019, the worst year in our nine-country panel}{peak}
 
-  \teks{36}{300}{300}{\bodyfont
+  \teks{36}{312}{198}{\smlfont
     \begin{blist}
-      \item Vietnam 368k $\cdot$ Philippines 220k $\cdot$ Thailand 159k
-            \textcolor{muted}{(latest complete year per country)}
+      \item Vietnam 368k, Philippines 220k, Thailand 159k
+            \textcolor{muted}{(latest complete year each)}
       \item The 2023--24 El Ni\~no added an estimated \textbf{9.6 million cases
             worldwide} \textcolor{muted}{(Tian et al., 2025)}
       \item Outbreaks are still fought \textbf{reactively}, only once cases surge
     \end{blist}}
 
-  \sacslot{366}{\CTOP}{270}{348}{h02-tren-tahunan}{ASEAN dengue cases, 2000--2024}
+  \sacslot{252}{\CTOP}{298}{h02-tren-tahunan}{ASEAN dengue cases, 2000--2024}
     {Line chart --- \textit{Dengue national annual}}
     {Filter \texttt{complete}=True, \texttt{year} 2000--2024 $\cdot$
      Measure \texttt{cases} (Sum) $\cdot$ Dim X \texttt{year} $\cdot$
      Reference line di 2019, label ``record in our data''}
 
-  \sacslot{654}{\CTOP}{270}{348}{h02-per-negara}{Cases by country, latest complete year}
+  \sacslotk{924}{\CTOP}{298}{h02-per-negara}{Cases by country, latest complete year}
     {Bar chart horizontal --- \textit{Dengue national annual}}
     {Measure \texttt{cases} $\cdot$ Dim \texttt{country} $\cdot$
      filter tahun lengkap terbaru (2022--2023) $\cdot$ urut menurun,
      biru; Indonesia disorot oranye}
+
+  \simpulan{252}{100}{672}{The burden is large, rising and spiky. Spikes are what
+    an alarm can catch; a trend line is not something a health office can act on.}
 
   \kaki{Source: OpenDengue V1.3, national totals, complete-reporting years only.
         We do not claim a 2023--24 record, because our panel is incomplete for
@@ -288,14 +352,14 @@
   \navbar{1}
   \kepala{The question}{Climate data arrives months before patients do}
 
-  \draw[rounded corners=4bp, fill=soft, draw=none] (36,\CTOP) rectangle ++(888,-86);
-  \draw[alarm, line width=4bp] (36,\CTOP) -- (36,338);
+  \draw[rounded corners=4bp, fill=soft, draw=none] (36,\CTOP) rectangle ++(888,-80);
+  \draw[alarm, line width=4bp] (36,\CTOP) -- (36,344);
   \node[anchor=north west, text width=852bp, align=left, text=ink,
-        font=\fontsize{20}{26}\selectfont\bfseries] at (54,404)
+        font=\fontsize{20}{26}\selectfont\bfseries] at (54,406)
     {Can a freely available climate index tell a health office how bad the coming
      season will be, early enough to act?};
 
-  \teks{36}{306}{300}{\smlfont
+  \teks{36}{318}{288}{\smlfont
     \begin{blist}
       \item \textbf{SDG target 3.3}: end the epidemics of neglected tropical
             diseases, of which dengue is one
@@ -303,25 +367,40 @@
             capacity to climate-related hazards
       \item \textbf{SDG target 6.1}: safe water for all. Where piped water is
             absent, households store it, and \textit{Aedes} breeds in the store
-    \end{blist}
-    \vspace{9bp}
+    \end{blist}}
+
+  \draw[line, line width=0.6bp] (36,168) -- (324,168);
+  \teks{36}{154}{288}{\smlfont
     \textbf{ASEAN priority.} Dengue sits under \textbf{ASEAN Health Cluster 2},
     \emph{Responding to All Hazards and Emerging Threats}, whose ASEAN Dengue Day
-    statements ask member states for earlier and better coordinated action.
-    \par\vspace{9bp}
-    \textcolor{muted}{Our test: does the signal survive when we remove the seasonal
-    cycle, hold out unseen years, and use the WHO outbreak definition?}}
+    statements ask member states for earlier and better coordinated action.}
 
-  \sacslot{366}{306}{558}{232}{h03-alur}{From public index to public action}
+  \sacslotk{924}{318}{136}{h03-alur}{From public index to public action}
     {Diagram --- SAC \textit{Shapes} + \textit{Text} (tanpa dataset)}
     {Empat kotak berurutan, panah di antaranya:
      \textbf{Climate index (ONI, monthly, public)} $\rightarrow$
      \textbf{3--4 month lag} $\rightarrow$
      \textbf{Dengue surge} $\rightarrow$
-     \textbf{Action window: PSN/3M, larviciding, stockpiles}.
-     Warna kotak mengikuti palet cerita: biru, abu, merah, oranye.}
+     \textbf{Action window: PSN/3M, larviciding, stockpiles}}
 
-  \kaki{The three tests promised here are answered on pages 7, 12 and 14.}{3}
+  % Tiga uji yang dijanjikan halaman ini, dibuat eksplisit sebagai kartu supaya
+  % juri bisa mencocokkannya dengan halaman 7, 12 dan 14.
+  \node[anchor=north west, text=alarm, font=\eyefont] at (360,150)
+    {WHAT WOULD MAKE US WRONG};
+  \foreach \i/\uji/\hal in {%
+      0/{Signal is only the wet season}/{answered p.\,7},
+      1/{Rule was tuned on its own test years}/{answered p.\,12},
+      2/{Our innovation angle does not hold}/{answered p.\,14}}{%
+    \pgfmathsetmacro{\cx}{360+192*\i}%
+    \draw[rounded corners=4bp, fill=soft, draw=none] (\cx,132) rectangle ++(176,-74);
+    \node[anchor=north west, text width=148bp, align=left, text=ink,
+          font=\smlfont] at ({\cx+14},118) {\uji};
+    \node[anchor=south west, text=accent, font=\tnyfont\bfseries]
+         at ({\cx+14},68) {\hal};
+  }
+
+  \kaki{Every claim on the following pages is tested against the three
+        objections above, and each test has its own page.}{3}
 \end{halaman}
 
 % =====================================================================
@@ -336,7 +415,7 @@
       \bodyfont
       \setlength{\arrayrulewidth}{0.5bp}
       \arrayrulecolor{line}
-      \renewcommand{\arraystretch}{1.72}
+      \renewcommand{\arraystretch}{1.55}
       \begin{tabular}{@{}p{296bp}@{}>{\raggedleft}p{74bp}@{\hspace{18bp}}>{\raggedright\arraybackslash}p{176bp}@{}}
         \thd{Data} & \thd{Rows} & \thd{Coverage}\\[-2bp]
         \hline
@@ -351,10 +430,23 @@
       \end{tabular}
     \end{minipage}};
 
-  \node[anchor=north west, font=\smlfont] at (36,146)
+  % Pita angka: mengisi bidang yang dulu menganga di kiri-bawah, sekaligus
+  % menjawab "seberapa besar panelnya" tanpa membuat juri menjumlah tabel.
+  \foreach \i/\ang/\lbl in {%
+      0/{175k}/{rows in the joined panel},
+      1/{9}/{countries with monthly data},
+      2/{212}/{provinces covered},
+      3/{0}/{paid or login-only sources}}{%
+    \pgfmathsetmacro{\cx}{36+144*\i}%
+    \node[anchor=north west, text=peak, font=\kpimid] at (\cx,172) {\ang};
+    \node[anchor=north west, text width=128bp, align=left, text=muted,
+          font=\tnyfont] at (\cx,136) {\lbl};
+  }
+
+  \node[anchor=north west, font=\smlfont] at (36,102)
     {\sdgchip{peak}{SDG 3}\hspace{6bp}\sdgchip{accent}{SDG 13}\hspace{6bp}\sdgchip{alarm}{SDG 6}};
 
-  \teks{36}{104}{564}{\smlfont
+  \teks{36}{74}{564}{\tnyfont
     \textcolor{muted}{Every table joins on the same two keys, \texttt{iso3} and
     \texttt{year}, with \texttt{period} added for the monthly
     dengue\,$\times$\,climate panel. Nothing is entered by hand.}}
@@ -389,30 +481,36 @@
   \navbar{3}
   \kepala{Analysis 1 $\cdot$ the season}{Dengue has a calendar, and it is not the same one everywhere}
 
-  \teks{36}{\CTOP}{264}{\bodyfont
+  \teks{36}{\CTOP}{198}{\smlfont
     \begin{blist}
-      \item \textbf{Indonesia}: cases peak \textbf{Jan--Apr}
-            \textcolor{muted}{(Jan avg 15,099/month against Sep 6,003, or 2.5$\times$)},
-            right after the December rainfall peak
-      \item \textbf{Thailand}: cases climb with the \textbf{onset} of the wet
-            season and peak \textbf{Jun--Sep}
-            \textcolor{muted}{(Jul avg 8,110 against Feb 1,465, or 5.5$\times$)}
-      \item The same disease peaks in opposite halves of the year, so a regional
-            alarm has to be \textbf{local in its timing}
+      \item \textbf{Indonesia} peaks \textbf{Jan--Apr}, right after the December
+            rainfall peak\\[3bp]
+            \textcolor{muted}{Jan 15,099 cases/month against Sep 6,003
+            $=$ 2.5$\times$}
+      \item \textbf{Thailand} climbs with the \textbf{onset} of the wet season
+            and peaks \textbf{Jun--Sep}\\[3bp]
+            \textcolor{muted}{Jul 8,110 against Feb 1,465 $=$ 5.5$\times$}
+      \item One disease, two calendars in opposite halves of the year
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{288}{348}{h05-musiman-idn}{Indonesia: cases vs rainfall by month}
+  \kutip{36}{148}{96}{180}{A regional alarm has to be local in its timing.}
+
+  \sacslot{252}{\CTOP}{312}{h05-musiman-idn}{Indonesia: cases vs rainfall by month}
     {Combination chart (Column \& Line) --- \textit{Seasonality IDN-THA}}
     {Filter \texttt{country}=Indonesia $\cdot$
      Column (kiri): \texttt{mean\_cases}, biru $\cdot$
      Line (kanan, sumbu sekunder): \texttt{mean\_rain\_mm}, abu putus-putus $\cdot$
      Dim X \texttt{month} (Sort by \texttt{month}) $\cdot$ 4 kolom tertinggi merah}
 
-  \sacslot{636}{\CTOP}{288}{348}{h05-musiman-tha}{Thailand: cases vs rainfall by month}
+  \sacslotk{924}{\CTOP}{312}{h05-musiman-tha}{Thailand: cases vs rainfall by month}
     {Combination chart (Column \& Line) --- \textit{Seasonality IDN-THA}}
     {Setelan identik, filter \texttt{country}=Thailand.
      Catatan: puncak hujan Thailand justru September, \emph{sesudah} puncak
      kasus (Juli) --- karena itu narasinya ``onset'', bukan ``peak''.}
+
+  \simpulan{252}{88}{672}{Rainfall alone cannot set the date: Thailand's rain
+    peaks in September, two months \emph{after} its cases. Something earlier in
+    the chain is doing the work.}
 
   \kaki{Source: national monthly means, complete years only (IDN 2010--2023,
         THA 2010--2022).}{5}
@@ -425,83 +523,88 @@
   \navbar{3}
   \kepala{Analysis 2 $\cdot$ the lag}{The climate signal arrives 1--4 months before the cases}
 
+  % Tabel prediktor dipadatkan: kolom "Country" diganti sub-judul, supaya muat
+  % di rail 198bp tanpa mengecilkan angkanya.
   \node[anchor=north west] at (36,\CTOP) {%
-    \begin{minipage}{300bp}
+    \begin{minipage}{198bp}
       \smlfont
       \setlength{\arrayrulewidth}{0.5bp}
       \arrayrulecolor{line}
-      \renewcommand{\arraystretch}{1.7}
-      \begin{tabular}{@{}p{92bp}@{}p{112bp}@{}>{\raggedleft}p{44bp}@{}>{\raggedleft\arraybackslash}p{44bp}@{}}
-        \thd{Country} & \thd{Best predictor} & \thd{Lag} & \thd{r}\\[-2bp]
+      \renewcommand{\arraystretch}{1.6}
+      \begin{tabular}{@{}p{96bp}@{}>{\raggedleft}p{46bp}@{}>{\raggedleft\arraybackslash}p{46bp}@{}}
+        \thd{Predictor} & \thd{Lag} & \thd{r}\\[-2bp]
         \hline
-        \textbf{Indonesia} & \textbf{ONI (El Ni\~no)} & \textbf{4 mo} & \textbf{+0.59}\\
-        Indonesia          & Temperature             & 3 mo          & +0.47\\
-        Indonesia          & Rainfall                & 1 mo          & +0.40\\
+        \multicolumn{3}{@{}l@{}}{\textcolor{accent}{\tnyfont\bfseries INDONESIA}}\\[-4bp]
+        \textbf{ONI (El Ni\~no)} & \textbf{4 mo} & \textbf{+0.59}\\
+        Temperature              & 3 mo          & +0.47\\
+        Rainfall                 & 1 mo          & +0.40\\
         \hline
-        \textbf{Thailand}  & \textbf{Temperature}    & \textbf{3 mo} & \textbf{+0.57}\\
-        Thailand           & Rainfall                & same mo       & +0.48\\
+        \multicolumn{3}{@{}l@{}}{\textcolor{accent}{\tnyfont\bfseries THAILAND}}\\[-4bp]
+        \textbf{Temperature}     & \textbf{3 mo} & \textbf{+0.57}\\
+        Rainfall                 & same mo       & +0.48\\
         \hline
       \end{tabular}
     \end{minipage}};
 
-  \draw[alarm, line width=4bp] (36,190) -- (36,146);
-  \node[anchor=north west, text width=282bp, align=left, text=ink,
-        font=\fontsize{16}{21}\selectfont\bfseries] at (54,190)
-    {The lag \emph{is} the opportunity: it is the time a health office has to act.};
+  \kutip{36}{164}{96}{180}{The lag \emph{is} the opportunity: it is the time a health office has to act.}
 
-  \sacslot{348}{\CTOP}{276}{348}{h06-heatmap-jeda}{Correlation by predictor and lag}
+  \sacslot{252}{\CTOP}{312}{h06-heatmap-jeda}{Correlation by predictor and lag}
     {Heat map --- \textit{Lag correlation - national}}
     {Filter \texttt{iso3}=IDN $\cdot$ Dim baris \texttt{predictor} $\cdot$
      Dim kolom \texttt{lag} $\cdot$ Measure \texttt{r} $\cdot$
-     skala diverging $-0{,}7 \dots +0{,}7$, nilai ditampilkan di sel.
-     Widget kedua untuk THA kalau ruang cukup.}
+     skala diverging $-0{,}7 \dots +0{,}7$, nilai ditampilkan di sel.}
 
-  \sacslot{648}{\CTOP}{276}{348}{h06-scatter-suhu}{Temperature (lag 2) vs cases, Indonesia}
+  \sacslotk{924}{\CTOP}{312}{h06-scatter-suhu}{Temperature (lag 2) vs cases, Indonesia}
     {Scatterplot --- \textit{Monthly series IDN-THA}}
     {Filter \texttt{country}=Indonesia $\cdot$ X \texttt{temp\_c\_lag2} $\cdot$
      Y \texttt{cases} $\cdot$ warna titik \texttt{enso\_phase\_lag4} $\cdot$
      Trend line $\rightarrow$ Linear}
+
+  \simpulan{252}{88}{672}{Every predictor peaks at a lag of one month or more,
+    so none of them is a coincident symptom. The best one, ONI, is also the one
+    published earliest and freely.}
 
   \kaki{Source: monthly national series, 2010+ (n = 172 months, Indonesia).}{6}
 \end{halaman}
 
 % =====================================================================
 % HALAMAN 7 — ANALYSIS 3: THE ACE CARD
+% Grafik ENSO sempit (rasio 0,75) jadi tingginya boleh hampir sepenuh pita isi.
 % =====================================================================
 \begin{halaman}
   \navbar{3}
   \kepala{Analysis 3 $\cdot$ the strongest signal}{A strong El Ni\~no nearly triples Indonesia's monthly dengue burden}
 
-  \kpi{36}{\CTOP}{264}{112}{2.8$\times$}{21,383 vs 7,597 cases per month, grouped by the ENSO phase four months earlier}{peak}
+  \kpi{36}{\CTOP}{198}{104}{2.8$\times$}{21,383 vs 7,597 cases per month, grouped by the ENSO phase four months earlier}{peak}
 
-  \teks{36}{298}{264}{\smlfont
+  \teks{36}{306}{198}{\tnyfont
     \begin{blist}
       \item The grouping uses the ENSO phase \textbf{four months earlier}, so
             this is a forecast rather than hindsight
-      \item \textbf{This is not merely seasonality.} With the seasonal cycle
-            removed, the ONI correlation still holds at \textbf{r = +0.56}
-      \item \textbf{Nor is it an aggregation artefact.} Cases run higher in
-            El Ni\~no months in \textbf{33 of 34 Indonesian provinces}
+      \item \textbf{Not merely seasonality.} With the seasonal cycle removed,
+            the ONI correlation still holds at \textbf{r = +0.56}
+      \item \textbf{Not an aggregation artefact.} Cases run higher in El Ni\~no
+            months in \textbf{33 of 34 Indonesian provinces}
             \textcolor{muted}{(sign test p = 2\,\texttimes\,10\textsuperscript{-9})}
             and in 70 of 77 Thai provinces
       \item Rainfall does \emph{not} survive the same test, falling from +0.40
             to +0.24, and we report that
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{330}{348}{h07-fase-enso}{Mean monthly cases by ENSO phase (lag 4)}
+  \sacslot{252}{\CTOP}{344}{h07-fase-enso}{Mean monthly cases by ENSO phase (lag 4)}
     {Bar chart --- \textit{ENSO phase - averages}}
     {Measure \texttt{mean\_cases\_per\_month} $\cdot$
      Dim \texttt{enso\_phase\_lag4}, \emph{Sort by} \texttt{order} $\cdot$
      gradasi biru $\rightarrow$ oranye $\rightarrow$ merah, label data aktif $\cdot$
-     Reference line di Netral (7.597) $\cdot$ catatan kaki:
-     ``La Ni\~na kuat: only 3 months observed --- too thin to conclude''}
+     Reference line di Netral (7.597)}
 
-  \sacslot{678}{\CTOP}{246}{348}{h07-anomali}{Same signal, seasonality removed}
+  \sacslotk{924}{\CTOP}{344}{h07-anomali}{Same signal, seasonality removed}
     {Heat map --- \textit{Lag correlation - anomaly}}
     {Bukti ``bukan musim''. Cadangan kalau juri menekan:
      \textit{Province consistency IDN} --- bar horizontal,
-     Measure \texttt{ratio\_nino\_vs\_other}, reference line di 1,0;
-     33 dari 34 batang ada di kanan garis.}
+     Measure \texttt{ratio\_nino\_vs\_other}, reference line di 1,0.}
+
+  \chip{258}{398}{peak}{Strong El Ni\~no: 21,383 cases/month}
 
   \kaki{Source: 172 months, Indonesia 2010--2024 $\cdot$ NOAA CPC definition:
         El Ni\~no = ONI $\geq$ 0.5. We claim early-warning feasibility, not causation.}{7}
@@ -514,7 +617,7 @@
   \navbar{3}
   \kepala{Analysis 4 $\cdot$ where and when}{The alarm must be set province by province}
 
-  \teks{36}{\CTOP}{264}{\bodyfont
+  \teks{36}{\CTOP}{198}{\smlfont
     \begin{blist}
       \item \textbf{Indonesia}: 20 of 35 provinces peak in \textbf{January},
             8 in February, but \textbf{Bali peaks in May} and North Kalimantan
@@ -524,29 +627,37 @@
       \item A single national alert date would be wrong for a third of Indonesia
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{288}{348}{h08-kalender-idn}{Indonesia: share of annual cases by month}
+  \kutip{36}{190}{122}{180}{Same colour scale, same twelve rows. Only the calendar moves.}
+
+  \sacslot{252}{\CTOP}{303}{h08-kalender-idn}{Indonesia: share of annual cases by month}
     {Heat map --- \textit{Risk calendar IDN}}
     {Dim baris \texttt{province} (urut menurut bulan puncak, \emph{bukan}
      alfabetis) $\cdot$ Dim kolom \texttt{month} $\cdot$
      Measure \texttt{share\_percent} $\cdot$ skala sekuensial putih $\rightarrow$
      merah $\cdot$ baris Bali diberi garis tebal}
 
-  \sacslot{636}{\CTOP}{288}{348}{h08-kalender-tha}{Thailand: share of annual cases by month}
+  \sacslotk{924}{\CTOP}{303}{h08-kalender-tha}{Thailand: share of annual cases by month}
     {Heat map --- \textit{Risk calendar THA}}
     {Setelan identik. Kontras dua panel inilah pesannya: satu penyakit,
      dua kalender.}
+
+  \simpulan{252}{96}{672}{This is why the rule carries a month condition as well
+    as a climate one. The index says how bad; the province's own calendar says
+    when.}
 
   \kaki{Source: share of annual cases by calendar month, per province.}{8}
 \end{halaman}
 
 % =====================================================================
 % HALAMAN 9 — ANALYSIS 5: WHO GETS HIT HARDEST (lapis SDG 6)
+% Tiga grafik: rail dibuang, teks jadi pita dua kolom di atas, supaya ketiga
+% grafik memakai lebar penuh 888bp (naik dari 200bp jadi 265bp per grafik).
 % =====================================================================
 \begin{halaman}
   \navbar{3}
   \kepala{Analysis 5 $\cdot$ who is hit hardest}{The same alarm, aimed at the most exposed places}
 
-  \teks{36}{\CTOP}{258}{\smlfont
+  \teks{36}{\CTOP}{432}{\tnyfont
     \begin{blist}
       \item Highest incidence 2018--2020: \textbf{Bali 134}, North Kalimantan 115,
             East Kalimantan 112 per 100k, which is \textbf{14$\times$ the lowest
@@ -554,23 +665,28 @@
       \item Indonesia has the \textbf{lowest piped-water access in ASEAN} at
             21.8\% \textcolor{muted}{(JMP 2024)}. Households therefore store
             water, and stored water breeds \emph{Aedes}
-      \item \textbf{12.9 million people in Bangkok} and 1.7 million in Jakarta
-            live in the 1-in-100-year flood zone
-      \item We use this to \textbf{target} the alarm, not to explain it
-            \textcolor{muted}{(see p.\,14)}
     \end{blist}}
 
-  \sacslot{318}{\CTOP}{200}{348}{h09-insidens}{Incidence per 100k, 2018--2020}
+  \teks{492}{\CTOP}{432}{\tnyfont
+    \begin{blist}
+      \item \textbf{12.9 million people in Bangkok} and 1.7 million in Jakarta
+            live in the 1-in-100-year flood zone
+      \item We use these three layers to \textbf{target} the alarm, not to
+            explain the disease. The one place we tried to explain it, the
+            claim failed \textcolor{muted}{(p.\,14)}
+    \end{blist}}
+
+  \sacslot{36}{348}{265}{h09-insidens}{Incidence per 100k, 2018--2020}
     {Bar chart horizontal --- \textit{Province incidence 18-20}}
     {Measure \texttt{mean} $\cdot$ Dim \texttt{province}, urut menurun,
      ambil 10 teratas + 3 terbawah $\cdot$ 3 teratas merah}
 
-  \sacslot{530}{\CTOP}{200}{348}{h09-wash}{Piped water access, ASEAN}
+  \sacslot{334}{348}{265}{h09-wash}{Piped water access, ASEAN}
     {Bar chart --- \textit{WASH by country}}
     {Measure \texttt{piped\_water\_\%} $\cdot$ Dim \texttt{country},
      urut menaik $\cdot$ Indonesia paling kiri, oranye}
 
-  \sacslot{742}{\CTOP}{182}{348}{h09-banjir}{Flood-zone population}
+  \sacslotk{924}{348}{265}{h09-banjir}{Flood-zone population, top cities}
     {Bar chart --- \textit{City flood vulnerability}}
     {Measure \texttt{exposed\_2020} $\cdot$ Dim \texttt{city},
      8 kota teratas}
@@ -587,28 +703,34 @@
   \navbar{4}
   \kepala{Synthesis}{From signal to schedule: a risk calendar every health office can read}
 
-  \teks{36}{\CTOP}{264}{\bodyfont
+  \teks{36}{\CTOP}{198}{\smlfont
     \begin{blist}
-      \item Each province is given three states, \textbf{Peak}, \textbf{Watch}
-            and \textbf{Normal}, derived from its own case history
-      \item The El Ni\~no index sets \textbf{how severe} the coming peak will be;
-            the calendar sets \textbf{when} it arrives
+      \item Each province gets three states, \textbf{Peak}, \textbf{Watch} and
+            \textbf{Normal}, derived from its own case history
+      \item The El Ni\~no index sets \textbf{how severe} the coming peak will
+            be; the calendar sets \textbf{when} it arrives
       \item Real lead times, every El Ni\~no episode since 2009:
-            \textbf{0--3 months} on observed ONI, and longer still on NOAA and
-            BMKG \emph{forecast} ONI
+            \textbf{0--3 months} on observed ONI, longer still on NOAA and BMKG
+            \emph{forecast} ONI
     \end{blist}}
 
-  \sacslot{324}{\CTOP}{288}{348}{h10-kalender-prioritas}{Risk calendar, six priority provinces}
+  \kutip{36}{166}{112}{180}{Two public numbers, one page, no model to maintain.}
+
+  \sacslot{252}{\CTOP}{311}{h10-kalender-prioritas}{Risk calendar, six priority provinces}
     {Heat map --- \textit{Risk calendar IDN}}
     {Filter 6 provinsi: Bali, Kalimantan Utara, Kalimantan Timur, Gorontalo,
      DKI Jakarta, Jawa Barat $\cdot$ Measure \texttt{status\_code} $\cdot$
      palet 3 warna: 0 abu (Normal), 1 kuning (Watch), 2 merah (Peak)}
 
-  \sacslot{636}{\CTOP}{288}{348}{h10-deret-alarm}{Cases vs the P75 outbreak threshold}
+  \sacslotk{924}{\CTOP}{311}{h10-deret-alarm}{Cases vs the P75 outbreak threshold}
     {Time series --- \textit{Monthly series IDN-THA}}
     {Filter Indonesia $\cdot$ Line \texttt{cases} $\cdot$
      Reference line \texttt{threshold\_p75} (11.932) $\cdot$
      warna titik/latar menurut \texttt{alarm\_el\_nino}}
+
+  \simpulan{252}{88}{672}{The threshold is the WHO-style P75 of the province's
+    own history, not a number we picked. Everything above the orange line is
+    what the alarm is trying to anticipate.}
 
   \kaki{Source: 5 El Ni\~no episodes, 2009--2024. The alarm predicts how severe the
         coming season will be; it does not shift its start date.}{10}
@@ -627,25 +749,25 @@
     {``If the month is Jan--Apr \textbf{AND} ONI four months ago was
      $\geq$ 0.5 $\rightarrow$ raise alert''};
 
-  \kpi{36}{336}{204}{88}{11.6\%}{of months fire the alert}{accent}
-  \kpi{252}{336}{204}{88}{100\%}{precision: every alert fell in a top-quartile dengue month}{peak}
-  \kpi{468}{336}{204}{88}{4\texttimes}{lift over the base rate}{alarm}
+  \kpi{36}{338}{180}{84}{11.6\%}{of months fire the alert}{accent}
+  \kpi{230}{338}{180}{84}{100\%}{precision, every alert in a top-quartile month}{peak}
+  \kpi{424}{338}{180}{84}{4\texttimes}{lift over the base rate}{alarm}
 
-  \teks{36}{238}{636}{\smlfont
+  \teks{36}{246}{570}{\tnyfont
     \begin{blist}
       \item Both inputs are public and free: NOAA publishes ONI monthly, the
             calendar comes from the office's own records
-      \item It runs in a spreadsheet, a WhatsApp broadcast or the SAC dashboard
-            on page 15. Where a statistical forecast needs a trained model and a
-            data team, this can be started by a provincial office next week
+      \item It runs in a spreadsheet, a WhatsApp broadcast or the SAC page on
+            p.\,15. Where a statistical forecast needs a trained model and a
+            data team, a provincial office can start this next week
     \end{blist}}
 
-  \sacslot{36}{182}{636}{106}{h11-deret-aturan}{When the rule fired, 2010--2024}
+  \sacslot{36}{196}{122}{h11-deret-aturan}{When the rule fired, 2010--2024}
     {Time series --- \textit{Monthly series IDN-THA}}
     {Filter Indonesia $\cdot$ Line \texttt{cases} $\cdot$ warna menurut
      \texttt{alarm\_rule\_d} $\cdot$ Reference line \texttt{threshold\_p75}}
 
-  \sacslot{690}{336}{234}{262}{h11-aturan}{Precision vs alert frequency, four rules}
+  \sacslotk{924}{338}{264}{h11-aturan}{Precision vs alert frequency, four rules}
     {Bar chart --- \textit{Trigger rules - evaluation}}
     {Measures \texttt{precision\_\%} dan \texttt{alarm\_coverage\_\%} $\cdot$
      Dim \texttt{rule} $\cdot$ baris D merah, sisanya abu ---
@@ -657,12 +779,16 @@
 
 % =====================================================================
 % HALAMAN 12 — VIABILITY (bobot 15%)
+% Tabel pembanding EWS dulu berupa tangkapan layar widget tabel SAC: kecil,
+% masih membawa chrome widget, dan tidak terbaca pada ukuran cetak. Angkanya
+% sama persis, hanya di-set ulang sebagai tabel LaTeX. Aturan panitia mengikat
+% GRAFIK, dan ini tabel, jadi tidak ada grafik SAC yang hilang dari dek.
 % =====================================================================
 \begin{halaman}
   \navbar{6}
   \kepala{Viability}{We tried to break our own rule. It held.}
 
-  \teks{36}{\CTOP}{300}{\smlfont
+  \teks{36}{\CTOP}{270}{\tnyfont
     \begin{blist}
       \item \textbf{Out-of-sample test}: rule built on 2010--2016, tested blind on
             2017--2024 $\rightarrow$ \textbf{precision still 100\%},
@@ -678,23 +804,50 @@
             (temperature anomaly, lag 2): lift 2.7
     \end{blist}}
 
-  \draw[rounded corners=4bp, fill=soft, draw=none] (36,152) rectangle ++(300,-94);
-  \node[anchor=north west, text=alarm, font=\eyefont] at (52,138) {ADOPTION IN THREE PHASES};
-  \teks{52}{118}{270}{\smlfont
+  \draw[rounded corners=4bp, fill=soft, draw=none] (36,150) rectangle ++(270,-92);
+  \node[anchor=north west, text=alarm, font=\eyefont] at (52,136) {ADOPTION IN THREE PHASES};
+  \teks{52}{116}{240}{\tnyfont
     \textbf{1} Bali, N.\ \& E.\ Kalimantan pilot \ \textcolor{line}{$\rightarrow$} \
     \textbf{2} all 38 provinces \ \textcolor{line}{$\rightarrow$} \
     \textbf{3} ASEAN peers\\[5bp]
-    \textcolor{muted}{Cost: open data, monthly refresh, existing staff.}}
+    \textcolor{muted}{Cost: open data, monthly refresh, existing staff.
+    No new licence and no new headcount.}}
 
-  \sacslot{360}{\CTOP}{270}{348}{h12-luar-sampel}{Train vs blind test, Indonesia and Thailand}
+  \sacslot{324}{\CTOP}{317}{h12-luar-sampel}{Train vs blind test, Indonesia and Thailand}
     {Bar chart --- \textit{Trigger rules - out of sample}}
     {Measures \texttt{precision\_\%}, \texttt{sensitivity\_\%} $\cdot$
      Dim \texttt{period} (latih vs UJI), dikelompokkan per \texttt{country}}
 
-  \sacslot{654}{\CTOP}{270}{348}{h12-tolok-ukur}{How we compare to published EWS}
-    {Table widget --- \textit{EWS benchmark}}
-    {Tampilkan 5 baris apa adanya, \emph{termasuk} kolom sumber ---
-     kejujuran pembanding inilah yang dinilai}
+  \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (672,\CTOP)
+    {How we compare to published EWS};
+  \node[anchor=north west] at (672,404) {%
+    \begin{minipage}{252bp}
+      \tnyfont
+      \setlength{\arrayrulewidth}{0.5bp}
+      \arrayrulecolor{line}
+      \renewcommand{\arraystretch}{1.35}
+      \begin{tabular}{@{}p{146bp}@{}>{\raggedleft}p{52bp}@{}>{\raggedleft\arraybackslash}p{52bp}@{}}
+        \thd{System} & \thd{Sens.\ \%} & \thd{PPV \%}\\[-2bp]
+        \hline
+        17 published EWS \emph{(range)}\newline
+          \textcolor{muted}{Baharom et al.\ 2022}      & 50--100 & 43--86\\
+        EWARS-csd, Colombia\newline
+          \textcolor{muted}{Schlesinger et al.\ 2024}  & 97      & 75\\
+        WHO/TDR EWARS, Mexico\newline
+          \textcolor{muted}{C\'ardenas et al.\ 2021}   & 100     & 83\\
+        \hline
+        \textbf{Rule D vs P75} \emph{(blind test)}\newline
+          \textcolor{muted}{this deck}                 & \textbf{44} & \textbf{100}\\
+        \textbf{Rule D vs endemic channel}\newline
+          \textcolor{muted}{this deck}                 & \textbf{29} & \textbf{30}\\
+        \hline
+      \end{tabular}
+    \end{minipage}};
+
+  \teks{672}{132}{252}{\tnyfont
+    \textcolor{muted}{We report the endemic-channel row even though it is our
+    worst result. It is the harder benchmark, and hiding it would be the kind of
+    selective reporting this deck argues against.}}
 
   \kaki{We chose precision over sensitivity: a repeated false alarm is the fastest
         way to make a health office stop trusting the system. This rule is an
@@ -703,14 +856,16 @@
 
 % =====================================================================
 % HALAMAN 13 — IMPACT (bobot 20%)
+% Tabel tenggang waktu juga di-set ulang sebagai tabel LaTeX; alasan sama
+% seperti halaman 12.
 % =====================================================================
 \begin{halaman}
   \navbar{7}
   \kepala{Impact $\cdot$ Indonesia alone}{Acting 4--8 weeks earlier is worth US\$1.5--3.7 million a year}
 
-  \kpi{36}{\CTOP}{288}{104}{4,656}{cases/year prevented in Indonesia, under the most conservative scenario}{peak}
+  \kpi{36}{\CTOP}{258}{96}{4,656}{cases/year prevented in Indonesia, under the most conservative scenario}{peak}
 
-  \teks{36}{300}{288}{\smlfont
+  \teks{36}{314}{258}{\tnyfont
     \begin{blist}
       \item Indonesia averages \textbf{104,753 cases/year}
             \textcolor{muted}{(complete years 2015--2023)}; \textbf{44\% fall in
@@ -721,21 +876,44 @@
             $\rightarrow$ \textbf{US\$1.5--3.7\,M (Rp 24--59 billion)/year}
       \item For scale, dengue costs Indonesia \textbf{US\$381--681\,M/year}
             \textcolor{muted}{(Nadjib 2019; Wilastonegoro 2020)}
-      \item The lead time is observed, not assumed. In the 2023--24 episode the
-            alarm fired in \textbf{Sep 2023} and cases crossed the peak threshold
-            in \textbf{Dec 2023}
     \end{blist}}
 
-  \sacslot{348}{\CTOP}{276}{348}{h13-dampak}{Avoided hospitalisation cost by scenario}
+  \kutip{36}{186}{86}{240}{Every figure here is either published or a stated
+    assumption. None of them is a model output.}
+
+  \sacslot{312}{\CTOP}{344}{h13-dampak}{Avoided cost by scenario}
     {Bar chart bertingkat --- \textit{Monetary impact}}
     {Measures \texttt{hospitalisation low (US\$316)} dan
-     \texttt{hospitalisation high (US\$791)} $\cdot$ Dim \texttt{scenario} $\cdot$
-     tambahkan Numeric Point (KPI tile) besar: \texttt{4,656 cases/year prevented}}
+     \texttt{hospitalisation high (US\$791)} $\cdot$ Dim \texttt{scenario}}
 
-  \sacslot{648}{\CTOP}{276}{348}{h13-tenggang}{Lead time, every El Ni\~no episode since 2009}
-    {Table --- \textit{El Nino episodes - lead time}}
-    {5 baris: \texttt{episode}, \texttt{alarm\_fires},
-     \texttt{cases\_cross\_p75}, \texttt{lead\_time\_months}}
+  \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (508,\CTOP)
+    {Lead time, every El Ni\~no episode since 2009};
+  \node[anchor=north west] at (508,404) {%
+    \begin{minipage}{416bp}
+      \smlfont
+      \setlength{\arrayrulewidth}{0.5bp}
+      \arrayrulecolor{line}
+      \renewcommand{\arraystretch}{1.65}
+      \begin{tabular}{@{}p{78bp}@{}p{104bp}@{}p{120bp}@{}>{\raggedleft\arraybackslash}p{114bp}@{}}
+        \thd{Episode} & \thd{Alarm fires} & \thd{Cases cross P75} & \thd{Lead time}\\[-2bp]
+        \hline
+        2009/10 & Dec 2009 & Jan 2010 & 1 month\\
+        2014/16 & Feb 2015 & Feb 2015 & 0\\
+        2018/19 & Jan 2019 & Jan 2019 & 0\\
+        2019/20 & Mar 2020 & Mar 2020 & 0\\
+        \textbf{2023/24} & \textbf{Sep 2023} & \textbf{Dec 2023} & \textbf{3 months}\\
+        \hline
+      \end{tabular}
+    \end{minipage}};
+
+  \draw[rounded corners=4bp, fill=soft, draw=none] (508,196) rectangle ++(416,-82);
+  \node[anchor=north west, text=alarm, font=\eyefont] at (524,182)
+    {THE LEAD TIME IS OBSERVED, NOT ASSUMED};
+  \teks{524}{162}{384}{\tnyfont
+    Three of five episodes gave zero months on \emph{observed} ONI, and we print
+    that. The value comes from the two that did not, and from the fact that NOAA
+    and BMKG publish a \emph{forecast} ONI months ahead of the observed one, on
+    which the same rule fires earlier still.}
 
   \kaki{Sources: cost per case from peer-reviewed Indonesian studies; case counts
         from our own panel. The cheapest anchor (US\$90/episode) still gives
@@ -749,7 +927,7 @@
   \navbar{8}
   \kepala{Limits \& data ethics}{What we tested and threw away}
 
-  \teks{36}{\CTOP}{540}{\bodyfont
+  \teks{36}{\CTOP}{504}{\bodyfont
     \begin{blist}
       \item \textbf{We falsified our own innovation angle.} ``Drought $\times$
             water access'' looked promising (r = $-$0.31) but collapsed after
@@ -768,7 +946,9 @@
             claim, and the mechanism is cited from the literature.
     \end{blist}}
 
-  \sacslot{606}{\CTOP}{318}{348}{h14-kekeringan}{No relationship ($\rho$ = +0.34, p = 0.46, n = 7)}
+  \kutip{36}{134}{88}{486}{A rule that survives its own falsification tests is worth more to a health office than a larger claim that has never been tested.}
+
+  \sacslotk{924}{\CTOP}{344}{h14-kekeringan}{No relationship ($\rho$ = +0.34, p = 0.46, n = 7)}
     {Scatterplot --- \textit{Drought x water access}}
     {X \texttt{piped\_water\_\%} $\cdot$ Y \texttt{r\_drought} $\cdot$
      ukuran bubble \texttt{nino\_multiplier} $\cdot$ label \texttt{country} $\cdot$
@@ -777,6 +957,7 @@
   \kaki{This page is not an apology. We tested our own best idea, it failed the
         test, and we removed it.}{14}
 \end{halaman}
+
 
 % =====================================================================
 % HALAMAN 15 — PRODUK
@@ -831,12 +1012,19 @@
        at (60,234) {Expect a top-quartile season. Act now, not in January.};
 
   % grafik SAC di dalam mockup — bukti bahwa isinya keluaran SAC sungguhan
-  \IfFileExists{gambar-sac/h11-deret-aturan.png}{%
+  \IfFileExists{gambar-siap/h11-deret-aturan.png}{%
     \node[anchor=north west] at (48,214)
-      {\includegraphics[width=420bp]{gambar-sac/h11-deret-aturan}};
+      {\includegraphics[width=420bp]{gambar-siap/h11-deret-aturan}};
   }{%
     \draw[rounded corners=3bp, fill=soft, draw=line, dashed] (48,214) rectangle ++(420,-142);
   }
+  % Legenda dieja di sini karena grafiknya kecil di dalam mockup, dan pita ini
+  % dulu kosong.
+  \draw[line, line width=0.5bp] (48,96) -- (468,96);
+  \node[anchor=north west, text width=420bp, align=left, text=muted, font=\tnyfont]
+       at (48,88)
+    {Blue: months the rule stayed silent \ $\cdot$ \ Orange: months it fired
+     \ $\cdot$ \ Red line: the province's own P75 outbreak threshold};
 
   % ---- tabel pemangku kepentingan (sub-kriteria Viability: peran yang jelas)
   \node[anchor=north west, text=ink, font=\smlfont\bfseries] at (516,308)

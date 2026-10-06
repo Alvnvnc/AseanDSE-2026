@@ -10,3 +10,7 @@ panduan-sac.tex
 
 # salinan siap submit, dibuat bangun.sh dari storyboard.pdf
 INDONESIA_*.pdf
+
+# hasil pangkasan siapkan-gambar.py dari gambar-sac/ — dibangun ulang oleh
+# bangun.sh, jadi tidak perlu ikut versi. Sumber kebenarannya gambar-sac/.
+gambar-siap/

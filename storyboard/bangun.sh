@@ -6,6 +6,29 @@ cd "$(dirname "$0")"
 TEX=storyboard.tex
 PDF=storyboard.pdf
 
+# ---------------------------------------------------------------- siapkan gambar
+# Ekspor SAC membawa judul bawaan, chrome widget, dan margin putih yang lebar.
+# siapkan-gambar.py memangkasnya ke gambar-siap/ dan menulis rasio tiap gambar
+# ke gambar-siap/rasio.tex, yang dipakai \sacslot untuk menghitung lebar kotak.
+PY=""
+AKAR=$(cd .. && pwd)
+for kandidat in "$AKAR/.venv/bin/python" "$PWD/.venv/bin/python" python3; do
+  if command -v "$kandidat" >/dev/null 2>&1 && \
+     "$kandidat" -c 'import numpy, PIL' >/dev/null 2>&1; then
+    PY="$kandidat"; break
+  fi
+done
+
+echo "==> siapkan gambar (pangkas judul & chrome SAC)"
+if [ -n "$PY" ]; then
+  "$PY" siapkan-gambar.py | tail -1
+else
+  echo "   [lewat] python dengan numpy+Pillow tidak ditemukan."
+  echo "           gambar-siap/ yang sudah ada tetap dipakai."
+  [ -d gambar-siap ] || { echo "   gambar-siap/ belum ada -- dek tidak bisa dibangun."; exit 1; }
+fi
+
+echo
 echo "==> kompilasi (2 lintasan)"
 for i in 1 2; do
   if ! pdflatex -interaction=nonstopmode -halt-on-error -file-line-error "$TEX" >/dev/null 2>&1; then
@@ -64,7 +87,9 @@ while read -r nama; do
     echo "   [kosong] $nama.png"
     KOSONG=$((KOSONG+1))
   fi
-done < <(sed -e '/^[[:space:]]*%/d' -n -e 's/.*\\sacslot{[^}]*}{[^}]*}{[^}]*}{[^}]*}{\([^}]*\)}.*/\1/p' "$TEX")
+done < <(sed -e '/^[[:space:]]*%/d' -n \
+           -e 's/.*\\sacslotk{[^}]*}{[^}]*}{[^}]*}{\([^}]*\)}.*/\1/p' \
+           -e 's/.*\\sacslot{[^}]*}{[^}]*}{[^}]*}{\([^}]*\)}.*/\1/p' "$TEX")
 
 echo
 echo "   $TERISI terisi, $KOSONG masih placeholder."

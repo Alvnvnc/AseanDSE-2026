@@ -51,18 +51,39 @@ GUGUS = [
     ("Risk calendar THA", ["h08-kalender-tha"]),
     ("Province incidence 18-20 / WASH / City flood",
      ["h09-insidens", "h09-wash", "h09-banjir"]),
-    ("Trigger rules - evaluation / out of sample / EWS benchmark",
-     ["h11-aturan", "h12-luar-sampel", "h12-tolok-ukur"]),
-    ("Monetary impact / El Nino episodes", ["h13-dampak", "h13-tenggang"]),
+    # Pembanding EWS (h12-tolok-ukur) dan tenggang waktu (h13-tenggang) dulu
+    # berupa widget tabel SAC. Keduanya kini di-set langsung sebagai tabel LaTeX
+    # di dek -- angkanya sama, tapi terbaca pada ukuran cetak dan tidak lagi
+    # membawa chrome widget. Tidak perlu dibangun di SAC.
+    ("Trigger rules - evaluation / out of sample",
+     ["h11-aturan", "h12-luar-sampel"]),
+    ("Monetary impact", ["h13-dampak"]),
     ("Drought x water access", ["h14-kekeringan"]),
     ("tanpa dataset", ["h03-alur"]),
 ]
 
 
+def baca_rasio() -> dict[str, float]:
+    """Rasio lebar/tinggi tiap gambar, ditulis siapkan-gambar.py setelah memangkas.
+
+    Dipakai untuk melaporkan lebar slot di katalog: sejak dek digerakkan tinggi,
+    lebarnya baru diketahui setelah gambarnya dipangkas. Kalau berkasnya belum
+    ada (grafik belum diekspor), 1,05 dipakai sebagai perkiraan -- itu rasio khas
+    ekspor SAC persegi setelah pita judulnya dibuang.
+    """
+    berkas = DEK.parent / "gambar-siap" / "rasio.tex"
+    if not berkas.exists():
+        return {}
+    pola = re.compile(r"rasio@([\w-]+)\\endcsname\{([0-9.]+)\}")
+    return {m.group(1): float(m.group(2))
+            for m in pola.finditer(berkas.read_text(encoding="utf-8"))}
+
+
 def baca_slot() -> list[dict]:
-    """Ambil argumen \\sacslot dari dek: lebar, tinggi, nama, judul, jenis, resep."""
+    """Ambil argumen \\sacslot / \\sacslotk dari dek: tinggi, nama, judul, jenis, resep."""
     baris = DEK.read_text(encoding="utf-8").splitlines()
     tex = "\n".join(b for b in baris if not b.lstrip().startswith("%"))
+    rasio = baca_rasio()
 
     def argumen(s: str, i: int) -> list[str]:
         out: list[str] = []
@@ -85,14 +106,19 @@ def baca_slot() -> list[dict]:
         return out
 
     slot = []
-    for m in re.finditer(r"\\sacslot", tex):
+    # \sacslotk (jangkar kanan) memakai susunan argumen yang sama; \sacslotinti
+    # dan definisi makronya sendiri disaring lewat lookahead.
+    for m in re.finditer(r"\\sacslotk?(?![a-zA-Z])", tex):
         a = argumen(tex, m.end())
-        if len(a) < 8:
+        if len(a) < 7 or not a[3]:
             continue
         rapi = lambda t: " ".join(t.split())  # noqa: E731
-        slot.append({"lebar": int(a[2]), "tinggi": int(a[3]), "nama": a[4],
-                     "judul": rapi(a[5]), "jenis": rapi(a[6]), "resep": rapi(a[7]),
-                     "halaman": a[4][1:3]})
+        tinggi = int(a[2])
+        nama = a[3]
+        slot.append({"lebar": round(tinggi * rasio.get(nama, 1.05)),
+                     "tinggi": tinggi, "nama": nama,
+                     "judul": rapi(a[4]), "jenis": rapi(a[5]), "resep": rapi(a[6]),
+                     "halaman": nama[1:3]})
     return slot
 
 
