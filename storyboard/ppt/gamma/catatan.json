@@ -1,0 +1,102 @@
+[
+ [
+  "Opening (30 detik):",
+  "- Greet the judges; perkenalkan tim: Swallowgank, ITS, Indonesia.",
+  "- Satu kalimat kunci: \"We turned a free climate index into a dengue alarm that any district health office can run — with no model and no code.\"",
+  "- Sebut semua grafik dibangun di SAP Analytics Cloud.",
+  "1"
+ ],
+ [
+  "- The problem: dengue is ASEAN's fastest-moving climate-sensitive disease.",
+  "- 1.26 million cases in 2019 (worst year in our nine-country panel).",
+  "- Spikes, not trends, are what a health office can act on — that is the opening for an early-warning alarm.",
+  "2"
+ ],
+ [
+  "- The question: can a free, public climate index give a health office enough notice?",
+  "- Ties to SDG 3.3, 13.1 and 6.1 and to ASEAN Health Cluster 2.",
+  "- We promise nothing to the judges we do not test: the three cards are the three ways we could be wrong, each answered on p. 7, 12 and 14.",
+  "3"
+ ],
+ [
+  "- Nine public datasets, zero paid sources; joins on iso3 + year (+ period).",
+  "- 175k rows, 9 countries, 212 provinces — all reproducible.",
+  "- Method: lagged correlations, anomalies before accepting any correlation, and an out-of-sample test we do not hide (p. 12).",
+  "4"
+ ],
+ [
+  "- Dengue has a calendar, and it differs across ASEAN: Indonesia peaks Jan–Apr (2.5× swing), Thailand peaks Jun–Sep (5.5× swing).",
+  "- One disease, two calendars in opposite halves of the year.",
+  "- Rainfall alone cannot set the date — Thailand's rain peaks after its cases. Something earlier in the chain is doing the work.",
+  "5"
+ ],
+ [
+  "- The climate signal arrives 1–4 months before cases — the lag is the opportunity.",
+  "- Best predictor for Indonesia: ONI at lag 4 (r = +0.59); every predictor peaks at lag ≥ 1 month.",
+  "- The best predictor is also the earliest-published and free (NOAA CPC).",
+  "6"
+ ],
+ [
+  "- Strongest signal: a strong El Niño (lag 4) nearly triples the monthly burden — 21,383 vs 7,597 cases/month.",
+  "- It is not just seasonality (anomaly r = +0.56) and not an aggregation artefact (33 of 34 provinces).",
+  "- Rainfall does not survive the same test — we report that too. Claim is feasibility of early warning, not causation.",
+  "7"
+ ],
+ [
+  "- The alarm must be set province by province: peaks scatter from December to May.",
+  "- A single national alert date would be wrong for a third of Indonesia.",
+  "- Hence the rule has a month condition as well as a climate one: the index says how bad, the calendar says when.",
+  "8"
+ ],
+ [
+  "- Who gets hit hardest: incidence is 14× higher in the top province (Bali) than the lowest.",
+  "- Indonesia has ASEAN's lowest piped-water access (21.8%) — stored water breeds Aedes.",
+  "- Flood exposure (Bangkok 12.9M, Jakarta 1.7M in the 1-in-100-year zone) is used to target the alarm, not to explain the disease.",
+  "9"
+ ],
+ [
+  "- Synthesis: every province gets Peak / Watch / Normal states derived from its own history.",
+  "- The index says how severe; the calendar says when.",
+  "- Real lead times: 0–3 months on observed ONI, longer on forecast ONI.",
+  "10"
+ ],
+ [
+  "- The solution in one line: two conditions, no model, no code — \"If the month is Jan–Apr AND ONI four months ago was ≥ 0.5 → raise alert\".",
+  "- 11.6% of months fire; 100% of alerts landed in a top-quartile month; 4× lift over base rate.",
+  "- Both inputs are free and public; it runs on a spreadsheet, a WhatsApp broadcast, or the SAC page.",
+  "11"
+ ],
+ [
+  "- Viability: we tried to break our own rule. Out-of-sample (built 2010–16, blind 2017–24): precision still 100%, lift 3.9.",
+  "- Benchmarked against WHO/PAHO endemic channel and 17 published EWS (PPV 43–86%); we reach comparable PPV with no statistical model.",
+  "- It replicates in Thailand. We chose precision over sensitivity, and we print our worst row too.",
+  "12"
+ ],
+ [
+  "- Impact, conservative: acting 4–8 weeks earlier is worth US$1.5–3.7M a year in Indonesia (4,656 cases prevented under a stated 10% assumption).",
+  "- Every figure is published or a stated assumption — none is a model output.",
+  "- Lead time is observed, not assumed: we print the three episodes that gave zero months too.",
+  "13"
+ ],
+ [
+  "- Limits & data ethics: we tested our own best idea (\"drought × water access\"), it failed, and we removed it.",
+  "- We do not claim records the panel cannot support; incidence only where official denominators exist.",
+  "- Correlation is not causation — this is an early-warning claim with the mechanism cited from the literature.",
+  "14"
+ ],
+ [
+  "- The product: Pawang — the rule delivered on the 1st of every month as one SAC page plus an automatic WhatsApp advisory.",
+  "- The digital layer (SAC refresh + Smart Predict) does the fetching, not the deciding; the alert stays auditable by hand.",
+  "- Who does what: district office acts, MoH/BMKG own the refresh, Jumantik cadres target households, cloud partner hosts.",
+  "- It scales by swapping one input — Thailand already replicates it.",
+  "15"
+ ],
+ [
+  "Reference pages (R1–R2) are for Q&A and due diligence; not part of the 15-page storyboard count.",
+  "16"
+ ],
+ [
+  "Reference pages (R1–R2) are for Q&A and due diligence; not part of the 15-page storyboard count.",
+  "17"
+ ]
+]

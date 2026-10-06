@@ -17,6 +17,7 @@ Yang disunting (agar sesuai storyboard & aturan panitia):
 Jalankan dari direktori mana saja:
     python3 sunting-gamma.py
 """
+import json
 import os
 import re
 import zipfile
@@ -232,6 +233,10 @@ for i in range(1, 18):
         n_isi += 1
 print(f'catatan pembicara disuntikkan ke {n_isi} notesSlide')
 
+with open(os.path.join(BASE, 'catatan.json'), 'w', encoding='utf-8') as f:
+    json.dump([catatan.get(i, []) for i in range(1, 18)], f, ensure_ascii=False, indent=1)
+print('catatan.json ditulis (dipakai buat-aman.js)')
+
 # =====================================================================
 # 4. NOMOR HALAMAN — kanan bawah, agar rujukan "p. 7/12/14" mudah dilacak
 # =====================================================================
@@ -252,6 +257,32 @@ for n in range(2, 16):
 simpan_slide(16, nomor_halaman(slide(16), 'R1'))
 simpan_slide(17, nomor_halaman(slide(17), 'R2'))
 print('nomor halaman ditambahkan (2–15, R1, R2)')
+
+# =====================================================================
+# 5. SAMPUL GELAP — identitas storyboard: navy #0E2340, teks putih,
+#    chip SDG merah/biru/oranye (tema Consultant aslinya putih polos)
+# =====================================================================
+s1 = slide(1)
+s1 = s1.replace(
+    '<p:bg><p:bgPr><a:solidFill><a:srgbClr val="FFFFFF"/></a:solidFill></p:bgPr></p:bg>',
+    '<p:bg><p:bgPr><a:solidFill><a:srgbClr val="0E2340"/></a:solidFill></p:bgPr></p:bg>', 1)
+
+
+def warnai(nama, dari, ke):
+    global s1
+    blok = sp_of(s1, nama)
+    s1 = s1.replace(blok, blok.replace(f'val="{dari}"', f'val="{ke}"'), 1)
+
+
+warnai('Text 0', '152D47', 'FFFFFF')          # judul
+warnai('Text 1', '4C4C4D', 'E7EDF5')          # subjudul + paragraf + baris tim
+warnai('Text 8', '4C4C4D', '9FB0C7')          # "All charts..."
+for sp_nama, warna in [('Shape 2', 'C53232'), ('Shape 4', '2A78D6'), ('Shape 6', 'E8833A')]:
+    warnai(sp_nama, 'CCD7FF', warna)          # chip SDG: SDG3 / SDG13 / SDG6
+for t_nama in ('Text 3', 'Text 5', 'Text 7'):
+    warnai(t_nama, '4C4C4D', 'FFFFFF')
+simpan_slide(1, s1)
+print('sampul: navy gelap + chip SDG storyboard')
 
 # =====================================================================
 # tulis ulang pptx
